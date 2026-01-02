@@ -1,0 +1,158 @@
+{
+  "pack_id": "ky_phrasebook_v1",
+  "version": "1.0.0",
+  "jurisdiction_scope": "KY_STATE",
+  "generated_at": "2025-12-31",
+  "mappings": [
+    {
+      "phrase": "i missed court",
+      "to_modules": [
+        "ky.warrants.bench-warrant-fta",
+        "ky.warrants.surrender-and-notice"
+      ]
+    },
+    {
+      "phrase": "i have a warrant",
+      "to_modules": [
+        "ky.warrants.bench-warrant-fta",
+        "ky.warrants.surrender-and-notice"
+      ]
+    },
+    {
+      "phrase": "bench warrant",
+      "to_modules": [
+        "ky.warrants.bench-warrant-fta"
+      ]
+    },
+    {
+      "phrase": "failure to appear",
+      "to_modules": [
+        "ky.warrants.bench-warrant-fta"
+      ]
+    },
+    {
+      "phrase": "bond conditions",
+      "to_modules": [
+        "ky.bond.conditions",
+        "ky.orders.no-contact"
+      ]
+    },
+    {
+      "phrase": "no contact order",
+      "to_modules": [
+        "ky.orders.no-contact",
+        "ky.bond.conditions"
+      ]
+    },
+    {
+      "phrase": "can they search my car",
+      "to_modules": [
+        "ky.phase.arrest.search-of-person-and-car",
+        "ky.motions.suppress-search-seizure"
+      ]
+    },
+    {
+      "phrase": "miranda",
+      "to_modules": [
+        "ky.phase.arrest.miranda-when-it-applies"
+      ]
+    },
+    {
+      "phrase": "i got arrested",
+      "to_modules": [
+        "ky.booking.booking-and-mugshot",
+        "ky.bond.set-and-types",
+        "ky.appearance.initial"
+      ]
+    },
+    {
+      "phrase": "how do i get out of jail",
+      "to_modules": [
+        "ky.bond.set-and-types",
+        "ky.bond.conditions"
+      ]
+    },
+    {
+      "phrase": "public defender",
+      "to_modules": [
+        "ky.counsel.public-defender-eligibility"
+      ]
+    },
+    {
+      "phrase": "arraignment",
+      "to_modules": [
+        "ky.arraignment.entering-your-plea"
+      ]
+    },
+    {
+      "phrase": "indictment",
+      "to_modules": [
+        "ky.grand-jury.indictment-basics",
+        "ky.arraignment.entering-your-plea"
+      ]
+    },
+    {
+      "phrase": "discovery",
+      "to_modules": [
+        "ky.discovery.overview",
+        "ky.motions.discovery-motions"
+      ]
+    },
+    {
+      "phrase": "suppress evidence",
+      "to_modules": [
+        "ky.motions.suppress-search-seizure"
+      ]
+    },
+    {
+      "phrase": "dui",
+      "to_modules": [
+        "ky.dui.flow.overview",
+        "ky.dui.implied-consent-basics"
+      ]
+    },
+    {
+      "phrase": "refused breath test",
+      "to_modules": [
+        "ky.dui.implied-consent-basics"
+      ]
+    },
+    {
+      "phrase": "traffic stop",
+      "to_modules": [
+        "ky.phase.arrest.traffic-stop"
+      ]
+    },
+    {
+      "phrase": "bond revoked",
+      "to_modules": [
+        "ky.bond.revocation-procedures"
+      ]
+    },
+    {
+      "phrase": "initial appearance",
+      "to_modules": [
+        "ky.appearance.initial"
+      ]
+    },
+    {
+      "phrase": "preliminary hearing",
+      "to_modules": [
+        "ky.appearance.preliminary-hearing"
+      ]
+    },
+    {
+      "phrase": "plea deal",
+      "to_modules": [
+        "ky.plea.plea-negotiations",
+        "ky.plea.guilty-vs-nolo"
+      ]
+    },
+    {
+      "phrase": "sentencing",
+      "to_modules": [
+        "ky.sentencing.overview"
+      ]
+    }
+  ]
+}

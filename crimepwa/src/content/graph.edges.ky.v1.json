@@ -1,0 +1,98 @@
+{
+  "pack_id": "ky_edges_v1",
+  "version": "1.0.0",
+  "jurisdiction_scope": "KY_STATE",
+  "generated_at": "2025-12-31",
+  "edges": [
+    {
+      "from": "ky.process.timeline",
+      "to": "ky.phase.arrest.traffic-stop",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.phase.arrest.traffic-stop",
+      "to": "ky.phase.arrest.search-of-person-and-car",
+      "type": "RELATED"
+    },
+    {
+      "from": "ky.phase.arrest.search-of-person-and-car",
+      "to": "ky.motions.suppress-search-seizure",
+      "type": "TRIGGERS"
+    },
+    {
+      "from": "ky.phase.arrest.traffic-stop",
+      "to": "ky.booking.booking-and-mugshot",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.booking.booking-and-mugshot",
+      "to": "ky.bond.set-and-types",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.bond.set-and-types",
+      "to": "ky.appearance.initial",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.appearance.initial",
+      "to": "ky.charging.complaint-citation-indictment",
+      "type": "RELATED"
+    },
+    {
+      "from": "ky.charging.complaint-citation-indictment",
+      "to": "ky.grand-jury.indictment-basics",
+      "type": "RELATED"
+    },
+    {
+      "from": "ky.grand-jury.indictment-basics",
+      "to": "ky.arraignment.entering-your-plea",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.arraignment.entering-your-plea",
+      "to": "ky.discovery.overview",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.discovery.overview",
+      "to": "ky.motions.discovery-motions",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.discovery.overview",
+      "to": "ky.plea.plea-negotiations",
+      "type": "RELATED"
+    },
+    {
+      "from": "ky.plea.plea-negotiations",
+      "to": "ky.sentencing.overview",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.warrants.bench-warrant-fta",
+      "to": "ky.warrants.surrender-and-notice",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.bond.conditions",
+      "to": "ky.bond.revocation-procedures",
+      "type": "TRIGGERS"
+    },
+    {
+      "from": "ky.orders.no-contact",
+      "to": "ky.bond.revocation-procedures",
+      "type": "TRIGGERS"
+    },
+    {
+      "from": "ky.dui.flow.overview",
+      "to": "ky.dui.implied-consent-basics",
+      "type": "NEXT"
+    },
+    {
+      "from": "ky.dui.flow.overview",
+      "to": "ky.motions.suppress-search-seizure",
+      "type": "RELATED"
+    }
+  ]
+}

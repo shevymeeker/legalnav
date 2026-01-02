@@ -1,0 +1,1712 @@
+{
+  "pack_id": "ky_seed_v1",
+  "jurisdiction_scope": "KY_STATE",
+  "version": "1.0.0",
+  "generated_at": "2025-12-31",
+  "notes": "All authority_refs are NEEDS_REVIEW unless verified. Informational only, not legal advice.",
+  "modules": [
+    {
+      "id": "ky.process.timeline",
+      "title": "Criminal Process Timeline: The Map",
+      "one_line_purpose": "A simple, reliable overview of the steps from arrest to resolution.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRE_ARREST",
+        "ARREST",
+        "BOOKING",
+        "INITIAL_APPEARANCE",
+        "PRELIMINARY_HEARING",
+        "INDICTMENT",
+        "ARRAIGNMENT",
+        "DISCOVERY",
+        "PRE_TRIAL_MOTIONS",
+        "PLEA",
+        "TRIAL",
+        "SENTENCING",
+        "APPEAL",
+        "POST_CONVICTION"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER",
+        "OBSERVER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "NONE",
+      "summary": "Most cases follow a repeatable sequence: police contact, booking, first court settings, charging, pretrial steps, then resolution by plea or trial. Details change by charge level and county, but the backbone stays recognizable.",
+      "deadlines": [],
+      "authority_refs": [],
+      "what_to_do_now": [
+        "Identify what phase you are actually in: police contact, jail/booking, pending court date, or post-charging.",
+        "Write down: county, charge wording, next court date/time, and whether you are in custody.",
+        "Use the next-step cards to avoid jumping to sentencing or appeal content too early."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is in custody right now",
+          "then_modules": [
+            "ky.booking.booking-and-mugshot",
+            "ky.bond.set-and-types",
+            "ky.appearance.initial"
+          ]
+        },
+        {
+          "if": "User missed court or got a letter about court",
+          "then_modules": [
+            "ky.warrants.bench-warrant-fta",
+            "ky.warrants.surrender-and-notice"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.charging.complaint-citation-indictment",
+          "edge": "RELATED",
+          "strength": 0.7
+        },
+        {
+          "type": "MODULE",
+          "id": "ky.courts.hierarchy-basics",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.courts.hierarchy-basics",
+      "title": "Courts in Kentucky: A Quick Hierarchy Map",
+      "one_line_purpose": "Which courts handle what, at a bird\u2019s-eye view.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE",
+        "TRIAL",
+        "APPEAL"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER",
+        "OBSERVER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "NONE",
+      "summary": "Different courts handle different charge levels and stages. Knowing the court level helps predict procedures, timelines, and the next likely hearings.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY court structure (District/Circuit/Appellate)",
+          "label": "Court hierarchy overview",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Identify which court is listed on your notice and whether it is District, Circuit, or another level.",
+        "Use court level to pick the right flowchart for hearings and charging routes.",
+        "If your case moves courts, treat it as a phase shift and re-check deadlines."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User has an indictment and is unsure where it goes",
+          "then_modules": [
+            "ky.grand-jury.indictment-basics",
+            "ky.arraignment.entering-your-plea"
+          ]
+        },
+        {
+          "if": "User wants appeals basics",
+          "then_modules": [
+            "ky.appeal.notice-and-deadlines"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.process.timeline",
+          "edge": "RELATED",
+          "strength": 0.4
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.phase.arrest.traffic-stop",
+      "title": "Traffic Stop Basics: What\u2019s Happening Right Now",
+      "one_line_purpose": "Understand the stop, what the officer is doing, and how it escalates.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRE_ARREST",
+        "ARREST"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "OBSERVER",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "SOON",
+      "summary": "A traffic stop is a short detention that can expand if the officer develops more suspicion. The key forks are: stop ends, citation issued, or detention expands into search or arrest.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "CASELAW",
+          "citation": "Fourth Amendment (stop/seizure standards)",
+          "label": "Stop vs arrest concepts",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Stay focused on the three forks: stop ends, citation issued, or detention expands.",
+        "If asked for consent to search, understand that consent changes the legal landscape.",
+        "If the stop shifts to arrest, the next phase is booking and bond."
+      ],
+      "what_if_branches": [
+        {
+          "if": "Officer asks to search the car",
+          "then_modules": [
+            "ky.phase.arrest.search-of-person-and-car",
+            "ky.motions.suppress-search-seizure"
+          ]
+        },
+        {
+          "if": "User is arrested",
+          "then_modules": [
+            "ky.booking.booking-and-mugshot",
+            "ky.bond.set-and-types"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.phase.arrest.miranda-when-it-applies",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.phase.arrest.search-of-person-and-car",
+      "title": "Searches of You and Your Car: The Decision Points",
+      "one_line_purpose": "The common ways searches happen and what matters later.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "OBSERVER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Searches often happen through consent, probable cause, or specific exceptions. What matters later is the officer\u2019s stated reason, the timeline, and what was actually searched.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "CASELAW",
+          "citation": "Fourth Amendment (search/seizure framework)",
+          "label": "Search exceptions overview",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Document the sequence: stop reason, questions, consent request, search, discovery, arrest.",
+        "If you did not consent, note exactly what you said and what the officer did.",
+        "Search issues usually surface later as a suppression motion."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User says they consented",
+          "then_modules": [
+            "ky.motions.suppress-search-seizure"
+          ]
+        },
+        {
+          "if": "User says police searched without permission",
+          "then_modules": [
+            "ky.motions.suppress-search-seizure"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.motions.suppress-search-seizure",
+          "edge": "TRIGGERS",
+          "strength": 0.9
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.phase.arrest.miranda-when-it-applies",
+      "title": "Miranda: When It Matters and When It Doesn\u2019t",
+      "one_line_purpose": "Separate custody, interrogation, and what gets excluded.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "SOON",
+      "summary": "Miranda warnings usually matter when you are in custody and being interrogated. Not hearing Miranda does not automatically erase a case, but it can affect the use of statements.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "CASELAW",
+          "citation": "Miranda v. Arizona (concept)",
+          "label": "Custodial interrogation framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Separate what you said voluntarily from what you said in response to questioning.",
+        "Note whether you were free to leave, restrained, or transported.",
+        "Statements issues are typically litigated through motions later."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User says police questioned them after arrest",
+          "then_modules": [
+            "ky.discovery.overview",
+            "ky.motions.suppress-search-seizure"
+          ]
+        },
+        {
+          "if": "User is worried they talked too much",
+          "then_modules": [
+            "ky.counsel.public-defender-eligibility",
+            "ky.plea.plea-negotiations"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.discovery.overview",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.dui.flow.overview",
+      "title": "DUI Flow: From Stop to Resolution",
+      "one_line_purpose": "A vertical map with the key forks: tests, license, court path.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST",
+        "BOOKING",
+        "INITIAL_APPEARANCE",
+        "PRE_TRIAL_MOTIONS",
+        "PLEA",
+        "TRIAL",
+        "SENTENCING"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "URGENT",
+      "summary": "DUI cases often run two tracks at once: the criminal case and the administrative/license track. Early decision points include roadside tests, chemical tests, refusals, and license actions with their own deadlines.",
+      "deadlines": [
+        {
+          "label": "Administrative license action response window",
+          "trigger": "LICENSE_ACTION_NOTICE",
+          "clock": "SHORT_WINDOW",
+          "urgency": "HIGH"
+        }
+      ],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (DUI and implied consent statutes)",
+          "label": "DUI + implied consent framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Separate the criminal court dates from license deadlines. They are not the same calendar.",
+        "Write down: test type, refusal/acceptance, time of stop, and paperwork received.",
+        "If you need to preserve bodycam/dashcam, that is time-sensitive."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User refused a test",
+          "then_modules": [
+            "ky.dui.implied-consent-basics"
+          ]
+        },
+        {
+          "if": "User wants to challenge stop/search",
+          "then_modules": [
+            "ky.phase.arrest.search-of-person-and-car",
+            "ky.motions.suppress-search-seizure"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.dui.implied-consent-basics",
+          "edge": "NEXT",
+          "strength": 0.8
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.dui.implied-consent-basics",
+      "title": "Implied Consent: Tests, Refusals, and Consequences",
+      "one_line_purpose": "The chemical test fork that impacts license and leverage.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST",
+        "BOOKING"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "URGENT",
+      "summary": "Implied consent rules connect chemical testing to license consequences. Refusals and test results often trigger administrative steps with short deadlines.",
+      "deadlines": [
+        {
+          "label": "Hearing request deadline (if applicable)",
+          "trigger": "TEST_REFUSAL_OR_FAILURE",
+          "clock": "SHORT_WINDOW",
+          "urgency": "HIGH"
+        }
+      ],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (implied consent)",
+          "label": "Implied consent authority",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Keep all paperwork from the stop and booking. It often contains deadline language.",
+        "Clarify whether you have a temporary permit and when it expires.",
+        "Ask counsel about parallel tracks: criminal defense and administrative hearing."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User needs public defender info",
+          "then_modules": [
+            "ky.counsel.public-defender-eligibility"
+          ]
+        },
+        {
+          "if": "User is offered diversion",
+          "then_modules": [
+            "ky.postconviction.expungement-basics"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.dui.flow.overview",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.booking.booking-and-mugshot",
+      "title": "Booking: What Happens After Arrest",
+      "one_line_purpose": "The standard steps: intake, property, fingerprints, photo, and housing.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "BOOKING"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Booking is the administrative process after arrest. It often includes property inventory, fingerprints, a mugshot, database checks, and a custody decision until bond is addressed.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (arrest/booking procedures)",
+          "label": "General arrest/booking authority",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "If you\u2019re the person in custody: focus on identifying charges, bond status, and the next court setting.",
+        "If you\u2019re family: get the booking number, facility, and court date information.",
+        "Assume calls are monitored and keep communication practical."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User wants to know about bond",
+          "then_modules": [
+            "ky.bond.set-and-types",
+            "ky.bond.conditions"
+          ]
+        },
+        {
+          "if": "User needs first appearance timing",
+          "then_modules": [
+            "ky.appearance.initial"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.phase.custody.jail-calls-and-phones",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.phase.custody.jail-calls-and-phones",
+      "title": "Jail Calls, Phones, and Messages: Practical Reality",
+      "one_line_purpose": "How communication works and why it can affect a case.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "BOOKING",
+        "INITIAL_APPEARANCE"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Most jail communications are recorded or monitored. The safest approach is logistics: court dates, bond arrangements, attorney contact, and essential family needs.",
+      "deadlines": [],
+      "authority_refs": [],
+      "what_to_do_now": [
+        "Keep calls about logistics: attorney, bond, medication, childcare, work notice.",
+        "Avoid discussing alleged facts over recorded lines.",
+        "Ask facility rules on attorney calls and legal mail."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User has a no-contact order concern",
+          "then_modules": [
+            "ky.orders.no-contact"
+          ]
+        },
+        {
+          "if": "Family wants to help with release",
+          "then_modules": [
+            "ky.bond.set-and-types",
+            "ky.bond.conditions"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.orders.no-contact",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.bond.set-and-types",
+      "title": "Bond: Types, How It\u2019s Set, and What It Means",
+      "one_line_purpose": "Bond is a release decision plus conditions, not a moral score.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "BOOKING",
+        "INITIAL_APPEARANCE",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Bond determines whether you are released while your case is pending and under what conditions. It can be set by schedule, judge, or changed later by motion depending on the situation.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (conditions of release)",
+          "label": "Release conditions framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Confirm the exact bond type and amount, not just the dollar figure.",
+        "Ask what conditions attach automatically and what is special (no-contact, monitoring).",
+        "If bond feels impossible, modification is a later procedural path."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User has strict conditions",
+          "then_modules": [
+            "ky.bond.conditions",
+            "ky.bond.modify-motion"
+          ]
+        },
+        {
+          "if": "User fears revocation",
+          "then_modules": [
+            "ky.bond.revocation-procedures"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.appearance.initial",
+          "edge": "NEXT",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.bond.conditions",
+      "title": "Bond Conditions: What You Can and Cannot Do",
+      "one_line_purpose": "Conditions are rules with teeth. Learn the common traps.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Bond conditions are court-ordered requirements while your case is pending. Violations can lead to revocation and sometimes new charges, even when the original case hasn\u2019t moved yet.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (conditions of release)",
+          "label": "Conditions of release",
+          "verification_status": "NEEDS_REVIEW"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 431.520 (bail jumping / penalties)",
+          "label": "Failure/violation penalties",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Get a written copy of conditions. Do not rely on memory or hearsay.",
+        "Treat no-contact and travel restrictions as literal until modified by court.",
+        "If conditions are unworkable (work travel, childcare), modification is the correct channel."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User has a no-contact order question",
+          "then_modules": [
+            "ky.orders.no-contact"
+          ]
+        },
+        {
+          "if": "User needs conditions changed",
+          "then_modules": [
+            "ky.bond.modify-motion"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.bond.revocation-procedures",
+          "edge": "TRIGGERS",
+          "strength": 0.8
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.orders.no-contact",
+      "title": "No-Contact Orders: What Counts as \u201cContact\u201d",
+      "one_line_purpose": "No-contact is usually broader than people expect.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE",
+        "PRE_TRIAL_MOTIONS",
+        "PROBATION"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER",
+        "VICTIM"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "No-contact orders commonly include direct and indirect contact, including messages through third parties and sometimes social media interactions. Violations can trigger revocation or new charges depending on circumstances.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (protective/no-contact authority)",
+          "label": "Protective/no-contact authority",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Get the order text. \u2018I thought it meant\u2026\u2019 is not a defense plan.",
+        "Assume indirect contact counts unless the order explicitly narrows it.",
+        "If you need exceptions (child exchanges), seek formal modification."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User already contacted someone",
+          "then_modules": [
+            "ky.bond.revocation-procedures"
+          ]
+        },
+        {
+          "if": "User needs bond terms clarified",
+          "then_modules": [
+            "ky.bond.conditions"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.phase.custody.jail-calls-and-phones",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.bond.modify-motion",
+      "title": "Motion to Modify Bond: How Changes Happen",
+      "one_line_purpose": "The court can change bond, but it usually requires a reason and a request.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "DEFENSE_ATTORNEY",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Bond modifications typically happen through a motion and hearing. Courts look for changed circumstances, practical necessity, and safety considerations, depending on the charge and facts alleged.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (bond conditions and adjustments)",
+          "label": "Modification authority",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Identify the exact condition to change and the practical reason (work, medical care, childcare).",
+        "Collect proof: employer letter, treatment plan, travel schedule, residence proof.",
+        "If unrepresented, ask the clerk about local motion formatting rules."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User already violated a condition",
+          "then_modules": [
+            "ky.bond.revocation-procedures"
+          ]
+        },
+        {
+          "if": "User is unrepresented",
+          "then_modules": [
+            "ky.counsel.public-defender-eligibility"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.appearance.initial",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.bond.revocation-procedures",
+      "title": "Bond Revocation: What Happens After a Violation Is Alleged",
+      "one_line_purpose": "Allegation \u2192 hearing \u2192 tighten conditions or revoke.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "URGENT",
+      "summary": "When a violation is alleged, the court can hold a hearing to decide whether to tighten conditions or revoke bond. The outcome depends on the allegation type, prior history, and local practice.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (release/conditions)",
+          "label": "Revocation framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Treat alleged violations as time-sensitive. Delays often make release harder.",
+        "Gather proof that addresses the specific allegation (work schedule, location data, communications).",
+        "If a no-contact order is involved, do not attempt \u2018clarifying contact\u2019."
+      ],
+      "what_if_branches": [
+        {
+          "if": "Violation relates to missed court",
+          "then_modules": [
+            "ky.warrants.bench-warrant-fta"
+          ]
+        },
+        {
+          "if": "Violation relates to contact",
+          "then_modules": [
+            "ky.orders.no-contact"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.bond.conditions",
+          "edge": "GOVERNED_BY",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.appearance.initial",
+      "title": "Initial Appearance: The First Court Setting After Arrest",
+      "one_line_purpose": "Where bond, counsel, and scheduling get addressed.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Initial appearance is often the first time a judge formally addresses custody status, bond, counsel, and next dates. It is usually brief and procedural.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY criminal procedure (initial appearance timing)",
+          "label": "First appearance framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Confirm: next court date, bond terms, and whether counsel is appointed or pending.",
+        "If you need an interpreter or medical accommodations, raise it early.",
+        "Write down anything the judge orders, especially deadlines and prohibitions."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User needs counsel",
+          "then_modules": [
+            "ky.counsel.public-defender-eligibility"
+          ]
+        },
+        {
+          "if": "Bond seems incorrect or impossible",
+          "then_modules": [
+            "ky.bond.modify-motion"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.charging.complaint-citation-indictment",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.charging.complaint-citation-indictment",
+      "title": "Understanding Charges: Citation vs Complaint vs Indictment",
+      "one_line_purpose": "Different documents mean different paths and timelines.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST",
+        "INITIAL_APPEARANCE",
+        "INDICTMENT"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "SOON",
+      "summary": "Charges can appear as a citation, a criminal complaint, or an indictment. Each implies a different procedural route and court handling, even when the alleged conduct sounds similar.",
+      "deadlines": [],
+      "authority_refs": [],
+      "what_to_do_now": [
+        "Look for the document type and court listed, not just the charge name.",
+        "Write down the exact statute number or ordinance reference shown.",
+        "Use the document type to choose the correct next-step flow."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User has an indictment",
+          "then_modules": [
+            "ky.grand-jury.indictment-basics",
+            "ky.arraignment.entering-your-plea"
+          ]
+        },
+        {
+          "if": "User has a citation and a court date",
+          "then_modules": [
+            "ky.appearance.initial",
+            "ky.warrants.surrender-and-notice"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.process.timeline",
+          "edge": "RELATED",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.charging.how-to-read-citation",
+      "title": "How to Read a Citation or Complaint",
+      "one_line_purpose": "Turn the paper into: what it says, where to go, and what\u2019s next.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARREST",
+        "INITIAL_APPEARANCE"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "SOON",
+      "summary": "Citations and complaints include key routing info: the court, the date/time, the charge code, and the required appearance terms. Reading the document correctly prevents missed court and wrong assumptions.",
+      "deadlines": [],
+      "authority_refs": [],
+      "what_to_do_now": [
+        "Find: the court name, date/time, location, and whether appearance is mandatory.",
+        "Copy the statute/ordinance number exactly; the name can be misleading.",
+        "Keep a photo/scan and put the date on a calendar with reminders."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User fears they missed the date",
+          "then_modules": [
+            "ky.warrants.bench-warrant-fta",
+            "ky.warrants.surrender-and-notice"
+          ]
+        },
+        {
+          "if": "User doesn\u2019t understand the charge label",
+          "then_modules": [
+            "ky.charging.complaint-citation-indictment"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.courts.hierarchy-basics",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.grand-jury.indictment-basics",
+      "title": "Grand Jury and Indictment: The Basics",
+      "one_line_purpose": "What an indictment means procedurally, and what it doesn\u2019t prove.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "GRAND_JURY",
+        "INDICTMENT"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "An indictment is a formal charging instrument that typically moves a case forward into arraignment and pretrial procedures. It is not a trial finding and does not mean guilt was proven.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY criminal procedure (grand jury/indictment)",
+          "label": "Indictment framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Confirm the arraignment date and court handling the indictment.",
+        "Ask for counsel immediately if you do not already have one.",
+        "Begin collecting documents: bond order, charging papers, prior notices."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is confused about arraignment",
+          "then_modules": [
+            "ky.arraignment.entering-your-plea"
+          ]
+        },
+        {
+          "if": "User needs discovery next",
+          "then_modules": [
+            "ky.discovery.overview"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.arraignment.entering-your-plea",
+          "edge": "NEXT",
+          "strength": 0.8
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.appearance.preliminary-hearing",
+      "title": "Preliminary Hearing: What It Is (and Isn\u2019t)",
+      "one_line_purpose": "A probable-cause checkpoint in certain felony paths, not a full trial.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRELIMINARY_HEARING"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "A preliminary hearing is typically about whether there is enough evidence to move forward on certain charges. It may involve limited testimony and is often strategic depending on counsel and posture.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY criminal procedure (preliminary hearing)",
+          "label": "Prelim framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Confirm whether your case includes a preliminary hearing step (depends on charging route).",
+        "Ask what the hearing is set for and what outcomes are possible in that court.",
+        "If unrepresented, prioritize counsel immediately."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is indicted instead",
+          "then_modules": [
+            "ky.grand-jury.indictment-basics",
+            "ky.arraignment.entering-your-plea"
+          ]
+        },
+        {
+          "if": "User is offered a plea early",
+          "then_modules": [
+            "ky.plea.plea-negotiations"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.grand-jury.indictment-basics",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.arraignment.entering-your-plea",
+      "title": "Arraignment: Entering Your Plea",
+      "one_line_purpose": "Where charges are addressed formally and a plea is entered.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "ARRAIGNMENT",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "SOON",
+      "summary": "Arraignment is usually a short hearing where the court confirms the charges, addresses counsel, records your plea, and sets next dates. It is not a trial and evidence is not argued here.",
+      "deadlines": [
+        {
+          "label": "Next date set at arraignment",
+          "trigger": "ARRAIGNMENT_COMPLETED",
+          "clock": "VARIES_BY_COURT",
+          "urgency": "MEDIUM"
+        }
+      ],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 8.02 (pleas)",
+          "label": "Plea options framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "If you do not understand charge wording, ask for clarification on the record.",
+        "If you cannot afford counsel, ask about the appointed-counsel process in that court.",
+        "Confirm the next court date and whether you must appear in person."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User wants to fight the case",
+          "then_modules": [
+            "ky.discovery.overview",
+            "ky.motions.suppress-search-seizure"
+          ]
+        },
+        {
+          "if": "User is considering a plea",
+          "then_modules": [
+            "ky.plea.plea-negotiations",
+            "ky.plea.guilty-vs-nolo"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.discovery.overview",
+          "edge": "NEXT",
+          "strength": 0.8
+        },
+        {
+          "type": "MODULE",
+          "id": "ky.bond.conditions",
+          "edge": "RELATED",
+          "strength": 0.5
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.counsel.public-defender-eligibility",
+      "title": "Public Defender Eligibility: How Appointment Works",
+      "one_line_purpose": "What courts look at and what documents you\u2019ll likely need.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "INITIAL_APPEARANCE",
+        "ARRAIGNMENT",
+        "DISCOVERY",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "If you cannot afford an attorney, you may qualify for appointed counsel depending on income and other factors. The process usually involves an application, documentation, and a court determination.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (public defender / DPA framework)",
+          "label": "Right-to-counsel implementation",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Ask the court or clerk where the application is filed and what proof is required.",
+        "Bring proof of income, dependents, expenses, and any public assistance documentation.",
+        "If you have a court date soon, apply immediately; delays can cost options."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is in custody and needs quick counsel",
+          "then_modules": [
+            "ky.appearance.initial",
+            "ky.arraignment.entering-your-plea"
+          ]
+        },
+        {
+          "if": "User has strict bond conditions",
+          "then_modules": [
+            "ky.bond.modify-motion"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.discovery.overview",
+          "edge": "RELATED",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.discovery.overview",
+      "title": "Discovery: What You Can Get and When",
+      "one_line_purpose": "How evidence exchange works and why it shapes pleas and motions.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "DISCOVERY",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "DEFENSE_ATTORNEY",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Discovery is the process of obtaining police reports, video, lab results, witness statements, and other evidence. Timing and scope vary, but discovery often determines whether motions or plea negotiations make sense.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY criminal discovery rules",
+          "label": "Discovery framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Ask what discovery is available now and what is pending (video, lab tests).",
+        "Track what you\u2019ve received with dates. Missing items matter later.",
+        "If evidence seems unlawfully obtained, suppression motions are the usual path."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User believes evidence came from an illegal search",
+          "then_modules": [
+            "ky.motions.suppress-search-seizure"
+          ]
+        },
+        {
+          "if": "User expects important missing evidence",
+          "then_modules": [
+            "ky.motions.discovery-motions"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.motions.discovery-motions",
+          "edge": "NEXT",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.motions.discovery-motions",
+      "title": "Discovery Motions: When You Need the Court to Order It",
+      "one_line_purpose": "What happens when evidence is delayed, missing, or disputed.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "DEFENSE_ATTORNEY"
+      ],
+      "complexity": "COMPLEX",
+      "time_sensitivity": "SOON",
+      "summary": "If discovery is incomplete or disputed, parties may ask the court to order disclosure, set deadlines, or resolve conflicts. This is often attorney-driven because it depends on rule-specific requirements.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY criminal discovery rules (motions/enforcement)",
+          "label": "Discovery enforcement",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Keep a dated list of what you requested and what you received.",
+        "Identify what is time-sensitive (video retention, 911 calls, bodycam).",
+        "If you have counsel, push early. Some evidence disappears on schedules."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is considering a plea without full discovery",
+          "then_modules": [
+            "ky.plea.plea-negotiations"
+          ]
+        },
+        {
+          "if": "User wants to challenge evidence",
+          "then_modules": [
+            "ky.motions.suppress-search-seizure"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.discovery.overview",
+          "edge": "GOVERNED_BY",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.motions.suppress-search-seizure",
+      "title": "Motion to Suppress: Challenging Searches, Seizures, and Statements",
+      "one_line_purpose": "How evidence gets excluded and why timing matters.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "DEFENSE_ATTORNEY"
+      ],
+      "complexity": "COMPLEX",
+      "time_sensitivity": "SOON",
+      "summary": "Suppression motions argue that evidence should not be used because it was obtained unlawfully. These motions often depend on precise timelines, bodycam, reports, and hearing testimony.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "CASELAW",
+          "citation": "Fourth Amendment (suppression doctrine)",
+          "label": "Suppression framework",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Preserve your timeline: when stopped, searched, questioned, arrested.",
+        "Identify what evidence flowed from the challenged act (items found, statements, tests).",
+        "Do not assume suppression is automatic; it\u2019s a litigated issue."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User\u2019s case is DUI-related",
+          "then_modules": [
+            "ky.dui.flow.overview"
+          ]
+        },
+        {
+          "if": "User is unrepresented",
+          "then_modules": [
+            "ky.counsel.public-defender-eligibility"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.discovery.overview",
+          "edge": "DEPENDS_ON",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.warrants.bench-warrant-fta",
+      "title": "Missed Court: Bench Warrants and Failure to Appear",
+      "one_line_purpose": "What a bench warrant is, why it persists, and what happens next.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "WARRANT",
+        "PRE_TRIAL_MOTIONS",
+        "POST_CONVICTION"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "BASIC",
+      "time_sensitivity": "URGENT",
+      "summary": "Missing a required court date can lead to a bench warrant. Warrants typically remain active until resolved by arrest or voluntary surrender, and they can affect bond decisions moving forward.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 2.14 (bench warrant procedures)",
+          "label": "Bench warrant framework",
+          "verification_status": "NEEDS_REVIEW"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS (failure to appear / bail jumping)",
+          "label": "FTA penalties",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Do not assume a missed date is fixable by phone alone. Courts usually require appearance or formal action.",
+        "If possible, contact counsel before you trigger an arrest in the wrong setting.",
+        "Prepare to address both the missed date and the underlying case."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User wants to surrender voluntarily",
+          "then_modules": [
+            "ky.warrants.surrender-and-notice"
+          ]
+        },
+        {
+          "if": "User wants to know if they can avoid jail",
+          "then_modules": [
+            "ky.warrants.surrender-and-notice",
+            "ky.bond.modify-motion"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.bond.set-and-types",
+          "edge": "TRIGGERS",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.warrants.surrender-and-notice",
+      "title": "Voluntary Surrender + Court Notice: Planning the Least-Bad Version",
+      "one_line_purpose": "How surrender differs from getting picked up, and how notice issues fit in.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "WARRANT"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "URGENT",
+      "summary": "Voluntary surrender can reduce chaos: you choose timing, childcare coverage, medication planning, and counsel coordination. Notice problems can explain how you got here, but courts often still require formal resolution.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY court notice/service rules",
+          "label": "Notice framework (general)",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Try to coordinate with counsel and confirm where/when surrender should occur.",
+        "Bring essentials: ID, medication list, emergency contacts, and bond plan.",
+        "Update your contact info with the clerk if allowed and keep proof."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User needs bond help after surrender",
+          "then_modules": [
+            "ky.bond.set-and-types",
+            "ky.bond.conditions"
+          ]
+        },
+        {
+          "if": "User wants to prevent another missed date",
+          "then_modules": [
+            "ky.charging.how-to-read-citation"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.warrants.bench-warrant-fta",
+          "edge": "RELATED",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.plea.plea-negotiations",
+      "title": "Plea Negotiations: What They Are Actually Doing",
+      "one_line_purpose": "A decision framework: risk, evidence strength, penalties, collateral costs.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PLEA",
+        "PRE_TRIAL_MOTIONS"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "DEFENSE_ATTORNEY",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Most cases resolve by plea. Negotiations weigh evidence, sentencing exposure, and practical life consequences. The point is not certainty, but managed risk.",
+      "deadlines": [],
+      "authority_refs": [],
+      "what_to_do_now": [
+        "Ask what the offer changes: charge level, jail exposure, probation terms, fines, license effects.",
+        "Do not decide without understanding what evidence exists and what is missing.",
+        "Separate \u2018what you want\u2019 from \u2018what you can reliably prove.\u2019"
+      ],
+      "what_if_branches": [
+        {
+          "if": "User asks about guilty vs no contest",
+          "then_modules": [
+            "ky.plea.guilty-vs-nolo"
+          ]
+        },
+        {
+          "if": "User wants trial instead",
+          "then_modules": [
+            "ky.trial.jury-trial-overview"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.sentencing.overview",
+          "edge": "NEXT",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.plea.guilty-vs-nolo",
+      "title": "Guilty vs No Contest: Why the Distinction Exists",
+      "one_line_purpose": "How pleas differ and what they commonly affect.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "PLEA"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Guilty pleas admit guilt. No contest (nolo contendere) generally accepts conviction without admitting the facts. Practical differences can matter most in related civil consequences and specific court practices.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "RCr 8.02 (pleas)",
+          "label": "Plea categories",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Ask how the court treats nolo in practice in that county and charge type.",
+        "Confirm whether the plea affects licensing, employment, or pending civil issues.",
+        "Understand what rights you waive by entering any plea."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is focused on sentencing outcomes",
+          "then_modules": [
+            "ky.sentencing.overview",
+            "ky.sentencing.collateral-consequences"
+          ]
+        },
+        {
+          "if": "User wants to keep fighting",
+          "then_modules": [
+            "ky.trial.jury-trial-overview",
+            "ky.motions.suppress-search-seizure"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.plea.plea-negotiations",
+          "edge": "RELATED",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.trial.jury-trial-overview",
+      "title": "Trial Overview: What Happens in Court",
+      "one_line_purpose": "The order of operations: rulings, openings, witnesses, verdict.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "TRIAL"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER",
+        "OBSERVER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Trials follow a structured sequence: (if jury) selection, openings, witness testimony, exhibits, closing arguments, then verdict. Many issues are decided before trial through motions and rulings.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "RULE",
+          "citation": "KY Rules of Evidence / trial procedure",
+          "label": "Trial structure",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Confirm whether trial is jury or bench and what court level it\u2019s in.",
+        "Understand witness obligations and subpoenas early, not on the day-of.",
+        "Expect pretrial rulings to shape what the factfinder is allowed to hear."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is anxious about sentencing exposure",
+          "then_modules": [
+            "ky.sentencing.overview"
+          ]
+        },
+        {
+          "if": "User is considering a plea instead",
+          "then_modules": [
+            "ky.plea.plea-negotiations"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.sentencing.overview",
+          "edge": "NEXT",
+          "strength": 0.6
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    },
+    {
+      "id": "ky.sentencing.overview",
+      "title": "Sentencing: What the Court Decides After Conviction or Plea",
+      "one_line_purpose": "The decision space: jail/prison, probation, fines, programs, conditions.",
+      "jurisdiction_scope": "KY_STATE",
+      "phase_tags": [
+        "SENTENCING"
+      ],
+      "actor_tags": [
+        "DEFENDANT",
+        "FAMILY_MEMBER"
+      ],
+      "complexity": "INTERMEDIATE",
+      "time_sensitivity": "SOON",
+      "summary": "Sentencing is where the court imposes penalties and conditions. Outcomes can include incarceration, probation, fines, treatment requirements, and restrictions that extend beyond the case timeline.",
+      "deadlines": [],
+      "authority_refs": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS (sentencing ranges and probation authority)",
+          "label": "Sentencing authority",
+          "verification_status": "NEEDS_REVIEW"
+        }
+      ],
+      "what_to_do_now": [
+        "Clarify what the sentence includes: time, suspended time, probation length, conditions, fees.",
+        "Ask about reporting instructions and deadlines immediately after sentencing.",
+        "Understand the difference between probation conditions and bond conditions."
+      ],
+      "what_if_branches": [
+        {
+          "if": "User is worried about jobs/licensing",
+          "then_modules": [
+            "ky.sentencing.collateral-consequences"
+          ]
+        },
+        {
+          "if": "User wants to appeal",
+          "then_modules": [
+            "ky.appeal.notice-and-deadlines"
+          ]
+        }
+      ],
+      "related_nodes": [
+        {
+          "type": "MODULE",
+          "id": "ky.sentencing.collateral-consequences",
+          "edge": "RELATED",
+          "strength": 0.7
+        }
+      ],
+      "last_reviewed_at": null,
+      "review_owner_role": null
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "jurisdiction_scope_default": "KY_STATE",
+  "phases": [
+    "PRE_ARREST",
+    "ARREST",
+    "BOOKING",
+    "INITIAL_APPEARANCE",
+    "PRELIMINARY_HEARING",
+    "GRAND_JURY",
+    "INDICTMENT",
+    "ARRAIGNMENT",
+    "DISCOVERY",
+    "PRE_TRIAL_MOTIONS",
+    "PLEA",
+    "TRIAL",
+    "SENTENCING",
+    "APPEAL",
+    "POST_CONVICTION",
+    "WARRANT",
+    "PROBATION",
+    "PAROLE"
+  ],
+  "actors": [
+    "DEFENDANT",
+    "FAMILY_MEMBER",
+    "OFFICER",
+    "PROSECUTOR",
+    "DEFENSE_ATTORNEY",
+    "JUDGE",
+    "WITNESS",
+    "VICTIM",
+    "OBSERVER"
+  ],
+  "complexity_levels": [
+    "BASIC",
+    "INTERMEDIATE",
+    "COMPLEX",
+    "REQUIRES_ATTORNEY"
+  ],
+  "time_sensitivity_levels": [
+    "NONE",
+    "SOON",
+    "URGENT",
+    "DEADLINE"
+  ],
+  "edge_types": [
+    "APPLIES_IN",
+    "GOVERNED_BY",
+    "HEARD_IN",
+    "TRIGGERS",
+    "DEPENDS_ON",
+    "NEXT",
+    "DEFINES",
+    "LIMITED_BY",
+    "RELATED"
+  ],
+  "verification_status": [
+    "VERIFIED",
+    "NEEDS_REVIEW",
+    "JURISDICTION_VARIABLE",
+    "OUTDATED"
+  ],
+  "defaults": {
+    "touch_target_min_px": 48,
+    "critical_action_min_px": 64,
+    "paragraph_clamp_lines": 4
+  }
+}
