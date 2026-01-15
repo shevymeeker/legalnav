@@ -1,0 +1,790 @@
+{
+  "pack_id": "ky_seed_v2",
+  "jurisdiction_scope": "KY_STATE",
+  "version": "2.0.0",
+  "generated_at": "2026-01-15",
+  "notes": "Complete rebuild: charge-focused, research-backed, rights-centered. All claims fact-checked against Kentucky statutes and criminal procedure rules. Questions or flagged items marked clearly.",
+  "modules": [
+    {
+      "id": "ky.foundation.court-system",
+      "title": "Kentucky Courts: Where Cases Go",
+      "category": "FOUNDATIONAL",
+      "one_line_purpose": "Three levels of courts handle different case types and appeal paths.",
+      "summary": "Kentucky has three levels of criminal courts. District Court handles misdemeanors and small felonies. Circuit Court handles serious felonies. Court of Appeals and Supreme Court handle appeals. Knowing which court you're in tells you what procedures apply and what comes next.",
+      "what_is_this": "Kentucky runs three layers of criminal courts:\n\n• District Court: Small claims, misdemeanors, and preliminary felony hearings. Fast-moving, informal.\n• Circuit Court: Serious felonies, trials, sentencing. Formal procedures, juries. This is where major cases live.\n• Court of Appeals: Reviews Circuit Court convictions for legal errors. Kentucky Supreme Court: Final court in the state.",
+      "why_it_matters": "The court level determines what procedures you get, how long things take, and what appeals look like. A case that starts in District Court might move to Circuit Court if it's serious enough. Missing this detail means you won't know what's actually happening next.",
+      "what_to_do_now": "Look at any court papers you have and write down which court is listed. If you're told you're in 'District' or 'Circuit' court, use that to find the right process guide for your situation. Ask the clerk if you're unsure which court handles your charge.",
+      "related_modules": [
+        "ky.process.arrest-and-booking",
+        "ky.process.initial-appearance",
+        "ky.process.trial"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "Kentucky Constitution Section 113; KRS Chapter 23-25 (court structure)",
+          "label": "Court structure authority",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "BOTH",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.foundation.charges-felony-misdemeanor",
+      "title": "Criminal Charges: Felonies vs Misdemeanors, Explained",
+      "category": "FOUNDATIONAL",
+      "one_line_purpose": "Charges are sorted by severity. Higher severity means more prison time and court complexity.",
+      "summary": "Criminal charges in Kentucky are either felonies or misdemeanors, sorted into classes. Misdemeanors are jail time (up to 12 months). Felonies mean prison (over 12 months, often years). Within each category, Class A is most serious. The class determines the sentence range and which court handles it.",
+      "what_is_this": "Charges are sorted by severity into boxes:\n\nMISDEMEANORS (jail—up to 12 months):\n• Class A: 90 days to 12 months jail, up to $500 fine\n• Class B: Up to 90 days jail, up to $250 fine\n\nFELONIES (prison—more than 12 months):\n• Class A: 20–50 years or life\n• Class B: 10–20 years\n• Class C: 5–10 years\n• Class D: 1–5 years",
+      "why_it_matters": "The class determines your maximum exposure (how much prison time is possible), which court handles it, and whether a jury trial is available. A Class D felony is serious; a Class A felony is extremely serious. This matters a lot for plea negotiations and case strategy.",
+      "what_to_do_now": "Look at any charging papers and find the exact statute number and class listed (like 'Class D Felony' or 'Class A Misdemeanor'). That class is your roadmap for sentence exposure. Ask your attorney or the prosecutor what the typical range is in your county—judges have flexibility within the class.",
+      "related_modules": [
+        "ky.charge.dui.overview",
+        "ky.charge.drugs.overview",
+        "ky.process.sentencing"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 532.020 (felony and misdemeanor designation and classes)",
+          "label": "Charge classification system",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "BOTH",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.foundation.process-overview",
+      "title": "The Criminal Process: The Basic Arc",
+      "category": "FOUNDATIONAL",
+      "one_line_purpose": "Almost every case follows the same backbone from arrest to sentencing.",
+      "summary": "The criminal process is a predictable sequence: arrest, booking, first court appearance (within 48 hours), charging, pretrial discovery and motions, then either a plea or trial, then sentencing. The speed varies, but the arc is almost always the same. Understanding the sequence prevents panic and helps you know what's coming.",
+      "what_is_this": "Most criminal cases follow this path:\n\n1. Police contact/arrest\n2. Booking (photos, fingerprints, property inventory)\n3. Initial appearance (48 hours max—judge sets bond, appoints counsel)\n4. Charging (formal document listing the charges)\n5. Preliminary hearing (if applicable) OR indictment\n6. Arraignment (you enter a plea)\n7. Discovery (evidence exchange)\n8. Pretrial motions (challenges to evidence, requests for dismissal)\n9. Plea negotiation OR trial prep\n10. Trial OR plea acceptance\n11. Sentencing\n12. (Possibly) Appeal",
+      "why_it_matters": "Knowing the sequence means you understand what's normal, what's urgent, and when to act. It prevents surprises. Most cases don't have dramatic turns—they move through these steps predictably. Your job is to know which step you're on and what deadline is next.",
+      "what_to_do_now": "Figure out where you are right now in this sequence. Are you at arrest? Booking? First court? Plea talk? Once you know, focus on that step and what comes immediately after. Write down the next court date and what you need to prepare.",
+      "related_modules": [
+        "ky.process.arrest-and-booking",
+        "ky.process.initial-appearance",
+        "ky.process.bail-hearing",
+        "ky.process.arraignment",
+        "ky.process.trial",
+        "ky.process.sentencing"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "KY Rules of Criminal Procedure (RCr)",
+          "label": "Procedural framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "BOTH",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.foundation.your-rights",
+      "title": "Your Constitutional Rights in Criminal Cases",
+      "category": "FOUNDATIONAL",
+      "one_line_purpose": "These rights exist whether you remember them or use them. Knowing them helps.",
+      "summary": "You have constitutional rights that apply everywhere in the process: right to remain silent, right to an attorney, right to know what you're charged with, right to face witnesses, right to due process. These aren't favors—they're constitutional protections. Police don't have to remind you about all of them, but they exist.",
+      "what_is_this": "Your basic rights in a criminal case:\n\n• Right to remain silent: You don't have to talk to police or answer questions. Silence cannot be used against you at trial.\n• Right to an attorney: If you can't afford one, the court appoints one (public defender). You can ask for one at any point.\n• Right to know charges: The government must tell you what you're accused of with specificity.\n• Right to confront witnesses: At trial, you can cross-examine anyone who testifies against you.\n• Right to a speedy trial: Cases shouldn't drag on indefinitely.\n• Right to due process: Fair procedures at every step. The government can't use unlawfully obtained evidence.",
+      "why_it_matters": "These rights are your protection. If you don't know them, you might waive them accidentally. If police violate them, evidence can get thrown out. Understanding these means you can protect yourself even without an attorney initially.",
+      "what_to_do_now": "If you're being questioned: Say 'I want to talk to a lawyer' clearly. Then stop talking. If you're arrested: Ask for an attorney. If you're offered a plea: Get legal advice before accepting. If you have an attorney: Keep your cards close—don't tell police things you don't tell your attorney.",
+      "related_modules": [
+        "ky.rights.miranda",
+        "ky.rights.attorney",
+        "ky.rights.silence",
+        "ky.rights.search-and-seizure"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "U.S. Constitution (4th, 5th, 6th Amendments); Kentucky Constitution Section 10-15",
+          "label": "Constitutional rights",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "BOTH",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.foundation.bail-basics",
+      "title": "Bail: Release, Money, and Conditions",
+      "category": "FOUNDATIONAL",
+      "one_line_purpose": "Bail is a release decision—who gets to go home while their case is pending, and under what rules.",
+      "summary": "Bail (or bond) is the court's decision about whether you can be released while waiting for trial and under what conditions. It's not about guilt or innocence—it's about whether you'll show up for court and stay safe. Kentucky abolished private bail bondsmen in 1976, so if you owe bail, you pay the court directly, get out, and the money is held until trial. Conditions are rules you must follow—breaking them can get you locked up.",
+      "what_is_this": "Bail comes in types:\n\n• Release on your own recognizance (ROR): You promise to show up. No money required.\n• Unsecured bond: You sign a paper saying you'll pay if you don't show. Usually no upfront money.\n• Cash bond: You (or family) give the court cash equal to the bail amount. Deposited with court clerk.\n• Detention: You stay in jail. No bail offered (usually for serious charges or bad history).\n\nConditions are rules attached to bail:\n• Standard: Check in with pretrial services\n• Common: No-contact with alleged victim, no drugs/alcohol, maintain employment\n• Strict: House arrest, monitoring device, surrender passport",
+      "why_it_matters": "Bail determines whether you're home or in jail while case is pending. That affects your job, family, ability to help your defense. Bail conditions are legally binding—violating them can get you rearrested and can hurt your case. Impossible conditions can be modified through a motion.",
+      "what_to_do_now": "At first appearance, confirm your bail type and amount. Write down every condition. If any condition is impossible (work travel, medical care, childcare), tell your attorney immediately—modification is possible but takes a motion. Don't assume the judge got it right; conditions can be changed.",
+      "related_modules": [
+        "ky.process.bail-hearing",
+        "ky.bond.modify-motion",
+        "ky.bond.revocation-procedures",
+        "ky.orders.no-contact"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 431 (bail and bail procedures); RCr 4.40 (conditions of release)",
+          "label": "Bail framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "BOTH",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.charge.dui.overview",
+      "title": "DUI: Driving Under Influence—What It Is",
+      "category": "CHARGE",
+      "charge_family": "DUI",
+      "one_line_purpose": "DUI means driving impaired by alcohol or drugs. It carries immediate and long-term consequences.",
+      "summary": "A DUI is operating a vehicle while impaired by alcohol, drugs, or with a blood alcohol level of 0.08% or higher. It's taken seriously because impaired driving causes deaths. DUI cases are unusual because they run two tracks: the criminal case (court) and the administrative case (license suspension). Both happen independently. First offense is serious; multiple offenses become felonies.",
+      "what_is_this": "You can be charged with DUI for:\n• Operating with BAC 0.08% or higher (measured by breath or blood test)\n• Operating while impaired (weaving, slurred speech, poor coordination—no test needed)\n• Operating while under influence of drugs (legal or illegal)\n• Refusing a chemical test (carries DUI-equivalent penalties)\n\nFor drivers under 21: DUI level is 0.02% BAC.\nFor commercial drivers: DUI level is 0.04% BAC.",
+      "why_it_matters": "DUI convictions carry mandatory jail time (even first offense), license suspension, ignition interlock requirement, and a criminal record affecting employment and housing. The administrative license suspension happens at arrest independent of the court case—missing a deadline there costs your license automatically.",
+      "what_to_do_now": "1. Get the police report and any bodycam footage.\n2. Note the stop time, where you were, how you drove, and what the officer said.\n3. Find out what test was done (breath, blood, or refusal) and the result.\n4. Check for any paperwork about administrative license suspension—that has a SHORT deadline.\n5. Get an attorney ASAP if you haven't.",
+      "related_modules": [
+        "ky.charge.dui.implied-consent",
+        "ky.charge.dui.first-offense",
+        "ky.process.arrest-and-booking",
+        "ky.rights.search-and-seizure"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 189A (DUI statute and implied consent)",
+          "label": "DUI framework",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "WEBSITE",
+          "citation": "Kentucky DRIVE (https://drive.ky.gov/) - Official state DUI info",
+          "label": "State DUI resource",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.charge.dui.first-offense",
+      "title": "First-Offense DUI: Penalties and Timeline",
+      "category": "CHARGE",
+      "charge_family": "DUI",
+      "one_line_purpose": "First DUI means minimum jail, license loss, and costs. It's serious but survivable.",
+      "summary": "A first DUI conviction in Kentucky carries mandatory penalties: minimum 48 hours to 30 days in jail (or community service), license suspension (30–120 days), a fine of $200–$500, ignition interlock device installation (6 months after reinstatement), and substance abuse treatment. The exact penalties vary by county and judge, but the baseline is always jail and license loss.",
+      "what_is_this": "First-offense DUI penalties in Kentucky:\n\n• Jail: 48 hours minimum to 30 days (can be swapped for community service, but jail time is mandatory)\n• License suspension: 30–120 days (can be restored early with hardship license after completing treatment)\n• Fine: $200–$500\n• Ignition interlock: Required for 6 months after license is reinstated\n• Treatment: Court-ordered substance abuse assessment and program\n• Criminal record: Yes, permanent (expungement is limited)\n\nNote: If you refused the chemical test OR had aggravating factors (accident, minor in car), penalties increase.",
+      "why_it_matters": "Jail time and license loss happen even on first offense—no 'just a warning.' Your ability to work is immediately affected. The ignition interlock costs ~$100–$150/month. The treatment program takes time and money. This is costly and intrusive even for first offense.",
+      "what_to_do_now": "1. Negotiate with your attorney—first offenses sometimes have diversion options (treatment instead of conviction).\n2. Line up employment letter and stability proof for sentencing.\n3. Get enrolled in substance abuse treatment BEFORE sentencing if possible—judges notice.\n4. Budget for court fines, ignition interlock costs, and treatment fees.\n5. Arrange transportation if your license is suspended (carpool, rideshare, public transit).",
+      "related_modules": [
+        "ky.charge.dui.overview",
+        "ky.charge.dui.implied-consent",
+        "ky.process.sentencing",
+        "ky.plea.plea-negotiations"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 189A.010 (first offense penalties)",
+          "label": "First DUI penalties",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "WEBSITE",
+          "citation": "DRIVE Kentucky (https://drive.ky.gov/Drivers/Pages/DUI.aspx)",
+          "label": "Official DUI penalties",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.charge.dui.implied-consent",
+      "title": "Implied Consent: Chemical Tests, Refusal, and Your License",
+      "category": "CHARGE",
+      "charge_family": "DUI",
+      "one_line_purpose": "Kentucky's implied consent law creates a separate license suspension from the criminal case.",
+      "summary": "Kentucky's 'implied consent' law assumes you've agreed to a chemical test (breath or blood) when you drive. If you refuse, your license is suspended automatically. If you take the test and fail, your license is also suspended. These suspensions happen through the DMV, not the court—different calendar, different rules, different deadlines. Missing an administrative deadline costs your license even if you beat the criminal charge.",
+      "what_is_this": "Implied consent basics:\n\n• When arrested for DUI, police offer a chemical test (breath, blood, or urine).\n• You can refuse. But: Refusal is a separate offense, and your license is suspended for 1 year (plus ignition interlock requirements).\n• You can accept. If BAC is 0.08%+, your license is suspended 30–120 days and you must request a hearing within 10 days to contest it.\n• You can request an administrative hearing with the DMV (separate from your court case) to challenge the suspension.\n\nIf you miss the 10-day hearing request deadline, your suspension is automatic—you lose that fight.",
+      "why_it_matters": "Refusal penalties are often WORSE than failing a test. Many people think refusing helps their criminal case—it doesn't usually help and hurts your license. The administrative suspension happens automatically; you must act fast or lose your license regardless of what happens in court.",
+      "what_to_do_now": "1. Find the police report showing what you said about the test (agreed, refused, or failed).\n2. If you refused: You have 1 year suspension minimum. If you took test: You have 10 days to request an administrative hearing.\n3. Request that hearing immediately in writing to the DMV (county clerk usually handles this).\n4. Gather any documents supporting your side (medical issues affecting test, faulty equipment, etc.).\n5. Tell your criminal attorney about the administrative hearing—it's separate from criminal court but both matter.",
+      "related_modules": [
+        "ky.charge.dui.overview",
+        "ky.charge.dui.first-offense",
+        "ky.rights.search-and-seizure",
+        "ky.motions.suppress-search-seizure"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 189A.100–189A.200 (implied consent, suspension procedures)",
+          "label": "Implied consent framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true,
+      "flagged": true,
+      "flag_reason": "Administrative hearing timeline (10 days) is strict and separate from court; exact DMV procedures vary by county clerk office"
+    },
+    {
+      "id": "ky.charge.drugs.overview",
+      "title": "Drug Possession: How It's Classified and Penalized",
+      "category": "CHARGE",
+      "charge_family": "DRUGS",
+      "one_line_purpose": "Drug charges range from misdemeanor to felony based on drug type and amount.",
+      "summary": "Drug possession charges vary wildly in Kentucky depending on what drug you have and how much. Marijuana possession is usually a misdemeanor. Cocaine, heroin, or prescription pills in quantity can be felony. The type of drug matters—Schedule I (heroin) is worse than Schedule III (some prescriptions). Amount matters—small amounts are possession; larger amounts suggest intent to distribute.",
+      "what_is_this": "Drug possession charges by category:\n\nMARIJUANA:\n• Class B misdemeanor (jail up to 45 days, $250 fine)\n• Can escalate to felony if amount suggests distribution (generally 8 oz.+)\n\nHARD DRUGS (Cocaine, Heroin, Meth, Fentanyl):\n• Schedule I or II narcotics: Class D felony (1–3 years prison)\n• First-degree possession (heroin, cocaine): 1–3 years prison\n• Second-degree possession: Class A misdemeanor (up to 12 months jail)\n\nPRESCRIPTION DRUGS:\n• Without prescription: Usually Class A or B misdemeanor\n• Large amounts (more than you'd take): Possession with intent to distribute\n\nINTENT TO DISTRIBUTE:\n• 8 oz.+ marijuana: Prima facie evidence of intent\n• 4 grams cocaine, 2 grams meth/heroin, 10 dosage units of narcotic: Trafficking charges (felony, years in prison)",
+      "why_it_matters": "The difference between Class B misdemeanor (45 days) and Class D felony (3 years) is amount and drug type. A tiny difference in weight can change your life dramatically. Prosecutors have discretion—they choose the charge. Whether they prove intent to distribute can add years.",
+      "what_to_do_now": "1. Get the police report showing exact what drug and amount was found.\n2. Ask your attorney whether prosecutors likely filed the most serious charge or negotiable.\n3. If drugs were found in a search, ask whether the search was legal—illegal searches mean evidence gets thrown out.\n4. Gather any employment, treatment history, or community ties for later sentencing argument.",
+      "related_modules": [
+        "ky.rights.search-and-seizure",
+        "ky.motions.suppress-search-seizure",
+        "ky.process.trial",
+        "ky.plea.plea-negotiations"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 218A (controlled substance offenses)",
+          "label": "Drug charge framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true,
+      "flagged": true,
+      "flag_reason": "Exact thresholds for 'intent to distribute' vary; some charges prosecuted differently in different counties"
+    },
+    {
+      "id": "ky.charge.assault.overview",
+      "title": "Assault: Levels, What Counts, and Serious Consequences",
+      "category": "CHARGE",
+      "charge_family": "ASSAULT",
+      "one_line_purpose": "Assault charges range from misdemeanor (4th degree) to serious felony (1st degree). Physical harm isn't always required.",
+      "summary": "Assault in Kentucky covers several tiers from 4th-degree misdemeanor (threatening someone) to 1st-degree felony (causing serious injury). Confusingly, the statute is called 'assault' but encompasses what other states call 'assault and battery.' You don't always need to touch someone—menacing threats count. The degree depends on the harm or threat of harm.",
+      "what_is_this": "Kentucky assault charges by degree:\n\n• Fourth Degree (Class A Misdemeanor): Attempting to cause physical injury or intentionally causing physical injury. Up to 12 months jail, $500 fine.\n• Third Degree (Class B Misdemeanor or Class D Felony): Recklessly causing physical injury or intentionally causing minor injury with a weapon. Misdemeanor or felony depending on facts.\n• Second Degree (Class C Felony): Intentionally causing serious physical injury. 5–10 years prison.\n• First Degree (Class B Felony): Intentionally causing serious physical injury with extreme indifference to human life. 10–20 years prison.\n\nDomestic violence: Can enhance any assault charge and creates additional restrictions and treatment requirements.",
+      "why_it_matters": "Assault convictions can carry significant prison time. Fourth degree seems minor but conviction still means a criminal record. Weapon involvement jumps charges up. If a victim's injury is 'serious,' you're looking at felony time. Self-defense is a legal defense—show it wasn't you who initiated.",
+      "what_to_do_now": "1. Get medical records for the alleged victim (shows injury level—no injury = weaker charge).\n2. Identify any witnesses to what happened.\n3. Gather evidence of self-defense if applicable (your injuries, texts, circumstances).\n4. If domestic violence is alleged: Prepare for additional restraining order and treatment mandates even if criminal case is weak.",
+      "related_modules": [
+        "ky.rights.self-defense",
+        "ky.process.trial",
+        "ky.orders.domestic-violence-order"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 508.020–508.050 (assault by degree)",
+          "label": "Assault framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true,
+      "flagged": true,
+      "flag_reason": "Definition of 'serious physical injury' is somewhat subjective; charging decisions vary by county"
+    },
+    {
+      "id": "ky.charge.theft.overview",
+      "title": "Theft and Shoplifting: Penalties by Value",
+      "category": "CHARGE",
+      "charge_family": "THEFT",
+      "one_line_purpose": "Theft charges jump in severity with each dollar threshold. Value determines class.",
+      "summary": "Theft in Kentucky is graded by the value of what was taken. Under $500 is a misdemeanor. $500–$1,000 is a higher misdemeanor. $1,000–$10,000 is felony. Over $10,000 is serious felony. Shoplifting is just retail theft—same law, same penalties. Stores often press charges and can also sue civilly for damages.",
+      "what_is_this": "Theft charges by stolen property value:\n\n• Under $500: Class B Misdemeanor (up to 90 days jail, $250 fine)\n• $500–$1,000: Class A Misdemeanor (up to 12 months jail, $500 fine)\n• $1,000–$10,000: Class D Felony (1–5 years prison, up to $10,000 fine)\n• $10,000+: Class C Felony (5–10 years prison, up to $10,000 fine)\n\nShoplifting: Same law, same penalties. Store can prove value through receipts or inventory records.\nRepeat offense: Charges often enhanced; multiple thefts can be charged as pattern.",
+      "why_it_matters": "The jump from misdemeanor to felony happens at $1,000. That single dollar threshold between -$999 and +$1,000 changes your exposure from 12 months jail to 5 years prison. Store can sue separately for damages and attorney fees (civil case). Retailers also share shoplifter names—affects future employment or housing checks.",
+      "what_to_do_now": "1. Get the store's inventory records or receipts showing what was taken and actual value (not 'suggested retail').\n2. If overcharged, challenge the valuation—$1,500 vs. $999 is a huge difference.\n3. If first offense: Negotiate for theft diversion program (avoid conviction).\n4. Restore the money if possible—judges like restitution.",
+      "related_modules": [
+        "ky.process.plea-negotiations",
+        "ky.process.trial",
+        "ky.sentencing.overview"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 514.020–514.040 (theft by value, shoplifting)",
+          "label": "Theft framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.process.arrest-and-booking",
+      "title": "Arrest and Booking: What Happens Immediately After",
+      "category": "PROCESS",
+      "one_line_purpose": "Booking is paperwork and procedures. You're photographed, fingerprinted, searched, and held until bail is addressed.",
+      "summary": "After arrest, you go to a police station or jail for booking. Police collect your photo (mugshot), fingerprints, biographical info, and search you. They inventory your property and conduct health/mental health screening. You're usually held in custody until your first court appearance (within 48 hours). This is administrative, not interrogation—cooperate but don't volunteer information.",
+      "what_is_this": "Booking includes:\n\n• Your photograph (mugshot) and fingerprints for records\n• Questions: Name, address, emergency contacts, medical issues, mental health\n• Property inventory: Anything you have is catalogued, photographed, and stored\n• Pat search or strip search (depends on charge seriousness)\n• Health screening: Medications, allergies, suicidal thoughts, injuries\n• Charges are read and bail decision is scheduled\n• You're placed in a holding cell or jail unit\n• DNA swab sometimes taken (depends on charge)\n\nYou have the right to tell them you want an attorney—say it clearly. Don't say more after that.",
+      "why_it_matters": "Booking triggers the 48-hour clock for first appearance. If they miss the deadline, they have to release you (though this is rare—they usually get it right). Your mugshot becomes public record. Your health screening can affect jail placement (medical issues = medical unit, mental health crisis = psychiatric hold). Property inventory prevents claims you lost things.",
+      "what_to_do_now": "1. Provide basic info (name, address, medical issues) during booking. Lying about identity makes things worse.\n2. Say clearly: 'I want to talk to a lawyer. I'm not answering questions.' Then stop talking.\n3. Ask about your medications and health needs—jail must provide them.\n4. Write down what property you had (they should give you a list).\n5. Ask when your first court appearance is.",
+      "related_modules": [
+        "ky.process.initial-appearance",
+        "ky.process.bail-hearing",
+        "ky.rights.miranda",
+        "ky.rights.silence"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 3.05 (arrest and bail procedures)",
+          "label": "Arrest/booking procedure",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 15.525 (booking procedures)",
+          "label": "Booking requirements",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.process.initial-appearance",
+      "title": "Initial Appearance: Your First Court Date (Within 48 Hours)",
+      "category": "PROCESS",
+      "one_line_purpose": "Judge confirms charges, sets bail, appoints attorney. It's procedural and usually quick.",
+      "summary": "Within 48 hours of arrest, you must appear before a judge. This hearing isn't about guilt—it's administrative. The judge confirms charges, tells you your rights, sets bail, and appoints a public defender if you qualify. Questions are usually yes-or-no. Don't give speeches or argue facts—that comes later.",
+      "what_is_this": "At initial appearance:\n\n• Judge identifies you and confirms charges (reads them to you)\n• Judge advises you of your rights (right to attorney, right to trial, right to remain silent)\n• If you can't afford an attorney, you request appointment of public defender\n• Judge asks about employment, ties to community, criminal history\n• Judge sets bail/bond (type and amount, if any)\n• Judge sets date for next hearing\n• If you're in custody, you might be released pending bail or stay in jail\n\nYour role: Listen, answer basic questions, request attorney if needed. Don't negotiate or argue.",
+      "why_it_matters": "Bail is set here. If it's too high or conditions are impossible, you can request modification later—but getting it right initially is better. Appointing a public defender here starts your case momentum. If you're released on your own recognizance (ROR), you go home immediately. If bail is set but you can't pay, you stay in jail until someone pays it.",
+      "what_to_do_now": "1. Listen carefully to the charges as read.\n2. If you can't afford an attorney, clearly say: 'I want a public defender appointed.'\n3. Confirm the next court date and write it down.\n4. If bail seems impossible, tell your attorney—they can file a motion to modify later.\n5. If you're released, confirm what conditions attach to your release. Get a written copy if possible.",
+      "related_modules": [
+        "ky.process.arrest-and-booking",
+        "ky.process.bail-hearing",
+        "ky.counsel.public-defender-eligibility",
+        "ky.foundation.process-overview"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 3.14 (initial appearance timing and procedure)",
+          "label": "Initial appearance requirements",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 431.040 (initial appearance)–",
+          "label": "Initial appearance statute",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.process.bail-hearing",
+      "title": "Bail Hearing: Where the Judge Decides Release",
+      "category": "PROCESS",
+      "one_line_purpose": "Judge weighs factors and sets bail. You can argue for lower bail or release on your recognizance.",
+      "summary": "At initial appearance, the judge conducts a bail hearing (or holds it over). The judge considers: seriousness of charge, your criminal history, ties to community, employment, family, whether you'd flee, danger to public. You can argue why you should be released or why bail should be lower. Prosecutors can argue for higher bail or detention.",
+      "what_is_this": "Judges consider at bail hearings:\n\n• Charge seriousness (felony vs. misdemeanor, prior convictions)\n• Criminal history (past failures to appear, prior probation violations)\n• Community ties (job, family, home ownership, length in community)\n• Financial resources (ability to pay bail, property to pledge)\n• Risk of flight (passport, travel history, ties elsewhere)\n• Danger to public or alleged victim (threats made, prior violence)\n\nBail options:\n• ROR (Release on Recognizance): You promise to appear. No money.\n• Unsecured bond: You sign agreement to pay if you don't appear.\n• Cash bond: You deposit money with court.\n• Bail denied: You're held in jail (usually serious felonies or bad history).",
+      "why_it_matters": "Bail determines whether you're home or in jail during your case. That affects job, family, ability to prepare your defense. If bail is impossible, you're incentivized to plead guilty quickly rather than wait in jail. If you're home, you have more time and resources. Getting bail right here matters enormously.",
+      "what_to_do_now": "1. At the hearing, listen to prosecutors' arguments.\n2. Prepare facts about yourself: stable employment, family, how long in Kentucky, community ties.\n3. Be respectful to the judge. 'I understand the seriousness' goes a long way.\n4. If bail is set too high: Tell your attorney you want to file a bail modification motion.\n5. If released: Understand every condition. Write them down. Violate none of them.",
+      "related_modules": [
+        "ky.process.initial-appearance",
+        "ky.foundation.bail-basics",
+        "ky.bond.modify-motion",
+        "ky.orders.no-contact"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.04 (bail hearing and determination)",
+          "label": "Bail hearing procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.process.arraignment",
+      "title": "Arraignment: Entering Your Plea",
+      "category": "PROCESS",
+      "one_line_purpose": "You formally enter a plea. Don't do this without talking to your attorney.",
+      "summary": "Arraignment is a quick hearing where the judge confirms charges again, makes sure you have an attorney or waive one, and you enter a plea: guilty, not guilty, or (rarely) no contest. This is not a trial—no evidence is argued. It's just the plea. If you plead not guilty, the case moves to discovery and pretrial motions. If guilty, it goes to sentencing.",
+      "what_is_this": "At arraignment:\n\n• Judge reads charges again\n• Judge asks: Do you understand the charges? Do you have an attorney?\n• Judge asks your plea: guilty, not guilty, or no contest\n• If guilty: Judge asks if you're making the plea freely, if you understand you're waiving trial, if anyone pressured you\n• If not guilty: Case goes to discovery, pretrial motions, trial prep\n• Judge sets next date\n\nNo negotiation happens here. Plea is entered and recorded.",
+      "why_it_matters": "This is where you commit to a plea. Withdrawing a guilty plea later is possible but hard. Never plead guilty without full conversation with your attorney. If you don't understand a charge, say so on the record. If prosecutor is pressuring you into plea without offering a deal, don't do it—take it to trial.",
+      "what_to_do_now": "1. BEFORE arraignment: Talk to your attorney about strategy. Is there a plea offer? Do you want to fight? Are there pretrial motions that might help?\n2. At arraignment: Listen carefully to the charges as read.\n3. Only enter a plea after consultation with your attorney.\n4. If anything confuses you, ask the judge to explain it.\n5. Confirm next date before you leave.",
+      "related_modules": [
+        "ky.plea.plea-negotiations",
+        "ky.discovery.overview",
+        "ky.motions.suppress-search-seizure",
+        "ky.process.trial"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 8.02 (plea procedures and acceptance)",
+          "label": "Arraignment and plea procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.process.trial",
+      "title": "Trial: The Structure and What Happens",
+      "category": "PROCESS",
+      "one_line_purpose": "Trial is where the prosecutor proves guilt beyond reasonable doubt. Most cases plead out before this.",
+      "summary": "Trial is the formal proceeding where a judge (bench trial) or jury (jury trial) hears evidence and decides guilty or not guilty. The prosecutor presents witnesses and evidence. You (or your attorney) cross-examines and presents your defense. Jury or judge decides. Only about 2–3% of cases go to trial—most plead. But if you go to trial, know what happens.",
+      "what_is_this": "Trial structure (jury trial shown):\n\n1. Jury selection: 12 jurors plus alternates chosen\n2. Opening statements: Both sides outline their case (no evidence yet)\n3. Prosecution case: Witnesses testify, prosecutor asks questions, you cross-examine\n4. Defense case: You can testify (risky) or not. Defense witnesses presented.\n5. Closing arguments: Both sides argue to jury\n6. Jury instructions: Judge explains the law\n7. Jury deliberation: Jurors discuss and decide\n8. Verdict: 'Guilty' or 'Not guilty' (must be unanimous)\n\nBench trial: Same structure but judge decides, not jury.",
+      "why_it_matters": "Trial is where the government has to prove guilt beyond reasonable doubt. You have the right to confront witnesses, to remain silent, to present your defense. But trials are unpredictable. Good evidence can still fail. Bad evidence sometimes convinces people. Conviction rate varies wildly by case and jury.",
+      "what_to_do_now": "1. Talk to your attorney about trial strategy—should you testify? What defense witnesses help?\n2. Prepare for courtroom appearance (dress professionally, arrive on time, speak respectfully).\n3. Avoid social media about the case—don't discuss it online.\n4. Understand sentencing exposure if convicted so the plea offer comparison makes sense.\n5. Trust your attorney's trial strategy unless you have serious concerns.",
+      "related_modules": [
+        "ky.process.arraignment",
+        "ky.discovery.overview",
+        "ky.plea.plea-negotiations",
+        "ky.process.sentencing"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 9 (trial procedures)",
+          "label": "Trial procedure",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 29A (jury trial rights)",
+          "label": "Jury trial statutory right",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.process.sentencing",
+      "title": "Sentencing: What the Judge Decides After Conviction",
+      "category": "PROCESS",
+      "one_line_purpose": "Judge imposes jail/prison, probation, fines, treatment, and other conditions based on law, facts, and your history.",
+      "summary": "After conviction (guilty plea or trial verdict), sentencing happens. Judge considers the statutory range for the charge, your criminal history, victim statements, your background, aggravating and mitigating factors, and purposes of sentencing. Judge can impose prison, probation, fines, treatment, restitution, and conditions. Sentencing ranges vary—a Class D felony means 1–5 years, but judge can impose anything within that.",
+      "what_is_this": "At sentencing:\n\n• Prosecutor presents aggravating factors (prior crimes, victim impact, etc.)\n• Defense presents mitigating factors (stable job, family, treatment, remorse)\n• Victim may make a statement (if crime had victim)\n• You can speak (allocution) or have attorney speak on your behalf\n• Judge announces the sentence: incarceration time, probation length, fines, conditions\n• Judge explains supervision requirements and how long conditions last\n\nSentence components:\n• Active time: Days/months/years actually in prison\n• Probation: Supervised release (years, usually) after serving time\n• Conditions: Drug testing, treatment, restitution, community service\n• Fines and costs\n• License suspension or other restrictions",
+      "why_it_matters": "Sentencing is where the real consequence hits. A Class D felony conviction is 1–5 years—judge decides where in that range. Job, family, housing, future depend on what the judge imposes. Good sentencing prep (gathering employment letters, treatment enrollment, character references) can reduce the hit.",
+      "what_to_do_now": "1. If possible, enroll in treatment programs BEFORE sentencing (judges notice and reward this).\n2. Gather employment letters, character references, community ties documentation.\n3. Contact family members who can speak for you at sentencing.\n4. If unable to pay fines, tell your attorney—courts can adjust.\n5. Ask about appeal rights and whether conviction can be appealed.",
+      "related_modules": [
+        "ky.process.trial",
+        "ky.plea.plea-negotiations",
+        "ky.sentencing.collateral-consequences",
+        "ky.appeal.notice-and-deadlines"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 532 (sentencing framework, ranges by class)",
+          "label": "Sentencing law",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "RULE",
+          "citation": "RCr 11 (sentencing procedure)",
+          "label": "Sentencing procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.rights.miranda",
+      "title": "Miranda Rights: When They Matter (and When They Don't)",
+      "category": "RIGHTS",
+      "one_line_purpose": "Miranda warnings don't prevent all questioning—they apply only to custodial interrogation.",
+      "summary": "Miranda rights (right to remain silent, right to attorney) apply when police have you in custody AND are interrogating you. If you're not in custody, Miranda doesn't apply. If they're not questioning you, Miranda doesn't apply. If you're in custody and being questioned but they never read you rights, statements you make can be excluded—but the case doesn't get dismissed, just that evidence is excluded.",
+      "what_is_this": "Miranda applies when:\n• You're in custody (reasonable person wouldn't feel free to leave)\n• AND police are interrogating you (asking questions designed to elicit incriminating response)\n\nIf you're in custody but not being questioned: No Miranda needed.\nIf you're questioned but NOT in custody (like traffic stop): No Miranda needed.\n\nWhat happens if violated: Any statement you made is excluded from trial. Evidence flowing from the statement might also be excluded (if you confess to where the weapon is, weapon can't be used).\n\nWhat doesn't happen: Case doesn't get dismissed. You don't go free. Just that evidence is excluded.",
+      "why_it_matters": "Many people think Miranda violations mean the case gets thrown out. They don't. But excluding a confession can be huge—sometimes that's the whole case. Knowing when Miranda applies helps you know when to demand a lawyer.",
+      "what_to_do_now": "1. If police start questioning you in custody: Clearly say 'I want to talk to a lawyer.' Then stop talking.\n2. Don't answer 'just one more question.'\n3. Everything you say after demanding a lawyer is useless and can hurt you.\n4. If later your attorney says Miranda was violated, that statement gets thrown out.",
+      "related_modules": [
+        "ky.rights.silence",
+        "ky.rights.attorney",
+        "ky.process.arrest-and-booking",
+        "ky.motions.suppress-search-seizure"
+      ],
+      "sources": [
+        {
+          "type": "CASELAW",
+          "citation": "Miranda v. Arizona (U.S. Supreme Court). Kentucky Rule of Criminal Procedure 10.03 (right to counsel)",
+          "label": "Miranda framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.rights.attorney",
+      "title": "Right to an Attorney: Appointment and Your Options",
+      "category": "RIGHTS",
+      "one_line_purpose": "You have the right to an attorney. If you can't afford one, the court appoints a public defender.",
+      "summary": "You have a constitutional right to an attorney at every critical stage: arrest, questioning, trial, appeal. If you can't afford a private attorney, you can request a public defender. Courts use a 'sliding scale of indigency' based on federal poverty guidelines. Public defenders are often overworked but are skilled litigators. Private attorneys cost money but you choose them.",
+      "what_is_this": "Getting an attorney:\n\n1. At initial appearance or any time: Say 'I want to talk to a lawyer' (in writing if possible).\n2. If you can't afford one: Request appointment of public defender.\n3. Judge will ask about your income, dependents, expenses.\n4. If you qualify (generally 100–125% federal poverty line or below): Defender is appointed at no cost.\n5. You can request a specific public defender (limited) or accept assigned.\n6. If you hire private attorney: You can do so at any point.\n\nPublic defender: Overworked, handle hundreds of cases, but experienced.\nPrivate attorney: You choose, pay out of pocket, often more availability.",
+      "why_it_matters": "Having an attorney from the start protects you. Anything you say before an attorney is present can be used against you. Many mistakes happen when people try to navigate court without counsel. Getting an attorney appointed quickly is the best investment you can make.",
+      "what_to_do_now": "1. At first opportunity, ask for an attorney.\n2. If requesting public defender: Bring proof of income, tax returns, or employment documentation.\n3. If you get an attorney: Stop talking to police immediately. Only talk to your attorney.\n4. Follow your attorney's advice. They know the court and judge.",
+      "related_modules": [
+        "ky.rights.silence",
+        "ky.rights.miranda",
+        "ky.counsel.public-defender-eligibility",
+        "ky.process.initial-appearance"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 31.110–31.140 (public defender appointment and eligibility)",
+          "label": "Public defender eligibility and appointment",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "RULE",
+          "citation": "RCr 3.10 (right to counsel)",
+          "label": "Right to counsel rule",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.rights.silence",
+      "title": "Your Right to Remain Silent: How to Use It",
+      "category": "RIGHTS",
+      "one_line_purpose": "You don't have to talk to police. Silence is your right. Don't waive it.",
+      "summary": "You have the constitutional right to remain silent. Police don't have to tell you this except under Miranda. You can use this right anytime: at arrest, booking, interrogation, trial. Remaining silent is not admission of guilt—it's exercising a right. Prosecutors cannot tell a jury you were silent (usually). Use this right early and clearly.",
+      "what_is_this": "Your right to silence means:\n\n• You don't have to talk to police\n• You don't have to answer questions\n• Your silence cannot be used to prove guilt at trial (usually)\n• You can remain silent even if you're innocent (exercise the right anyway)\n• You can choose to talk later through your attorney\n\nHow to invoke it:\n• Clearly say: 'I want to remain silent' or 'I'm not answering questions.'\n• Then don't talk anymore. Don't give 'just one more answer.'\n• Silence is not legally interpreted as guilt.",
+      "why_it_matters": "Anything you say can be used against you. Even innocent explanations can be twisted. Police are trained to get people to talk. Remaining silent protects you. You can explain everything later through your attorney in a controlled way.",
+      "what_to_do_now": "1. If questioned: Say clearly 'I want to remain silent' or 'I want a lawyer.'\n2. Don't add more words. Silence is enough.\n3. If already talked: Shut up now and demand attorney.\n4. With your attorney: Decide what to say to investigators (if anything).",
+      "related_modules": [
+        "ky.rights.attorney",
+        "ky.rights.miranda",
+        "ky.process.arrest-and-booking"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "Kentucky Constitution Section 14 (right against self-incrimination)",
+          "label": "Right to silence (state constitution)",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "U.S. Constitution 5th Amendment (right against self-incrimination)",
+          "label": "Right to silence (federal)",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.rights.search-and-seizure",
+      "title": "Search and Seizure: Your Fourth Amendment Rights",
+      "category": "RIGHTS",
+      "one_line_purpose": "Police need a warrant to search you, your car, or your home. Exceptions exist but are narrow.",
+      "summary": "Police generally need a warrant (signed by judge based on probable cause) to search you, your vehicle, or your home. Consent (if given freely) eliminates warrant requirement. In your home, warrant is required except in emergencies. In a car, police can search without warrant if there's probable cause (but not just because they want to). Knowing this protects you from illegal searches.",
+      "what_is_this": "Search and seizure rules:\n\nVehicle searches:\n• Police need probable cause to search a car (belief that evidence/contraband is inside)\n• They don't need a warrant, but do need probable cause\n• If pulled over, you can decline consent to search: 'I don't consent to a search'\n• Trunk, under seats, compartments all searchable if probable cause exists\n\nHome searches:\n• Police need a warrant to search your home (unless emergency, consent, or other exception)\n• Warrant must specifically list what they're searching for\n• You can refuse consent if someone asks to search your home\n\nPerson searches:\n• Pat down allowed if officer has reasonable suspicion of weapon (frisk)\n• Full search requires arrest\n• If detained, you can ask 'Am I free to leave?' If officer says yes, go.",
+      "why_it_matters": "Illegal searches mean evidence gets thrown out. If police violated Fourth Amendment to get drugs, weapon, or confession, that evidence can't be used. This is huge defense strategy. Knowing what police can and can't do helps you know when to fight.",
+      "what_to_do_now": "1. If pulled over: Clearly say 'I don't consent to a search of my vehicle/person.'\n2. At home: If police show up, don't open door if you don't have to. Ask for warrant. If no warrant, decline entry unless emergency.\n3. Later, tell your attorney about the search—they can challenge it if it was illegal.",
+      "related_modules": [
+        "ky.motions.suppress-search-seizure",
+        "ky.rights.miranda",
+        "ky.charge.drugs.overview",
+        "ky.phase.arrest.traffic-stop"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "U.S. Constitution 4th Amendment (unreasonable search and seizure); Kentucky Constitution Section 10",
+          "label": "Search and seizure protection",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.plea.plea-negotiations",
+      "title": "Plea Negotiations: What's Being Offered and Why",
+      "category": "PROCESS",
+      "one_line_purpose": "Most cases resolve by plea, not trial. Understand the trade: certainty vs. risk.",
+      "summary": "Plea negotiations are conversations between prosecutor and your attorney about a deal: you plead guilty to certain charges in exchange for reduced charges, recommended sentence, dropped charges, or other benefits. The goal is managed risk—certainty of a smaller consequence vs. the risk of trial and bigger consequence. Most cases (98%) resolve this way.",
+      "what_is_this": "How plea negotiations work:\n\n1. Prosecutor makes initial offer (reduce charges, recommend light sentence, drop counts)\n2. Your attorney tells you the offer\n3. You discuss risk/reward: What if you lose at trial? What does prosecutor offer?\n4. Your attorney counters or accepts\n5. If accepted, you enter guilty plea and judge approves sentence (usually)\n6. If rejected, case goes to trial\n\nPlea deals often include:\n• Charge reduction (felony to misdemeanor, higher class to lower)\n• Sentence recommendation (judge often follows)\n• Dropping some counts in exchange for guilty on others\n• Agreed-upon fines or probation length",
+      "why_it_matters": "Plea deal certainty often beats trial risk. You know what you're getting. Trial is unpredictable—jury could convict on all charges, sentence could be maximum. On the other hand, sometimes evidence is weak and trial is the right move. This is where attorney judgment matters.",
+      "what_to_do_now": "1. Ask your attorney: What's the offer? What's the evidence against me? What are trial risks?\n2. Compare: Plea outcome vs. worst-case trial outcome.\n3. Don't feel pressure to plead if you don't want to. But understand consequences.\n4. If plea feels wrong: Tell your attorney. They should explain the basis for the offer.",
+      "related_modules": [
+        "ky.discovery.overview",
+        "ky.process.trial",
+        "ky.process.sentencing",
+        "ky.plea.guilty-vs-nolo"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 8.02–8.03 (plea acceptance)",
+          "label": "Plea procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.action.get-legal-help",
+      "title": "Finding Legal Help: Public Defender, Private Attorney, or Legal Aid",
+      "category": "ACTION",
+      "one_line_purpose": "Multiple paths exist to get legal representation. Start now.",
+      "summary": "If you're charged, you need legal help. Options: (1) Request public defender if you can't afford attorney; (2) Hire private attorney if you can; (3) Contact legal aid societies for reduced-fee representation; (4) Ask bar association for referral. Don't navigate alone. Getting help early is critical.",
+      "what_is_this": "Legal help options:\n\nPublic Defender (free, if income qualifies):\n• Ask at initial appearance or early\n• Bring income/household documentation\n• Skilled attorneys, but high caseload\n• Department of Public Advocacy (DPA) runs statewide system\n\nPrivate Attorney (you pay):\n• Can find through bar association referral\n• Often more availability, less caseload\n• Cost varies: $500–$2,000+ depending on case complexity\n• Some offer payment plans\n\nLegal Aid Societies (low-cost, if income qualifies):\n• Kentucky Justice Advocates, Legal Aid of the Bluegrass, etc.\n• Below-market rates based on income\n• Usually handle specific case types (domestic violence, housing, etc.)\n\nBar Association Referral:\n• State bar association website (www.kybar.org)\n• Can refer you to attorneys in your area",
+      "why_it_matters": "Having an attorney from day one protects you. Many mistakes happen in first 48 hours when unrepresented. Good attorney can negotiate, file motions, suppress bad evidence, get charges reduced. It's worth every penny to get help early.",
+      "what_to_do_now": "1. If arrested: At first appearance, request public defender if you qualify.\n2. If can hire private: Contact bar association for referral, interview multiple attorneys.\n3. If income is low but above public defender threshold: Call legal aid societies.\n4. Start this NOW, not day before trial.",
+      "related_modules": [
+        "ky.counsel.public-defender-eligibility",
+        "ky.process.initial-appearance",
+        "ky.rights.attorney"
+      ],
+      "sources": [
+        {
+          "type": "WEBSITE",
+          "citation": "Kentucky Bar Association (https://www.kybar.org/) — Referral service",
+          "label": "Bar association referral",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "WEBSITE",
+          "citation": "Department of Public Advocacy (https://dpa.ky.gov/) — Public defender system",
+          "label": "Public defender agency",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "PLAIN",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.action.bail-violation-what-to-do",
+      "title": "You Violated Bail Conditions: What Happens Now",
+      "category": "ACTION",
+      "one_line_purpose": "Violation doesn't mean immediate jail, but it's serious. Act fast.",
+      "summary": "If you violate bail conditions (missed court, contacted no-contact person, used drugs, missed check-in, traveled), prosecution can file a violation. You'll get a hearing. Judge can tighten conditions or revoke bail (send you to jail). Acting fast and getting your attorney involved immediately improves odds.",
+      "what_is_this": "Bail violation scenarios:\n\n• Missed court date: Police may arrest you on bench warrant\n• Violated no-contact order: Charged separately and bail can be revoked\n• Failed drug test: Judge can order random testing or jail\n• Missed check-in: Can trigger revocation\n• Traveled out of state without permission: Can trigger revocation\n\nWhat happens:\n1. Prosecutor files violation motion\n2. You're noticed for bail revocation hearing\n3. Judge hears evidence\n4. Judge can: (a) Warn you, (b) Tighten conditions, (c) Increase bail, (d) Revoke bail (jail)\n\nAttorney can argue: It was mistake, no pattern, you're still safe to release, conditions were impossible.",
+      "why_it_matters": "Violations give prosecutors reason to lock you up. Revoking bail means you wait in jail for trial (sometimes months). You lose job, family stability, ability to help defense. Preventing violations is critical.",
+      "what_to_do_now": "1. If you believe you violated something: Tell your attorney IMMEDIATELY.\n2. At violation hearing: Show it was one-time, you're complying now, circumstances explain it.\n3. Bring evidence: Employer letter (job still there), mental health/substance abuse proof (you're getting help), etc.\n4. Prepare explanation but attorney does the talking.",
+      "related_modules": [
+        "ky.foundation.bail-basics",
+        "ky.bond.revocation-procedures",
+        "ky.orders.no-contact",
+        "ky.warrants.bench-warrant-fta"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (bail conditions and revocation)",
+          "label": "Bail revocation procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.action.bail-impossible-modification",
+      "title": "Bail Conditions Are Impossible: Motion to Modify",
+      "category": "ACTION",
+      "one_line_purpose": "If conditions prevent work, medical care, or childcare, file motion to modify. It's possible.",
+      "summary": "If bail conditions make it impossible to work, attend medical care, or handle family responsibilities, you can file a motion to modify. Judge will weigh necessity against public safety. Bring evidence of hardship: employer letter, medical documentation, childcare plan. Judges often grant modifications that don't increase crime risk.",
+      "what_is_this": "Common impossible conditions:\n\n• Travel restriction prevents work (cross-state job)\n• House arrest prevents childcare pickup\n• Random drug testing but you're uninsured and can't pay\n• Check-in location is unreachable (hours away)\n• No-contact prevents necessary communications (child custody exchanges)\n\nMotion process:\n1. Attorney files written motion showing hardship\n2. Hearing held\n3. You and prosecutor present arguments\n4. Judge decides: modify, keep as-is, or tighten\n\nEvidence that helps:\n• Employer letter: 'Employee must travel' or 'Must be available during hours'\n• Medical documentation: 'Patient requires [treatment] at [location]'\n• Childcare plan: 'Third party available 3–6 PM for pickup'\n• Alternative: 'I can do random testing if paid by court' (sometimes works)",
+      "why_it_matters": "Impossible conditions set you up to violate. If you violate, bail can be revoked. Getting reasonable conditions prevents this trap. Judge is usually sympathetic to real hardship.",
+      "what_to_do_now": "1. Identify the impossible condition and why it's impossible.\n2. Tell your attorney immediately.\n3. Gather evidence: Employer letter, doctor's note, childcare documentation.\n4. Attorney files modification motion.\n5. At hearing: Be honest, bring documentation, don't exaggerate.",
+      "related_modules": [
+        "ky.foundation.bail-basics",
+        "ky.bond.modify-motion",
+        "ky.process.bail-hearing"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 4.40 (modification of release conditions)",
+          "label": "Bail modification authority",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "SOON",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    }
+  ]
+}

@@ -3,9 +3,9 @@
     <div class="context-bar">
       <div class="d-flex justify-content-between align-items-center">
         <div>
-          <div class="fw-bold">KY Criminal Law Navigation</div>
+          <div class="fw-bold">Criminal Law Navigator: Kentucky</div>
           <div class="muted small">
-            Offline-first prototype • Content pack editable • Last sync: {{ lastSyncLabel }}
+            Your offline guide to criminal charges and process
           </div>
         </div>
         <button class="btn btn-outline-secondary btn-sm tap-target" @click="syncNow">
@@ -18,10 +18,10 @@
 
     <nav class="bottom-nav" aria-label="Bottom navigation">
       <div class="nav-inner">
-        <RouterLink class="nav-btn" :class="{ active: $route.name==='home' }" to="/">Process</RouterLink>
-        <RouterLink class="nav-btn" :class="{ active: $route.name==='graph' }" to="/graph">Links</RouterLink>
-        <RouterLink class="nav-btn" :class="{ active: $route.name==='data' }" to="/data">Data</RouterLink>
-        <a class="nav-btn" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <RouterLink class="nav-btn" :class="{ active: $route.name==='home' }" to="/">Search</RouterLink>
+        <RouterLink class="nav-btn" :class="{ active: $route.name==='graph' }" to="/graph">Connections</RouterLink>
+        <RouterLink class="nav-btn" :class="{ active: $route.name==='data' }" to="/data">Manage</RouterLink>
+        <a class="nav-btn" href="https://github.com" target="_blank" rel="noreferrer">Source</a>
       </div>
     </nav>
   </div>
