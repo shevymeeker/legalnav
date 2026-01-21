@@ -20,6 +20,7 @@
       <div class="nav-inner">
         <RouterLink class="nav-btn" :class="{ active: $route.name==='home' }" to="/">Search</RouterLink>
         <RouterLink class="nav-btn" :class="{ active: $route.name==='graph' }" to="/graph">Connections</RouterLink>
+        <RouterLink class="nav-btn" :class="{ active: $route.name==='resources' }" to="/resources">Resources</RouterLink>
         <RouterLink class="nav-btn" :class="{ active: $route.name==='data' }" to="/data">Manage</RouterLink>
         <a class="nav-btn" href="https://github.com" target="_blank" rel="noreferrer">Source</a>
       </div>

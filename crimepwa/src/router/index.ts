@@ -3,6 +3,7 @@ import Home from '@/pages/Home.vue';
 import ModuleDetail from '@/pages/ModuleDetail.vue';
 import DataManager from '@/pages/DataManager.vue';
 import Graph from '@/pages/Graph.vue';
+import Resources from '@/pages/Resources.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -10,7 +11,8 @@ const router = createRouter({
     { path: '/', name: 'home', component: Home },
     { path: '/m/:id', name: 'module', component: ModuleDetail, props: true },
     { path: '/data', name: 'data', component: DataManager },
-    { path: '/graph', name: 'graph', component: Graph }
+    { path: '/graph', name: 'graph', component: Graph },
+    { path: '/resources', name: 'resources', component: Resources }
   ]
 });
 
