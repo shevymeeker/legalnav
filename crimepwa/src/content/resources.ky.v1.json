@@ -1,0 +1,72 @@
+{
+  "pack_id": "ky_resources_v1",
+  "jurisdiction_scope": "KY_STATE",
+  "version": "1.0.0",
+  "generated_at": "2025-02-01",
+  "notes": "Resource PDFs bundled for offline access. Filenames map to src/content/newcontent assets.",
+  "resources": [
+    {
+      "id": "ky.resource.domestic-violence-policy-2024",
+      "title": "Domestic Violence & Interpersonal Violence Prosecution Policy Manual (2024)",
+      "summary": "Policy and procedure manual outlining prosecution guidance for domestic and interpersonal violence cases in Kentucky.",
+      "tags": ["domestic-violence", "interpersonal-violence", "prosecution", "policy", "manual"],
+      "file": "2024 Domestic Violence and Interpersonal Violence Prosecution Policy Procedure Manual.pdf"
+    },
+    {
+      "id": "ky.resource.kclm-2025-08-15",
+      "title": "KCLM Guidance Document (2025-08-15)",
+      "summary": "Kentucky law enforcement guidance document dated 2025-08-15 (KCLM).",
+      "tags": ["law-enforcement", "guidance", "policy"],
+      "file": "2025-KCLM_250815.pdf"
+    },
+    {
+      "id": "ky.resource.criminal-appeals-brochure",
+      "title": "Criminal Appeals Brochure",
+      "summary": "Plain-language overview of criminal appeals, timelines, and what to expect after sentencing.",
+      "tags": ["appeals", "post-conviction", "brochure"],
+      "file": "Criminal-Appeals-brochure.pdf"
+    },
+    {
+      "id": "ky.resource.leosa-2019",
+      "title": "LEOSA for Kentucky Law Enforcement (2019)",
+      "summary": "Overview of the Law Enforcement Officers Safety Act (LEOSA) and its Kentucky-specific guidance.",
+      "tags": ["law-enforcement", "leosa", "firearms", "policy"],
+      "file": "LEOSA-for-Kentucky-Law-Enforcement-2019.pdf"
+    },
+    {
+      "id": "ky.resource.lgbtq-victims-of-crime",
+      "title": "LGBTQ Victims of Crime",
+      "summary": "Reference material on serving and supporting LGBTQ victims of crime.",
+      "tags": ["victim-services", "lgbtq", "support"],
+      "file": "LGBTQ-Victims-of-Crime.pdf"
+    },
+    {
+      "id": "ky.resource.matricula-consular-2019",
+      "title": "Matricula Consular Identification (2019)",
+      "summary": "Guidance on recognizing and handling Matricula Consular identification cards.",
+      "tags": ["identification", "immigration", "matricula-consular"],
+      "file": "Matricula-Consular-2019.pdf"
+    },
+    {
+      "id": "ky.resource.miranda-card-printout",
+      "title": "Miranda Card Printout",
+      "summary": "Printable Miranda warning card for consistent rights advisements.",
+      "tags": ["miranda", "rights", "law-enforcement"],
+      "file": "Miranda-Card_PRINTOUT.pdf"
+    },
+    {
+      "id": "ky.resource.search-in-school-2019",
+      "title": "Search in a School Environment (2019)",
+      "summary": "Guidance on searches conducted in school settings, including student rights and scope.",
+      "tags": ["search-and-seizure", "schools", "students"],
+      "file": "Search-in-a-School-Environment-2019.pdf"
+    },
+    {
+      "id": "ky.resource.conflicts-of-interest",
+      "title": "Conflicts of Interest",
+      "summary": "Reference guide for recognizing and managing conflicts of interest in legal matters.",
+      "tags": ["ethics", "conflicts", "legal-practice"],
+      "file": "conflicts_of_interest.pdf"
+    }
+  ]
+}

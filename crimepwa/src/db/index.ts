@@ -21,11 +21,19 @@ export type ModuleRow = {
 
 export type EdgeRow = { from: string; to: string; type: string };
 export type PhraseRow = { id?: number; phrase: string; to_modules: string[] };
+export type ResourceRow = {
+  id: string;
+  title: string;
+  summary?: string;
+  tags?: string[];
+  file: string;
+};
 
 class AppDB extends Dexie {
   modules!: Table<ModuleRow, string>;
   edges!: Table<EdgeRow, [string, string]>;
   phrasebook!: Table<PhraseRow, number>;
+  resources!: Table<ResourceRow, string>;
 
   constructor() {
     super('kyLawNav');
@@ -33,6 +41,12 @@ class AppDB extends Dexie {
       modules: 'id, title, time_sensitivity, *phase_tags, *actor_tags',
       edges: '[from+to], from, to, type',
       phrasebook: '++id, phrase'
+    });
+    this.version(2).stores({
+      modules: 'id, title, time_sensitivity, *phase_tags, *actor_tags',
+      edges: '[from+to], from, to, type',
+      phrasebook: '++id, phrase',
+      resources: 'id, title, *tags'
     });
   }
 }
