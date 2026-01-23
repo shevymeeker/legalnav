@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { db } from '@/db';
-import seedPack from '@/content/modules.seed.ky.v1.json';
+import seedPack from '@/content/modules.seed.ky.v2.json';
 import phrasebookPack from '@/content/phrasebook.ky.v1.json';
 import edgesPack from '@/content/graph.edges.ky.v1.json';
 import resourcesPack from '@/content/resources.ky.v1.json';
