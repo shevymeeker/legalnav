@@ -36,6 +36,23 @@ export const useAppStore = defineStore('app', {
           await db.edges.bulkPut(edgesPack.edges as any);
           await db.phrasebook.bulkPut((phrasebookPack.mappings as any).map((m: any, idx: number) => ({ id: idx+1, ...m })));
           await db.resources.bulkPut((resourcesPack.resources as any) ?? []);
+
+          // Generate edges from related_modules in v2 schema
+          const generatedEdges: any[] = [];
+          for (const mod of seedPack.modules as any[]) {
+            if (mod.related_modules && Array.isArray(mod.related_modules)) {
+              for (const relatedId of mod.related_modules) {
+                generatedEdges.push({
+                  from: mod.id,
+                  to: relatedId,
+                  type: 'RELATED'
+                });
+              }
+            }
+          }
+          if (generatedEdges.length > 0) {
+            await db.edges.bulkPut(generatedEdges);
+          }
         });
 
         this.lastSyncAt = Date.now();
