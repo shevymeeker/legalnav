@@ -1,5 +1,10 @@
 <template>
   <div v-if="m" class="mt-3">
+    <div class="mb-3">
+      <button @click="goBack" class="btn btn-outline-secondary btn-sm tap-target">
+        ← Back
+      </button>
+    </div>
     <div class="card-soft p-3">
       <div class="d-flex justify-content-between gap-3">
         <div style="min-width: 0;">
@@ -90,11 +95,12 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { useAppStore } from '@/stores/app';
 
 const store = useAppStore();
 const route = useRoute();
+const router = useRouter();
 
 const m = ref<any | null>(null);
 const neighbors = ref<any[]>([]);
@@ -114,6 +120,10 @@ function sourceColor(status: string): any {
   if (status === 'VERIFIED') return { backgroundColor: '#d4edda', color: '#155724' };
   if (status === 'PARTIAL') return { backgroundColor: '#fff3cd', color: '#856404' };
   return { backgroundColor: '#f8d7da', color: '#721c24' };
+}
+
+function goBack() {
+  router.back();
 }
 
 async function load() {
