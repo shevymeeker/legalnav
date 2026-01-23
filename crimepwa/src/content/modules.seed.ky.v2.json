@@ -1,9 +1,9 @@
 {
   "pack_id": "ky_seed_v2",
   "jurisdiction_scope": "KY_STATE",
-  "version": "2.0.0",
-  "generated_at": "2026-01-15",
-  "notes": "Complete rebuild: charge-focused, research-backed, rights-centered. All claims fact-checked against Kentucky statutes and criminal procedure rules. Questions or flagged items marked clearly.",
+  "version": "2.1.0",
+  "generated_at": "2026-01-23",
+  "notes": "Voice sharpening applied. Preliminary Hearing and Grand Jury modules added. Cross-links updated for District/Circuit court flow.",
   "modules": [
     {
       "id": "ky.foundation.court-system",
@@ -17,6 +17,8 @@
       "related_modules": [
         "ky.process.arrest-and-booking",
         "ky.process.initial-appearance",
+        "ky.process.preliminary-hearing",
+        "ky.process.grand-jury",
         "ky.process.trial"
       ],
       "sources": [
@@ -64,7 +66,7 @@
       "title": "The Criminal Process: The Basic Arc",
       "category": "FOUNDATIONAL",
       "one_line_purpose": "Almost every case follows the same backbone from arrest to sentencing.",
-      "summary": "The criminal process is a predictable sequence: arrest, booking, first court appearance (within 48 hours), charging, pretrial discovery and motions, then either a plea or trial, then sentencing. The speed varies, but the arc is almost always the same. Understanding the sequence prevents panic and helps you know what's coming.",
+      "summary": "The system is a specific, slow-moving grinder. Knowing which gear you’re currently stuck in won’t stop the machine, but it prevents you from being blindsided when the next one starts turning.",
       "what_is_this": "Most criminal cases follow this path:\n\n1. Police contact/arrest\n2. Booking (photos, fingerprints, property inventory)\n3. Initial appearance (48 hours max—judge sets bond, appoints counsel)\n4. Charging (formal document listing the charges)\n5. Preliminary hearing (if applicable) OR indictment\n6. Arraignment (you enter a plea)\n7. Discovery (evidence exchange)\n8. Pretrial motions (challenges to evidence, requests for dismissal)\n9. Plea negotiation OR trial prep\n10. Trial OR plea acceptance\n11. Sentencing\n12. (Possibly) Appeal",
       "why_it_matters": "Knowing the sequence means you understand what's normal, what's urgent, and when to act. It prevents surprises. Most cases don't have dramatic turns—they move through these steps predictably. Your job is to know which step you're on and what deadline is next.",
       "what_to_do_now": "Figure out where you are right now in this sequence. Are you at arrest? Booking? First court? Plea talk? Once you know, focus on that step and what comes immediately after. Write down the next court date and what you need to prepare.",
@@ -290,7 +292,7 @@
       "summary": "Assault in Kentucky covers several tiers from 4th-degree misdemeanor (threatening someone) to 1st-degree felony (causing serious injury). Confusingly, the statute is called 'assault' but encompasses what other states call 'assault and battery.' You don't always need to touch someone—menacing threats count. The degree depends on the harm or threat of harm.",
       "what_is_this": "Kentucky assault charges by degree:\n\n• Fourth Degree (Class A Misdemeanor): Attempting to cause physical injury or intentionally causing physical injury. Up to 12 months jail, $500 fine.\n• Third Degree (Class B Misdemeanor or Class D Felony): Recklessly causing physical injury or intentionally causing minor injury with a weapon. Misdemeanor or felony depending on facts.\n• Second Degree (Class C Felony): Intentionally causing serious physical injury. 5–10 years prison.\n• First Degree (Class B Felony): Intentionally causing serious physical injury with extreme indifference to human life. 10–20 years prison.\n\nDomestic violence: Can enhance any assault charge and creates additional restrictions and treatment requirements.",
       "why_it_matters": "Assault convictions can carry significant prison time. Fourth degree seems minor but conviction still means a criminal record. Weapon involvement jumps charges up. If a victim's injury is 'serious,' you're looking at felony time. Self-defense is a legal defense—show it wasn't you who initiated.",
-      "what_to_do_now": "1. Get medical records for the alleged victim (shows injury level—no injury = weaker charge).\n2. Identify any witnesses to what happened.\n3. Gather evidence of self-defense if applicable (your injuries, texts, circumstances).\n4. If domestic violence is alleged: Prepare for additional restraining order and treatment mandates even if criminal case is weak.",
+      "what_to_do_now": "1. Get medical records for the alleged victim (shows injury level—no injury = weaker charge).\n2. Identify any witnesses to what happened.\n3. Gather evidence of self-defense if applicable (your documentation, texts, circumstances).\n4. If domestic violence is alleged: Prepare for additional restraining order and treatment mandates even if criminal case is weak.",
       "related_modules": [
         "ky.rights.self-defense",
         "ky.process.trial",
@@ -320,7 +322,7 @@
       "one_line_purpose": "Theft charges jump in severity with each dollar threshold. Value determines class.",
       "summary": "Theft in Kentucky is graded by the value of what was taken. Under $500 is a misdemeanor. $500–$1,000 is a higher misdemeanor. $1,000–$10,000 is felony. Over $10,000 is serious felony. Shoplifting is just retail theft—same law, same penalties. Stores often press charges and can also sue civilly for damages.",
       "what_is_this": "Theft charges by stolen property value:\n\n• Under $500: Class B Misdemeanor (up to 90 days jail, $250 fine)\n• $500–$1,000: Class A Misdemeanor (up to 12 months jail, $500 fine)\n• $1,000–$10,000: Class D Felony (1–5 years prison, up to $10,000 fine)\n• $10,000+: Class C Felony (5–10 years prison, up to $10,000 fine)\n\nShoplifting: Same law, same penalties. Store can prove value through receipts or inventory records.\nRepeat offense: Charges often enhanced; multiple thefts can be charged as pattern.",
-      "why_it_matters": "The jump from misdemeanor to felony happens at $1,000. That single dollar threshold between -$999 and +$1,000 changes your exposure from 12 months jail to 5 years prison. Store can sue separately for damages and attorney fees (civil case). Retailers also share shoplifter names—affects future employment or housing checks.",
+      "why_it_matters": "The jump from misdemeanor to felony happens at $1,000. That single dollar threshold between $999 and $1,000 changes your exposure from 12 months jail to 5 years prison. Store can sue separately for damages and attorney fees (civil case). Retailers also share shoplifter names—affects future employment or housing checks.",
       "what_to_do_now": "1. Get the store's inventory records or receipts showing what was taken and actual value (not 'suggested retail').\n2. If overcharged, challenge the valuation—$1,500 vs. $999 is a huge difference.\n3. If first offense: Negotiate for theft diversion program (avoid conviction).\n4. Restore the money if possible—judges like restitution.",
       "related_modules": [
         "ky.process.plea-negotiations",
@@ -400,7 +402,7 @@
         },
         {
           "type": "STATUTE",
-          "citation": "KRS 431.040 (initial appearance)–",
+          "citation": "KRS 431.040 (initial appearance)",
           "label": "Initial appearance statute",
           "verification_status": "VERIFIED"
         }
@@ -608,7 +610,7 @@
       "title": "Your Right to Remain Silent: How to Use It",
       "category": "RIGHTS",
       "one_line_purpose": "You don't have to talk to police. Silence is your right. Don't waive it.",
-      "summary": "You have the constitutional right to remain silent. Police don't have to tell you this except under Miranda. You can use this right anytime: at arrest, booking, interrogation, trial. Remaining silent is not admission of guilt—it's exercising a right. Prosecutors cannot tell a jury you were silent (usually). Use this right early and clearly.",
+      "summary": "You have the right to shut up. Most people don't use it because they think they can talk their way out of a pair of handcuffs; they can't. Silence isn't an admission of guilt—it’s the only free defense you’ll ever get.",
       "what_is_this": "Your right to silence means:\n\n• You don't have to talk to police\n• You don't have to answer questions\n• Your silence cannot be used to prove guilt at trial (usually)\n• You can remain silent even if you're innocent (exercise the right anyway)\n• You can choose to talk later through your attorney\n\nHow to invoke it:\n• Clearly say: 'I want to remain silent' or 'I'm not answering questions.'\n• Then don't talk anymore. Don't give 'just one more answer.'\n• Silence is not legally interpreted as guilt.",
       "why_it_matters": "Anything you say can be used against you. Even innocent explanations can be twisted. Police are trained to get people to talk. Remaining silent protects you. You can explain everything later through your attorney in a controlled way.",
       "what_to_do_now": "1. If questioned: Say clearly 'I want to remain silent' or 'I want a lawyer.'\n2. Don't add more words. Silence is enough.\n3. If already talked: Shut up now and demand attorney.\n4. With your attorney: Decide what to say to investigators (if anything).",
@@ -785,6 +787,68 @@
       "severity": "SOON",
       "verified_status": "VERIFIED",
       "requires_attorney": true
+    },
+    {
+      "id": "ky.process.preliminary-hearing",
+      "title": "Preliminary Hearing: The Probable Cause Test",
+      "category": "PROCESS",
+      "one_line_purpose": "A 'mini-trial' where a judge decides if the prosecution has enough to keep a felony case alive.",
+      "summary": "This is a gatekeeper hearing for felonies. The prosecution only has to prove 'Probable Cause'—a low bar. If they succeed, your case is 'bound over' to the Grand Jury. If they fail, the charges are dismissed (for now).",
+      "what_is_this": "A preliminary hearing is held in District Court. It isn't a full trial; the judge isn't deciding if you are guilty, only if there is enough evidence to justify a felony charge. Usually, one officer testifies. Your attorney can cross-examine them, which is often the first time you get to see how weak or strong their story actually is.",
+      "why_it_matters": "In practice, this is a discovery tool. It locks the officer into a specific version of events under oath. If they change their story at trial six months later, your lawyer uses the transcript of this hearing to shred their credibility. It’s also a common place for prosecutors to offer a 'reduction'—dropping a felony to a misdemeanor if you plead right then.",
+      "what_to_do_now": "Do not testify. You cannot win the case by talking here, you can only give the prosecution more ammunition. Pay close attention to the officer's testimony. If they lie or get a detail wrong (like the color of a car or a time), tell your lawyer—don't shout it out in court.",
+      "related_modules": [
+        "ky.process.initial-appearance",
+        "ky.process.grand-jury",
+        "ky.foundation.charges-felony-misdemeanor"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 3.14",
+          "label": "Probable cause finding and procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "MODERATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true
+    },
+    {
+      "id": "ky.process.grand-jury",
+      "title": "The Grand Jury: Behind Closed Doors",
+      "category": "PROCESS",
+      "one_line_purpose": "A secret group of citizens decides if there is enough evidence to formally indict you for a felony.",
+      "summary": "After a felony case leaves District Court, it goes to the Grand Jury. This is a secret proceeding where only the prosecutor and witnesses speak. You and your lawyer are not invited. If they vote to move forward, you are 'Indicted' and the case moves to Circuit Court.",
+      "what_is_this": "The Grand Jury is a group of 12 citizens. Their job is to decide if there is probable cause to bring a formal charge (an Indictment). It is not a trial. There is no judge present, and the defense is not allowed to present evidence. Because the prosecutor is the only one in the room, almost everyone gets indicted—hence the saying that a prosecutor could 'indict a ham sandwich.'",
+      "why_it_matters": "This is the bridge to Circuit Court. Once you are indicted, your case becomes much more formal and serious. This is often a 'black hole' period where months can pass with no news. Don't panic; the system is just grinding slowly behind the scenes.",
+      "what_to_do_now": "Wait. You usually won't know the Grand Jury met until you receive a notice for 'Circuit Court Arraignment' or a new warrant is issued. Use this quiet period to work with your attorney on discovery. If you are 'No-True Billed,' it means they didn't find enough evidence and the charge is dropped.",
+      "related_modules": [
+        "ky.process.preliminary-hearing",
+        "ky.process.arraignment",
+        "ky.foundation.court-system"
+      ],
+      "sources": [
+        {
+          "type": "RULE",
+          "citation": "RCr 5.02-5.24",
+          "label": "Grand Jury procedures",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 29A.210",
+          "label": "Grand Jury selection",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "MODERATE",
+      "audience": "DEFENDANT",
+      "severity": "BACKGROUND",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
     }
   ]
 }
