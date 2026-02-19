@@ -9,7 +9,10 @@
       "color": "teal",
       "related_resource_ids": [
         "ky.resource.search-seizure-casebook",
-        "ky.resource.patrol-handbook-2025"
+        "ky.resource.patrol-handbook-2025",
+        "ky.resource.search-in-school-2019",
+        "ky.resource.kclm-2025-08-15",
+        "ky.resource.leosa-2019"
       ]
     },
     {
@@ -21,7 +24,8 @@
       "color": "danger",
       "related_resource_ids": [
         "ky.resource.patrol-handbook-2025",
-        "ky.resource.miranda-card-printout"
+        "ky.resource.miranda-card-printout",
+        "ky.resource.matricula-consular-2019"
       ]
     },
     {
@@ -31,7 +35,10 @@
       "title": "Initial Appearance Before Magistrate",
       "short": "Initial Appearance",
       "color": "warning",
-      "related_resource_ids": []
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024",
+        "ky.resource.kclm-2025-08-15"
+      ]
     },
     {
       "id": "district-court",
@@ -51,7 +58,10 @@
       "title": "Grand Jury",
       "short": "Grand Jury",
       "color": "secondary",
-      "related_resource_ids": []
+      "related_resource_ids": [
+        "ky.resource.conflicts-of-interest",
+        "ky.resource.kclm-2025-08-15"
+      ]
     },
     {
       "id": "circuit-court",
@@ -62,7 +72,8 @@
       "color": "primary",
       "related_resource_ids": [
         "ky.resource.trial-law-notebook",
-        "ky.resource.suppression-manual-2024"
+        "ky.resource.suppression-manual-2024",
+        "ky.resource.conflicts-of-interest"
       ]
     },
     {
@@ -72,7 +83,9 @@
       "title": "Sentencing",
       "short": "Sentencing",
       "color": "dark",
-      "related_resource_ids": []
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024"
+      ]
     },
     {
       "id": "post-conviction",
@@ -93,7 +106,10 @@
       "title": "Execution of Judgment",
       "short": "Execution of Judgment",
       "color": "dark",
-      "related_resource_ids": []
+      "related_resource_ids": [
+        "ky.resource.leosa-2019",
+        "ky.resource.matricula-consular-2019"
+      ]
     },
     {
       "id": "specialized",
