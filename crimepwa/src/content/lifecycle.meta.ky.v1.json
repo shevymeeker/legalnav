@@ -12,7 +12,8 @@
         "ky.resource.patrol-handbook-2025",
         "ky.resource.search-in-school-2019",
         "ky.resource.kclm-2025-08-15",
-        "ky.resource.leosa-2019"
+        "ky.resource.leosa-2019",
+        "ky.resource.ky-rules-of-evidence-2019"
       ]
     },
     {
@@ -37,7 +38,8 @@
       "color": "warning",
       "related_resource_ids": [
         "ky.resource.domestic-violence-policy-2024",
-        "ky.resource.kclm-2025-08-15"
+        "ky.resource.kclm-2025-08-15",
+        "ky.resource.fighting-for-your-rights"
       ]
     },
     {
@@ -48,7 +50,9 @@
       "short": "District Court",
       "color": "primary",
       "related_resource_ids": [
-        "ky.resource.suppression-manual-2024"
+        "ky.resource.suppression-manual-2024",
+        "ky.resource.evidence-manual-8th-ed",
+        "ky.resource.ky-rules-of-evidence-2019"
       ]
     },
     {
@@ -73,7 +77,10 @@
       "related_resource_ids": [
         "ky.resource.trial-law-notebook",
         "ky.resource.suppression-manual-2024",
-        "ky.resource.conflicts-of-interest"
+        "ky.resource.conflicts-of-interest",
+        "ky.resource.evidence-manual-8th-ed",
+        "ky.resource.ky-rules-of-evidence-2019",
+        "ky.resource.fighting-for-your-rights"
       ]
     },
     {
