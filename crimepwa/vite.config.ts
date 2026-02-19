@@ -24,7 +24,7 @@ export default defineConfig({
         short_name: 'KY Law Nav',
         description: 'Offline-first legal navigation prototype (content pack editable).',
         theme_color: '#0b1b2b',
-        background_color: '#ffffff',
+        background_color: '#f6f6f6',
         display: 'standalone',
         icons: [
           { src: 'icons/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }
