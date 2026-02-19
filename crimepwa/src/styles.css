@@ -1,5 +1,5 @@
 :root {
-  --app-bg: #ffffff;
+  --app-bg: #f6f6f6;
   --app-ink: #111827;
   --app-muted: #6b7280;
   --app-border: #e5e7eb;
@@ -71,7 +71,7 @@ body { background: var(--app-bg); color: var(--app-ink); }
 .context-bar {
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.95);
+  background: rgba(246,246,246,0.95);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--app-border);
   padding: 10px 0;

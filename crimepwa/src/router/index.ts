@@ -8,7 +8,8 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: PhaseMap },
     { path: '/phase/:id', name: 'phase', component: PhaseDetail, props: true },
-    { path: '/resources', name: 'resources', component: Resources }
+    { path: '/resources', name: 'resources', component: Resources },
+    { path: '/:pathMatch(.*)*', redirect: '/' }
   ]
 });
 
