@@ -18,15 +18,17 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/icon.svg'],
+      includeAssets: ['icons/icon.svg', 'icons/logo-192.png', 'icons/logo-512.png'],
       manifest: {
-        name: 'KY Criminal Law Navigation',
-        short_name: 'KY Law Nav',
-        description: 'Offline-first legal navigation prototype (content pack editable).',
+        name: 'Wildman Legal Nav',
+        short_name: 'Wildman Legal Nav',
+        description: 'Wildman Legal Nav – not legal advice.',
         theme_color: '#0b1b2b',
         background_color: '#f6f6f6',
         display: 'standalone',
         icons: [
+          { src: 'icons/logo-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icons/logo-512.png', sizes: '512x512', type: 'image/png' },
           { src: 'icons/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }
         ]
       },

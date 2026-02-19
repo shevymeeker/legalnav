@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <div class="card-soft p-3 mb-3">
-      <div class="fw-bold fs-5">Daviess County Criminal Process</div>
+      <div class="fw-bold fs-5">Kentucky Criminal Process</div>
       <div class="muted mt-1">
         Select a phase to explore the law, procedures, and key rights at each stage of a criminal case.
         Relevant reference documents are surfaced inside each phase.

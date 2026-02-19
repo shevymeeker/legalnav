@@ -1,8 +1,13 @@
 <template>
   <div class="app-shell">
     <div class="context-bar">
-      <div class="fw-bold">Criminal Law Navigator: Kentucky</div>
-      <div class="muted small">Daviess County · Offline Guide</div>
+      <div class="d-flex align-items-center gap-2">
+        <img src="/icons/logo-192.png" alt="Wildman Legal Nav logo" class="app-logo" />
+        <div>
+          <div class="fw-bold">Wildman Legal Nav</div>
+          <div class="muted small">not legal advice</div>
+        </div>
+      </div>
     </div>
 
     <router-view />
