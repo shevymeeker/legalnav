@@ -4,7 +4,7 @@ import PhaseDetail from '@/pages/PhaseDetail.vue';
 import Resources from '@/pages/Resources.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: PhaseMap },
     { path: '/phase/:id', name: 'phase', component: PhaseDetail, props: true },

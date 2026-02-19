@@ -36,6 +36,8 @@ jobs:
         run: |
           cd crimepwa
           npm run build
+        env:
+          VITE_BASE_PATH: /legalnav/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
