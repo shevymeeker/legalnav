@@ -16,7 +16,24 @@ export const resourceAssets: Record<string, string> = {
     './newcontent/Search-in-a-School-Environment-2019.pdf',
     import.meta.url
   ).href,
-  'conflicts_of_interest.pdf': new URL('./newcontent/conflicts_of_interest.pdf', import.meta.url).href
+  'conflicts_of_interest.pdf': new URL('./newcontent/conflicts_of_interest.pdf', import.meta.url).href,
+  '2025-Model-Patrol-Legal-handbook-250917.pdf': new URL(
+    './newcontent/2025-Model-Patrol-Legal-handbook-250917.pdf',
+    import.meta.url
+  ).href,
+  'P56BasicAppellatePracticeHandbook.pdf': new URL(
+    './newcontent/P56BasicAppellatePracticeHandbook.pdf',
+    import.meta.url
+  ).href,
+  'Search-and-Seizure-Casebook_250520.pdf': new URL(
+    './newcontent/Search-and-Seizure-Casebook_250520.pdf',
+    import.meta.url
+  ).href,
+  'Suppression-Manual-May-2024.pdf': new URL(
+    './newcontent/Suppression-Manual-May-2024.pdf',
+    import.meta.url
+  ).href,
+  'trial law notebook.pdf': new URL('./newcontent/trial law notebook.pdf', import.meta.url).href
 };
 
 export function getResourceAsset(file: string): string {

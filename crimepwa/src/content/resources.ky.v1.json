@@ -67,6 +67,41 @@
       "summary": "Reference guide for recognizing and managing conflicts of interest in legal matters.",
       "tags": ["ethics", "conflicts", "legal-practice"],
       "file": "conflicts_of_interest.pdf"
+    },
+    {
+      "id": "ky.resource.patrol-handbook-2025",
+      "title": "Model Patrol Legal Handbook (2025)",
+      "summary": "Comprehensive legal reference for law enforcement patrol officers covering arrest authority, search and seizure, use of force, and officer liability.",
+      "tags": ["law-enforcement", "patrol", "arrest", "search-and-seizure", "use-of-force", "handbook"],
+      "file": "2025-Model-Patrol-Legal-handbook-250917.pdf"
+    },
+    {
+      "id": "ky.resource.appellate-practice",
+      "title": "Basic Appellate Practice Handbook (P56)",
+      "summary": "Step-by-step guide to criminal appeals in Kentucky courts, covering notice of appeal, briefing requirements, oral argument, and post-conviction relief.",
+      "tags": ["appeals", "post-conviction", "appellate-practice", "handbook"],
+      "file": "P56BasicAppellatePracticeHandbook.pdf"
+    },
+    {
+      "id": "ky.resource.search-seizure-casebook",
+      "title": "Search and Seizure Casebook (2025)",
+      "summary": "Comprehensive casebook covering Fourth Amendment search and seizure law with Kentucky case citations, covering warrants, consent, vehicle stops, and suppression motions.",
+      "tags": ["search-and-seizure", "fourth-amendment", "suppression", "warrants", "casebook"],
+      "file": "Search-and-Seizure-Casebook_250520.pdf"
+    },
+    {
+      "id": "ky.resource.suppression-manual-2024",
+      "title": "Suppression Manual (May 2024)",
+      "summary": "Practical manual for litigating suppression motions in Kentucky criminal cases, including grounds, procedure, evidentiary standards, and sample motions.",
+      "tags": ["suppression", "motions", "evidence", "pre-trial", "criminal-procedure"],
+      "file": "Suppression-Manual-May-2024.pdf"
+    },
+    {
+      "id": "ky.resource.trial-law-notebook",
+      "title": "Trial Law Notebook",
+      "summary": "Reference notebook covering trial procedure, jury selection, opening statements, examination of witnesses, evidence rules, and closing argument for Kentucky criminal trials.",
+      "tags": ["trial", "jury", "evidence", "criminal-procedure", "trial-practice"],
+      "file": "trial law notebook.pdf"
     }
   ]
 }

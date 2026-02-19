@@ -1,0 +1,10 @@
+[build]
+  base    = "crimepwa"
+  publish = "dist"
+  command = "npm run build"
+
+# Serve index.html for all routes so Vue Router handles them client-side
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

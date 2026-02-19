@@ -1,17 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '@/pages/Home.vue';
-import ModuleDetail from '@/pages/ModuleDetail.vue';
-import DataManager from '@/pages/DataManager.vue';
-import Graph from '@/pages/Graph.vue';
+import PhaseMap from '@/pages/PhaseMap.vue';
+import PhaseDetail from '@/pages/PhaseDetail.vue';
 import Resources from '@/pages/Resources.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'home', component: Home },
-    { path: '/m/:id', name: 'module', component: ModuleDetail, props: true },
-    { path: '/data', name: 'data', component: DataManager },
-    { path: '/graph', name: 'graph', component: Graph },
+    { path: '/', name: 'home', component: PhaseMap },
+    { path: '/phase/:id', name: 'phase', component: PhaseDetail, props: true },
     { path: '/resources', name: 'resources', component: Resources }
   ]
 });

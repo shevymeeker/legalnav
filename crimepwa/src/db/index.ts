@@ -1,26 +1,5 @@
 import Dexie, { type Table } from 'dexie';
 
-export type ModuleRow = {
-  id: string;
-  title: string;
-  one_line_purpose?: string;
-  jurisdiction_scope?: string;
-  phase_tags?: string[];
-  actor_tags?: string[];
-  complexity?: string;
-  time_sensitivity?: string;
-  summary?: string;
-  deadlines?: any[];
-  authority_refs?: any[];
-  what_to_do_now?: string[];
-  what_if_branches?: any[];
-  related_nodes?: any[];
-  last_reviewed_at?: string | null;
-  review_owner_role?: string | null;
-};
-
-export type EdgeRow = { from: string; to: string; type: string };
-export type PhraseRow = { id?: number; phrase: string; to_modules: string[] };
 export type ResourceRow = {
   id: string;
   title: string;
@@ -30,13 +9,11 @@ export type ResourceRow = {
 };
 
 class AppDB extends Dexie {
-  modules!: Table<ModuleRow, string>;
-  edges!: Table<EdgeRow, [string, string]>;
-  phrasebook!: Table<PhraseRow, number>;
   resources!: Table<ResourceRow, string>;
 
   constructor() {
     super('kyLawNav');
+    // v1/v2 kept for upgrade path — migrate existing users cleanly
     this.version(1).stores({
       modules: 'id, title, time_sensitivity, *phase_tags, *actor_tags',
       edges: '[from+to], from, to, type',
@@ -46,6 +23,13 @@ class AppDB extends Dexie {
       modules: 'id, title, time_sensitivity, *phase_tags, *actor_tags',
       edges: '[from+to], from, to, type',
       phrasebook: '++id, phrase',
+      resources: 'id, title, *tags'
+    });
+    // v3: drop modules/edges/phrasebook — only resources remain
+    this.version(3).stores({
+      modules: null,
+      edges: null,
+      phrasebook: null,
       resources: 'id, title, *tags'
     });
   }

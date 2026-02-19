@@ -1,0 +1,111 @@
+{
+  "phases": [
+    {
+      "id": "pre-arrest",
+      "number": 1,
+      "heading_marker": "PHASE 1:",
+      "title": "Pre-Arrest / Investigation",
+      "short": "Investigation",
+      "color": "teal",
+      "related_resource_ids": [
+        "ky.resource.search-seizure-casebook",
+        "ky.resource.patrol-handbook-2025"
+      ]
+    },
+    {
+      "id": "arrest",
+      "number": 2,
+      "heading_marker": "PHASE 2:",
+      "title": "Arrest and Initial Custody",
+      "short": "Arrest",
+      "color": "danger",
+      "related_resource_ids": [
+        "ky.resource.patrol-handbook-2025",
+        "ky.resource.miranda-card-printout"
+      ]
+    },
+    {
+      "id": "initial-appearance",
+      "number": 3,
+      "heading_marker": "PHASE 3:",
+      "title": "Initial Appearance Before Magistrate",
+      "short": "Initial Appearance",
+      "color": "warning",
+      "related_resource_ids": []
+    },
+    {
+      "id": "district-court",
+      "number": 4,
+      "heading_marker": "PHASE 4:",
+      "title": "District Court Proceedings",
+      "short": "District Court",
+      "color": "primary",
+      "related_resource_ids": [
+        "ky.resource.suppression-manual-2024"
+      ]
+    },
+    {
+      "id": "grand-jury",
+      "number": 5,
+      "heading_marker": "PHASE 5:",
+      "title": "Grand Jury",
+      "short": "Grand Jury",
+      "color": "secondary",
+      "related_resource_ids": []
+    },
+    {
+      "id": "circuit-court",
+      "number": 6,
+      "heading_marker": "PHASE 6:",
+      "title": "Circuit Court Proceedings",
+      "short": "Circuit Court",
+      "color": "primary",
+      "related_resource_ids": [
+        "ky.resource.trial-law-notebook",
+        "ky.resource.suppression-manual-2024"
+      ]
+    },
+    {
+      "id": "sentencing",
+      "number": 7,
+      "heading_marker": "PHASE 7:",
+      "title": "Sentencing",
+      "short": "Sentencing",
+      "color": "dark",
+      "related_resource_ids": []
+    },
+    {
+      "id": "post-conviction",
+      "number": 8,
+      "heading_marker": "PHASE 8:",
+      "title": "Post-Conviction Remedies",
+      "short": "Post-Conviction",
+      "color": "secondary",
+      "related_resource_ids": [
+        "ky.resource.appellate-practice",
+        "ky.resource.criminal-appeals-brochure"
+      ]
+    },
+    {
+      "id": "execution",
+      "number": 9,
+      "heading_marker": "PHASE 9:",
+      "title": "Execution of Judgment",
+      "short": "Execution of Judgment",
+      "color": "dark",
+      "related_resource_ids": []
+    },
+    {
+      "id": "specialized",
+      "number": 10,
+      "heading_marker": "SPECIALIZED PROCEEDINGS",
+      "title": "Specialized Proceedings",
+      "short": "Special Cases",
+      "color": "info",
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024",
+        "ky.resource.lgbtq-victims-of-crime"
+      ]
+    }
+  ]
+}

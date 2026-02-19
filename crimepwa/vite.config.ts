@@ -3,8 +3,12 @@ import vue from '@vitejs/plugin-vue';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
+// GitHub Pages needs /legalnav/ as the base; Netlify deploys at /.
+// Set VITE_BASE_PATH in CI to control which deployment target is built.
+const base = process.env.VITE_BASE_PATH ?? '/';
+
 export default defineConfig({
-  base: '/legalnav/',
+  base,
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -27,9 +31,8 @@ export default defineConfig({
         ]
       },
       workbox: {
-        navigateFallback: '/index.html',
+        navigateFallback: `${base}index.html`,
         runtimeCaching: [
-          // Content packs (bundled) are pre-cached by build; runtime caching mostly for future.
           {
             urlPattern: ({ request }) => request.destination === 'document',
             handler: 'NetworkFirst',
