@@ -78,6 +78,12 @@ body { background: var(--app-bg); color: var(--app-ink); }
   z-index: 10;
 }
 
+.app-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 .clamp-4 { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 
