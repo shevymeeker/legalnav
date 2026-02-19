@@ -45,6 +45,45 @@
           </div>
         </div>
       </div>
+
+      <!-- Prev / Next phase navigation -->
+      <div class="phase-nav mt-4">
+        <button
+          v-if="prevPhase"
+          class="phase-nav__btn phase-nav__btn--prev"
+          @click="router.push(`/phase/${prevPhase.id}`)"
+        >
+          <span class="phase-nav__arrow">‹</span>
+          <span class="phase-nav__label">
+            <span class="phase-nav__hint">Previous</span>
+            <span class="phase-nav__name">{{ prevPhase.short }}</span>
+          </span>
+        </button>
+        <div v-else />
+
+        <button
+          v-if="nextPhase"
+          class="phase-nav__btn phase-nav__btn--next"
+          @click="router.push(`/phase/${nextPhase.id}`)"
+        >
+          <span class="phase-nav__label">
+            <span class="phase-nav__hint">Next</span>
+            <span class="phase-nav__name">{{ nextPhase.short }}</span>
+          </span>
+          <span class="phase-nav__arrow">›</span>
+        </button>
+        <button
+          v-else
+          class="phase-nav__btn phase-nav__btn--next"
+          @click="router.push('/')"
+        >
+          <span class="phase-nav__label">
+            <span class="phase-nav__hint">Done</span>
+            <span class="phase-nav__name">All Phases</span>
+          </span>
+          <span class="phase-nav__arrow">›</span>
+        </button>
+      </div>
     </div>
 
     <div v-else class="muted mt-4">Phase not found.</div>
@@ -63,6 +102,11 @@ const store = useAppStore();
 const router = useRouter();
 
 const phase = computed(() => store.getPhase(props.id));
+
+const allPhases = computed(() => store.getPhases());
+const currentIndex = computed(() => allPhases.value.findIndex(p => p.id === props.id));
+const prevPhase = computed(() => currentIndex.value > 0 ? allPhases.value[currentIndex.value - 1] : null);
+const nextPhase = computed(() => currentIndex.value < allPhases.value.length - 1 ? allPhases.value[currentIndex.value + 1] : null);
 
 const renderedContent = computed(() =>
   phase.value ? mdToHtml(phase.value.content) : ''
