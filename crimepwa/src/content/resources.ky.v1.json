@@ -102,6 +102,27 @@
       "summary": "Reference notebook covering trial procedure, jury selection, opening statements, examination of witnesses, evidence rules, and closing argument for Kentucky criminal trials.",
       "tags": ["trial", "jury", "evidence", "criminal-procedure", "trial-practice"],
       "file": "trial law notebook.pdf"
+    },
+    {
+      "id": "ky.resource.evidence-manual-8th-ed",
+      "title": "Evidence Manual – 8th Edition",
+      "summary": "Comprehensive reference on Kentucky evidence law covering admissibility, hearsay exceptions, privilege, authentication, witness examination, and the rules governing evidentiary rulings at trial and hearings.",
+      "tags": ["evidence", "admissibility", "hearsay", "privilege", "authentication", "trial", "handbook"],
+      "file": "Evidence-Manual-8th-Edition-FINAL.pdf"
+    },
+    {
+      "id": "ky.resource.ky-rules-of-evidence-2019",
+      "title": "Kentucky Rules of Evidence (2019)",
+      "summary": "Official text of the Kentucky Rules of Evidence governing admissibility, witnesses, authentication, hearsay, privilege, and burden of proof in Kentucky courts. KRE 508 covers informant-identity privilege relevant to investigations.",
+      "tags": ["evidence", "rules", "admissibility", "hearsay", "privilege", "witnesses", "kre"],
+      "file": "Kentucky-Rules-of-Evidence-2019.pdf"
+    },
+    {
+      "id": "ky.resource.fighting-for-your-rights",
+      "title": "Fighting for Your Rights from Court",
+      "summary": "Plain-language guide to defendant rights throughout Kentucky criminal proceedings, covering the right to counsel, presumption of innocence, bail, trial rights, and how to navigate the court process.",
+      "tags": ["defendant-rights", "rights", "bail", "counsel", "guide", "court", "presumption-of-innocence"],
+      "file": "fighting for your rights from court.pdf"
     }
   ]
 }

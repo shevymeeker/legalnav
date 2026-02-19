@@ -33,7 +33,19 @@ export const resourceAssets: Record<string, string> = {
     './newcontent/Suppression-Manual-May-2024.pdf',
     import.meta.url
   ).href,
-  'trial law notebook.pdf': new URL('./newcontent/trial law notebook.pdf', import.meta.url).href
+  'trial law notebook.pdf': new URL('./newcontent/trial law notebook.pdf', import.meta.url).href,
+  'Evidence-Manual-8th-Edition-FINAL.pdf': new URL(
+    './newcontent/Evidence-Manual-8th-Edition-FINAL.pdf',
+    import.meta.url
+  ).href,
+  'Kentucky-Rules-of-Evidence-2019.pdf': new URL(
+    './newcontent/Kentucky-Rules-of-Evidence-2019.pdf',
+    import.meta.url
+  ).href,
+  'fighting for your rights from court.pdf': new URL(
+    './newcontent/fighting for your rights from court.pdf',
+    import.meta.url
+  ).href
 };
 
 export function getResourceAsset(file: string): string {
