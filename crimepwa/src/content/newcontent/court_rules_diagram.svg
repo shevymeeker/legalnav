@@ -1,0 +1,201 @@
+<svg width="1400" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">
+    Daviess Circuit Court Rules - Document Relationships
+  </text>
+  
+  <!-- Central node: Local Rules -->
+  <rect x="550" y="400" width="300" height="100" fill="#4A90E2" stroke="#2E5C8A" stroke-width="3" rx="5"/>
+  <text x="700" y="435" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    C6 LOCAL RULES
+  </text>
+  <text x="700" y="455" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    6th Judicial Circuit
+  </text>
+  <text x="700" y="475" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Daviess Circuit Court
+  </text>
+  
+  <!-- Project Files (Available) -->
+  <rect x="50" y="80" width="280" height="60" fill="#27AE60" stroke="#1E8449" stroke-width="2" rx="5"/>
+  <text x="190" y="110" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    gov_ky_krs_title_50.odt
+  </text>
+  <text x="190" y="128" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    KRS Title 50 (Domestic Relations)
+  </text>
+  
+  <rect x="50" y="170" width="280" height="60" fill="#27AE60" stroke="#1E8449" stroke-width="2" rx="5"/>
+  <text x="190" y="200" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Evidence-Manual-8th-Edition
+  </text>
+  <text x="190" y="218" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    Kentucky Rules of Evidence
+  </text>
+  
+  <!-- Referenced External Sources -->
+  <rect x="1070" y="80" width="280" height="60" fill="#E67E22" stroke="#CA6F1E" stroke-width="2" rx="5"/>
+  <text x="1210" y="110" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Kentucky Revised Statutes (KRS)
+  </text>
+  <text x="1210" y="128" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    Chs. 403, 405, 620, 625, etc.
+  </text>
+  
+  <rect x="1070" y="170" width="280" height="60" fill="#E67E22" stroke="#CA6F1E" stroke-width="2" rx="5"/>
+  <text x="1210" y="200" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    KY Civil Rules (CR)
+  </text>
+  <text x="1210" y="218" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    CR 7, 16, 23, 33-36, 50, 56, 59-71
+  </text>
+  
+  <rect x="1070" y="260" width="280" height="60" fill="#E67E22" stroke="#CA6F1E" stroke-width="2" rx="5"/>
+  <text x="1210" y="290" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Family Court Rules (FCRPP)
+  </text>
+  <text x="1210" y="308" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    FCRPP 2-9, 11, 12, 21, 32-36
+  </text>
+  
+  <rect x="1070" y="350" width="280" height="60" fill="#E67E22" stroke="#CA6F1E" stroke-width="2" rx="5"/>
+  <text x="1210" y="380" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Supreme Court Rules (SCR)
+  </text>
+  <text x="1210" y="398" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    SCR 1.040, RCr 13.02
+  </text>
+  
+  <rect x="1070" y="440" width="280" height="60" fill="#E67E22" stroke="#CA6F1E" stroke-width="2" rx="5"/>
+  <text x="1210" y="470" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Domestic Violence Rules (RDDC)
+  </text>
+  <text x="1210" y="488" font-family="Arial" font-size="10" text-anchor="middle" fill="white">
+    RDDC 5, RDDC 104D(3), RDDC 1D(iv)(c)
+  </text>
+  
+  <!-- Local Rule Sections -->
+  <rect x="50" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="150" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 1: Admin Procedures
+  </text>
+  
+  <rect x="270" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="370" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 2: Court Scheduling
+  </text>
+  
+  <rect x="490" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="590" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 3: Adoptions
+  </text>
+  
+  <rect x="710" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="810" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 4: DV Protocol
+  </text>
+  
+  <rect x="930" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="1030" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 5: Domestic Relations
+  </text>
+  
+  <rect x="1150" y="600" width="200" height="50" fill="#9B59B6" stroke="#7D3C98" stroke-width="2" rx="5"/>
+  <text x="1250" y="630" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Rule 6: Misc Family Law
+  </text>
+  
+  <!-- Appendices -->
+  <rect x="400" y="700" width="250" height="50" fill="#8E44AD" stroke="#6C3483" stroke-width="2" rx="5"/>
+  <text x="525" y="730" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Appendix A: DV Protocol (24hr)
+  </text>
+  
+  <rect x="700" y="700" width="250" height="50" fill="#8E44AD" stroke="#6C3483" stroke-width="2" rx="5"/>
+  <text x="825" y="730" font-family="Arial" font-size="11" text-anchor="middle" fill="white">
+    Appendix B: Timesharing Guidelines
+  </text>
+  
+  <!-- Connections from Local Rules to Project Files -->
+  <line x1="550" y1="430" x2="330" y2="110" stroke="#27AE60" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="440" y="270" font-family="Arial" font-size="10" fill="#27AE60">
+    References KRS 403, 405, 620, 625
+  </text>
+  
+  <line x1="550" y1="470" x2="330" y2="200" stroke="#27AE60" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="440" y="340" font-family="Arial" font-size="10" fill="#27AE60">
+    Evidentiary hearings
+  </text>
+  
+  <!-- Connections from Local Rules to External Sources -->
+  <line x1="850" y1="430" x2="1070" y2="110" stroke="#E67E22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="960" y="270" font-family="Arial" font-size="10" fill="#E67E22">
+    Multiple KRS references
+  </text>
+  
+  <line x1="850" y1="440" x2="1070" y2="200" stroke="#E67E22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="960" y="320" font-family="Arial" font-size="10" fill="#E67E22">
+    CR procedures
+  </text>
+  
+  <line x1="850" y1="450" x2="1070" y2="290" stroke="#E67E22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="960" y="370" font-family="Arial" font-size="10" fill="#E67E22">
+    FCRPP 2-9 compliance
+  </text>
+  
+  <line x1="850" y1="460" x2="1070" y2="380" stroke="#E67E22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="850" y1="470" x2="1070" y2="470" stroke="#E67E22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="960" y="485" font-family="Arial" font-size="10" fill="#E67E22">
+    DV Protocol
+  </text>
+  
+  <!-- Connections from Local Rules to Sections -->
+  <line x1="600" y1="500" x2="150" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  <line x1="650" y1="500" x2="370" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  <line x1="700" y1="500" x2="590" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  <line x1="750" y1="500" x2="810" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  <line x1="800" y1="500" x2="1030" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  <line x1="850" y1="500" x2="1250" y2="600" stroke="#9B59B6" stroke-width="2"/>
+  
+  <!-- Connections from Sections to Appendices -->
+  <line x1="810" y1="650" x2="525" y2="700" stroke="#8E44AD" stroke-width="2"/>
+  <line x1="1030" y1="650" x2="825" y2="700" stroke="#8E44AD" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="850" width="1300" height="120" fill="#F8F9F9" stroke="#34495E" stroke-width="2" rx="5"/>
+  <text x="700" y="875" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">
+    Legend
+  </text>
+  
+  <rect x="80" y="890" width="30" height="20" fill="#27AE60" stroke="#1E8449" stroke-width="1"/>
+  <text x="120" y="905" font-family="Arial" font-size="11">
+    Available in Project Files
+  </text>
+  
+  <rect x="350" y="890" width="30" height="20" fill="#E67E22" stroke="#CA6F1E" stroke-width="1"/>
+  <text x="390" y="905" font-family="Arial" font-size="11">
+    External Referenced Sources
+  </text>
+  
+  <rect x="650" y="890" width="30" height="20" fill="#4A90E2" stroke="#2E5C8A" stroke-width="1"/>
+  <text x="690" y="905" font-family="Arial" font-size="11">
+    Primary Local Rules Document
+  </text>
+  
+  <rect x="80" y="925" width="30" height="20" fill="#9B59B6" stroke="#7D3C98" stroke-width="1"/>
+  <text x="120" y="940" font-family="Arial" font-size="11">
+    Specific Rule Sections
+  </text>
+  
+  <rect x="350" y="925" width="30" height="20" fill="#8E44AD" stroke="#6C3483" stroke-width="1"/>
+  <text x="390" y="940" font-family="Arial" font-size="11">
+    Appendices
+  </text>
+</svg>
