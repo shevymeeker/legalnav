@@ -25,7 +25,7 @@ Crimes come to law enforcement attention through victim reports, witness stateme
 - Surveillance (subject to constitutional limitations)
 - Confidential informants (KRE 508 governs identity privilege)
 
-### Highway Interdiction and Pretextual Traffic Stops
+### Traffic Stops and Highway Interdiction
 
 **Legal Foundation — Pretextual Stops:**
 - *Whren v. United States*, 517 U.S. 806 (1996): Any objectively observed traffic violation constitutes probable cause for a stop regardless of the officer's actual subjective motive. The officer's intent is constitutionally irrelevant. An officer seeking to investigate a vehicle for drug trafficking may lawfully stop it for a broken tail light, an air freshener hanging from the mirror, or failure to signal a lane change.
@@ -60,24 +60,22 @@ ALPR systems compare license plates against criminal databases in real time, ale
 **Attenuation Doctrine — Utah v. Strieff:**
 *Utah v. Strieff*, 579 U.S. 232 (2016): Evidence obtained after an unlawful stop may be admissible if sufficiently attenuated from the illegality, considering: temporal proximity, intervening circumstances (e.g., discovery of an outstanding warrant), and the purpose and flagrancy of the police misconduct. An outstanding arrest warrant discovered during an unlawful stop may "purge" the taint of the illegal stop and permit admission of evidence discovered in the resulting arrest search. Defense must challenge both the initial stop's legality and the attenuation analysis.
 
----
+**K-9 Deployments and Drug Detection:**
 
-### K-9 Deployments and Drug Detection
-
-**Governing Doctrine:**
+*Governing Doctrine:*
 - *Illinois v. Caballes*, 543 U.S. 405 (2005): A trained drug detection dog walked around the exterior of a lawfully stopped vehicle does not constitute a Fourth Amendment search, as there is no reasonable expectation of privacy in contraband.
 - *Florida v. Harris*, 568 U.S. 237 (2013): A K-9 alert establishes probable cause to search the vehicle interior if the dog has been trained and certified and there is no evidence of excessive error rates undermining reliability. The Court rejected a rigid field-records test; totality of circumstances governs.
 - *Rodriguez v. United States*, 575 U.S. 348 (2015): A dog sniff may not extend an otherwise completed traffic stop. Once the stop's purpose is finished, continued detention to await K-9 arrival requires independent reasonable suspicion.
 
-**K-9 Reliability Issues — Suppression Litigation:**
+*K-9 Reliability Issues — Suppression Litigation:*
 Published field studies document K-9 alert rates that do not consistently correspond to actual contraband presence. Documented false-alert rates range from 12% to 96% depending on handler-dog team and environmental conditions. Handler cueing — inadvertent physical or behavioral signals from the handler indicating expectation of an alert — is a recognized source of unreliable alerts. *Florida v. Harris* permits defendants to challenge K-9 reliability through evidence of poor field performance records, lack of current certification, or inadequate training protocols. In Kentucky suppression practice, defense may request: K-9 training records, certification history, handler deployment log, field alert records, and handler curriculum vitae through discovery or RCr 7.24 motion.
 
-**Practical Implications:**
+*Practical Implications:*
 A K-9 alert creates probable cause for a full vehicle search, including passenger compartment, trunk, and closed containers. Evidence obtained from that search is admissible unless: (1) the underlying stop was unlawful; (2) the stop was unlawfully extended beyond its completed purpose to accommodate K-9 arrival; or (3) K-9 reliability is successfully challenged. Suppression motions involving K-9 evidence should address all three grounds.
 
 ---
 
-### Interrogation and Custodial Questioning
+### Custodial Interrogation and Miranda
 
 **Miranda Doctrine — Application:**
 *Miranda v. Arizona*, 384 U.S. 436 (1966): Statements made during custodial interrogation are inadmissible unless preceded by adequate warnings and an intelligent, voluntary waiver. Custodial interrogation requires: (1) the person is "in custody" — a reasonable person would not feel free to terminate the encounter and leave; AND (2) police engage in express questioning or its functional equivalent (words or actions reasonably likely to elicit an incriminating response).
@@ -88,13 +86,22 @@ Officers frequently attempt to avoid Miranda obligations by framing pre-arrest c
 **Two-Step Interrogation — Missouri v. Seibert:**
 *Missouri v. Seibert*, 542 U.S. 600 (2004): Police may not deliberately employ a two-step interrogation strategy — eliciting a pre-Miranda confession, then providing Miranda warnings and re-questioning for the same facts — to circumvent Miranda. Statements obtained through deliberate Seibert two-step methodology are suppressible even if technically post-Miranda warning. Courts examine whether the Miranda warning was designed to function effectively as a warning or merely as a perfunctory formality in an already completed interrogation.
 
-**Kentucky-Specific Coercion Standards:**
+**Polygraph Evidence:**
+Polygraph results are inadmissible at trial in Kentucky courts under longstanding per se rule. Officers frequently offer polygraph examinations during pre-arrest investigation. Participation is voluntary; a defendant may legally decline. Participation does not constitute waiver of Fifth Amendment rights. Statements made during a polygraph examination are subject to Miranda analysis. *Rogers v. Commonwealth* (Ky. 2002): Defendant has a limited constitutional right to present evidence of a polygraph examination result when it is material to a specific defense theory, notwithstanding general inadmissibility.
+
+**RCr 8.27 — Suppression Motion Procedure:**
+Motions to suppress involuntary confessions or Miranda-violating statements are filed under RCr 8.27. Requirements: written motion filed before trial identifying specific statements and grounds for suppression; evidentiary hearing with testimony from interrogating officers; burden of proof on Commonwealth to establish voluntariness by preponderance of the evidence; court makes specific factual findings on the record regarding circumstances of the interrogation and the adequacy and voluntariness of any waiver.
+
+---
+
+### Kentucky Interrogation Case Law
+
 Kentucky courts apply a three-part coercion test drawn from *Gray v. Commonwealth* (Ky. 2016):
 1. Was there police overreaching or coercive conduct?
 2. Was the conduct objectively coercive under the circumstances?
 3. Did the coercive conduct actually cause the defendant to make the statement?
 
-Key Kentucky precedents:
+**Key Kentucky Precedents:**
 - *Gray v. Commonwealth* (Ky. 2016): Evidence that police fabricated evidence during questioning — false co-conspirator confessions, fabricated forensic results — creates a presumption of unconstitutional coercion. Fabrication of evidence during interrogation is per se impermissible.
 - *Carlisle v. Commonwealth* (Ky. Ct. App. 2011): "Wearing down" a defendant's resistance through sustained questioning, denial of rest, or isolation may satisfy the coercion element even absent explicit threats or physical pressure.
 - *Bailey v. Commonwealth* (Ky. 2006): Defendants with diminished mental capacity require only a lesser quantum of coercive conduct to satisfy the coercion test. Cognitive impairment, mental illness, intoxication, and youth are all relevant to the voluntariness analysis.
@@ -102,12 +109,6 @@ Key Kentucky precedents:
 - *Stanton v. Commonwealth* (Ky. 2011): Threats concerning third parties (e.g., CPS involvement with children, consequences for a spouse) do not automatically render a confession involuntary; threat of consequences that will occur independently of cooperation is generally permissible unless the threat is itself unlawful or fabricated.
 - *Springer v. Commonwealth* (Ky. 1999): Strategic deception — false representations about evidence strength, falsely claiming co-defendants confessed — is generally permissible under Kentucky law and does not alone establish coercion. However, deception combined with other coercive factors remains relevant to the totality inquiry.
 - *United States v. Chambers* (W.D. Ky. 2015): Implied waiver of Miranda — continuing to speak after warnings are given — constitutes valid waiver absent evidence of incapacity, coercion, or inadequate comprehension of the warnings.
-
-**Polygraph Evidence:**
-Polygraph results are inadmissible at trial in Kentucky courts under longstanding per se rule. Officers frequently offer polygraph examinations during pre-arrest investigation. Participation is voluntary; a defendant may legally decline. Participation does not constitute waiver of Fifth Amendment rights. Statements made during a polygraph examination are subject to Miranda analysis. *Rogers v. Commonwealth* (Ky. 2002): Defendant has a limited constitutional right to present evidence of a polygraph examination result when it is material to a specific defense theory, notwithstanding general inadmissibility.
-
-**RCr 8.27 — Suppression Motion Procedure:**
-Motions to suppress involuntary confessions or Miranda-violating statements are filed under RCr 8.27. Requirements: written motion filed before trial identifying specific statements and grounds for suppression; evidentiary hearing with testimony from interrogating officers; burden of proof on Commonwealth to establish voluntariness by preponderance of the evidence; court makes specific factual findings on the record regarding circumstances of the interrogation and the adequacy and voluntariness of any waiver.
 
 ---
 
@@ -262,6 +263,20 @@ Judge must inform defendant of following rights (Kentucky Constitution Sections 
 - No inference of guilt may be drawn from mere accusation
 
 ### Bail Determination
+
+**Constitutional Basis — The Right to Bail:**
+
+Pretrial detention without the offer of bail is constitutionally prohibited under both Kentucky and federal law, except in capital cases meeting a specific evidentiary threshold. Bail is not a privilege extended at judicial discretion — it is a constitutional mandate rooted in the presumption of innocence and the prohibition against punishment before conviction.
+
+- **Kentucky Constitution, Section 16**: "All prisoners shall be bailable by sufficient sureties, unless for capital offenses when the proof is evident or the presumption great." This provision is absolute. For non-capital offenses, the court has no authority to deny the offer of bail entirely. The question is only the amount and conditions — not whether bail must be offered.
+- **KRS 431.520**: "All persons shall be bailable before conviction, except for capital offenses when the proof is evident or the presumption great." The statute codifies the constitutional guarantee and reaffirms bail as a right of every accused person.
+- **Eighth Amendment (U.S. Constitution)**: "Excessive bail shall not be required." In *Stack v. Boyle*, 342 U.S. 1 (1951), the Supreme Court held: "This traditional right to freedom before conviction permits the unhampered preparation of a defense, and serves to prevent the infliction of punishment prior to conviction." Bail set above the amount reasonably necessary to ensure the defendant's appearance is excessive and unconstitutional.
+- **Due Process — Fifth and Fourteenth Amendments**: Pretrial detention constitutes a severe deprivation of liberty. The government may not detain a person as punishment for a crime of which they have not been convicted. In *United States v. Salerno*, 481 U.S. 739 (1987), the Supreme Court, while upholding narrow federal preventive detention provisions, emphasized that pretrial detention must serve a regulatory purpose — ensuring appearance and preventing danger — not a punitive one. Detention imposed simply because the state wants to punish the accused before trial is unconstitutional.
+
+**The Critical Distinction — The Right to Bail vs. the Ability to Pay:**
+The constitutional mandate is that bail *must be offered*. Whether a defendant can afford to post the bail amount set is a separate and deeply consequential question, but it does not alter the constitutional obligation on the court. A court that refuses to set any bail at all — other than in a capital case meeting the constitutional threshold — violates Section 16 of the Kentucky Constitution and the Eighth Amendment. A court that sets bail so high that it functions as de facto detention without pretrial finding may be imposing excessive bail in violation of *Stack v. Boyle*.
+
+The practical reality is that a significant portion of defendants held in pretrial detention are there not because a court determined they are dangerous or a flight risk beyond any bail — but because the bail set, even if constitutionally appropriate in amount, exceeds what they can pay. This financial reality does not eliminate the constitutional violation of denying the offer of bail; it adds a separate layer of systemic consequence. Defendants held on unaffordable bail are not there as punishment — legally they cannot be — but the functional effect is the same.
 
 **Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
 
