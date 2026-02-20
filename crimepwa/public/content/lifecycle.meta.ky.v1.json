@@ -18,13 +18,6 @@
       ],
       "sub_phases": [
         {
-          "id": "law-enforcement",
-          "heading_marker": "### Law Enforcement Investigation",
-          "title": "Law Enforcement Overview",
-          "short": "Overview",
-          "tags": ["investigation", "police", "warrants", "probable-cause"]
-        },
-        {
           "id": "traffic-stops",
           "heading_marker": "### Traffic Stops and Highway Interdiction",
           "title": "Traffic Stops",
@@ -32,25 +25,11 @@
           "tags": ["4th-amendment", "vehicle", "search-and-seizure", "k9", "traffic"]
         },
         {
-          "id": "interrogation",
-          "heading_marker": "### Custodial Interrogation and Miranda",
-          "title": "Custodial Interrogation",
-          "short": "Interrogation",
-          "tags": ["miranda", "5th-amendment", "interrogation", "custodial"]
-        },
-        {
           "id": "supreme-court-opinions",
           "heading_marker": "### Kentucky Interrogation Case Law",
           "title": "Supreme Court Opinions",
           "short": "Case Law",
           "tags": ["miranda", "case-law", "interrogation", "coercion", "kentucky"]
-        },
-        {
-          "id": "practical-rights",
-          "heading_marker": "### Pre-Arrest Practical Rights",
-          "title": "Know Your Rights",
-          "short": "Your Rights",
-          "tags": ["rights", "practical", "advice", "police-encounter"]
         }
       ]
     },

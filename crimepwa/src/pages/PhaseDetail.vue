@@ -49,9 +49,10 @@
           </button>
         </div>
 
-        <!-- Lifecycle content (shown when: subId set, OR phase has no sub_phases) -->
+        <!-- Lifecycle content: sub-phase view shows that sub's content;
+             overview shows phase content with sub-phase sections removed -->
         <div
-          v-if="props.subId || !phase.sub_phases?.length"
+          v-if="renderedContent"
           class="card-soft p-3 mb-3 lifecycle-content"
           v-html="renderedContent"
         />
@@ -152,9 +153,11 @@ const nextPhase = computed(() => currentIndex.value < allPhases.value.length - 1
 const renderedContent = computed(() => {
   if (!phase.value) return '';
   if (props.subId) {
+    // Sub-phase view: show only that section's content
     return mdToHtml(store.getSubPhaseContent(props.id, props.subId));
   }
-  return mdToHtml(phase.value.content);
+  // Overview: show phase content minus the sections broken out as sub-modules
+  return mdToHtml(store.getPhaseMainContent(props.id));
 });
 
 const linkedResources = computed(() =>
