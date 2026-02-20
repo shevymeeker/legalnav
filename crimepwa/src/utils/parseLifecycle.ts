@@ -23,12 +23,10 @@ export function extractSubPhaseContent(raw: string, phaseMarker: string, subMark
   const phaseContent = extractPhaseContent(raw, phaseMarker);
   if (!phaseContent) return '';
 
-  // Split on ### boundaries within the phase content
+  // Split on ### boundaries within the phase content.
+  // Each resulting section starts with "### Heading\n...", so match the full marker.
   const subSections = phaseContent.split(/^(?=### )/m);
-
-  // Match against the heading text (with or without leading "### ")
-  const subTitle = subMarker.replace(/^### /, '');
-  const match = subSections.find(s => s.trimStart().startsWith(subTitle));
+  const match = subSections.find(s => s.startsWith(subMarker));
   if (!match) return '';
 
   // Drop the ### heading line itself

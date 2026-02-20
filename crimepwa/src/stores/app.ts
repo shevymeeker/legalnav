@@ -96,6 +96,25 @@ export const useAppStore = defineStore('app', {
       return extractSubPhaseContent(this._lifecycleRaw, phase.heading_marker, sub.heading_marker);
     },
 
+    /**
+     * Returns the phase content with sub-phase sections removed.
+     * Used on the phase overview page so broken-out sub-modules don't appear twice.
+     */
+    getPhaseMainContent(phaseId: string): string {
+      const phase = this.phases.find(p => p.id === phaseId);
+      if (!phase) return '';
+      if (!phase.sub_phases?.length) return phase.content;
+
+      const subMarkers = new Set(phase.sub_phases.map(s => s.heading_marker));
+      // Split on ### boundaries; each section starts with "### Heading\n..."
+      const sections = phase.content.split(/^(?=### )/m);
+      const kept = sections.filter(s => {
+        const firstLine = s.split('\n')[0].trim();
+        return !subMarkers.has(firstLine);
+      });
+      return kept.join('').trim();
+    },
+
     getResourcesForPhase(phase: PhaseWithContent): Resource[] {
       return (phase.related_resource_ids ?? [])
         .map(id => this._resourcesById[id])
