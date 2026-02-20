@@ -849,6 +849,226 @@
       "severity": "BACKGROUND",
       "verified_status": "VERIFIED",
       "requires_attorney": false
+    },
+    {
+      "id": "ky.phase.arrest.traffic-stop",
+      "title": "The Traffic Stop: What's Actually Happening",
+      "category": "RIGHTS",
+      "one_line_purpose": "A traffic stop is a legal framework built around officer discretion. Knowing how it works protects you.",
+      "summary": "Traffic stops are the most common encounter between civilians and law enforcement, and they operate under a body of law designed to give officers wide latitude. Under Whren v. United States, any observed traffic violation—no matter how minor—gives police constitutional authority to stop your vehicle, regardless of their actual purpose. Officers may be investigating something entirely unrelated to your driving. Understanding the legal structure of a stop, what you must do, what you cannot be required to do, and when the stop must legally end is essential.",
+      "what_is_this": "What police can legally do during a stop:\n\n• Stop you for any observed traffic violation, no matter how minor (Whren v. United States, 517 U.S. 806 (1996))\n• Ask for license, registration, and proof of insurance—you must produce these\n• Run your license and plates through databases\n• Walk a K-9 around the exterior of the vehicle during a lawful stop that has not been extended (Illinois v. Caballes, 543 U.S. 405 (2005))\n• Ask questions—but you are not required to answer investigatory questions beyond identification\n\nWhat police cannot legally do:\n\n• Extend the stop beyond its purpose (issuing citation, running check) without independent reasonable suspicion of criminal activity (Rodriguez v. United States, 575 U.S. 348 (2015))\n• Search your vehicle without probable cause or your consent\n• Use your refusal to consent as the basis for probable cause\n• Continue the stop after telling you that you are free to go\n\nThe consent request:\nOfficers routinely ask for consent to search after issuing a citation. This often happens after stating 'You're free to go'—a framing designed to create a new voluntary encounter. You have the right to decline. Say: 'I don't consent to a search of my vehicle.' Do not explain or negotiate. Consent given is difficult to retract once a search begins.",
+      "why_it_matters": "Traffic stops are the gateway to most drug possession and contraband arrests in Kentucky. Officers are trained in highway interdiction—selecting vehicles for stops based on indicators and using the stop as a platform for consent requests or K-9 deployment. Evidence discovered in a stop that was unlawfully extended, or in a search where consent was involuntary or exceeded its scope, may be suppressed. The difference between a ticket and a felony charge often turns on what happens in the first 90 seconds after the officer approaches your window.",
+      "what_to_do_now": "During the stop:\n1. Pull over promptly and safely. Turn off the engine. Keep hands visible.\n2. Produce license, registration, and insurance when asked. These you must provide.\n3. If asked questions about your travel, destination, or activities: 'I'd prefer not to answer questions.' You are not required to explain yourself.\n4. If asked for consent to search: 'I don't consent to a search of my vehicle or my person.' Say it clearly, once.\n5. If you believe the stop is over: Ask 'Am I free to go?' If yes, leave. If no, ask why you are being detained.\n6. Do not physically resist, even if you believe the stop is unlawful. Contest it in court.\n\nAfter the stop:\n7. Write down everything immediately: time, location, officer name and badge, what was said, what was searched, what was taken.\n8. If something was searched or seized: Tell your attorney as soon as possible. A suppression motion challenging the stop's legality or the consent's voluntariness could eliminate the evidence.",
+      "related_modules": [
+        "ky.rights.search-and-seizure",
+        "ky.rights.k9-searches",
+        "ky.rights.silence",
+        "ky.motions.suppress-search-seizure",
+        "ky.rights.asset-forfeiture"
+      ],
+      "sources": [
+        {
+          "type": "CASELAW",
+          "citation": "Whren v. United States, 517 U.S. 806 (1996)",
+          "label": "Pretextual stops constitutional",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Rodriguez v. United States, 575 U.S. 348 (2015)",
+          "label": "Stop duration limits",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Florida v. Bostick, 501 U.S. 429 (1991)",
+          "label": "Consent voluntariness standard",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 189A (traffic code); U.S. Constitution 4th Amendment; Kentucky Constitution Section 10",
+          "label": "Traffic stop legal framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "BOTH",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.rights.k9-searches",
+      "title": "K-9 Searches: The Dog Sniff Doctrine",
+      "category": "RIGHTS",
+      "one_line_purpose": "A K-9 alert creates probable cause to search your vehicle—but the alert itself can be challenged.",
+      "summary": "Law enforcement K-9 units are deployed routinely during Kentucky traffic stops. Under current doctrine, a trained drug-detection dog sniffing the exterior of a stopped vehicle is not a 'search' under the Fourth Amendment—no warrant or probable cause is required for the sniff itself. But an alert from the dog does establish probable cause for a full vehicle search. What most people don't know: the stop cannot be extended to wait for a dog without independent suspicion, and a dog's alert can be challenged based on training records, false-alert history, and handler cueing.",
+      "what_is_this": "The K-9 legal framework:\n\n• Exterior sniff is not a search: Illinois v. Caballes, 543 U.S. 405 (2005). Walking a dog around a stopped vehicle requires no warrant, no probable cause, and no consent.\n• Alert creates probable cause: Florida v. Harris, 568 U.S. 237 (2013). If the dog is trained and certified, its alert is sufficient to justify a full vehicle search—passenger compartment, trunk, containers.\n• Stop cannot be extended for the dog: Rodriguez v. United States, 575 U.S. 348 (2015). Once the traffic stop's purpose is complete, you must be free to go unless there is independent reasonable suspicion. Even a few minutes of extension to wait for a dog violates the Fourth Amendment.\n\nChallenging the K-9 alert:\n\n• False-alert rates: Published field studies show false alert rates ranging from 12% to 96% depending on the handler-dog team and conditions. A dog alerting does not guarantee contraband is present.\n• Handler cueing: Officers can inadvertently signal a dog through body language, alerting the dog even without contraband. This is a recognized source of unreliable alerts.\n• Certification and training records: Defense can request the dog's full training history, certification status, and field deployment logs through discovery. If the dog was not current on certification or had a poor field record, the alert's reliability is challenged.\n• Timing challenge: If the stop was extended—even briefly—before the dog arrived, that extension requires independent justification.",
+      "why_it_matters": "A K-9 alert leads to a full vehicle search. That search can uncover anything in the car—drugs, weapons, cash—that then forms the basis of criminal charges. The alert is treated as probable cause, but it is not infallible. Challenging the timing of the stop, the dog's reliability, or the handler's conduct can be the difference between evidence being admitted and evidence being suppressed.",
+      "what_to_do_now": "During the stop:\n1. Do not consent to a search. A K-9 sniff of the exterior cannot be refused, but your verbal non-consent to a search is still on the record.\n2. Note the time the stop began and the time the dog arrived. That sequence matters.\n3. Ask 'Am I free to go?' before agreeing to wait for anything.\n\nAfter an arrest based on a K-9 alert:\n4. Tell your attorney the exact sequence of events: when the ticket or warning was issued, when the dog was called, when it arrived, and when it alerted.\n5. Request through your attorney: the dog's training records, certification history, and field deployment logs (discovery or RCr 7.24 motion).\n6. Ask whether the stop was extended before the dog arrived—if so, a suppression motion on Rodriguez grounds may exclude everything.",
+      "related_modules": [
+        "ky.phase.arrest.traffic-stop",
+        "ky.rights.search-and-seizure",
+        "ky.motions.suppress-search-seizure",
+        "ky.rights.asset-forfeiture"
+      ],
+      "sources": [
+        {
+          "type": "CASELAW",
+          "citation": "Illinois v. Caballes, 543 U.S. 405 (2005)",
+          "label": "K-9 exterior sniff not a search",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Florida v. Harris, 568 U.S. 237 (2013)",
+          "label": "K-9 alert probable cause standard",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Rodriguez v. United States, 575 U.S. 348 (2015)",
+          "label": "Stop extension for dog sniff prohibited",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true,
+      "flagged": true,
+      "flag_reason": "K-9 reliability challenges require specific discovery requests and may require expert witness; outcomes vary by circuit"
+    },
+    {
+      "id": "ky.rights.interrogation-tactics",
+      "title": "Interrogation Tactics: How Police Question Suspects in Kentucky",
+      "category": "RIGHTS",
+      "one_line_purpose": "Police interrogation is a practiced technique. Knowing what they can legally do—and what they cannot—protects you.",
+      "summary": "Police interrogation is not a casual conversation. It is a structured process designed to elicit statements, admissions, and confessions. Officers receive extensive training in psychological interrogation techniques. Many common tactics—deception, fabricating evidence claims, creating urgency—are legal under Kentucky law. But there are constitutional limits, and Kentucky courts have suppressed confessions where those limits were crossed. The single most protective thing you can do is invoke your right to silence and your right to counsel—then stop talking.",
+      "what_is_this": "What police can legally do during interrogation:\n\n• Deceive you about the evidence they have: Claiming they have fingerprints, DNA, witness statements, or a co-defendant's confession when they don't is generally permissible. Springer v. Commonwealth (Ky. 1999)\n• Minimize the seriousness of the offense or offer sympathy: 'I understand why this happened' or 'This will go better if you cooperate' are lawful tactics\n• Employ silence and psychological pressure: Sitting quietly, repeating questions, expressing disappointment\n• Claim your only option is to cooperate: This is a tactic, not a legal reality\n\nWhat police cannot legally do:\n\n• Fabricate evidence (show you a fake lab report, a forged document): Gray v. Commonwealth (Ky. 2016) — fabricating evidence creates a presumption of unconstitutional coercion\n• 'Wear down' your resistance through sustained pressure, sleep deprivation, or denial of breaks to the point of overcoming your will: Carlisle v. Commonwealth (Ky. Ct. App. 2011)\n• Continue questioning after you clearly invoke your right to silence or right to counsel\n• Use a two-step strategy — getting a pre-Miranda confession, then re-reading rights and asking the same questions: Missouri v. Seibert, 542 U.S. 600 (2004)\n\nThe 'just talking' framing:\nA documented tactic in Kentucky and federal cases: officers approach a subject and say 'You're not under arrest, we're just talking.' In United States v. Hoyer (W.D. Ky. 2019), a federal court suppressed statements where this framing was used while the defendant was effectively in custody. If a reasonable person would not feel free to leave, you are in custody—Miranda applies regardless of what the officer calls the encounter.\n\nPolygraphs:\nPolygraph results are inadmissible in Kentucky courts. Participation is voluntary. Declining a polygraph is lawful and cannot be used as evidence of guilt. Statements made during or around a polygraph examination are subject to Miranda analysis and may be used against you.",
+      "why_it_matters": "In Kentucky, as nationally, confessions and admissions remain the single most powerful evidence a prosecutor can present. Courts regularly convict on confession evidence even where physical evidence is thin. Studies show that innocent people confess—particularly when subjected to prolonged questioning, under sleep deprivation, or when cognitively vulnerable. A statement made in an interrogation room, even one you believe is harmless, can and will be used against you. The right to silence exists precisely because it is the only reliable protection.",
+      "what_to_do_now": "If police want to question you:\n1. Say clearly: 'I want to remain silent' and 'I want a lawyer.' Both phrases separately trigger constitutional protections.\n2. Stop talking. Do not answer 'just one more question.' Do not try to explain or provide context.\n3. If offered a polygraph: Decline. You have no legal obligation to submit.\n4. If police claim they only need a 'quick answer' or 'just need to clear something up': These are interrogation openers, not requests. Invoke your rights.\n\nIf you already spoke to police:\n5. Tell your attorney everything you said—including details you think are harmless. Your attorney cannot protect you from statements they don't know about.\n6. Ask your attorney whether the circumstances support a suppression motion under RCr 8.27 (involuntary confession) or Miranda.",
+      "related_modules": [
+        "ky.rights.miranda",
+        "ky.rights.silence",
+        "ky.rights.attorney",
+        "ky.motions.suppress-search-seizure",
+        "ky.phase.arrest.traffic-stop"
+      ],
+      "sources": [
+        {
+          "type": "CASELAW",
+          "citation": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+          "label": "Miranda rights and custodial interrogation",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Gray v. Commonwealth (Ky. 2016) — fabricated evidence; Carlisle v. Commonwealth (Ky. Ct. App. 2011) — sustained pressure; Bailey v. Commonwealth (Ky. 2006) — diminished capacity; Springer v. Commonwealth (Ky. 1999) — permissible deception",
+          "label": "Kentucky coercion and interrogation case law",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Missouri v. Seibert, 542 U.S. 600 (2004)",
+          "label": "Two-step interrogation prohibition",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "RULE",
+          "citation": "RCr 8.27 (suppression of involuntary confessions)",
+          "label": "Suppression motion procedure",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false
+    },
+    {
+      "id": "ky.rights.asset-forfeiture",
+      "title": "Asset Forfeiture: How Kentucky Seizures Work",
+      "category": "RIGHTS",
+      "one_line_purpose": "Kentucky law allows police to seize property connected to drug crimes—even before conviction.",
+      "summary": "Civil asset forfeiture in Kentucky allows law enforcement to seize cash, vehicles, and property alleged to be connected to drug offenses—frequently at the roadside, before any charges are filed. The proceeding is technically against the property, not the person. You bear the burden of proving your property is innocent. The system is funded by the seizures it generates: Kentucky law directs 85% of forfeiture proceeds to the seizing agency. Understanding the legal framework—and acting immediately—is the only way to recover seized property.",
+      "what_is_this": "The Kentucky forfeiture framework (KRS 218A.410–218A.460):\n\n• What can be seized: Currency, vehicles, real property, equipment, and any asset alleged to be proceeds of drug trafficking or used to facilitate a drug offense. KRS 218A.410 establishes a statutory presumption that cash found near drugs is forfeitable proceeds.\n\n• Who seizes it: Law enforcement may seize property at the time of arrest or stop. No criminal charge is required for seizure. No conviction is required to complete forfeiture.\n\n• How it proceeds: Forfeiture is an in rem (against the property) civil proceeding. The government files a forfeiture petition in circuit court. You must respond and claim ownership within the statutory period or you lose all rights to contest.\n\n• The burden problem: You bear the burden of proving your property was not drug proceeds or was not used in a drug offense. The standard is preponderance of the evidence in your favor.\n\n• The funding structure: Under KRS 218A.460, 85% of forfeiture proceeds go to the seizing law enforcement agency and 15% to the general fund. This creates a financial incentive for agencies to pursue forfeitures.\n\n• Federal equitable sharing: Kentucky agencies may also pursue federal forfeiture through DEA or FBI task force participation, accessing federal forfeiture funds and circumventing some state procedural protections. Federal sharing returns up to 80% of proceeds to the seizing agency.\n\nKentucky seized approximately $17 million in assets through forfeiture in FY2019.",
+      "why_it_matters": "Cash found near drugs is presumed forfeitable under Kentucky law—even if you are never charged with a crime. Prosecutors and police have described the economic reality bluntly: defending a $3,000 forfeiture costs more in attorney fees than the money is worth to recover, so most people don't fight it. If you don't respond to the forfeiture petition within the required time, the property is forfeited by default. The process is designed to be efficient for the government and expensive for the property owner.",
+      "what_to_do_now": "If property was seized during a stop or arrest:\n1. Get a receipt. Law enforcement must provide documentation of what was seized. Demand it if not offered.\n2. Note the exact amount of cash, vehicle description, and any other property seized. Document serial numbers and identifying information if possible.\n3. Contact an attorney immediately—forfeiture has strict response deadlines. Missing the deadline means losing your right to contest.\n4. Ask your attorney: Was the underlying stop lawful? Was the seizure based on independent evidence or solely on proximity to drugs? Was federal equitable sharing invoked?\n5. Gather evidence of legitimate source: Bank withdrawal records, employment records, gambling winnings documentation, loan documentation, anything that establishes a lawful origin for seized cash.\n6. Do not wait. Forfeiture timelines are short and the default outcome is permanent loss.",
+      "related_modules": [
+        "ky.phase.arrest.traffic-stop",
+        "ky.rights.search-and-seizure",
+        "ky.rights.k9-searches",
+        "ky.motions.suppress-search-seizure",
+        "ky.charge.drugs.overview"
+      ],
+      "sources": [
+        {
+          "type": "STATUTE",
+          "citation": "KRS 218A.410 (forfeitable property and presumptions); KRS 218A.420 (seizure procedures); KRS 218A.440 (in rem proceedings); KRS 218A.460 (distribution of proceeds)",
+          "label": "Kentucky civil forfeiture framework",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "28 U.S.C. § 524(c) (federal equitable sharing program)",
+          "label": "Federal equitable sharing",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "TECHNICAL",
+      "audience": "DEFENDANT",
+      "severity": "URGENT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": true,
+      "flagged": true,
+      "flag_reason": "Forfeiture response deadlines are strict; failure to timely contest results in default forfeiture. Exact procedures vary by county court. Federal vs. state forfeiture track affects applicable deadlines and standards."
+    },
+    {
+      "id": "ky.rights.first-amendment-police",
+      "title": "First Amendment Rights in Police Encounters",
+      "category": "RIGHTS",
+      "one_line_purpose": "Recording police in public is a constitutional right. Protest rights are protected. Know both.",
+      "summary": "The First Amendment protects two things that frequently arise in police encounters: the right to record police performing their duties in public, and the right to engage in expressive activity including peaceful protest. These rights exist regardless of whether an officer wants them exercised. Officers may not lawfully seize or demand deletion of recordings, order you to stop recording without articulable obstruction, or arrest you for protest activity absent genuine lawful basis. These rights also have limits you should understand.",
+      "what_is_this": "Recording police in public:\n\n• The right to record: The majority of federal circuit courts, including the Sixth Circuit (which covers Kentucky), recognize a First Amendment right to record police performing their duties in public spaces. ACLU of Illinois v. Alvarez, 679 F.3d 583 (7th Cir. 2012); Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017).\n• You may record openly and audibly: Kentucky is a one-party consent state for audio recording (KRS 526.010). Recording a police officer in public does not require the officer's consent.\n• Officers cannot legally order you to stop recording in a public space unless your recording is actually obstructing their duties (not merely annoying them). Being told to back up a reasonable distance is lawful; being ordered to stop recording entirely is generally not.\n• Officers cannot legally seize your phone, demand you delete recordings, or physically interfere with recording as retaliation for exercising First Amendment rights.\n• If your phone is seized: Do not consent to a search of its contents. Officers need a warrant to search a phone's digital contents. Riley v. California, 573 U.S. 373 (2014).\n\nProtest and expressive activity:\n\n• Peaceful protest in traditional public forums (sidewalks, parks, public plazas) is constitutionally protected. Time, place, and manner restrictions are permissible if content-neutral and narrowly tailored, but authorities cannot prohibit protected expression based on its content.\n• 'Failure to disperse' and disorderly conduct charges are sometimes used against lawful protesters. If you receive an order to disperse, clearly document the order, who gave it, and the stated basis.\n• Obstruction charges: Remaining in a public space while exercising First Amendment rights does not by itself constitute obstruction. Obstruction requires actual interference with official duties.\n• Retaliation arrests: An arrest motivated by the desire to retaliate for protected speech or recording violates the First Amendment even if there is technical probable cause for a minor offense. Document the sequence of events.\n\nWhat you should do:\n• Hold the phone visible and steady; announce you are recording if directly questioned.\n• Do not physically resist an attempt to seize the phone—document the seizure and contest it in court.\n• If arrested in a protest context: Invoke your right to remain silent and request counsel immediately.",
+      "why_it_matters": "Video evidence is the most effective tool available to a defendant whose case turns on what actually happened during a police encounter. Officers know this. Recordings have directly led to suppression of evidence, civil rights settlements, dismissal of charges, and officer accountability. The First Amendment right to record is meaningless if you don't know you have it or don't exercise it. At the same time, asserting the right in a way that creates an obstruction charge works against you—exercise the right calmly, at a reasonable distance, without physically interfering.",
+      "what_to_do_now": "1. If recording during a stop or encounter: Hold your phone visibly. Do not obscure the recording. Do not physically interfere with officers.\n2. If ordered to stop recording: State clearly: 'I am exercising my First Amendment right to record police in a public space.' Then note the officer's name, badge number, and exact order.\n3. If your phone is seized: Say clearly: 'I do not consent to a search of my phone.' Do not provide your passcode.\n4. After any encounter involving recording: Immediately back up the footage to cloud storage before anything else.\n5. If arrested for recording or protest activity: Tell your attorney about the recording and the sequence of events leading to arrest. A retaliatory arrest claim may be available.",
+      "related_modules": [
+        "ky.rights.silence",
+        "ky.rights.attorney",
+        "ky.phase.arrest.traffic-stop",
+        "ky.rights.search-and-seizure"
+      ],
+      "sources": [
+        {
+          "type": "CASELAW",
+          "citation": "Fields v. City of Philadelphia, 862 F.3d 353 (3d Cir. 2017); ACLU of Illinois v. Alvarez, 679 F.3d 583 (7th Cir. 2012)",
+          "label": "First Amendment right to record police",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "CASELAW",
+          "citation": "Riley v. California, 573 U.S. 373 (2014)",
+          "label": "Warrant required for phone search",
+          "verification_status": "VERIFIED"
+        },
+        {
+          "type": "STATUTE",
+          "citation": "KRS 526.010 (Kentucky one-party consent recording); U.S. Constitution Amendment I",
+          "label": "Recording and First Amendment framework",
+          "verification_status": "VERIFIED"
+        }
+      ],
+      "complexity": "INTERMEDIATE",
+      "audience": "BOTH",
+      "severity": "IMPORTANT",
+      "verified_status": "VERIFIED",
+      "requires_attorney": false,
+      "flagged": true,
+      "flag_reason": "Sixth Circuit has not issued a definitive en banc ruling; right to record is recognized through district court and sister circuit decisions. Kentucky statute KRS 526.010 should be independently verified for current applicability to law enforcement recording."
     }
   ]
 }
