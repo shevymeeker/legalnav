@@ -40,6 +40,15 @@ export default defineConfig({
             urlPattern: ({ request }) => request.destination === 'document',
             handler: 'NetworkFirst',
             options: { cacheName: 'pages' }
+          },
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/content/'),
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'app-content',
+              networkTimeoutSeconds: 4,
+              expiration: { maxEntries: 150, maxAgeSeconds: 30 * 24 * 60 * 60 }
+            }
           }
         ]
       }

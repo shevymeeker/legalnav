@@ -8,7 +8,9 @@
       </div>
     </div>
 
-    <div class="d-grid gap-2">
+    <div v-if="!store.loaded && !store.contentError" class="muted mt-2 text-center small">Loading…</div>
+    <div v-else-if="store.contentError" class="alert alert-warning mt-2">Content unavailable offline.</div>
+    <div v-else class="d-grid gap-2">
       <button
         v-for="phase in phases"
         :key="phase.id"
@@ -57,6 +59,6 @@ function snippet(content: string): string {
 }
 
 onMounted(async () => {
-  await store.ensureSeeded(false);
+  await store.ensureLoaded();
 });
 </script>

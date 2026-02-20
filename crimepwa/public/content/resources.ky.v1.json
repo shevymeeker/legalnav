@@ -1,0 +1,149 @@
+{
+  "pack_id": "ky_resources_v1",
+  "jurisdiction_scope": "KY_STATE",
+  "version": "1.0.0",
+  "generated_at": "2025-02-01",
+  "notes": "Resource PDFs bundled for offline access. Filenames map to src/content/newcontent assets.",
+  "resources": [
+    {
+      "id": "ky.resource.domestic-violence-policy-2024",
+      "title": "Domestic Violence & Interpersonal Violence Prosecution Policy Manual (2024)",
+      "summary": "Policy and procedure manual outlining prosecution guidance for domestic and interpersonal violence cases in Kentucky.",
+      "tags": ["domestic-violence", "interpersonal-violence", "prosecution", "policy", "manual"],
+      "file": "2024 Domestic Violence and Interpersonal Violence Prosecution Policy Procedure Manual.pdf"
+    },
+    {
+      "id": "ky.resource.kclm-2025-08-15",
+      "title": "KCLM Guidance Document (2025-08-15)",
+      "summary": "Kentucky law enforcement guidance document dated 2025-08-15 (KCLM).",
+      "tags": ["law-enforcement", "guidance", "policy"],
+      "file": "2025-KCLM_250815.pdf"
+    },
+    {
+      "id": "ky.resource.criminal-appeals-brochure",
+      "title": "Criminal Appeals Brochure",
+      "summary": "Plain-language overview of criminal appeals, timelines, and what to expect after sentencing.",
+      "tags": ["appeals", "post-conviction", "brochure"],
+      "file": "Criminal-Appeals-brochure.pdf"
+    },
+    {
+      "id": "ky.resource.leosa-2019",
+      "title": "LEOSA for Kentucky Law Enforcement (2019)",
+      "summary": "Overview of the Law Enforcement Officers Safety Act (LEOSA) and its Kentucky-specific guidance.",
+      "tags": ["law-enforcement", "leosa", "firearms", "policy"],
+      "file": "LEOSA-for-Kentucky-Law-Enforcement-2019.pdf"
+    },
+    {
+      "id": "ky.resource.lgbtq-victims-of-crime",
+      "title": "LGBTQ Victims of Crime",
+      "summary": "Reference material on serving and supporting LGBTQ victims of crime.",
+      "tags": ["victim-services", "lgbtq", "support"],
+      "file": "LGBTQ-Victims-of-Crime.pdf"
+    },
+    {
+      "id": "ky.resource.matricula-consular-2019",
+      "title": "Matricula Consular Identification (2019)",
+      "summary": "Guidance on recognizing and handling Matricula Consular identification cards.",
+      "tags": ["identification", "immigration", "matricula-consular"],
+      "file": "Matricula-Consular-2019.pdf"
+    },
+    {
+      "id": "ky.resource.miranda-card-printout",
+      "title": "Miranda Card Printout",
+      "summary": "Printable Miranda warning card for consistent rights advisements.",
+      "tags": ["miranda", "rights", "law-enforcement"],
+      "file": "Miranda-Card_PRINTOUT.pdf"
+    },
+    {
+      "id": "ky.resource.search-in-school-2019",
+      "title": "Search in a School Environment (2019)",
+      "summary": "Guidance on searches conducted in school settings, including student rights and scope.",
+      "tags": ["search-and-seizure", "schools", "students"],
+      "file": "Search-in-a-School-Environment-2019.pdf"
+    },
+    {
+      "id": "ky.resource.conflicts-of-interest",
+      "title": "Conflicts of Interest",
+      "summary": "Reference guide for recognizing and managing conflicts of interest in legal matters.",
+      "tags": ["ethics", "conflicts", "legal-practice"],
+      "file": "conflicts_of_interest.pdf"
+    },
+    {
+      "id": "ky.resource.patrol-handbook-2025",
+      "title": "Model Patrol Legal Handbook (2025)",
+      "summary": "Comprehensive legal reference for law enforcement patrol officers covering arrest authority, search and seizure, use of force, and officer liability.",
+      "tags": ["law-enforcement", "patrol", "arrest", "search-and-seizure", "use-of-force", "handbook"],
+      "file": "2025-Model-Patrol-Legal-handbook-250917.pdf"
+    },
+    {
+      "id": "ky.resource.appellate-practice",
+      "title": "Basic Appellate Practice Handbook (P56)",
+      "summary": "Step-by-step guide to criminal appeals in Kentucky courts, covering notice of appeal, briefing requirements, oral argument, and post-conviction relief.",
+      "tags": ["appeals", "post-conviction", "appellate-practice", "handbook"],
+      "file": "P56BasicAppellatePracticeHandbook.pdf"
+    },
+    {
+      "id": "ky.resource.search-seizure-casebook",
+      "title": "Search and Seizure Casebook (2025)",
+      "summary": "Comprehensive casebook covering Fourth Amendment search and seizure law with Kentucky case citations, covering warrants, consent, vehicle stops, and suppression motions.",
+      "tags": ["search-and-seizure", "fourth-amendment", "suppression", "warrants", "casebook"],
+      "file": "Search-and-Seizure-Casebook_250520.pdf"
+    },
+    {
+      "id": "ky.resource.suppression-manual-2024",
+      "title": "Suppression Manual (May 2024)",
+      "summary": "Practical manual for litigating suppression motions in Kentucky criminal cases, including grounds, procedure, evidentiary standards, and sample motions.",
+      "tags": ["suppression", "motions", "evidence", "pre-trial", "criminal-procedure"],
+      "file": "Suppression-Manual-May-2024.pdf"
+    },
+    {
+      "id": "ky.resource.trial-law-notebook",
+      "title": "Trial Law Notebook",
+      "summary": "Reference notebook covering trial procedure, jury selection, opening statements, examination of witnesses, evidence rules, and closing argument for Kentucky criminal trials.",
+      "tags": ["trial", "jury", "evidence", "criminal-procedure", "trial-practice"],
+      "file": "trial law notebook.pdf"
+    },
+    {
+      "id": "ky.resource.evidence-manual-8th-ed",
+      "title": "Evidence Manual – 8th Edition",
+      "summary": "Comprehensive reference on Kentucky evidence law covering admissibility, hearsay exceptions, privilege, authentication, witness examination, and the rules governing evidentiary rulings at trial and hearings.",
+      "tags": ["evidence", "admissibility", "hearsay", "privilege", "authentication", "trial", "handbook"],
+      "file": "Evidence-Manual-8th-Edition-FINAL.pdf"
+    },
+    {
+      "id": "ky.resource.ky-rules-of-evidence-2019",
+      "title": "Kentucky Rules of Evidence (2019)",
+      "summary": "Official text of the Kentucky Rules of Evidence governing admissibility, witnesses, authentication, hearsay, privilege, and burden of proof in Kentucky courts. KRE 508 covers informant-identity privilege relevant to investigations.",
+      "tags": ["evidence", "rules", "admissibility", "hearsay", "privilege", "witnesses", "kre"],
+      "file": "Kentucky-Rules-of-Evidence-2019.pdf"
+    },
+    {
+      "id": "ky.resource.fighting-for-your-rights",
+      "title": "Fighting for Your Rights from Court",
+      "summary": "Plain-language guide to defendant rights throughout Kentucky criminal proceedings, covering the right to counsel, presumption of innocence, bail, trial rights, and how to navigate the court process.",
+      "tags": ["defendant-rights", "rights", "bail", "counsel", "guide", "court", "presumption-of-innocence"],
+      "file": "fighting for your rights from court.pdf"
+    },
+    {
+      "id": "ky.resource.c6-local-rules",
+      "title": "6th Judicial Circuit Local Rules (C6)",
+      "summary": "Official local rules governing civil and criminal proceedings in the Daviess Circuit and District Courts (6th Judicial Circuit). Covers motion practice, pretrial procedures, jury trial scheduling, grand jury schedule, arraignment timing, and courtroom decorum requirements. Primary procedural reference for Daviess County practitioners.",
+      "tags": ["local-rules", "daviess-county", "6th-circuit", "procedure", "motion-practice", "trial-scheduling", "criminal-procedure"],
+      "file": "C6LOCALRULES (1).pdf"
+    },
+    {
+      "id": "ky.resource.d6-local-rules",
+      "title": "6th Judicial District Local Rules (D6)",
+      "summary": "Comprehensive local rules for district court proceedings in the 6th Judicial District, covering misdemeanor arraignment, pretrial conferences, district court trial procedure, preliminary hearings, and administrative requirements. Applicable to misdemeanor cases and the district court phase of felony cases prior to circuit court transfer.",
+      "tags": ["local-rules", "daviess-county", "district-court", "6th-district", "procedure", "misdemeanor", "preliminary-hearing"],
+      "file": "D6LOCALRULES (1).pdf"
+    },
+    {
+      "id": "ky.resource.c6-family-rules",
+      "title": "6th Judicial Circuit Family Court Local Rules (C6)",
+      "summary": "Local rules governing family court proceedings in the 6th Judicial Circuit, including domestic relations cases, child custody, domestic violence proceedings, and family court motion practice. Relevant to criminal cases with intersecting domestic or family court dimensions.",
+      "tags": ["local-rules", "daviess-county", "family-court", "6th-circuit", "domestic-violence", "custody", "procedure"],
+      "file": "C6FamilyRules.pdf"
+    }
+  ]
+}

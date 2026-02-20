@@ -8,8 +8,14 @@ export type ResourceRow = {
   file: string;
 };
 
+export type ContentMetaRow = {
+  key: string;
+  data: any;
+};
+
 class AppDB extends Dexie {
   resources!: Table<ResourceRow, string>;
+  content_meta!: Table<ContentMetaRow, string>;
 
   constructor() {
     super('kyLawNav');
@@ -37,6 +43,11 @@ class AppDB extends Dexie {
       resources: 'id, title, *tags'
     }).upgrade(tx => {
       return tx.table('resources').clear();
+    });
+    // v5: add content_meta table for runtime-fetched content caching
+    this.version(5).stores({
+      resources: 'id, title, *tags',
+      content_meta: 'key'
     });
   }
 }

@@ -1,54 +1,120 @@
 import { defineStore } from 'pinia';
 import { db } from '@/db';
-import resourcesPack from '@/content/resources.ky.v1.json';
-import lifecycleMeta from '@/content/lifecycle.meta.ky.v1.json';
-import { extractPhaseContent } from '@/utils/parseLifecycle';
+import { loadContent } from '@/services/contentLoader';
+import { extractPhaseContent, extractSubPhaseContent } from '@/utils/parseLifecycle';
 import { normalizeQuery } from '@/services/search';
 
-export type PhaseMeta = (typeof lifecycleMeta.phases)[number];
+export type SubPhase = {
+  id: string;
+  heading_marker: string;
+  title: string;
+  short: string;
+  tags?: string[];
+};
+
+export type PhaseMeta = {
+  id: string;
+  number: number;
+  heading_marker: string;
+  title: string;
+  short: string;
+  color: string;
+  tags?: string[];
+  related_resource_ids?: string[];
+  sub_phases?: SubPhase[];
+};
+
 export type PhaseWithContent = PhaseMeta & { content: string };
-export type Resource = (typeof resourcesPack.resources)[number];
 
-// Build phases with content at module load time (synchronous, static)
-const _phases: PhaseWithContent[] = lifecycleMeta.phases.map(p => ({
-  ...p,
-  content: extractPhaseContent(p.heading_marker)
-}));
+export type Resource = {
+  id: string;
+  title: string;
+  summary?: string;
+  tags?: string[];
+  file: string;
+};
 
-// Build resource lookup map
-const _resourcesById = new Map<string, Resource>(
-  resourcesPack.resources.map(r => [r.id, r])
-);
+export type RelatedSection = {
+  type: 'phase' | 'sub';
+  phaseId: string;
+  id: string;
+  title: string;
+};
 
 export const useAppStore = defineStore('app', {
   state: () => ({
-    loaded: false
+    loaded: false,
+    contentError: false,
+    phases: [] as PhaseWithContent[],
+    _resourcesById: {} as Record<string, Resource>,
+    _lifecycleRaw: '' as string,
   }),
 
   actions: {
-    async ensureSeeded(force = false) {
-      const count = await db.resources.count();
-      if (count === 0 || force) {
-        if (force) {
+    async ensureLoaded() {
+      if (this.loaded) return;
+      try {
+        const { lifecycleMeta, lifecycleRaw, resources, isStale } = await loadContent();
+        this._lifecycleRaw = lifecycleRaw;
+        this.phases = lifecycleMeta.phases.map((p: PhaseMeta) => ({
+          ...p,
+          content: extractPhaseContent(lifecycleRaw, p.heading_marker)
+        }));
+        this._resourcesById = Object.fromEntries(
+          resources.resources.map((r: Resource) => [r.id, r])
+        );
+
+        // Seed resources to IndexedDB for full-text search
+        if (isStale || (await db.resources.count()) === 0) {
           await db.resources.clear();
+          await db.resources.bulkPut(resources.resources);
         }
-        await db.resources.bulkPut(resourcesPack.resources as any);
+
+        this.loaded = true;
+      } catch {
+        this.contentError = true;
       }
-      this.loaded = true;
+    },
+
+    // Keep legacy name so existing onMounted calls don't break during migration
+    async ensureSeeded(_force = false) {
+      return this.ensureLoaded();
     },
 
     getPhases(): PhaseWithContent[] {
-      return _phases;
+      return this.phases;
     },
 
     getPhase(id: string): PhaseWithContent | undefined {
-      return _phases.find(p => p.id === id);
+      return this.phases.find(p => p.id === id);
+    },
+
+    getSubPhaseContent(phaseId: string, subId: string): string {
+      const phase = this.phases.find(p => p.id === phaseId);
+      const sub = phase?.sub_phases?.find(s => s.id === subId);
+      if (!phase || !sub || !this._lifecycleRaw) return '';
+      return extractSubPhaseContent(this._lifecycleRaw, phase.heading_marker, sub.heading_marker);
     },
 
     getResourcesForPhase(phase: PhaseWithContent): Resource[] {
       return (phase.related_resource_ids ?? [])
-        .map(id => _resourcesById.get(id))
+        .map(id => this._resourcesById[id])
         .filter((r): r is Resource => r !== undefined);
+    },
+
+    getRelatedSections(tags: string[], excludePhaseId?: string, excludeSubId?: string): RelatedSection[] {
+      const results: RelatedSection[] = [];
+      for (const phase of this.phases) {
+        if (phase.tags?.some(t => tags.includes(t)) && phase.id !== excludePhaseId) {
+          results.push({ type: 'phase', phaseId: phase.id, id: phase.id, title: phase.title });
+        }
+        for (const sub of phase.sub_phases ?? []) {
+          if (sub.tags?.some(t => tags.includes(t)) && !(phase.id === excludePhaseId && sub.id === excludeSubId)) {
+            results.push({ type: 'sub', phaseId: phase.id, id: sub.id, title: sub.title });
+          }
+        }
+      }
+      return results;
     },
 
     async searchResources(q: string) {
