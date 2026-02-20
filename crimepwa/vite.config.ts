@@ -34,6 +34,7 @@ export default defineConfig({
       },
       workbox: {
         navigateFallback: `${base}index.html`,
+        navigateFallbackDenylist: [/\.pdf($|\?)/i],
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === 'document',
