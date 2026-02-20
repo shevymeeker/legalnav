@@ -1,0 +1,186 @@
+{
+  "phases": [
+    {
+      "id": "pre-arrest",
+      "number": 1,
+      "heading_marker": "PHASE 1:",
+      "title": "Pre-Arrest / Investigation",
+      "short": "Investigation",
+      "color": "teal",
+      "tags": ["4th-amendment", "5th-amendment", "investigation", "rights", "police"],
+      "related_resource_ids": [
+        "ky.resource.search-seizure-casebook",
+        "ky.resource.patrol-handbook-2025",
+        "ky.resource.search-in-school-2019",
+        "ky.resource.kclm-2025-08-15",
+        "ky.resource.leosa-2019",
+        "ky.resource.ky-rules-of-evidence-2019"
+      ],
+      "sub_phases": [
+        {
+          "id": "law-enforcement",
+          "heading_marker": "### Law Enforcement Investigation",
+          "title": "Law Enforcement Overview",
+          "short": "Overview",
+          "tags": ["investigation", "police", "warrants", "probable-cause"]
+        },
+        {
+          "id": "traffic-stops",
+          "heading_marker": "### Traffic Stops and Highway Interdiction",
+          "title": "Traffic Stops",
+          "short": "Traffic Stops",
+          "tags": ["4th-amendment", "vehicle", "search-and-seizure", "k9", "traffic"]
+        },
+        {
+          "id": "interrogation",
+          "heading_marker": "### Custodial Interrogation and Miranda",
+          "title": "Custodial Interrogation",
+          "short": "Interrogation",
+          "tags": ["miranda", "5th-amendment", "interrogation", "custodial"]
+        },
+        {
+          "id": "supreme-court-opinions",
+          "heading_marker": "### Kentucky Interrogation Case Law",
+          "title": "Supreme Court Opinions",
+          "short": "Case Law",
+          "tags": ["miranda", "case-law", "interrogation", "coercion", "kentucky"]
+        },
+        {
+          "id": "practical-rights",
+          "heading_marker": "### Pre-Arrest Practical Rights",
+          "title": "Know Your Rights",
+          "short": "Your Rights",
+          "tags": ["rights", "practical", "advice", "police-encounter"]
+        }
+      ]
+    },
+    {
+      "id": "arrest",
+      "number": 2,
+      "heading_marker": "PHASE 2:",
+      "title": "Arrest and Initial Custody",
+      "short": "Arrest",
+      "color": "danger",
+      "tags": ["arrest", "custody", "booking", "rights"],
+      "related_resource_ids": [
+        "ky.resource.patrol-handbook-2025",
+        "ky.resource.miranda-card-printout",
+        "ky.resource.matricula-consular-2019"
+      ]
+    },
+    {
+      "id": "initial-appearance",
+      "number": 3,
+      "heading_marker": "PHASE 3:",
+      "title": "Initial Appearance Before Magistrate",
+      "short": "Initial Appearance",
+      "color": "warning",
+      "tags": ["bail", "bond", "magistrate", "initial-appearance", "due-process"],
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024",
+        "ky.resource.kclm-2025-08-15",
+        "ky.resource.fighting-for-your-rights",
+        "ky.resource.d6-local-rules"
+      ]
+    },
+    {
+      "id": "district-court",
+      "number": 4,
+      "heading_marker": "PHASE 4:",
+      "title": "District Court Proceedings",
+      "short": "District Court",
+      "color": "primary",
+      "tags": ["district-court", "arraignment", "pretrial", "motions"],
+      "related_resource_ids": [
+        "ky.resource.suppression-manual-2024",
+        "ky.resource.evidence-manual-8th-ed",
+        "ky.resource.ky-rules-of-evidence-2019",
+        "ky.resource.c6-local-rules",
+        "ky.resource.d6-local-rules"
+      ]
+    },
+    {
+      "id": "grand-jury",
+      "number": 5,
+      "heading_marker": "PHASE 5:",
+      "title": "Grand Jury",
+      "short": "Grand Jury",
+      "color": "secondary",
+      "tags": ["grand-jury", "indictment", "felony"],
+      "related_resource_ids": [
+        "ky.resource.conflicts-of-interest",
+        "ky.resource.kclm-2025-08-15"
+      ]
+    },
+    {
+      "id": "circuit-court",
+      "number": 6,
+      "heading_marker": "PHASE 6:",
+      "title": "Circuit Court Proceedings",
+      "short": "Circuit Court",
+      "color": "primary",
+      "tags": ["circuit-court", "trial", "felony", "motions"],
+      "related_resource_ids": [
+        "ky.resource.trial-law-notebook",
+        "ky.resource.suppression-manual-2024",
+        "ky.resource.conflicts-of-interest",
+        "ky.resource.evidence-manual-8th-ed",
+        "ky.resource.ky-rules-of-evidence-2019",
+        "ky.resource.fighting-for-your-rights",
+        "ky.resource.c6-local-rules"
+      ]
+    },
+    {
+      "id": "sentencing",
+      "number": 7,
+      "heading_marker": "PHASE 7:",
+      "title": "Sentencing",
+      "short": "Sentencing",
+      "color": "dark",
+      "tags": ["sentencing", "penalty", "mitigation"],
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024"
+      ]
+    },
+    {
+      "id": "post-conviction",
+      "number": 8,
+      "heading_marker": "PHASE 8:",
+      "title": "Post-Conviction Remedies",
+      "short": "Post-Conviction",
+      "color": "secondary",
+      "tags": ["appeals", "post-conviction", "habeas", "relief"],
+      "related_resource_ids": [
+        "ky.resource.appellate-practice",
+        "ky.resource.criminal-appeals-brochure"
+      ]
+    },
+    {
+      "id": "execution",
+      "number": 9,
+      "heading_marker": "PHASE 9:",
+      "title": "Execution of Judgment",
+      "short": "Execution of Judgment",
+      "color": "dark",
+      "tags": ["probation", "parole", "incarceration", "judgment"],
+      "related_resource_ids": [
+        "ky.resource.leosa-2019",
+        "ky.resource.matricula-consular-2019"
+      ]
+    },
+    {
+      "id": "specialized",
+      "number": 10,
+      "heading_marker": "SPECIALIZED PROCEEDINGS",
+      "title": "Specialized Proceedings",
+      "short": "Special Cases",
+      "color": "info",
+      "tags": ["domestic-violence", "drug-court", "mental-health", "specialized"],
+      "related_resource_ids": [
+        "ky.resource.domestic-violence-policy-2024",
+        "ky.resource.lgbtq-victims-of-crime",
+        "ky.resource.c6-family-rules"
+      ]
+    }
+  ]
+}
