@@ -1,11 +1,9 @@
-import raw from '@/content/daviess_criminal_lifecycle.md?raw';
-
 /**
  * Extracts the markdown content for a phase section from the lifecycle document.
  * headingMarker is matched against ## headings (e.g. "PHASE 1:", "SPECIALIZED PROCEEDINGS").
  * Returns the content from the matched ## heading to the next ## heading (exclusive).
  */
-export function extractPhaseContent(headingMarker: string): string {
+export function extractPhaseContent(raw: string, headingMarker: string): string {
   // Split on lines that start with ## (level-2 headings)
   const sections = raw.split(/^(?=## )/m);
   const match = sections.find(s => s.includes(headingMarker));
@@ -13,6 +11,28 @@ export function extractPhaseContent(headingMarker: string): string {
   // Strip the leading ## heading line itself so we start at the first ###
   const lines = match.split('\n');
   // Drop the first line (the ## heading) and return the rest
+  return lines.slice(1).join('\n').trim();
+}
+
+/**
+ * Extracts content for a sub-phase (### heading) within a phase section.
+ * Returns content from the matched ### heading to the next ### or ## heading.
+ * subMarker is the full heading string e.g. "### Traffic Stops and Highway Interdiction"
+ */
+export function extractSubPhaseContent(raw: string, phaseMarker: string, subMarker: string): string {
+  const phaseContent = extractPhaseContent(raw, phaseMarker);
+  if (!phaseContent) return '';
+
+  // Split on ### boundaries within the phase content
+  const subSections = phaseContent.split(/^(?=### )/m);
+
+  // Match against the heading text (with or without leading "### ")
+  const subTitle = subMarker.replace(/^### /, '');
+  const match = subSections.find(s => s.trimStart().startsWith(subTitle));
+  if (!match) return '';
+
+  // Drop the ### heading line itself
+  const lines = match.split('\n');
   return lines.slice(1).join('\n').trim();
 }
 
