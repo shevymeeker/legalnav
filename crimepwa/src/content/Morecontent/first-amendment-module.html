@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The First Amendment: From Shield to Weapon</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #e8e8e8;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        .mono {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+        }
+        
+        .section-card:active {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 255, 135, 0.3);
+        }
+        
+        @media (min-width: 768px) {
+            .section-card:hover {
+                background: rgba(255, 255, 255, 0.05);
+                border-color: rgba(0, 255, 135, 0.3);
+            }
+        }
+        
+        .timeline-dot {
+            width: 10px;
+            height: 10px;
+            background: #00ff87;
+            border-radius: 50%;
+            position: relative;
+            flex-shrink: 0;
+        }
+        
+        @media (min-width: 768px) {
+            .timeline-dot {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        
+        .timeline-line {
+            width: 2px;
+            background: linear-gradient(180deg, #00ff87 0%, rgba(0, 255, 135, 0.1) 100%);
+        }
+        
+        .callout {
+            border-left: 3px solid #00ff87;
+            background: rgba(0, 255, 135, 0.05);
+            padding: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .callout {
+                padding: 1rem 1.5rem;
+            }
+        }
+        
+        .nav-active {
+            background: rgba(0, 255, 135, 0.15);
+            border-left: 3px solid #00ff87;
+        }
+        
+        .example-box {
+            background: rgba(96, 239, 255, 0.05);
+            border: 1px solid rgba(96, 239, 255, 0.2);
+        }
+        
+        button:active {
+            transform: scale(0.98);
+        }
+        
+        @media (min-width: 768px) {
+            button:hover {
+                transform: translateY(-1px);
+            }
+            
+            button:active {
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-nav-open {
+            transform: translateX(0);
+        }
+        
+        .mobile-nav-closed {
+            transform: translateX(-100%);
+        }
+        
+        .mobile-overlay {
+            backdrop-filter: blur(4px);
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Smooth transitions for mobile nav */
+        .mobile-nav-transition {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        
+        const sections = [
+            {
+                id: 'intro',
+                title: 'The Setup',
+                subtitle: 'When rights become weapons'
+            },
+            {
+                id: 'charlie',
+                title: 'The Charlie Kirk Problem',
+                subtitle: 'Scale, speed, targeting'
+            },
+            {
+                id: 'founders',
+                title: 'The Founders\' Gambit',
+                subtitle: '1789-1801: Already failing'
+            },
+            {
+                id: 'silence',
+                title: 'Century of Silence',
+                subtitle: '1801-1927: Amendment sleeps'
+            },
+            {
+                id: 'doctrine',
+                title: 'Doctrine Awakens',
+                subtitle: '1917-2025: The modern framework'
+            },
+            {
+                id: 'crisis',
+                title: 'The Crisis',
+                subtitle: 'Shield becomes weapon'
+            }
+        ];
+        
+        function App() {
+            const [currentSection, setCurrentSection] = useState('intro');
+            const [expandedExample, setExpandedExample] = useState(null);
+            const [progress, setProgress] = useState({});
+            const [navOpen, setNavOpen] = useState(false);
+            
+            useEffect(() => {
+                const saved = localStorage.getItem('first-amend-progress');
+                if (saved) setProgress(JSON.parse(saved));
+            }, []);
+            
+            useEffect(() => {
+                const newProgress = { ...progress, [currentSection]: true };
+                setProgress(newProgress);
+                localStorage.setItem('first-amend-progress', JSON.stringify(newProgress));
+                setNavOpen(false); // Close nav on mobile after selecting
+                window.scrollTo(0, 0); // Scroll to top on section change
+            }, [currentSection]);
+            
+            const getSectionProgress = () => {
+                return Object.keys(progress).length;
+            };
+            
+            return (
+                <div className="relative min-h-screen">
+                    {/* Mobile Header */}
+                    <div className="lg:hidden fixed top-0 left-0 right-0 z-40 bg-black border-b border-gray-800">
+                        <div className="flex items-center justify-between p-4">
+                            <button
+                                onClick={() => setNavOpen(!navOpen)}
+                                className="p-2 rounded-lg bg-gray-900 active:bg-gray-800"
+                                aria-label="Toggle menu"
+                            >
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                            <div className="text-center flex-1">
+                                <div className="text-sm font-semibold gradient-text">First Amendment</div>
+                                <div className="text-xs text-gray-500">{sections.find(s => s.id === currentSection)?.title}</div>
+                            </div>
+                            <div className="w-10"></div>
+                        </div>
+                        <div className="px-4 pb-3">
+                            <div className="flex justify-between text-xs text-gray-500 mb-2">
+                                <span>Progress</span>
+                                <span>{getSectionProgress()}/{sections.length}</span>
+                            </div>
+                            <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                                <div 
+                                    className="h-full bg-gradient-to-r from-green-400 to-cyan-400 transition-all duration-500"
+                                    style={{ width: `${(getSectionProgress() / sections.length) * 100}%` }}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Mobile Overlay */}
+                    {navOpen && (
+                        <div 
+                            className="lg:hidden fixed inset-0 z-40 mobile-overlay"
+                            onClick={() => setNavOpen(false)}
+                        />
+                    )}
+                    
+                    {/* Sidebar */}
+                    <div className={`
+                        fixed lg:static inset-y-0 left-0 z-50
+                        w-80 bg-black border-r border-gray-800 flex flex-col
+                        mobile-nav-transition
+                        ${navOpen ? 'mobile-nav-open' : 'mobile-nav-closed'}
+                        lg:translate-x-0
+                    `}>
+                        <div className="p-4 lg:p-6 border-b border-gray-800">
+                            <div className="flex items-start justify-between lg:block">
+                                <div>
+                                    <h1 className="text-xl lg:text-2xl font-bold mb-2 gradient-text">
+                                        First Amendment
+                                    </h1>
+                                    <p className="text-sm text-gray-400">
+                                        From shield to weapon
+                                    </p>
+                                </div>
+                                <button
+                                    onClick={() => setNavOpen(false)}
+                                    className="lg:hidden p-2 rounded-lg hover:bg-gray-900"
+                                    aria-label="Close menu"
+                                >
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="mt-4 hidden lg:block">
+                                <div className="flex justify-between text-xs text-gray-500 mb-2">
+                                    <span>Progress</span>
+                                    <span>{getSectionProgress()}/{sections.length}</span>
+                                </div>
+                                <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                                    <div 
+                                        className="h-full bg-gradient-to-r from-green-400 to-cyan-400 transition-all duration-500"
+                                        style={{ width: `${(getSectionProgress() / sections.length) * 100}%` }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <nav className="flex-1 overflow-y-auto p-3 lg:p-4">
+                            {sections.map((section, idx) => (
+                                <button
+                                    key={section.id}
+                                    onClick={() => setCurrentSection(section.id)}
+                                    className={`w-full text-left p-3 lg:p-4 rounded-lg mb-2 transition-all ${
+                                        currentSection === section.id 
+                                            ? 'nav-active' 
+                                            : 'active:bg-gray-900'
+                                    }`}
+                                >
+                                    <div className="flex items-start gap-3">
+                                        <div className={`mono text-xs mt-1 flex-shrink-0 ${
+                                            progress[section.id] ? 'text-green-400' : 'text-gray-600'
+                                        }`}>
+                                            {String(idx + 1).padStart(2, '0')}
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                            <div className="font-semibold text-sm mb-1">
+                                                {section.title}
+                                            </div>
+                                            <div className="text-xs text-gray-500">
+                                                {section.subtitle}
+                                            </div>
+                                        </div>
+                                        {progress[section.id] && (
+                                            <div className="text-green-400 text-xs flex-shrink-0">✓</div>
+                                        )}
+                                    </div>
+                                </button>
+                            ))}
+                        </nav>
+                        
+                        <div className="p-4 border-t border-gray-800 text-xs text-gray-500 hidden lg:block">
+                            <p>Navigate with keyboard: ← → arrows</p>
+                        </div>
+                    </div>
+                    
+                    {/* Main Content */}
+                    <div className="lg:ml-80 min-h-screen">
+                        <div className="max-w-4xl mx-auto px-4 py-6 lg:p-12 mt-32 lg:mt-0">
+                            {currentSection === 'intro' && <IntroSection />}
+                            {currentSection === 'charlie' && <CharlieSection expandedExample={expandedExample} setExpandedExample={setExpandedExample} />}
+                            {currentSection === 'founders' && <FoundersSection />}
+                            {currentSection === 'silence' && <SilenceSection />}
+                            {currentSection === 'doctrine' && <DoctrineSection />}
+                            {currentSection === 'crisis' && <CrisisSection />}
+                            
+                            <NavigationButtons 
+                                currentSection={currentSection}
+                                setCurrentSection={setCurrentSection}
+                                sections={sections}
+                            />
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        
+        function IntroSection() {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4 leading-tight">
+                            The First Amendment has become <span className="gradient-text">America's most weaponized constitutional provision</span>
+                        </h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            In the last decade, especially since 2018, it has been retooled in real time: school-board threats, Alex Jones, platform immunity, stochastic terrorism as content strategy.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">Not through government suppression</h3>
+                        <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
+                            Through something more insidious: the transformation of a defensive shield against state power into an offensive weapon against accountability itself. We've reached a point where "free speech" functions less as a principle and more as a rhetorical off-ramp from consequence.
+                        </p>
+                    </div>
+                    
+                    <div className="callout rounded-lg my-6 lg:my-8">
+                        <p className="font-semibold mb-2 text-sm lg:text-base">The pattern:</p>
+                        <ol className="space-y-2 text-gray-300 text-sm lg:text-base">
+                            <li>1. Someone says something vile</li>
+                            <li>2. Public backlash follows</li>
+                            <li>3. Inevitably: "What about free speech?"</li>
+                        </ol>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">What it actually says</h3>
+                        <div className="example-box p-4 lg:p-6 rounded-lg mono text-xs lg:text-sm mb-4">
+                            "Congress shall make no law... abridging the freedom of speech."
+                        </div>
+                        <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
+                            What it constrains: <strong>Congress</strong>. By extension, through the Fourteenth Amendment's incorporation doctrine, all government actors. The state cannot punish you for your speech. The state cannot throw you in prison for criticizing the president.
+                        </p>
+                        <p className="text-gray-300 leading-relaxed mt-4 text-sm lg:text-base">
+                            That's it. That's the protection.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <h3 className="text-lg lg:text-xl font-semibold mb-3 lg:mb-4 text-cyan-400">What it doesn't say</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            The First Amendment creates no obligation for private actors—individuals, corporations, platforms, employers—to provide you a microphone, amplify your message, or protect you from social consequences.
+                        </p>
+                        <ul className="space-y-3 text-gray-400 text-sm lg:text-base">
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0 text-lg">×</span>
+                                <span>Getting fired for saying something reprehensible is <strong className="text-white">not</strong> a First Amendment violation</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0 text-lg">×</span>
+                                <span>Getting banned from Twitter is <strong className="text-white">not</strong> censorship in any constitutional sense</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0 text-lg">×</span>
+                                <span>Facing public criticism is <strong className="text-white">not</strong> suppression of speech; it <em>is</em> speech responding to speech</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-6 lg:p-8 rounded-xl border border-gray-800">
+                        <p className="text-lg lg:text-xl leading-relaxed">
+                            We've culturally confused the First Amendment's legal constraints on government with some broader social obligation to platform, tolerate, or validate all speech equally. We've weaponized "free speech" to mean "freedom from criticism," "immunity from consequence," and "entitlement to amplification."
+                        </p>
+                        <p className="text-gray-400 mt-4 text-sm lg:text-base">
+                            This isn't accidental evolution. It's deliberate strategy.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function CharlieSection({ expandedExample, setExpandedExample }) {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4">The Charlie Kirk Playbook</h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            Scale, speed, targeting. The new mechanics of weaponized speech.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <div className="mb-6">
+                            <div className="text-xs lg:text-sm text-gray-500 mono mb-2">September 11, 2023</div>
+                            <div className="example-box p-4 rounded-lg text-base lg:text-lg">
+                                "Homeschool your kids. The government should not raise your kids."
+                            </div>
+                            <div className="text-xs lg:text-sm text-gray-500 mt-2">— Charlie Kirk, X (formerly Twitter)</div>
+                        </div>
+                        
+                        <div className="grid grid-cols-3 gap-3 lg:gap-4 my-6">
+                            <div className="text-center p-3 lg:p-4 bg-black rounded-lg">
+                                <div className="text-2xl lg:text-3xl font-bold text-cyan-400 mb-1">8.5M</div>
+                                <div className="text-xs text-gray-500">Views</div>
+                            </div>
+                            <div className="text-center p-3 lg:p-4 bg-black rounded-lg">
+                                <div className="text-2xl lg:text-3xl font-bold text-green-400 mb-1">1000s</div>
+                                <div className="text-xs text-gray-500">Replies</div>
+                            </div>
+                            <div className="text-center p-3 lg:p-4 bg-black rounded-lg">
+                                <div className="text-2xl lg:text-3xl font-bold text-red-400 mb-1">↑</div>
+                                <div className="text-xs text-gray-500">Threats</div>
+                            </div>
+                        </div>
+                        
+                        <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
+                            Innocuous enough on its surface. Parental rights, educational choice, small government—standard conservative talking points. But the machinery beneath that simple statement. What it actually does.
+                        </p>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-3 text-sm lg:text-base">The legal questions:</p>
+                        <div className="space-y-3 text-sm lg:text-base">
+                            <div>
+                                <p className="text-gray-400 mb-1">Did Charlie Kirk personally threaten anyone?</p>
+                                <p className="text-white font-semibold">No.</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-400 mb-1">Did he explicitly call for violence?</p>
+                                <p className="text-white font-semibold">No.</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-400 mb-1">Does his speech meet the legal threshold for incitement under Brandenburg v. Ohio?</p>
+                                <p className="text-white font-semibold">Almost certainly not.</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-400 mb-1">Is there a connection between his rhetoric and the climate of intimidation facing educators?</p>
+                                <p className="text-green-400 font-semibold">Let's be honest: of course there is.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">Stochastic terrorism in practice</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            Speech that, while not explicitly calling for violence, increases the likelihood that someone in the audience will act violently. The speaker maintains plausible deniability. The connection remains fuzzy enough to defeat legal liability.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4">
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="text-cyan-400 font-semibold mb-2 text-sm lg:text-base">Inflammatory rhetoric</div>
+                                <div className="text-xs lg:text-sm text-gray-400">Creates enemy narrative</div>
+                            </div>
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="text-green-400 font-semibold mb-2 text-sm lg:text-base">Mass amplification</div>
+                                <div className="text-xs lg:text-sm text-gray-400">8.5M instant reach</div>
+                            </div>
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="text-red-400 font-semibold mb-2 text-sm lg:text-base">Predictable violence</div>
+                                <div className="text-xs lg:text-sm text-gray-400">Statistically likely</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-red-950/30 to-black p-6 lg:p-8 rounded-xl border border-red-900/30">
+                        <p className="text-lg lg:text-xl leading-relaxed mb-4">
+                            The First Amendment, as currently interpreted, offers no remedy. Kirk's speech is protected. The consequences of that speech—the climate of fear, the chilling effect on educators, the erosion of civic discourse—are externalities the law does not recognize.
+                        </p>
+                        <p className="text-gray-400 text-sm">
+                            This is the gap between doctrine and reality.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-4">The three mechanics</h3>
+                        
+                        <button
+                            onClick={() => setExpandedExample(expandedExample === 'scale' ? null : 'scale')}
+                            className="w-full text-left section-card p-5 lg:p-6 rounded-lg mb-4 transition-all"
+                        >
+                            <div className="flex justify-between items-center">
+                                <div>
+                                    <div className="text-lg lg:text-xl font-semibold mb-1">Scale</div>
+                                    <div className="text-xs lg:text-sm text-gray-500">One post, twice the 1791 US population</div>
+                                </div>
+                                <div className="text-2xl text-gray-600 flex-shrink-0 ml-4">{expandedExample === 'scale' ? '−' : '+'}</div>
+                            </div>
+                            {expandedExample === 'scale' && (
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-gray-300 space-y-3 text-sm lg:text-base">
+                                    <p>Charlie Kirk's September 2023 post reached 8.5 million people. In the pre-digital era, the largest megaphone available to even the most prominent demagogue was a radio or television broadcast that might reach millions over time, through scheduled programming, with institutional gatekeepers controlling access.</p>
+                                    <p>Kirk reached more people with a single post, instantly, at zero marginal cost.</p>
+                                    <p className="text-xs lg:text-sm text-gray-500">The First Amendment was drafted in an era when pamphlets were cutting edge. The entire US population in 1791 was under four million people.</p>
+                                </div>
+                            )}
+                        </button>
+                        
+                        <button
+                            onClick={() => setExpandedExample(expandedExample === 'speed' ? null : 'speed')}
+                            className="w-full text-left section-card p-5 lg:p-6 rounded-lg mb-4 transition-all"
+                        >
+                            <div className="flex justify-between items-center">
+                                <div>
+                                    <div className="text-lg lg:text-xl font-semibold mb-1">Speed</div>
+                                    <div className="text-xs lg:text-sm text-gray-500">Amplification in minutes, response arrives too late</div>
+                                </div>
+                                <div className="text-2xl text-gray-600 flex-shrink-0 ml-4">{expandedExample === 'speed' ? '−' : '+'}</div>
+                            </div>
+                            {expandedExample === 'speed' && (
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-gray-300 space-y-3 text-sm lg:text-base">
+                                    <p>Kirk posts. Algorithms identify engagement patterns. The post surfaces in feeds, gets quoted, generates responses, triggers media coverage. By the time anyone might consider consequences, the message has already achieved saturation.</p>
+                                    <p>The marketplace of ideas theory assumes speech and counter-speech operate on similar timelines. But when viral amplification moves faster than institutional response, by the time counter-speech arrives, the original message has already done its work.</p>
+                                </div>
+                            )}
+                        </button>
+                        
+                        <button
+                            onClick={() => setExpandedExample(expandedExample === 'targeting' ? null : 'targeting')}
+                            className="w-full text-left section-card p-5 lg:p-6 rounded-lg transition-all"
+                        >
+                            <div className="flex justify-between items-center">
+                                <div>
+                                    <div className="text-lg lg:text-xl font-semibold mb-1">Targeting</div>
+                                    <div className="text-xs lg:text-sm text-gray-500">Precision delivery to receptive audiences</div>
+                                </div>
+                                <div className="text-2xl text-gray-600 flex-shrink-0 ml-4">{expandedExample === 'targeting' ? '−' : '+'}</div>
+                            </div>
+                            {expandedExample === 'targeting' && (
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-gray-300 space-y-3 text-sm lg:text-base">
+                                    <p>Modern platforms don't just amplify speech—they optimize delivery. Algorithms identify users most likely to engage, most susceptible to the message, most likely to share it further.</p>
+                                    <p>Kirk's post didn't reach a random sample of Americans; it reached users the algorithm predicted would respond positively, users already primed by previous content, users embedded in networks where this message would resonate and spread.</p>
+                                    <p className="font-semibold">This isn't neutral distribution. This is precision targeting that would make propagandists of earlier eras weep with envy.</p>
+                                </div>
+                            )}
+                        </button>
+                    </div>
+                </div>
+            );
+        }
+        
+        
+        function FoundersSection() {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4">The Founders' Gambit</h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            Between 1789 and 1801, the First Amendment is seven years old and already being ignored.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">The crime that made freedom necessary</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            The Continental Congress committed treason. Not metaphorically. Actual, legally defined, capital-punishment-upon-conviction treason against the British Crown.
+                        </p>
+                        <div className="example-box p-4 rounded-lg text-sm lg:text-base">
+                            <p className="text-gray-400 mb-2">The calculus:</p>
+                            <p className="text-white">The Declaration of Independence = confession. The signatures = evidence. If Britain won, every signer faced execution.</p>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed mt-4 text-sm lg:text-base">
+                            They knew this. They signed anyway. This is not a story about idealism. It's a story about survival.
+                        </p>
+                    </div>
+                    
+                    <div className="relative">
+                        <div className="absolute left-4 lg:left-6 top-0 bottom-0 timeline-line"></div>
+                        
+                        <div className="relative space-y-6 lg:space-y-8 pl-12 lg:pl-16">
+                            <div className="flex items-start gap-3 lg:gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-4 lg:p-6 rounded-lg flex-1">
+                                    <div className="mono text-xs lg:text-sm text-cyan-400 mb-2">1788</div>
+                                    <div className="font-semibold mb-2 text-sm lg:text-base">What the Constitution said about speech</div>
+                                    <div className="text-gray-400 text-sm lg:text-base">Nothing. Zero protections. This was deliberate.</div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-3 lg:gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-4 lg:p-6 rounded-lg flex-1">
+                                    <div className="mono text-xs lg:text-sm text-cyan-400 mb-2">1791</div>
+                                    <div className="font-semibold mb-2 text-sm lg:text-base">The Bill of Rights: A compromise</div>
+                                    <div className="text-gray-400 text-sm lg:text-base">Not part of the original plan. A political necessity to secure ratification. The First Amendment exists because the Founders couldn't get the votes without it.</div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-3 lg:gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-4 lg:p-6 rounded-lg flex-1">
+                                    <div className="mono text-xs lg:text-sm text-cyan-400 mb-2">1798</div>
+                                    <div className="font-semibold mb-2 text-sm lg:text-base">Alien and Sedition Acts</div>
+                                    <div className="text-gray-400 mb-3 text-sm lg:text-base">Made it a crime to "write, print, utter or publish... any false, scandalous and malicious writing" against the government.</div>
+                                    <div className="bg-black p-3 lg:p-4 rounded space-y-2 text-xs lg:text-sm">
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">Arrested:</span>
+                                            <span className="text-white">26 people</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">Convicted:</span>
+                                            <span className="text-white">10 people</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">First Amendment protection:</span>
+                                            <span className="text-red-400">Zero</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-3 lg:gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-4 lg:p-6 rounded-lg flex-1">
+                                    <div className="mono text-xs lg:text-sm text-cyan-400 mb-2">1801</div>
+                                    <div className="font-semibold mb-2 text-sm lg:text-base">The Sedition Act expires</div>
+                                    <div className="text-gray-400 text-sm lg:text-base">Not struck down. Not found unconstitutional. It just expired. Speech can be criminalized. Everyone has just watched it happen. The First Amendment survives on paper. It will spend the next century mostly watching.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-3 text-sm lg:text-base">The uncomfortable part: the First Amendment was, in part, about protecting slavery</p>
+                        <p className="text-gray-300 mb-3 text-sm lg:text-base">
+                            Southern states needed assurance that federal government wouldn't interfere with slavery. The First Amendment only constrained Congress. It left states free to suppress speech as they saw fit.
+                        </p>
+                        <p className="text-gray-400 text-xs lg:text-sm">
+                            For seventy years, the First Amendment did nothing to protect antislavery speakers in the South. Those speakers were murdered, driven out, silenced by state law and mob violence.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-6 lg:p-8 rounded-xl border border-gray-800">
+                        <h3 className="text-lg lg:text-xl font-semibold mb-3 lg:mb-4">The structural choice</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            The First Amendment reflects a specific wager: that speech, however toxic, is less dangerous than empowering government to regulate speech.
+                        </p>
+                        <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
+                            Not because the Founders believed all speech was valuable. Not because they thought marketplace-of-ideas theory would sort truth from falsehood. Because they were pessimists who believed governments always abuse power when given the opportunity.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function SilenceSection() {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4">Century of Silence</h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            From 1801 to 1927, the First Amendment existed but did essentially nothing.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl text-center">
+                        <div className="text-5xl lg:text-6xl font-bold mb-4 gradient-text">126</div>
+                        <p className="text-base lg:text-xl mb-2">years without a single significant First Amendment case at the Supreme Court</p>
+                        <p className="text-gray-500 text-sm lg:text-base">Not one.</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                        <div className="section-card p-4 lg:p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-cyan-400 text-sm lg:text-base">Why it was dormant</h3>
+                            <div className="space-y-3 text-xs lg:text-sm text-gray-300">
+                                <div>
+                                    <div className="font-semibold mb-1">Only constrained Congress</div>
+                                    <div className="text-gray-500">And Congress almost never tried to restrict speech in the 19th century</div>
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">Didn't apply to states</div>
+                                    <div className="text-gray-500">States remained free to suppress speech however they wanted</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="section-card p-4 lg:p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-green-400 text-sm lg:text-base">Where suppression happened</h3>
+                            <div className="space-y-2 text-xs lg:text-sm text-gray-300">
+                                <div>State law</div>
+                                <div>Mob violence</div>
+                                <div>Extra-legal suppression</div>
+                                <div>Private action</div>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-gray-800 text-gray-500 text-xs">
+                                The First Amendment offered no protection
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">What happened during the silence</h3>
+                        
+                        <div className="space-y-4 lg:space-y-6">
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="flex items-start gap-3 lg:gap-4">
+                                    <div className="text-2xl lg:text-3xl flex-shrink-0">📰</div>
+                                    <div>
+                                        <div className="font-semibold mb-2 text-sm lg:text-base">1835: Abolitionist press suppression</div>
+                                        <p className="text-gray-400 text-xs lg:text-sm mb-3">
+                                            South Carolina burned mailbags containing abolitionist literature. Postmasters refused to deliver anti-slavery materials. State legislatures criminalized abolitionist publications. Georgia offered $5,000 reward for arrests.
+                                        </p>
+                                        <div className="bg-black p-3 rounded text-xs lg:text-sm text-gray-500">
+                                            Elijah Lovejoy, newspaper editor: murdered by mob in 1837 after they destroyed his printing press four times
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="flex items-start gap-3 lg:gap-4">
+                                    <div className="text-2xl lg:text-3xl flex-shrink-0">⚔️</div>
+                                    <div>
+                                        <div className="font-semibold mb-2 text-sm lg:text-base">1861-1865: Civil War censorship</div>
+                                        <p className="text-gray-400 text-xs lg:text-sm mb-3">
+                                            Approximately 300 newspapers faced suppression: closure, arrest of editors, destruction of presses, denial of mail privileges. Lincoln's administration used military authority to control information.
+                                        </p>
+                                        <div className="text-xs text-gray-500">
+                                            The First Amendment was not the relevant question. No significant legal challenge reached the Supreme Court.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-4 lg:p-6 rounded-lg">
+                                <div className="flex items-start gap-3 lg:gap-4">
+                                    <div className="text-2xl lg:text-3xl flex-shrink-0">🏭</div>
+                                    <div>
+                                        <div className="font-semibold mb-2 text-sm lg:text-base">Late 1800s: Labor organizing crushed</div>
+                                        <p className="text-gray-400 text-xs lg:text-sm mb-3">
+                                            Workers trying to unionize faced arrests under conspiracy laws. Speech advocating strikes could constitute criminal conspiracy. The Haymarket affair: eight anarchist labor organizers arrested, four hanged. Their crime was speech.
+                                        </p>
+                                        <div className="example-box p-3 rounded text-xs lg:text-sm">
+                                            Eugene Debs imprisoned in 1895 for speaking to striking workers. Supreme Court dismissed First Amendment claim as "irrelevant."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-2 text-sm lg:text-base">The long silence ends</p>
+                        <p className="text-gray-300 text-sm lg:text-base">
+                            By the early twentieth century, editors have been jailed, organizers executed, radicals deported. The First Amendment still has no coherent doctrine. That finally changes, and not in the way its dead would have chosen.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function DoctrineSection() {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4">Doctrine Awakens</h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            In the twentieth century, the First Amendment finally wakes up. From 1917-2025, doctrine comes into focus. Who counts as a speaker. Which harms count. Which never do.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">WWI: The First Amendment wakes up weak</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            In 1917, Congress passed the Espionage Act. In 1918, the Sedition Act (yes, again). About 2,000 people prosecuted. Sentences: months to 20 years. The targets: socialists, anarchists, anti-war activists, labor organizers.
+                        </p>
+                        <div className="bg-black p-4 rounded text-sm lg:text-base">
+                            <div className="text-xs lg:text-sm text-gray-500 mb-2">Eugene Debs:</div>
+                            <div className="text-white">10-year sentence for a speech criticizing the war</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">The key cases that built modern doctrine</h3>
+                        
+                        <div className="space-y-4">
+                            <div className="section-card p-5 lg:p-6 rounded-lg">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                                    <div className="font-bold text-base lg:text-lg">Brandenburg v. Ohio (1969)</div>
+                                    <div className="mono text-xs text-cyan-400">INCITEMENT</div>
+                                </div>
+                                <div className="text-gray-400 text-xs lg:text-sm mb-4">
+                                    KKK leader at rally with cross-burning and racial slurs. Supreme Court: speech must be directed to inciting imminent lawless action AND likely to produce such action.
+                                </div>
+                                <div className="example-box p-3 lg:p-4 rounded">
+                                    <div className="font-semibold text-xs lg:text-sm mb-2">Three elements required:</div>
+                                    <div className="grid grid-cols-3 gap-2 lg:gap-3 text-xs">
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Directed</div>
+                                            <div className="text-gray-500">Speech must intend to cause action</div>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Imminent</div>
+                                            <div className="text-gray-500">Must be immediate, not future</div>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Likely</div>
+                                            <div className="text-gray-500">Actually probable to occur</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-xs lg:text-sm">
+                                    <div className="text-green-400 mb-1">✓ What it gave us:</div>
+                                    <div className="text-gray-400 mb-3">Strong protection for political speech</div>
+                                    <div className="text-red-400 mb-1">✗ What it can't handle:</div>
+                                    <div className="text-gray-400">Algorithmic amplification, stochastic terrorism, distributed audiences, statistical likelihood of violence</div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-5 lg:p-6 rounded-lg">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                                    <div className="font-bold text-base lg:text-lg">New York Times v. Sullivan (1964)</div>
+                                    <div className="mono text-xs text-cyan-400">DEFAMATION</div>
+                                </div>
+                                <div className="text-gray-400 text-xs lg:text-sm mb-4">
+                                    Civil rights ad contained minor errors. Montgomery official sued. Court: public figures must prove "actual malice" - that defendant knew statement was false or acted with reckless disregard for truth.
+                                </div>
+                                <div className="bg-black p-3 lg:p-4 rounded text-xs lg:text-sm space-y-2 mb-4">
+                                    <div className="flex justify-between">
+                                        <span className="text-gray-500">Original verdict:</span>
+                                        <span className="text-white">$500,000 ($5M today)</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span className="text-gray-500">Supreme Court:</span>
+                                        <span className="text-green-400">Reversed</span>
+                                    </div>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-xs lg:text-sm">
+                                    <div className="text-green-400 mb-1">✓ What it gave us:</div>
+                                    <div className="text-gray-400 mb-3">Protection for aggressive journalism investigating government</div>
+                                    <div className="text-red-400 mb-1">✗ What it protects now:</div>
+                                    <div className="text-gray-400">Platforms amplifying misinformation, influencers spreading conspiracy theories, bad-faith actors claiming "belief" in false statements</div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-5 lg:p-6 rounded-lg">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                                    <div className="font-bold text-base lg:text-lg">Citizens United (2010)</div>
+                                    <div className="mono text-xs text-cyan-400">CORPORATE SPEECH</div>
+                                </div>
+                                <div className="text-gray-400 text-xs lg:text-sm mb-4">
+                                    Court struck down limits on corporate political expenditures. Corporations could spend unlimited amounts on political advocacy. Treated money as speech and corporate spending as protected expression.
+                                </div>
+                                <div className="callout rounded border-l-red-400">
+                                    <div className="font-semibold mb-2 text-xs lg:text-sm">The transformation:</div>
+                                    <div className="text-gray-400 text-xs lg:text-sm">
+                                        Originally: protected individuals from government censorship<br/>
+                                        Now: protects corporations from regulation
+                                    </div>
+                                </div>
+                                <div className="mt-4 text-xs lg:text-sm text-gray-400">
+                                    First Amendment as property right. Protects not the vulnerable from the powerful but the powerful from democratic accountability.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-6 lg:p-8 rounded-xl border border-gray-800">
+                        <h3 className="text-lg lg:text-xl font-semibold mb-3 lg:mb-4">Section 230: The amplification shield</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            "No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider."
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-4 text-xs lg:text-sm">
+                            <div className="example-box p-3 lg:p-4 rounded">
+                                <div className="font-semibold mb-2">When claiming free speech rights:</div>
+                                <div className="text-gray-400">"We're publishers exercising editorial judgment"</div>
+                            </div>
+                            <div className="example-box p-3 lg:p-4 rounded">
+                                <div className="font-semibold mb-2">When facing liability:</div>
+                                <div className="text-gray-400">"We're not publishers, we just host content"</div>
+                            </div>
+                        </div>
+                        <p className="text-gray-400 text-xs lg:text-sm mt-4">
+                            Platforms enjoy constitutional protection for their editorial choices AND statutory immunity from liability for consequences. This is the architecture of unaccountability.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function CrisisSection() {
+            return (
+                <div className="space-y-6 lg:space-y-8">
+                    <div>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-3 lg:mb-4">The Crisis</h2>
+                        <p className="text-lg lg:text-xl text-gray-400">
+                            The First Amendment was supposed to protect the vulnerable from the powerful. It has become the mechanism by which power protects itself from consequence.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl">
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">The circle closes</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            By the time the 2010s arrive, the structure is in place:
+                        </p>
+                        <ul className="space-y-3 text-gray-400 text-sm lg:text-base">
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Incitement protection so strong that almost no speech qualifies</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Libel doctrine that kneecaps public-figure claims</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Expansive rights for corporate speakers and their money</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Section 230 shielding platforms from consequences of what they amplify</span>
+                            </li>
+                        </ul>
+                        <p className="text-gray-300 mt-4 text-sm lg:text-base">
+                            This is the legal environment in which school-board members receive death threats and Jones calls grieving parents actors, live to millions, for years.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                        <div className="section-card p-5 lg:p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-cyan-400 text-sm lg:text-base">The Founders' wager (1791)</h3>
+                            <div className="text-gray-400 text-xs lg:text-sm space-y-3">
+                                <p>Speech, however toxic, is less dangerous than empowering government to regulate speech.</p>
+                                <div className="bg-black p-3 rounded text-xs text-gray-500">
+                                    Context: Speech technology limited. Speakers identifiable. Audiences local. Harm constrained by physical distance.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="section-card p-5 lg:p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-red-400 text-sm lg:text-base">The wager breaks (2025)</h3>
+                            <div className="text-gray-400 text-xs lg:text-sm space-y-3">
+                                <p>Speech technology fundamentally changed. Amplification instant and global. Harm detached from presence. Accountability collapsed.</p>
+                                <div className="bg-black p-3 rounded text-xs text-gray-500">
+                                    Constitutional framework designed for one set of facts applied to circumstances Founders never imagined.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-3 text-sm lg:text-base">So what does this actually mean for you?</p>
+                        <div className="space-y-4 text-gray-300 text-xs lg:text-sm">
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're an educator:</div>
+                                <div>Public figures can direct millions to view you as an enemy, face no legal consequence, and you have no remedy when harassment follows.</div>
+                            </div>
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're a public figure:</div>
+                                <div>You can face coordinated defamation campaigns, watch platforms amplify attacks, and find the legal system treats this as the price of discourse.</div>
+                            </div>
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're a platform user:</div>
+                                <div>You exist in an information environment optimized for outrage, where misinformation spreads faster than truth, and the constitutional framework provides no check on these harms.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-red-950/30 to-black p-6 lg:p-8 rounded-xl border border-red-900/30">
+                        <h3 className="text-xl lg:text-2xl font-semibold mb-3 lg:mb-4">The contemporary crisis</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4 text-sm lg:text-base">
+                            The First Amendment was designed to constrain government. Through incorporation, commercial speech doctrine, corporate personhood, Section 230, and cultural mythology about "free speech" as immunity from all consequence, it has become a shield for powerful actors against accountability.
+                        </p>
+                        <p className="text-lg lg:text-xl text-white leading-relaxed">
+                            The Founders didn't anticipate a world where private actors could achieve the same silencing effects as government, where speech itself could become a weapon of control, where constitutional protections designed for the powerless would be claimed by the powerful.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-6 lg:p-8 rounded-xl text-center">
+                        <p className="text-xl lg:text-2xl leading-relaxed mb-4">
+                            Not censorship by government. But the transformation of a defensive constitutional right into an offensive weapon against accountability itself.
+                        </p>
+                        <p className="text-gray-400 text-sm lg:text-base">
+                            That inversion is the contemporary constitutional crisis. And the law, as currently constructed, has no answer.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-black p-6 lg:p-8 rounded-xl border border-gray-800">
+                        <p className="text-xs lg:text-sm text-gray-500 mb-4">You've completed the module</p>
+                        <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
+                            This isn't a call for censorship. It's not an argument for government control of speech. It's a recognition that the gap between our constitutional doctrine and our communications reality has become a chasm, and in that chasm, real harm occurs that the law refuses to see.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+            return (
+                <div className="space-y-8">
+                    <div>
+                        <h2 className="text-5xl font-bold mb-4">The Founders' Gambit</h2>
+                        <p className="text-xl text-gray-400">
+                            Between 1789 and 1801, the First Amendment is seven years old and already being ignored.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-8 rounded-xl">
+                        <h3 className="text-2xl font-semibold mb-4">The crime that made freedom necessary</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            The Continental Congress committed treason. Not metaphorically. Actual, legally defined, capital-punishment-upon-conviction treason against the British Crown.
+                        </p>
+                        <div className="example-box p-4 rounded-lg">
+                            <p className="text-sm text-gray-400 mb-2">The calculus:</p>
+                            <p className="text-white">The Declaration of Independence = confession. The signatures = evidence. If Britain won, every signer faced execution.</p>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed mt-4">
+                            They knew this. They signed anyway. This is not a story about idealism. It's a story about survival.
+                        </p>
+                    </div>
+                    
+                    <div className="relative">
+                        <div className="absolute left-6 top-0 bottom-0 timeline-line"></div>
+                        
+                        <div className="relative space-y-8 pl-16">
+                            <div className="flex items-start gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-6 rounded-lg flex-1">
+                                    <div className="mono text-sm text-cyan-400 mb-2">1788</div>
+                                    <div className="font-semibold mb-2">What the Constitution said about speech</div>
+                                    <div className="text-gray-400">Nothing. Zero protections. This was deliberate.</div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-6 rounded-lg flex-1">
+                                    <div className="mono text-sm text-cyan-400 mb-2">1791</div>
+                                    <div className="font-semibold mb-2">The Bill of Rights: A compromise</div>
+                                    <div className="text-gray-400">Not part of the original plan. A political necessity to secure ratification. The First Amendment exists because the Founders couldn't get the votes without it.</div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-6 rounded-lg flex-1">
+                                    <div className="mono text-sm text-cyan-400 mb-2">1798</div>
+                                    <div className="font-semibold mb-2">Alien and Sedition Acts</div>
+                                    <div className="text-gray-400 mb-3">Made it a crime to "write, print, utter or publish... any false, scandalous and malicious writing" against the government.</div>
+                                    <div className="bg-black p-4 rounded space-y-2 text-sm">
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">Arrested:</span>
+                                            <span className="text-white">26 people</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">Convicted:</span>
+                                            <span className="text-white">10 people</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-500">First Amendment protection:</span>
+                                            <span className="text-red-400">Zero</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="flex items-start gap-4">
+                                <div className="timeline-dot flex-shrink-0 mt-2"></div>
+                                <div className="section-card p-6 rounded-lg flex-1">
+                                    <div className="mono text-sm text-cyan-400 mb-2">1801</div>
+                                    <div className="font-semibold mb-2">The Sedition Act expires</div>
+                                    <div className="text-gray-400">Not struck down. Not found unconstitutional. It just expired. Speech can be criminalized. Everyone has just watched it happen. The First Amendment survives on paper. It will spend the next century mostly watching.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-3">The uncomfortable part: the First Amendment was, in part, about protecting slavery</p>
+                        <p className="text-gray-300 mb-3">
+                            Southern states needed assurance that federal government wouldn't interfere with slavery. The First Amendment only constrained Congress. It left states free to suppress speech as they saw fit.
+                        </p>
+                        <p className="text-gray-400 text-sm">
+                            For seventy years, the First Amendment did nothing to protect antislavery speakers in the South. Those speakers were murdered, driven out, silenced by state law and mob violence.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border border-gray-800">
+                        <h3 className="text-xl font-semibold mb-4">The structural choice</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            The First Amendment reflects a specific wager: that speech, however toxic, is less dangerous than empowering government to regulate speech.
+                        </p>
+                        <p className="text-gray-300 leading-relaxed">
+                            Not because the Founders believed all speech was valuable. Not because they thought marketplace-of-ideas theory would sort truth from falsehood. Because they were pessimists who believed governments always abuse power when given the opportunity.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function SilenceSection() {
+            return (
+                <div className="space-y-8">
+                    <div>
+                        <h2 className="text-5xl font-bold mb-4">Century of Silence</h2>
+                        <p className="text-xl text-gray-400">
+                            From 1801 to 1927, the First Amendment existed but did essentially nothing.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-8 rounded-xl text-center">
+                        <div className="text-6xl font-bold mb-4 gradient-text">126</div>
+                        <p className="text-xl mb-2">years without a single significant First Amendment case at the Supreme Court</p>
+                        <p className="text-gray-500">Not one.</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="section-card p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-cyan-400">Why it was dormant</h3>
+                            <div className="space-y-3 text-sm text-gray-300">
+                                <div>
+                                    <div className="font-semibold mb-1">Only constrained Congress</div>
+                                    <div className="text-gray-500">And Congress almost never tried to restrict speech in the 19th century</div>
+                                </div>
+                                <div>
+                                    <div className="font-semibold mb-1">Didn't apply to states</div>
+                                    <div className="text-gray-500">States remained free to suppress speech however they wanted</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="section-card p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-green-400">Where suppression happened</h3>
+                            <div className="space-y-3 text-sm text-gray-300">
+                                <div>State law</div>
+                                <div>Mob violence</div>
+                                <div>Extra-legal suppression</div>
+                                <div>Private action</div>
+                            </div>
+                            <div className="mt-4 pt-4 border-t border-gray-800 text-gray-500 text-xs">
+                                The First Amendment offered no protection
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-2xl font-semibold mb-6">What happened during the silence</h3>
+                        
+                        <div className="space-y-6">
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex items-start gap-4">
+                                    <div className="text-3xl flex-shrink-0">📰</div>
+                                    <div>
+                                        <div className="font-semibold mb-2">1835: Abolitionist press suppression</div>
+                                        <p className="text-gray-400 text-sm mb-3">
+                                            South Carolina burned mailbags containing abolitionist literature. Postmasters refused to deliver anti-slavery materials. State legislatures criminalized abolitionist publications. Georgia offered $5,000 reward for arrests.
+                                        </p>
+                                        <div className="bg-black p-3 rounded text-sm text-gray-500">
+                                            Elijah Lovejoy, newspaper editor: murdered by mob in 1837 after they destroyed his printing press four times
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex items-start gap-4">
+                                    <div className="text-3xl flex-shrink-0">⚔️</div>
+                                    <div>
+                                        <div className="font-semibold mb-2">1861-1865: Civil War censorship</div>
+                                        <p className="text-gray-400 text-sm mb-3">
+                                            Approximately 300 newspapers faced suppression: closure, arrest of editors, destruction of presses, denial of mail privileges. Lincoln's administration used military authority to control information.
+                                        </p>
+                                        <div className="text-xs text-gray-500">
+                                            The First Amendment was not the relevant question. No significant legal challenge reached the Supreme Court.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex items-start gap-4">
+                                    <div className="text-3xl flex-shrink-0">🏭</div>
+                                    <div>
+                                        <div className="font-semibold mb-2">Late 1800s: Labor organizing crushed</div>
+                                        <p className="text-gray-400 text-sm mb-3">
+                                            Workers trying to unionize faced arrests under conspiracy laws. Speech advocating strikes could constitute criminal conspiracy. The Haymarket affair: eight anarchist labor organizers arrested, four hanged. Their crime was speech.
+                                        </p>
+                                        <div className="example-box p-3 rounded text-sm">
+                                            Eugene Debs imprisoned in 1895 for speaking to striking workers. Supreme Court dismissed First Amendment claim as "irrelevant."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-2">The long silence ends</p>
+                        <p className="text-gray-300">
+                            By the early twentieth century, editors have been jailed, organizers executed, radicals deported. The First Amendment still has no coherent doctrine. That finally changes, and not in the way its dead would have chosen.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function DoctrineSection() {
+            return (
+                <div className="space-y-8">
+                    <div>
+                        <h2 className="text-5xl font-bold mb-4">Doctrine Awakens</h2>
+                        <p className="text-xl text-gray-400">
+                            In the twentieth century, the First Amendment finally wakes up. From 1917-2025, doctrine comes into focus. Who counts as a speaker. Which harms count. Which never do.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-8 rounded-xl">
+                        <h3 className="text-2xl font-semibold mb-4">WWI: The First Amendment wakes up weak</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            In 1917, Congress passed the Espionage Act. In 1918, the Sedition Act (yes, again). About 2,000 people prosecuted. Sentences: months to 20 years. The targets: socialists, anarchists, anti-war activists, labor organizers.
+                        </p>
+                        <div className="bg-black p-4 rounded">
+                            <div className="text-sm text-gray-500 mb-2">Eugene Debs:</div>
+                            <div className="text-white">10-year sentence for a speech criticizing the war</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-2xl font-semibold mb-6">The key cases that built modern doctrine</h3>
+                        
+                        <div className="space-y-4">
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex justify-between items-start mb-3">
+                                    <div className="font-bold text-lg">Brandenburg v. Ohio (1969)</div>
+                                    <div className="mono text-xs text-cyan-400">INCITEMENT</div>
+                                </div>
+                                <div className="text-gray-400 text-sm mb-4">
+                                    KKK leader at rally with cross-burning and racial slurs. Supreme Court: speech must be directed to inciting imminent lawless action AND likely to produce such action.
+                                </div>
+                                <div className="example-box p-4 rounded">
+                                    <div className="font-semibold text-sm mb-2">Three elements required:</div>
+                                    <div className="grid grid-cols-3 gap-3 text-xs">
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Directed</div>
+                                            <div className="text-gray-500">Speech must intend to cause action</div>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Imminent</div>
+                                            <div className="text-gray-500">Must be immediate, not future</div>
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-white mb-1">Likely</div>
+                                            <div className="text-gray-500">Actually probable to occur</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-sm">
+                                    <div className="text-green-400 mb-1">✓ What it gave us:</div>
+                                    <div className="text-gray-400 mb-3">Strong protection for political speech</div>
+                                    <div className="text-red-400 mb-1">✗ What it can't handle:</div>
+                                    <div className="text-gray-400">Algorithmic amplification, stochastic terrorism, distributed audiences, statistical likelihood of violence</div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex justify-between items-start mb-3">
+                                    <div className="font-bold text-lg">New York Times v. Sullivan (1964)</div>
+                                    <div className="mono text-xs text-cyan-400">DEFAMATION</div>
+                                </div>
+                                <div className="text-gray-400 text-sm mb-4">
+                                    Civil rights ad contained minor errors. Montgomery official sued. Court: public figures must prove "actual malice" - that defendant knew statement was false or acted with reckless disregard for truth.
+                                </div>
+                                <div className="bg-black p-4 rounded text-sm space-y-2 mb-4">
+                                    <div className="flex justify-between">
+                                        <span className="text-gray-500">Original verdict:</span>
+                                        <span className="text-white">$500,000 ($5M today)</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span className="text-gray-500">Supreme Court:</span>
+                                        <span className="text-green-400">Reversed</span>
+                                    </div>
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-800 text-sm">
+                                    <div className="text-green-400 mb-1">✓ What it gave us:</div>
+                                    <div className="text-gray-400 mb-3">Protection for aggressive journalism investigating government</div>
+                                    <div className="text-red-400 mb-1">✗ What it protects now:</div>
+                                    <div className="text-gray-400">Platforms amplifying misinformation, influencers spreading conspiracy theories, bad-faith actors claiming "belief" in false statements</div>
+                                </div>
+                            </div>
+                            
+                            <div className="section-card p-6 rounded-lg">
+                                <div className="flex justify-between items-start mb-3">
+                                    <div className="font-bold text-lg">Citizens United (2010)</div>
+                                    <div className="mono text-xs text-cyan-400">CORPORATE SPEECH</div>
+                                </div>
+                                <div className="text-gray-400 text-sm mb-4">
+                                    Court struck down limits on corporate political expenditures. Corporations could spend unlimited amounts on political advocacy. Treated money as speech and corporate spending as protected expression.
+                                </div>
+                                <div className="callout rounded border-l-red-400">
+                                    <div className="font-semibold mb-2">The transformation:</div>
+                                    <div className="text-gray-400 text-sm">
+                                        Originally: protected individuals from government censorship<br/>
+                                        Now: protects corporations from regulation
+                                    </div>
+                                </div>
+                                <div className="mt-4 text-sm text-gray-400">
+                                    First Amendment as property right. Protects not the vulnerable from the powerful but the powerful from democratic accountability.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border border-gray-800">
+                        <h3 className="text-xl font-semibold mb-4">Section 230: The amplification shield</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            "No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider."
+                        </p>
+                        <div className="grid grid-cols-2 gap-4 text-sm">
+                            <div className="example-box p-4 rounded">
+                                <div className="font-semibold mb-2">When claiming free speech rights:</div>
+                                <div className="text-gray-400">"We're publishers exercising editorial judgment"</div>
+                            </div>
+                            <div className="example-box p-4 rounded">
+                                <div className="font-semibold mb-2">When facing liability:</div>
+                                <div className="text-gray-400">"We're not publishers, we just host content"</div>
+                            </div>
+                        </div>
+                        <p className="text-gray-400 text-sm mt-4">
+                            Platforms enjoy constitutional protection for their editorial choices AND statutory immunity from liability for consequences. This is the architecture of unaccountability.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function CrisisSection() {
+            return (
+                <div className="space-y-8">
+                    <div>
+                        <h2 className="text-5xl font-bold mb-4">The Crisis</h2>
+                        <p className="text-xl text-gray-400">
+                            The First Amendment was supposed to protect the vulnerable from the powerful. It has become the mechanism by which power protects itself from consequence.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-8 rounded-xl">
+                        <h3 className="text-2xl font-semibold mb-4">The circle closes</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            By the time the 2010s arrive, the structure is in place:
+                        </p>
+                        <ul className="space-y-3 text-gray-400">
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Incitement protection so strong that almost no speech qualifies</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Libel doctrine that kneecaps public-figure claims</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Expansive rights for corporate speakers and their money</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-gray-600 flex-shrink-0">•</span>
+                                <span>Section 230 shielding platforms from consequences of what they amplify</span>
+                            </li>
+                        </ul>
+                        <p className="text-gray-300 mt-4">
+                            This is the legal environment in which school-board members receive death threats and Jones calls grieving parents actors, live to millions, for years.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="section-card p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-cyan-400">The Founders' wager (1791)</h3>
+                            <div className="text-gray-400 text-sm space-y-3">
+                                <p>Speech, however toxic, is less dangerous than empowering government to regulate speech.</p>
+                                <div className="bg-black p-3 rounded text-xs text-gray-500">
+                                    Context: Speech technology limited. Speakers identifiable. Audiences local. Harm constrained by physical distance.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="section-card p-6 rounded-lg">
+                            <h3 className="font-semibold mb-3 text-red-400">The wager breaks (2025)</h3>
+                            <div className="text-gray-400 text-sm space-y-3">
+                                <p>Speech technology fundamentally changed. Amplification instant and global. Harm detached from presence. Accountability collapsed.</p>
+                                <div className="bg-black p-3 rounded text-xs text-gray-500">
+                                    Constitutional framework designed for one set of facts applied to circumstances Founders never imagined.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="callout rounded-lg">
+                        <p className="font-semibold mb-3">So what does this actually mean for you?</p>
+                        <div className="space-y-4 text-gray-300 text-sm">
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're an educator:</div>
+                                <div>Public figures can direct millions to view you as an enemy, face no legal consequence, and you have no remedy when harassment follows.</div>
+                            </div>
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're a public figure:</div>
+                                <div>You can face coordinated defamation campaigns, watch platforms amplify attacks, and find the legal system treats this as the price of discourse.</div>
+                            </div>
+                            <div>
+                                <div className="font-semibold text-white mb-1">If you're a platform user:</div>
+                                <div>You exist in an information environment optimized for outrage, where misinformation spreads faster than truth, and the constitutional framework provides no check on these harms.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gradient-to-br from-red-950/30 to-black p-8 rounded-xl border border-red-900/30">
+                        <h3 className="text-2xl font-semibold mb-4">The contemporary crisis</h3>
+                        <p className="text-gray-300 leading-relaxed mb-4">
+                            The First Amendment was designed to constrain government. Through incorporation, commercial speech doctrine, corporate personhood, Section 230, and cultural mythology about "free speech" as immunity from all consequence, it has become a shield for powerful actors against accountability.
+                        </p>
+                        <p className="text-xl text-white leading-relaxed">
+                            The Founders didn't anticipate a world where private actors could achieve the same silencing effects as government, where speech itself could become a weapon of control, where constitutional protections designed for the powerless would be claimed by the powerful.
+                        </p>
+                    </div>
+                    
+                    <div className="section-card p-8 rounded-xl text-center">
+                        <p className="text-2xl leading-relaxed mb-4">
+                            Not censorship by government. But the transformation of a defensive constitutional right into an offensive weapon against accountability itself.
+                        </p>
+                        <p className="text-gray-400">
+                            That inversion is the contemporary constitutional crisis. And the law, as currently constructed, has no answer.
+                        </p>
+                    </div>
+                    
+                    <div className="bg-black p-8 rounded-xl border border-gray-800">
+                        <p className="text-sm text-gray-500 mb-4">You've completed the module</p>
+                        <p className="text-gray-300 leading-relaxed">
+                            This isn't a call for censorship. It's not an argument for government control of speech. It's a recognition that the gap between our constitutional doctrine and our communications reality has become a chasm, and in that chasm, real harm occurs that the law refuses to see.
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        
+        function NavigationButtons({ currentSection, setCurrentSection, sections }) {
+            const currentIndex = sections.findIndex(s => s.id === currentSection);
+            const hasPrev = currentIndex > 0;
+            const hasNext = currentIndex < sections.length - 1;
+            
+            return (
+                <div className="flex justify-between items-center mt-12 lg:mt-16 pt-6 lg:pt-8 border-t border-gray-800 pb-6">
+                    <button
+                        onClick={() => hasPrev && setCurrentSection(sections[currentIndex - 1].id)}
+                        disabled={!hasPrev}
+                        className={`flex items-center gap-2 px-5 lg:px-6 py-3 lg:py-3 rounded-lg transition-all text-sm lg:text-base ${
+                            hasPrev 
+                                ? 'bg-gray-900 active:bg-gray-800 text-white' 
+                                : 'bg-gray-950 text-gray-700 cursor-not-allowed'
+                        }`}
+                    >
+                        <span>←</span>
+                        <span className="hidden sm:inline">Previous</span>
+                        <span className="sm:hidden">Prev</span>
+                    </button>
+                    
+                    <div className="text-xs lg:text-sm text-gray-500 mono">
+                        {currentIndex + 1} / {sections.length}
+                    </div>
+                    
+                    <button
+                        onClick={() => hasNext && setCurrentSection(sections[currentIndex + 1].id)}
+                        disabled={!hasNext}
+                        className={`flex items-center gap-2 px-5 lg:px-6 py-3 lg:py-3 rounded-lg transition-all text-sm lg:text-base font-semibold ${
+                            hasNext 
+                                ? 'bg-gradient-to-r from-green-400 to-cyan-400 text-black active:opacity-90' 
+                                : 'bg-gray-950 text-gray-700 cursor-not-allowed'
+                        }`}
+                    >
+                        <span>Next</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            );
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                const event = new CustomEvent('navigate', { detail: e.key });
+                window.dispatchEvent(event);
+            }
+        });
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

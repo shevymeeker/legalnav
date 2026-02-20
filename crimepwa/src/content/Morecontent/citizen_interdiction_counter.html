@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highway Interdiction: The Citizen's Counter-Doctrine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f5f5f0;
+            font-family: 'Comic Sans MS', 'Marker Felt', cursive;
+            padding: 20px;
+        }
+        
+        .whiteboard {
+            background: white;
+            border: 8px solid #333;
+            border-radius: 4px;
+            padding: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .title h1 {
+            font-size: 42px;
+            font-weight: bold;
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #c00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 28px;
+            color: #444;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .lanes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            position: relative;
+        }
+        
+        .lane {
+            border: 3px solid #2c5aa0;
+            border-radius: 8px;
+            padding: 20px;
+            background: #f9f9ff;
+            position: relative;
+        }
+        
+        .lane-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5aa0;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 5px;
+        }
+        
+        .lane-subtitle {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .section {
+            margin: 20px 0;
+        }
+        
+        .section-title {
+            font-size: 19px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        
+        .item {
+            margin: 8px 0 8px 15px;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        
+        .bullet {
+            color: #2c5aa0;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .sub-item {
+            margin-left: 20px;
+            font-size: 13px;
+            color: #444;
+        }
+        
+        .warning-box {
+            border: 3px solid #c00;
+            background: #fff5f5;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .warning-title {
+            color: #c00;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .tip-box {
+            border: 3px solid #080;
+            background: #f5fff5;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .tip-title {
+            color: #080;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .highlight {
+            background: #ffeb3b;
+            padding: 2px 4px;
+            font-weight: bold;
+        }
+        
+        .red-text {
+            color: #c00;
+            font-weight: bold;
+        }
+        
+        .blue-text {
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        
+        .arrow {
+            font-size: 32px;
+            color: #2c5aa0;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .case-name {
+            font-style: italic;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .whiteboard {
+                box-shadow: none;
+                border: 2px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="whiteboard">
+        <div class="title">
+            <h1>Highway Interdiction: The Citizen's Counter-Doctrine</h1>
+        </div>
+        <div class="subtitle">
+            (From "Compliant" → "Informed & Protected")
+        </div>
+        
+        <div class="lanes">
+            <!-- LANE 1 -->
+            <div class="lane">
+                <div class="lane-title">Lane 1: Know The Game</div>
+                <div class="lane-subtitle">(Their Strategy & Your Rights)</div>
+                
+                <div class="section">
+                    <div class="section-title">1. The Philosophy They Use</div>
+                    <div class="item"><span class="bullet">⊗</span> <span class="blue-text">Reactive vs. Proactive:</span> They're not responding to calls. They're <span class="highlight">hunting</span> for pretextual stops—any minor violation to justify pulling you over.</div>
+                    <div class="item"><span class="bullet">⊗</span> <span class="blue-text">"All Crimes" Approach:</span> Traffic stops are fishing expeditions. Same networks move drugs, stolen cars, trafficking victims, fraud proceeds.</div>
+                    <div class="item"><span class="bullet">⊗</span> <span class="blue-text">"The Hunter" Mindset:</span> They use behavioral indicators to identify "criminal couriers" vs. regular travelers. You're being profiled.</div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">2. Your Legal Shield</div>
+                    <div class="item"><span class="bullet">🛡️</span> <span class="blue-text"><span class="case-name">Whren v. U.S.</span> (1996):</span> Pretextual stops are legal. Minor violations = legal stop even if real reason is suspicion.</div>
+                    <div class="warning-box">
+                        <div class="warning-title">⚠️ CRITICAL:</div>
+                        <div>The stop itself is almost always legal. Your goal is preventing <span class="highlight">expansion beyond the traffic violation</span>.</div>
+                    </div>
+                    <div class="item"><span class="bullet">🛡️</span> <span class="blue-text"><span class="case-name">Rodriguez v. U.S.</span> (2015):</span> The stop cannot be extended beyond the time needed for the traffic mission without <span class="highlight">independent reasonable suspicion</span>.</div>
+                    <div class="sub-item"><span class="red-text">Rule:</span> License, registration, ticket—done. They need <span class="highlight">articulable reasonable suspicion</span> to hold you longer.</div>
+                    <div class="sub-item"><span class="red-text">"Simultaneous Mission":</span> They can ask questions or run a K-9 <span class="highlight">only if it doesn't add time</span>. Multitasking is key—for them.</div>
+                    <div class="item"><span class="bullet">🛡️</span> <span class="blue-text">"Wall Stop" Scenario:</span> Intel (DEA/FBI) wants a car stopped but lacks the wiretap to burn. Patrol officer <span class="highlight">must find independent probable cause</span> (speeding, tint, etc.).</div>
+                    <div class="sub-item"><span class="red-text">Your Defense:</span> Officer must have observed the violation. If it's pretextual but legal, you're stuck—but the clock starts immediately.</div>
+                    <div class="warning-box">
+                        <div class="warning-title">🔒 DO NOT:</div>
+                        <div>Answer questions that reveal knowledge of the investigation. <span class="red-text">"Where are you headed?"</span> sounds innocent but builds their case.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LANE 2 -->
+            <div class="lane">
+                <div class="lane-title">Lane 2: Recognize The Process</div>
+                <div class="lane-subtitle">(What They're Looking For)</div>
+                
+                <div class="section">
+                    <div class="section-title">1. "The Drive" (Pre-Stop Indicators)</div>
+                    <div class="item"><span class="bullet">👁️</span> <span class="blue-text">The Stare:</span> Driver hyper-focused on police car, refusing to look at the officer. "Locked stare."</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> Drive normally. Acknowledge their presence without fixating. Natural awareness ≠ guilt.</div>
+                    <div class="item"><span class="bullet">👁️</span> <span class="blue-text">Mirror Fixation:</span> Obsessive mirror checking, shifting in seat.</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> Check mirrors at normal intervals. Fidgeting reads as nervous.</div>
+                    <div class="item"><span class="bullet">👁️</span> <span class="blue-text">Irrational Driving:</span> Sudden braking below limit, "lane camping" (refusing to pass).</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> Maintain normal speed and lane discipline. Overcompliance is suspicious.</div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">2. Vehicle Forensics (Exterior)</div>
+                    <div class="item"><span class="bullet">🚗</span> <span class="blue-text">The Rental Game:</span></div>
+                    <div class="sub-item">• <span class="red-text">Third-Party Rental:</span> Car rented by someone NOT in the vehicle? Major red flag.</div>
+                    <div class="sub-item">• <span class="red-text">One-Way:</span> High cost, economically inefficient = suspicious.</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> If driving a rental, have rental agreement accessible. If you're an authorized driver, it's in the contract.</div>
+                    <div class="item"><span class="bullet">🚗</span> <span class="blue-text">"Clean/Dirty" Conflict:</span> Dirty exterior (road grime) but pristine interior? Indicates temperature control/care for cargo.</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> Nothing you can do about this retroactively. Don't volunteer explanations.</div>
+                    <div class="item"><span class="bullet">🚗</span> <span class="blue-text">Hardware:</span> New bolts on old plates? Stolen/switched plates.</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> Verify your plates and registration match before long trips.</div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">3. The Interview ("Conversation with a Purpose")</div>
+                    <div class="item"><span class="bullet">🎯</span> <span class="blue-text">Goal:</span> Normalize interaction → Detect deviations.</div>
+                    <div class="item"><span class="bullet">🎯</span> <span class="blue-text">"Hook" Questions:</span></div>
+                    <div class="sub-item">• <span class="red-text">"Where are you coming from?"</span> (Check logistical logic.)</div>
+                    <div class="sub-item">• <span class="red-text">Separation Technique:</span> Ask driver and passenger separately. Conflicting stories?</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> You are not required to answer. <span class="blue-text">"I'd prefer not to answer questions."</span></div>
+                    <div class="item"><span class="bullet">🎯</span> <span class="blue-text">Deception Cues:</span></div>
+                    <div class="sub-item">• <span class="red-text">Verbal:</span> "Swearing to God" (religiosity when nervous). Answering a question with a question.</div>
+                    <div class="sub-item">• <span class="red-text">Body:</span> Carotid artery pulsing (fight or flight). "Felony Stretch" (yawning for oxygen under stress).</div>
+                    <div class="tip-box">
+                        <div class="tip-title">✓ THE SCRIPT:</div>
+                        <div><span class="blue-text">"Am I free to go?"</span><br>
+                        If no: <span class="blue-text">"I'm invoking my right to remain silent and my right to an attorney. I do not consent to any searches."</span><br>
+                        Then: <span class="highlight">Stop talking.</span></div>
+                    </div>
+                    <div class="warning-box">
+                        <div class="warning-title">⚠️ DO NOT:</div>
+                        <div>• Explain why you're nervous.<br>
+                        • Volunteer your itinerary.<br>
+                        • Consent to "just a quick look."</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LANE 3 -->
+            <div class="lane">
+                <div class="lane-title">Lane 3: The Search & Your Defense</div>
+                <div class="lane-subtitle">(When They Escalate)</div>
+                
+                <div class="section">
+                    <div class="section-title">1. The Search Pattern</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Don't Interrupt:</span> Use <span class="highlight">systematic flow</span> (Zone 1 → Zone 8). Rushed = sloppy.</div>
+                    <div class="sub-item"><span class="highlight">Your Position:</span> This is their training. Watch what they're doing. Do not physically interfere.</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Rule of Voids:</span> Every car has natural hollow spaces. Smugglers use them.</div>
+                    <div class="sub-item"><span class="highlight">Counter:</span> If they search without consent or warrant, document it. They need <span class="red-text">probable cause</span> or your <span class="red-text">consent</span>.</div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">2. Where They Look (The Hides)</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Tires:</span> Hit with mallet. "Thud" = solid (drugs). "Ring" = air (normal).</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Undercarriage:</span> Fresh, wet undercoating? Hides cuts/welds on gas tank.</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Dash/Console:</span> Non-factory switches? Loose screws? Air vent not blowing?</div>
+                    <div class="item"><span class="bullet">🔍</span> <span class="blue-text">Traps:</span> Complex activation sequences (Defrost ON + Neutral + Rear Switch).</div>
+                    <div class="tip-box">
+                        <div class="tip-title">✓ REMEMBER:</div>
+                        <div>They're trained to find these. You're <span class="highlight">not required to help them</span>. Silence is legal.</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">3. Safety Protocols (Theirs)</div>
+                    <div class="item"><span class="bullet">⚠️</span> <span class="blue-text">The Approach:</span> Passenger Side Approach. Why? Avoid traffic, view hands/console, surprise driver.</div>
+                    <div class="sub-item"><span class="highlight">Your Response:</span> Hands on wheel. Dome light on if dark. No sudden movements.</div>
+                    <div class="item"><span class="bullet">⚠️</span> <span class="blue-text">Trunk Check:</span> Push down on trunk to ensure latched. Avoid latent prints, ambush.</div>
+                    <div class="item"><span class="bullet">⚠️</span> <span class="blue-text">Fentanyl/Xylazine Risk:</span></div>
+                    <div class="sub-item">• <span class="red-text">NEVER</span> field test powder. Aerosol risk too high.</div>
+                    <div class="sub-item">• <span class="red-text">Xylazine:</span> It's a sedative. Narcan won't reverse it (~2% mix). Use Narcan anyway for fentanyl component.</div>
+                    <div class="sub-item">• <span class="red-text">PPE:</span> Nitrile gloves always. N95 if powder visible.</div>
+                    <div class="warning-box">
+                        <div class="warning-title">⚠️ IF THEY FIND SOMETHING:</div>
+                        <div>• <span class="red-text">"I do not consent to this search."</span><br>
+                        • <span class="red-text">"I'm invoking my right to remain silent."</span><br>
+                        • <span class="red-text">"I want an attorney."</span><br>
+                        <span class="highlight">Do not explain. Do not justify. Lawyer. Now.</span></div>
+                    </div>
+                </div>
+                
+                <div class="tip-box">
+                    <div class="tip-title">🔑 REMEMBER: Totality of Circumstances</div>
+                    <div>No single indicator is enough. They build a picture. <span class="highlight">Your job is to give them nothing to build with.</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <div class="warning-box" style="margin-top: 20px; border-width: 4px;">
+            <div class="warning-title" style="font-size: 20px;">⚠️ THE NON-NEGOTIABLES:</div>
+            <div style="margin-top: 10px; font-size: 15px;">
+                <div style="margin: 8px 0;"><span class="bullet">1.</span> <span class="highlight">DO NOT CONSENT TO SEARCHES.</span> Ever. "I do not consent" is not suspicious—it's constitutional.</div>
+                <div style="margin: 8px 0;"><span class="bullet">2.</span> <span class="highlight">DO NOT ANSWER QUESTIONS.</span> You're not required to explain your trip, your day, or why you're nervous.</div>
+                <div style="margin: 8px 0;"><span class="bullet">3.</span> <span class="highlight">ASK IF YOU'RE FREE TO GO.</span> If yes, leave. If no, invoke your rights and stop talking.</div>
+                <div style="margin: 8px 0;"><span class="bullet">4.</span> <span class="highlight">DO NOT PHYSICALLY RESIST.</span> Document, invoke rights, comply with lawful orders, get a lawyer.</div>
+                <div style="margin: 8px 0;"><span class="bullet">5.</span> <span class="highlight">RECORD IF LEGAL IN YOUR STATE.</span> Know your state's recording laws. Many allow recording of on-duty officers.</div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center; font-size: 18px; color: #555; font-style: italic;">
+            They're trained to make this feel like a conversation. It's an interrogation. Act accordingly.
+        </div>
+    </div>
+</body>
+</html>
