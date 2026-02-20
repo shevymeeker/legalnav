@@ -123,6 +123,27 @@
       "summary": "Plain-language guide to defendant rights throughout Kentucky criminal proceedings, covering the right to counsel, presumption of innocence, bail, trial rights, and how to navigate the court process.",
       "tags": ["defendant-rights", "rights", "bail", "counsel", "guide", "court", "presumption-of-innocence"],
       "file": "fighting for your rights from court.pdf"
+    },
+    {
+      "id": "ky.resource.c6-local-rules",
+      "title": "6th Judicial Circuit Local Rules (C6)",
+      "summary": "Official local rules governing civil and criminal proceedings in the Daviess Circuit and District Courts (6th Judicial Circuit). Covers motion practice, pretrial procedures, jury trial scheduling, grand jury schedule, arraignment timing, and courtroom decorum requirements. Primary procedural reference for Daviess County practitioners.",
+      "tags": ["local-rules", "daviess-county", "6th-circuit", "procedure", "motion-practice", "trial-scheduling", "criminal-procedure"],
+      "file": "C6LOCALRULES (1).pdf"
+    },
+    {
+      "id": "ky.resource.d6-local-rules",
+      "title": "6th Judicial District Local Rules (D6)",
+      "summary": "Comprehensive local rules for district court proceedings in the 6th Judicial District, covering misdemeanor arraignment, pretrial conferences, district court trial procedure, preliminary hearings, and administrative requirements. Applicable to misdemeanor cases and the district court phase of felony cases prior to circuit court transfer.",
+      "tags": ["local-rules", "daviess-county", "district-court", "6th-district", "procedure", "misdemeanor", "preliminary-hearing"],
+      "file": "D6LOCALRULES (1).pdf"
+    },
+    {
+      "id": "ky.resource.c6-family-rules",
+      "title": "6th Judicial Circuit Family Court Local Rules (C6)",
+      "summary": "Local rules governing family court proceedings in the 6th Judicial Circuit, including domestic relations cases, child custody, domestic violence proceedings, and family court motion practice. Relevant to criminal cases with intersecting domestic or family court dimensions.",
+      "tags": ["local-rules", "daviess-county", "family-court", "6th-circuit", "domestic-violence", "custody", "procedure"],
+      "file": "C6FamilyRules.pdf"
     }
   ]
 }

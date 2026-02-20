@@ -25,6 +25,116 @@ Crimes come to law enforcement attention through victim reports, witness stateme
 - Surveillance (subject to constitutional limitations)
 - Confidential informants (KRE 508 governs identity privilege)
 
+### Highway Interdiction and Pretextual Traffic Stops
+
+**Legal Foundation — Pretextual Stops:**
+- *Whren v. United States*, 517 U.S. 806 (1996): Any objectively observed traffic violation constitutes probable cause for a stop regardless of the officer's actual subjective motive. The officer's intent is constitutionally irrelevant. An officer seeking to investigate a vehicle for drug trafficking may lawfully stop it for a broken tail light, an air freshener hanging from the mirror, or failure to signal a lane change.
+- *Heien v. North Carolina*, 574 U.S. 54 (2014): An officer's reasonable mistake of law — believing conduct violates a statute when it does not — may still constitute reasonable suspicion, extending officer latitude beyond factual error to legal interpretation errors.
+- *Terry v. Ohio*, 392 U.S. 1 (1968): Reasonable, articulable suspicion — a lower standard than probable cause — permits brief investigatory detention and a pat-down for weapons.
+
+**Highway Interdiction Programs:**
+Kentucky participates in federally coordinated highway drug interdiction programs derived from DEA Operation Pipeline (established 1984), which trained over 27,000 law enforcement officers nationally in vehicle selection methodology. Kentucky State Police (KSP), local departments, and county sheriff's offices employ highway interdiction tactics on I-65 (Bowling Green–Louisville corridor), I-64, I-75, the Western Kentucky Parkway, and US 60. Officers are trained to select vehicles through behavioral and vehicle indicators rather than waiting for direct criminal evidence. These programs operate under a "proactive" law enforcement model designed to intercept contraband before arrival at destination.
+
+**Vehicle and Behavioral Indicators Used by Officers:**
+Interdiction training curricula identify categories of "indicators" officers use to justify stops and request consent to search. Knowledge of these categories is relevant to suppression litigation and to evaluating whether an officer had independent, articulable grounds for each step of a stop:
+- *Vehicle indicators*: Rental vehicles (documented as statistically overrepresented in drug transportation), vehicles with competing scents (heavy air fresheners in combination with dirt or debris), mismatched license plates, out-of-state plates in patterns inconsistent with stated travel, unusual interior modifications, missing or aftermarket body panels
+- *Behavioral indicators*: Avoidance of eye contact with patrol vehicles, excessive mirror use, sudden speed changes upon officer observation, rigid posture, scanning behaviors, "white knuckle" grip on steering wheel
+- *Travel indicators*: Claimed itinerary inconsistent with vehicle or luggage condition, cash purchase of one-way transportation, vague or internally inconsistent travel story
+- *Criminal history*: ALPR (Automated License Plate Reader) database hits, NCIC/LINK entries, pre-existing intelligence files from regional fusion centers
+
+**Automated License Plate Readers (ALPR):**
+ALPR systems compare license plates against criminal databases in real time, alerting officers to vehicles with outstanding warrants, prior drug offense history, or flagged intelligence. ALPR networks operated by KSP and participating departments create pre-stop profiles. Use of ALPR data to develop investigatory interest, followed by observation of a minor traffic violation to justify a stop, is constitutionally permissible under *Whren*.
+
+**Stop Duration and Rodriguez Limits:**
+- *Rodriguez v. United States*, 575 U.S. 348 (2015): A traffic stop cannot be prolonged beyond the time required to complete its purpose — checking license, registration, and insurance; running a warrant check; issuing a citation — without independent reasonable articulable suspicion of criminal activity. Even a brief extension of several minutes violates the Fourth Amendment absent separate justification.
+- *Illinois v. Caballes*, 543 U.S. 405 (2005): A K-9 sniff conducted *during* a lawful traffic stop that has not been extended does not constitute a Fourth Amendment search, as there is no reasonable expectation of privacy in contraband.
+- Practical implication: If the stop's purpose is completed before K-9 arrival, the officer must release the driver. Evidence obtained after an unlawful extension is subject to suppression. Defense attorneys should subpoena CAD logs, dash camera timestamps, and K-9 dispatch records to establish the precise sequence and timing.
+
+**Consent Searches — Structure and Limits:**
+- *Florida v. Bostick*, 501 U.S. 429 (1991): "Free to leave" is not the dispositive test for voluntariness of consent during a traffic stop. The test is whether a reasonable person would feel free to decline the request or otherwise terminate the encounter under the totality of circumstances.
+- Oral consent to search is legally sufficient. Consent may be withdrawn at any time before or during a search; evidence discovered after withdrawal is subject to suppression.
+- Scope of consent is measured by objective reasonableness — what the typical reasonable person would have understood to be within the scope of the grant.
+- Refusal to consent *cannot* itself be used as probable cause for a search or extended detention. *United States v. Jones*, 234 F.3d 234 (5th Cir. 2000); *United States v. Crum* (6th Cir.).
+- An officer stating "you're free to go" followed immediately by a request to search creates a legally distinct second encounter. If the driver reasonably believes compliance is expected, voluntariness of resulting consent is contestable.
+
+**Attenuation Doctrine — Utah v. Strieff:**
+*Utah v. Strieff*, 579 U.S. 232 (2016): Evidence obtained after an unlawful stop may be admissible if sufficiently attenuated from the illegality, considering: temporal proximity, intervening circumstances (e.g., discovery of an outstanding warrant), and the purpose and flagrancy of the police misconduct. An outstanding arrest warrant discovered during an unlawful stop may "purge" the taint of the illegal stop and permit admission of evidence discovered in the resulting arrest search. Defense must challenge both the initial stop's legality and the attenuation analysis.
+
+---
+
+### K-9 Deployments and Drug Detection
+
+**Governing Doctrine:**
+- *Illinois v. Caballes*, 543 U.S. 405 (2005): A trained drug detection dog walked around the exterior of a lawfully stopped vehicle does not constitute a Fourth Amendment search, as there is no reasonable expectation of privacy in contraband.
+- *Florida v. Harris*, 568 U.S. 237 (2013): A K-9 alert establishes probable cause to search the vehicle interior if the dog has been trained and certified and there is no evidence of excessive error rates undermining reliability. The Court rejected a rigid field-records test; totality of circumstances governs.
+- *Rodriguez v. United States*, 575 U.S. 348 (2015): A dog sniff may not extend an otherwise completed traffic stop. Once the stop's purpose is finished, continued detention to await K-9 arrival requires independent reasonable suspicion.
+
+**K-9 Reliability Issues — Suppression Litigation:**
+Published field studies document K-9 alert rates that do not consistently correspond to actual contraband presence. Documented false-alert rates range from 12% to 96% depending on handler-dog team and environmental conditions. Handler cueing — inadvertent physical or behavioral signals from the handler indicating expectation of an alert — is a recognized source of unreliable alerts. *Florida v. Harris* permits defendants to challenge K-9 reliability through evidence of poor field performance records, lack of current certification, or inadequate training protocols. In Kentucky suppression practice, defense may request: K-9 training records, certification history, handler deployment log, field alert records, and handler curriculum vitae through discovery or RCr 7.24 motion.
+
+**Practical Implications:**
+A K-9 alert creates probable cause for a full vehicle search, including passenger compartment, trunk, and closed containers. Evidence obtained from that search is admissible unless: (1) the underlying stop was unlawful; (2) the stop was unlawfully extended beyond its completed purpose to accommodate K-9 arrival; or (3) K-9 reliability is successfully challenged. Suppression motions involving K-9 evidence should address all three grounds.
+
+---
+
+### Interrogation and Custodial Questioning
+
+**Miranda Doctrine — Application:**
+*Miranda v. Arizona*, 384 U.S. 436 (1966): Statements made during custodial interrogation are inadmissible unless preceded by adequate warnings and an intelligent, voluntary waiver. Custodial interrogation requires: (1) the person is "in custody" — a reasonable person would not feel free to terminate the encounter and leave; AND (2) police engage in express questioning or its functional equivalent (words or actions reasonably likely to elicit an incriminating response).
+
+**"Just Talking" — Avoiding Miranda Through Framing:**
+Officers frequently attempt to avoid Miranda obligations by framing pre-arrest contact as consensual conversation. *United States v. Hoyer* (W.D. Ky. 2019): Court suppressed statements where an officer represented the encounter as "just talking" while the defendant was effectively in custody, finding the framing deceptive and the resulting waiver invalid. Officers employing "wall stop" scenarios — blocking egress with a vehicle or body position while claiming the subject is free to leave — may create custody even without formal arrest. The determinative question is whether a reasonable person in the defendant's position would believe the encounter could be freely terminated.
+
+**Two-Step Interrogation — Missouri v. Seibert:**
+*Missouri v. Seibert*, 542 U.S. 600 (2004): Police may not deliberately employ a two-step interrogation strategy — eliciting a pre-Miranda confession, then providing Miranda warnings and re-questioning for the same facts — to circumvent Miranda. Statements obtained through deliberate Seibert two-step methodology are suppressible even if technically post-Miranda warning. Courts examine whether the Miranda warning was designed to function effectively as a warning or merely as a perfunctory formality in an already completed interrogation.
+
+**Kentucky-Specific Coercion Standards:**
+Kentucky courts apply a three-part coercion test drawn from *Gray v. Commonwealth* (Ky. 2016):
+1. Was there police overreaching or coercive conduct?
+2. Was the conduct objectively coercive under the circumstances?
+3. Did the coercive conduct actually cause the defendant to make the statement?
+
+Key Kentucky precedents:
+- *Gray v. Commonwealth* (Ky. 2016): Evidence that police fabricated evidence during questioning — false co-conspirator confessions, fabricated forensic results — creates a presumption of unconstitutional coercion. Fabrication of evidence during interrogation is per se impermissible.
+- *Carlisle v. Commonwealth* (Ky. Ct. App. 2011): "Wearing down" a defendant's resistance through sustained questioning, denial of rest, or isolation may satisfy the coercion element even absent explicit threats or physical pressure.
+- *Bailey v. Commonwealth* (Ky. 2006): Defendants with diminished mental capacity require only a lesser quantum of coercive conduct to satisfy the coercion test. Cognitive impairment, mental illness, intoxication, and youth are all relevant to the voluntariness analysis.
+- *N.C. v. Commonwealth* (Ky. 2013): Interrogation of minors in school settings without parental notification or counsel raises heightened voluntariness concerns; the totality of circumstances must account for age, education level, and the inherently coercive nature of school authority.
+- *Stanton v. Commonwealth* (Ky. 2011): Threats concerning third parties (e.g., CPS involvement with children, consequences for a spouse) do not automatically render a confession involuntary; threat of consequences that will occur independently of cooperation is generally permissible unless the threat is itself unlawful or fabricated.
+- *Springer v. Commonwealth* (Ky. 1999): Strategic deception — false representations about evidence strength, falsely claiming co-defendants confessed — is generally permissible under Kentucky law and does not alone establish coercion. However, deception combined with other coercive factors remains relevant to the totality inquiry.
+- *United States v. Chambers* (W.D. Ky. 2015): Implied waiver of Miranda — continuing to speak after warnings are given — constitutes valid waiver absent evidence of incapacity, coercion, or inadequate comprehension of the warnings.
+
+**Polygraph Evidence:**
+Polygraph results are inadmissible at trial in Kentucky courts under longstanding per se rule. Officers frequently offer polygraph examinations during pre-arrest investigation. Participation is voluntary; a defendant may legally decline. Participation does not constitute waiver of Fifth Amendment rights. Statements made during a polygraph examination are subject to Miranda analysis. *Rogers v. Commonwealth* (Ky. 2002): Defendant has a limited constitutional right to present evidence of a polygraph examination result when it is material to a specific defense theory, notwithstanding general inadmissibility.
+
+**RCr 8.27 — Suppression Motion Procedure:**
+Motions to suppress involuntary confessions or Miranda-violating statements are filed under RCr 8.27. Requirements: written motion filed before trial identifying specific statements and grounds for suppression; evidentiary hearing with testimony from interrogating officers; burden of proof on Commonwealth to establish voluntariness by preponderance of the evidence; court makes specific factual findings on the record regarding circumstances of the interrogation and the adequacy and voluntariness of any waiver.
+
+---
+
+### Pre-Arrest Practical Rights
+
+**Encounter Categories — Three Tiers:**
+Kentucky courts, consistent with federal doctrine, recognize three tiers of law enforcement encounters carrying distinct Fourth Amendment implications:
+
+1. **Consensual Contact**: No reasonable suspicion required. Officer may approach, speak to, and request identification or information. Person may decline to answer and walk away absent reasonable suspicion or probable cause for detention. No seizure exists unless a reasonable person would not feel free to leave.
+
+2. **Investigatory Detention (Terry Stop)**: Requires reasonable, articulable suspicion that criminal activity is afoot. Brief detention is permissible for the time necessary to confirm or dispel that suspicion. Officer may conduct a pat-down for weapons if there is reasonable suspicion the person is armed and dangerous. Duration is limited to what is reasonably necessary.
+
+3. **Arrest**: Requires probable cause supported by specific articulable facts. Triggers right to counsel (RCr 2.14(1)), right to remain silent (Fifth Amendment; Kentucky Constitution Section 14), and right to be brought before a judicial officer without unnecessary delay (RCr 3.02).
+
+**Rights During Traffic Stops:**
+- Driver must produce license, registration, and proof of insurance upon lawful demand.
+- No obligation to answer investigatory questions beyond identification requirements.
+- Driver may clearly state: "I do not consent to a search." Refusal to consent does not create probable cause and cannot be used as a basis for continued detention.
+- Driver may ask: "Am I free to go?" If the officer cannot articulate reasonable suspicion justifying continued detention, continued stop is unlawful.
+- Recording traffic stops in public spaces is constitutionally protected activity under the First Amendment. *ACLU of Illinois v. Alvarez*, 679 F.3d 583 (7th Cir. 2012); *Fields v. City of Philadelphia*, 862 F.3d 353 (3d Cir. 2017); majority federal circuit rule.
+
+**Rights if Stopped and Questioned:**
+- Provide identification if lawfully detained; Kentucky's stop-and-identify provisions do not require answering questions about activities, associations, or travel.
+- Invoke: "I want to remain silent" and "I want a lawyer." Both are legally operative independently; invoking either requires police to cease interrogation.
+- Do not physically resist even an unlawful arrest. The remedy for unlawful arrest is suppression of evidence and civil remedy, not force. *Kentucky v. King*, 563 U.S. 452 (2011).
+- Document everything immediately after the encounter: time, location, officer name and badge number, agency, what was said, what was searched, what was taken.
+
 ---
 
 ## PHASE 2: ARREST AND INITIAL CUSTODY
