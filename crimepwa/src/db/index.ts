@@ -32,6 +32,12 @@ class AppDB extends Dexie {
       phrasebook: null,
       resources: 'id, title, *tags'
     });
+    // v4: clear resources to force re-seed with updated pack (new local rules PDFs added)
+    this.version(4).stores({
+      resources: 'id, title, *tags'
+    }).upgrade(tx => {
+      return tx.table('resources').clear();
+    });
   }
 }
 

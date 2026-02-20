@@ -45,7 +45,10 @@ export const resourceAssets: Record<string, string> = {
   'fighting for your rights from court.pdf': new URL(
     './newcontent/fighting for your rights from court.pdf',
     import.meta.url
-  ).href
+  ).href,
+  'C6LOCALRULES (1).pdf': new URL('./Morecontent/C6LOCALRULES (1).pdf', import.meta.url).href,
+  'D6LOCALRULES (1).pdf': new URL('./Morecontent/D6LOCALRULES (1).pdf', import.meta.url).href,
+  'C6FamilyRules.pdf': new URL('./Morecontent/C6FamilyRules.pdf', import.meta.url).href
 };
 
 export function getResourceAsset(file: string): string {

@@ -39,7 +39,8 @@
       "related_resource_ids": [
         "ky.resource.domestic-violence-policy-2024",
         "ky.resource.kclm-2025-08-15",
-        "ky.resource.fighting-for-your-rights"
+        "ky.resource.fighting-for-your-rights",
+        "ky.resource.d6-local-rules"
       ]
     },
     {
@@ -52,7 +53,9 @@
       "related_resource_ids": [
         "ky.resource.suppression-manual-2024",
         "ky.resource.evidence-manual-8th-ed",
-        "ky.resource.ky-rules-of-evidence-2019"
+        "ky.resource.ky-rules-of-evidence-2019",
+        "ky.resource.c6-local-rules",
+        "ky.resource.d6-local-rules"
       ]
     },
     {
@@ -80,7 +83,8 @@
         "ky.resource.conflicts-of-interest",
         "ky.resource.evidence-manual-8th-ed",
         "ky.resource.ky-rules-of-evidence-2019",
-        "ky.resource.fighting-for-your-rights"
+        "ky.resource.fighting-for-your-rights",
+        "ky.resource.c6-local-rules"
       ]
     },
     {
@@ -127,7 +131,8 @@
       "color": "info",
       "related_resource_ids": [
         "ky.resource.domestic-violence-policy-2024",
-        "ky.resource.lgbtq-victims-of-crime"
+        "ky.resource.lgbtq-victims-of-crime",
+        "ky.resource.c6-family-rules"
       ]
     }
   ]
