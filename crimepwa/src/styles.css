@@ -108,6 +108,11 @@ body {
   border-radius: 8px;
 }
 
+/* Logo is dark navy — invert to white on the dark masthead */
+.context-bar .app-logo {
+  filter: brightness(0) invert(1);
+}
+
 /* ─── Bottom navigation ─── */
 /* Same dark as masthead — deliberate bookend structure */
 .bottom-nav {
