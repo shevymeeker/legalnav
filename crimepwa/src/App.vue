@@ -1,7 +1,7 @@
 <template>
-  <div class="app-shell">
+  <div>
     <div class="context-bar">
-      <div class="d-flex align-items-center gap-2">
+      <div class="context-bar__inner">
         <img src="/icons/logo-192.png" alt="Wildman Legal Nav logo" class="app-logo" />
         <div>
           <div class="fw-bold">Wildman Legal Nav</div>
@@ -10,7 +10,9 @@
       </div>
     </div>
 
-    <router-view />
+    <div class="app-shell">
+      <router-view />
+    </div>
 
     <nav class="bottom-nav" aria-label="Bottom navigation">
       <div class="nav-inner">
