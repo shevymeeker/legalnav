@@ -23,8 +23,8 @@ export default defineConfig({
         name: 'Wildman Legal Nav',
         short_name: 'Wildman Legal Nav',
         description: 'Wildman Legal Nav – not legal advice.',
-        theme_color: '#0b1b2b',
-        background_color: '#f6f6f6',
+        theme_color: '#0d1b2a',
+        background_color: '#0d1b2a',
         display: 'standalone',
         icons: [
           { src: 'icons/logo-192.png', sizes: '192x192', type: 'image/png' },
