@@ -102,12 +102,12 @@ Kentucky courts apply a three-part coercion test drawn from *Gray v. Commonwealt
 3. Did the coercive conduct actually cause the defendant to make the statement?
 
 **Key Kentucky Precedents:**
-- *Gray v. Commonwealth* (Ky. 2016): Evidence that police fabricated evidence during questioning — false co-conspirator confessions, fabricated forensic results — creates a presumption of unconstitutional coercion. Fabrication of evidence during interrogation is per se impermissible.
+- *Gray v. Commonwealth*, 480 S.W.3d 253 (Ky. 2016): Kentucky courts draw a firm line between permissible verbal deception and prohibited fabricated documentary evidence. Presenting a defendant with a forged Kentucky State Police laboratory report bearing official letterhead and falsely indicating forensic results is per se impermissible conduct that creates a strong presumption of coercion. This is distinct from verbal bluffing—falsely claiming surveillance footage exists or that a co-defendant confessed—which remains permissible under *Springer v. Commonwealth*.
 - *Carlisle v. Commonwealth* (Ky. Ct. App. 2011): "Wearing down" a defendant's resistance through sustained questioning, denial of rest, or isolation may satisfy the coercion element even absent explicit threats or physical pressure.
 - *Bailey v. Commonwealth* (Ky. 2006): Defendants with diminished mental capacity require only a lesser quantum of coercive conduct to satisfy the coercion test. Cognitive impairment, mental illness, intoxication, and youth are all relevant to the voluntariness analysis.
 - *N.C. v. Commonwealth* (Ky. 2013): Interrogation of minors in school settings without parental notification or counsel raises heightened voluntariness concerns; the totality of circumstances must account for age, education level, and the inherently coercive nature of school authority.
 - *Stanton v. Commonwealth* (Ky. 2011): Threats concerning third parties (e.g., CPS involvement with children, consequences for a spouse) do not automatically render a confession involuntary; threat of consequences that will occur independently of cooperation is generally permissible unless the threat is itself unlawful or fabricated.
-- *Springer v. Commonwealth* (Ky. 1999): Strategic deception — false representations about evidence strength, falsely claiming co-defendants confessed — is generally permissible under Kentucky law and does not alone establish coercion. However, deception combined with other coercive factors remains relevant to the totality inquiry.
+- *Springer v. Commonwealth*, 998 S.W.2d 439 (Ky. 1999): Verbal bluffing about evidence — false claims that surveillance footage exists or that co-defendants have confessed — is a permissible investigative technique that does not automatically render a resulting confession involuntary. However, verbal deception combined with other coercive factors remains relevant to the totality inquiry. Contrast with *Gray v. Commonwealth*, which prohibits fabricated documentary evidence.
 - *United States v. Chambers* (W.D. Ky. 2015): Implied waiver of Miranda — continuing to speak after warnings are given — constitutes valid waiver absent evidence of incapacity, coercion, or inadequate comprehension of the warnings.
 
 ---
@@ -121,7 +121,7 @@ Kentucky courts, consistent with federal doctrine, recognize three tiers of law 
 
 2. **Investigatory Detention (Terry Stop)**: Requires reasonable, articulable suspicion that criminal activity is afoot. Brief detention is permissible for the time necessary to confirm or dispel that suspicion. Officer may conduct a pat-down for weapons if there is reasonable suspicion the person is armed and dangerous. Duration is limited to what is reasonably necessary.
 
-3. **Arrest**: Requires probable cause supported by specific articulable facts. Triggers right to counsel (RCr 2.14(1)), right to remain silent (Fifth Amendment; Kentucky Constitution Section 14), and right to be brought before a judicial officer without unnecessary delay (RCr 3.02).
+3. **Arrest**: Requires probable cause supported by specific articulable facts. Triggers right to counsel (RCr 2.14(1)), right to remain silent (Fifth Amendment; Kentucky Constitution Section 11), and right to be brought before a judicial officer without unnecessary delay (RCr 3.02).
 
 **Rights During Traffic Stops:**
 - Driver must produce license, registration, and proof of insurance upon lawful demand.
@@ -171,10 +171,12 @@ Misdemeanor Arrests - Officer may arrest without warrant when:
 - Misdemeanor committed in officer's presence
 - Specific statutory authorization exists (domestic violence, protective order violations, etc.)
 
-Citation in Lieu of Arrest (KRS 431.005):
-- Officer may issue citation for misdemeanors if reasonable grounds exist that person will appear
-- If defendant fails to appear, complaint filed and warrant issued
-- Physical arrest plus citation: officer marks "ARRESTED" on citation instead of court date
+Citation in Lieu of Arrest (KRS 431.015):
+- Notwithstanding KRS 431.005, a peace officer shall issue a citation instead of making an arrest for a misdemeanor committed in the officer's presence when there are reasonable grounds to believe the cited person will appear. The citation must designate an appearance time.
+- A peace officer may make an arrest instead of issuing a citation when the misdemeanor involves a violation of KRS Chapter 508, 510, or 527, or KRS 189A.010, 511.050, 511.085, 514.110, or 523.110; when the offense involves a risk of danger to the defendant or another person; or when the defendant refuses to follow the officer's reasonable instructions.
+- A peace officer shall make an arrest, not issue a citation, for violations of protective orders issued under KRS 403.715 through 403.785 or an order of protection as defined in KRS 456.010.
+- If defendant fails to appear, complaint filed and warrant issued.
+- Physical arrest plus citation: officer marks "ARRESTED" on citation instead of court date.
 
 Post-Arrest Complaint Requirement (RCr 3.02):
 - When arrest made without warrant, post-arrest complaint must be filed
@@ -188,9 +190,13 @@ Issued when witness fails to appear pursuant to subpoena or defendant fails to a
 
 ### Right to Contact Attorney
 
-**RCr 2.14(1) - Immediate Rights**
+**RCr 2.14 - Access to Counsel in Custody**
 
-Any person taken into custody must be allowed to communicate with attorney "as soon as practicable." This is not simply a courtesy but a mandatory procedural requirement. Denial of this right creates grounds for suppression of statements and potentially other remedies.
+An arrested person must be permitted to make communications to secure the services of an attorney. Any attorney entitled to practice in the courts of the Commonwealth must be permitted to visit the person in custody upon the request of the detainee or of someone acting on the detainee's behalf.
+
+*West v. Commonwealth*, 887 S.W.2d 338 (Ky. 1994) established that this protection extends further than the federal standard: if an attorney contacts the facility on behalf of a detained person—even when retained by a third party without the person's knowledge—law enforcement must provide access and cannot continue interrogation.
+
+Denial of this right creates grounds for suppression of statements and potentially other remedies.
 
 Practical implementation: Upon booking at Daviess County Detention Center, defendant must be afforded reasonable opportunity to contact counsel, family members who can contact counsel, or public defender's office.
 
@@ -278,22 +284,19 @@ The constitutional mandate is that bail *must be offered*. Whether a defendant c
 
 The practical reality is that a significant portion of defendants held in pretrial detention are there not because a court determined they are dangerous or a flight risk beyond any bail — but because the bail set, even if constitutionally appropriate in amount, exceeds what they can pay. This financial reality does not eliminate the constitutional violation of denying the offer of bail; it adds a separate layer of systemic consequence. Defendants held on unaffordable bail are not there as punishment — legally they cannot be — but the functional effect is the same.
 
-**Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
+**Mandatory Release for Low and Moderate Risk Defendants (KRS 431.066)**
 
-Defendants assessed as low risk for failure to appear and low or moderate risk for new criminal activity are eligible for release on recognizance under statewide schedule, with numerous exceptions including:
+KRS 431.066, enacted through HB 463 in 2011, establishes mandatory release standards:
+- If the defendant poses a low risk of flight, is likely to appear for trial, and is not likely to be a danger to others, the court **shall** order release on unsecured bond or on the defendant's own recognizance.
+- If the defendant poses a moderate risk of flight, has a moderate risk of non-appearance, or poses a moderate risk of danger, the court shall release under the same low-risk conditions but shall consider ordering GPS monitoring, controlled substance testing, increased supervision, or other conditions.
+- A court that departs from unsecured or recognizance release for a high-risk defendant must document the reasons in a written order.
+- KRS 431.066 also requires that a defendant be permitted a credit of **one hundred dollars per day** for each day or portion of a day spent in jail prior to trial. When sufficient credit has accrued to satisfy the bail amount, the court shall order release. This credit does not apply to violent offenders as defined in KRS 439.3401, to persons convicted of specified sex offenses, or to persons determined by the court to present a flight risk or danger to others.
 
-Ineligible Defendants:
-- Charges listed in specified offense schedule (Appendix A - serious violent crimes)
-- Alcohol intoxication in public place (released per specific protocol)
-- DUI 1st offense (detained minimum 6 hours)
-- DUI causing death or serious physical injury (not eligible for schedule release)
-- Indictment warrant arrests
-- Extradited defendants
-- Defendants who decline pretrial services interview
-- Contempt of court arrests
-- Violation of release conditions
-- Offenses during declared emergency/disaster/civil unrest
-- Charges with alleged victim (special no-contact condition imposed)
+**Special Provisions for Assault, Sexual Offense, and Protective Order Cases (KRS 431.064):**
+Before releasing any person arrested for or charged with a crime under KRS Chapter 508 (assault) or KRS Chapter 510 (sexual offenses), or for a crime involving violation of an order of protection, the court must review the facts of the arrest, determine whether the person is a threat to the alleged victim, and make findings on the record before release. A written order of conditional release must be issued, a copy immediately distributed to pretrial services, and the conditions entered into the Law Information Network of Kentucky within twenty-four hours. Any person who violates a condition of release under KRS 431.064 is guilty of a Class A misdemeanor.
+
+**Non-Bailable Offenses:**
+A person arrested for Alcohol Intoxication first or second offense cannot be held for more than eight hours (KRS 222.204). Violations generally are not bailable, with specific exceptions listed in KRS 431.062.
 
 **Judicial Discretion Factors (RCr 4.02; KRS 431.066):**
 
@@ -314,13 +317,16 @@ Special Provisions for Domestic Violence/Sexual Assault Cases (KRS 431.064):
 - Court must impose conditions protecting alleged victim
 - Conditions may include: no-contact orders, stay-away provisions, GPS monitoring, surrender of firearms, substance abuse testing
 
-Bond Types Available:
-- Release on own recognizance (ROR)
-- Unsecured bond (defendant signs promise to pay if fails to appear, but posts no money upfront)
-- Cash bond (full amount posted)
-- Property bond (real property pledged)
-- Surety bond (commercial bail bonding outlawed in Kentucky - not available)
-- Conditional release (specific conditions imposed: GPS, home incarceration, substance abuse treatment, mental health treatment, regular reporting)
+Bond Types Available (KRS 431.520):
+- **Personal recognizance (ROR):** Written promise to appear; no financial obligation.
+- **Unsecured bond:** Defendant signs promise to pay a specified amount only upon failure to appear; no money posted upfront.
+- **Cash bond:** Full bail amount deposited in cash.
+- **Ten-percent deposit bond:** Ten percent of the total bail deposited; ninety percent of the deposit returned upon compliance, ten percent retained (minimum five dollars) as a court fee. This is the most common secured bond form in Kentucky.
+- **Property bond:** Real estate in Kentucky with equity worth double the bond amount pledged.
+- **Surety bond (non-commercial):** A third party—who must be worth the amount promised—personally guarantees the defendant's appearance. Commercial bail bonding for profit was outlawed in Kentucky in 1975; a surety must be a private individual, not a bonding company.
+- **Non-financial conditional release:** Placement in supervision, restrictions on travel or association, GPS monitoring, substance abuse treatment, or other conditions imposed in any combination.
+
+Regardless of which form applies, **ten percent of any cash deposited for bail purposes is retained by the court as a bail fee and is not returned** (KRS 431.530(3), 431.532(2)).
 
 **24-Hour Bond Review:**
 
@@ -437,28 +443,36 @@ Determine whether probable cause exists to believe:
 
 This is NOT a determination of guilt, only whether sufficient evidence exists to justify continued detention or bond and to proceed to circuit court.
 
-**Timing Requirements:**
-- Defendant in custody: within 10 days after arraignment (RCr 3.14)
-- Defendant released on bond: within 20 days after arraignment
+**Timing Requirements (RCr 3.10):**
+- Defendant in custody: within 10 days of the initial appearance
+- Defendant released on bond: within 20 days of the initial appearance
+- If the required hearing is not held within these windows, the court must discharge the defendant from custody. Any further action on those charges must then proceed through the grand jury.
 - Continuances permitted for good cause
 
 **Hearing Procedure:**
 - Commonwealth presents witnesses and evidence
 - Defense may cross-examine witnesses
 - Defense may present evidence but typically does not (preserves trial strategy, avoids revealing defense)
-- Hearsay admissible if within recognized exception
+- Hearsay broadly admissible; a finding of probable cause may be based entirely or in part on hearsay evidence (RCr 3.14(2)). The formal rules of evidence that govern trials do not apply.
+- Objections to evidence on grounds of unlawful search and seizure are not permitted at the preliminary hearing (RCr 3.14(3)); those challenges must be reserved for Circuit Court after indictment is returned.
 - Lower evidentiary standard than trial
 
 **Outcomes:**
-- Probable cause found: defendant bound over to grand jury; case proceeds to circuit court
-- Probable cause not found: defendant released; Commonwealth may still present case to grand jury
-- If probable cause found and defendant in custody, bond reviewed and may be modified
+- Probable cause found: defendant bound over to grand jury; judge holds defendant to answer in Circuit Court and simultaneously reviews bail conditions.
+- Probable cause not found: defendant released; Commonwealth may still present case to grand jury.
+- If probable cause found and defendant in custody, bond reviewed and may be modified.
+
+**60-Day Indictment Rule (RCr 5.22):**
+If the defendant is held to answer following a probable cause finding but is not indicted within sixty days, the Circuit Court must, upon motion, discharge the defendant from custody or exonerate bail. This discharge does not bar a subsequent indictment, because no statute of limitations applies to felony offenses.
+
+**Bail Jurisdiction After Preliminary Hearing:**
+Bail jurisdiction during the period between the preliminary hearing and indictment remains with the District Court (RCr 4.54). Upon return of an indictment, jurisdiction over bail passes immediately to the Circuit Court.
 
 **Waiver:**
 Defendant may waive preliminary hearing. Common reasons: already indicted by grand jury, negotiating plea agreement, avoiding revealing Commonwealth's evidence.
 
-**Jurisdiction Transfer:**
-After preliminary hearing or waiver, case file transferred to circuit court for grand jury presentation and circuit court proceedings.
+**Jurisdiction Transfer (RCr 3.22):**
+Upon a finding of probable cause or a waiver of the hearing, the District Court Clerk transmits all records, papers, and bail documents to the Circuit Court Clerk and the Commonwealth's Attorney.
 
 ---
 
@@ -466,8 +480,8 @@ After preliminary hearing or waiver, case file transferred to circuit court for 
 
 ### Daviess County Grand Jury Structure
 
-**C6 Local Rule 2.06 - Grand Jury Schedule:**
-Grand jury impaneled on first Tuesday of January and first Tuesday of July (or next day thereafter if legal holiday) in months without jury trial periods. Each grand jury meets thereafter on first Tuesday of each month for six months. Sessions typically 2-4 days, not exceeding statutory limit of 20 total days per jury's service.
+**C6 Local Rule 206 - Grand Jury Schedule:**
+A new grand jury is impaneled on the first Tuesday of January and the first Tuesday of July at 8:30 AM. The grand jury then meets on the first Tuesday of each month for six months. If the first Tuesday falls on a legal holiday, the grand jury meets on the next succeeding day that is not a holiday. Each session is anticipated to run two days, with more time as justice requires. The statutory maximum is twenty days of actual court attendance during the six-month service period. The Circuit Court Clerk randomly and equally divides cases and the jury pool among the divisions; the division holding a trial period during those months provides the presiding judge.
 
 ### Composition and Selection
 
@@ -564,13 +578,16 @@ Voting:
 - Multiple defendants (several persons charged in same indictment if offenses related)
 
 **Filing:**
+- A True Bill requires agreement from at least nine of the twelve grand jurors. The True Bill becomes a formal indictment when signed by the foreperson and the Commonwealth's Attorney.
+- In Daviess County, indictments are returned in open court on the record after the session concludes.
 - Indictment filed with circuit court clerk
 - Defendant served with copy
 - Arrest warrant issued if defendant not already in custody or released on bond
 - If defendant on bond from district court, bond continues unless circuit court modifies
+- Upon the finding of probable cause or waiver of the hearing, the District Court Clerk transmits all records, papers, and bail documents to the Circuit Court Clerk and the Commonwealth's Attorney (RCr 3.22).
 
 **No True Bill:**
-If grand jury finds insufficient evidence, returns "No True Bill" and matter dismissed. Commonwealth may re-present to different grand jury if new evidence develops.
+If grand jury finds insufficient evidence, the foreperson reports a No True Bill in writing to the court. A defendant held to answer on a charge that receives a No True Bill is released. A No True Bill is not an acquittal and does not bar re-presentation to a subsequent grand jury if new evidence is obtained.
 
 **Statute of Limitations (KRS 500.050):**
 - Felonies: No limitation period (may be prosecuted anytime)
@@ -599,8 +616,8 @@ Operates in two divisions (Division I and Division II) per C6 Local Rule 1.04:
 
 ### Arraignment - Felony Cases in Circuit Court
 
-**Timing (C6 Local Rule 2.01):**
-Arraignment and initial pretrial conferences held commencing 8:30 AM on first Thursday and Friday next after beginning of trial period.
+**Timing (C6 Local Rule 201):**
+Arraignment and initial pretrial conferences held commencing 8:30 AM on the Thursday and Friday next after the beginning of the trial period. The defendant must be personally present; defense counsel cannot waive this appearance on the defendant's behalf. The Morton J. Holbrook Judicial Center also closes on the Friday immediately preceding the annual Owensboro Barbeque Festival, in addition to holidays designated by the Administrative Office of the Courts.
 
 **Procedure:**
 - Formal reading of charges from indictment
@@ -621,11 +638,11 @@ District court lacks jurisdiction to accept guilty plea in felony case at distri
 
 ### Pre-Trial Procedures and Motion Practice
 
-**C6 Local Rule 2.02 - Criminal Motion Docket:**
+**C6 Local Rule 202 - Criminal Motion Docket:**
 
-Criminal motions heard each morning at 8:30 AM on Monday, Wednesday, and Thursday.
+Division I criminal motions are heard each morning at 8:30 AM. Division II criminal motions are heard at 8:30 AM on Monday, Wednesday, and Thursday.
 
-Hearings estimated to last more than 30 minutes set by calling judge's office. Generally set at 1:30 on first available afternoon.
+Hearings estimated to last more than 30 minutes cannot be heard during the regular morning call and must be separately scheduled, generally at 1:30 PM on the first available afternoon. Division II schedules such matters by calling the judge's chambers.
 
 **Common Pretrial Motions:**
 
@@ -634,12 +651,13 @@ Hearings estimated to last more than 30 minutes set by calling judge's office. G
 - Defense entitled to: police reports, witness statements, defendant's statements, scientific reports, expert witness information, physical evidence, exculpatory evidence (Brady material), impeachment evidence (Giglio material)
 - Mutual disclosure: defense must provide reciprocal discovery of alibi witnesses, insanity defense notice, expert witnesses
 
-**Motion to Suppress Evidence (RCr 8.32):**
+**Motion to Suppress Evidence (RCr 8.27):**
 - Challenges legality of search, seizure, or arrest
 - Challenges admissibility of defendant's statements
-- Hearing held on motion (evidentiary hearing with witness testimony)
-- Burden on defendant to establish standing
-- Burden on Commonwealth to establish lawfulness of search/seizure
+- Must be filed by the deadline established under RCr 8.20 for pretrial motions, or within a reasonable time before trial where no specific deadline has been set. Failure to timely file operates as a waiver unless the court grants relief for good cause.
+- Hearing held on the record and before trial; no jury or prospective juror may be present (RCr 8.27(2))
+- Any party intending to call a witness must furnish opposing counsel copies of all prior statements by that witness at least 48 hours before the hearing (RCr 8.27(3))
+- Burden on Commonwealth to prove by a preponderance of the evidence that the statement or evidence is admissible
 - Exclusionary rule: illegally obtained evidence suppressed
 
 **Motion to Dismiss:**
@@ -674,7 +692,7 @@ Hearings estimated to last more than 30 minutes set by calling judge's office. G
 - Requests court exclude specific evidence from trial
 - Heard immediately before trial
 
-**C6 Local Rule 2.02(4)(d) - Motion Requirements:**
+**C6 Local Rule 202 - Motion Requirements:**
 
 Written motions served at least five (5) days before hearing unless different time fixed by CR, applicable statute, or court order.
 
@@ -682,7 +700,7 @@ All motions going to merits or requiring citation of authority must be accompani
 
 Party properly served with motion or application must file response containing statement of grounds for opposing motion with memorandum of points and authorities. Responses filed at or prior to time specified in notice of hearing. Failure to file response may be grounds for sustaining motion, but time for filing response may be extended for good cause shown.
 
-### Pretrial Conferences (RCr 8.26; C6 Local Rule 2.03)
+### Pretrial Conferences (C6 Local Rule 203)
 
 **Purpose:**
 - Narrow issues for trial
@@ -699,7 +717,7 @@ Party properly served with motion or application must file response containing s
 - Defendant not required to attend unless entering plea
 - Multiple pretrial conferences common in complex cases
 
-**Scheduling Order (C6 Local Rule 2.03):**
+**Scheduling Order (C6 Local Rule 203):**
 Upon motion of either party or on court's own initiative, scheduling order may be provided establishing deadlines for:
 - Discovery completion
 - Disclosure of experts
@@ -711,7 +729,7 @@ Pretrial conference pursuant to CR 16 may include consideration of scheduling or
 
 ### Assignment of Jury Trials
 
-**C6 Local Rule 2.04 - Assignment of Jury Trials:**
+**C6 Local Rule 204 - Assignment of Jury Trials:**
 
 Motions to set jury trials held approximately two months before month with available trial dates. Clerk of each division sets motions to be heard in that division. Attorney wishing to set case for jury trial may move clerk for listing on motion docket.
 
@@ -729,16 +747,18 @@ Court trials may be had at time convenient with judge, attorneys, and parties. M
 
 ### Jury Trial Schedules
 
-**C6 Local Rule 2.07 - Jury Trial Periods:**
+**C6 Local Rule 207 - Jury Trial Periods:**
 
-Jury trial periods held in each division commencing on first Monday of every other month except December.
+Jury trial periods begin on the first Monday of every other month except December, staggered so that jury trials are in progress in one division or the other every month except December.
 
-In even-numbered years, jury trial periods as follows:
+In odd-numbered years, jury trial periods as follows:
 
 **Division I:** January, March, May, July, September, November
 **Division II:** February, April, June, August, October
 
-In odd-numbered years, months reversed for each division and alternated annually thereafter on annual basis. Although no jury trials in December, grand jury meets at its designated time that month.
+In even-numbered years the assignments reverse, and alternate annually thereafter. Although no jury trials in December, the grand jury meets at its designated time that month.
+
+Grand jury duties rotate between divisions based on which division holds the trial period during those months.
 
 Alternatively, first two weeks devoted to trial of civil cases, and criminal cases set thereafter. May be modified by judge as circumstances require.
 
@@ -861,17 +881,25 @@ Court may order presentence psychiatric examination for period not exceeding 60 
 - Hearing held if defendant contests factual assertions
 - Report aids judge in determining appropriate sentence within statutory limits
 
-### Sentencing Hearing
+### Bifurcated Trial and Sentencing Hearing
+
+**Truth in Sentencing — The Bifurcated Trial (KRS 532.055):**
+Kentucky felony trials operate in two distinct phases. In the **guilt phase**, the jury makes a determination of not guilty, guilty, guilty but mentally ill, or not guilty by virtue of insanity, and no more. Sentencing information is not presented during the guilt phase.
+
+Upon a verdict of guilty or guilty but mentally ill, the court conducts a **sentencing hearing** before the same jury. During this phase, the Commonwealth may introduce: minimum parole eligibility for the offense; prior felony and misdemeanor convictions with dates of commission, sentencing, and release; the nature of prior offenses; the defendant's status if on probation, parole, postincarceration supervision, or conditional discharge at the time of the offense; relevant juvenile adjudications for offenses that would constitute felonies if committed by an adult; and victim impact evidence as defined in KRS 421.500. The defendant may introduce evidence in mitigation or in support of leniency.
+
+**Argument Order:** Defense counsel argues first, followed by the Commonwealth. The jury then recommends a sentence within the statutory range. If the jury cannot agree on a sentence, the judge imposes the sentence within the range provided by law.
+
+All sentencing hearings under KRS 532.055 are combined with any hearing provided for by KRS 532.080 relating to persistent felony offender status.
 
 **Timing:**
 Sentence imposed without unreasonable delay. Typically 30-60 days after conviction to allow presentence investigation completion.
 
-**Procedure:**
+**Procedure (Non-Jury Sentencing / Judge Sentencing After Jury Recommendation):**
 - Presentence report presented to court
-- Commonwealth Attorney argues for appropriate sentence (may include victim statements)
+- Commonwealth Attorney may present victim impact statements and sentencing arguments
 - Defense attorney argues for appropriate sentence
 - Defendant may make statement (allocution)
-- Court may hear from victims (victim impact statements)
 - Judge considers: nature and circumstances of offense, defendant's character and background, need for deterrence, protection of public, rehabilitation of defendant, presentence report recommendations
 
 ### Sentencing Options and Limitations
@@ -940,6 +968,9 @@ Defendants convicted of specified violent offenses must serve 85% of sentence be
 - May be condition of probation or part of sentence
 - Includes: medical expenses, lost wages, property damage, funeral expenses, counseling costs
 
+**Postincarceration Supervision (KRS 532.060(3)):**
+For any felony specified in KRS Chapter 510 (sexual offenses) or KRS 530.020, 530.064(1)(a), 531.310, 531.320, 531.335, 529.100, 529.110, or 531.340, the sentence must include an additional **five-year period of postincarceration supervision** added to the maximum sentence. A defendant who violates conditions during this period may be reincarcerated for the remaining initial sentence (if any) plus the entire postincarceration supervision period.
+
 **Concurrent vs. Consecutive Sentences:**
 - Concurrent: sentences run simultaneously (defendant serves longest sentence)
 - Consecutive: sentences run one after another (defendant serves combined total)
@@ -1001,16 +1032,22 @@ Court's mandate of death sentence, when confirmed on appeal, fixes execution day
 - Final judgment: judgment entered after guilty plea or jury verdict, sentence imposed
 - Failure to file timely notice = loss of appeal rights (jurisdictional)
 
-**Clerk Notification (C6 Local Rule 2.05; RCr 12.06):**
+**Clerk Notification (RCr 12.06):**
 Clerk immediately notifies parties of entry of judgments in felony cases, except notification unnecessary for judgment entered pursuant to guilty plea.
 
+**Appellate Court Jurisdiction:**
+- When a defendant is sentenced to **twenty years or more, to life imprisonment, or to death**, the appeal proceeds **directly to the Kentucky Supreme Court**, bypassing the Court of Appeals entirely.
+- In all other criminal cases, the appeal goes to the Court of Appeals. Either party may then seek review by the Kentucky Supreme Court through a motion for discretionary review, filed within thirty days of the Court of Appeals opinion.
+
 **Appellate Process:**
-- Notice of appeal filed with circuit court clerk
-- Transcript of proceedings prepared (defendant entitled to free transcript if indigent)
-- Appellate brief filed (appellant's brief, appellee's brief, reply brief)
-- Oral argument (may be waived)
-- Court of Appeals renders decision
-- Further appeal to Kentucky Supreme Court (by motion for discretionary review)
+- Notice of appeal filed with circuit court clerk within 30 days of sentencing. The filing fee must be paid when the notice is tendered; a defendant unable to pay may file a motion to proceed in forma pauperis simultaneously.
+- Most Kentucky circuit courts record proceedings electronically; that recording serves as the official appellate record. No separate written transcript is prepared. The clerk automatically includes any trial recording in the certified record; pre-trial and post-trial hearings must be specifically designated by the appellant.
+- A designation of record must be filed within ten days of the notice of appeal if additional material beyond what the clerk automatically assembles is needed.
+- The circuit court clerk certifies the record within thirty days of the notice of appeal.
+- Appellant's brief due sixty days after certification of the record (or sixty days from when the record is made available to the Department of Public Advocacy if DPA represents the appellant).
+- Appellee's brief due sixty days after filing of appellant's brief. Reply brief due fifteen days after appellee's brief.
+- Oral argument scheduled in fewer than ten percent of appeals; the Court announces decisions each Friday at 10:00 AM.
+- Further appeal to Kentucky Supreme Court by motion for discretionary review (unless sentence triggers direct Supreme Court jurisdiction above).
 
 **Issues Reviewable:**
 - Legal errors (jury instructions, evidentiary rulings, constitutional violations)
@@ -1106,11 +1143,19 @@ Sheriff furnished forthwith with two certified copies of judgment ordering confi
 - Considers: nature of offense, criminal history, institutional conduct, rehabilitation programming, parole plan, risk to community
 - Grants or denies parole
 
-**Parole Eligibility:**
-- Non-violent offenders: eligible after serving 20% of sentence
-- Violent offenders: eligible after serving 85% of sentence
-- Life sentences: minimum 20 years (25 years if convicted after 1998)
-- Sex offenders: special provisions under KRS 439.3401
+**Parole Eligibility (501 KAR 1:030; KRS 439.3401; KRS 197.045(4)):**
+
+For felony offenses committed after December 3, 1980, initial parole review under 501 KAR 1:030:
+- Sentence of one year up to but not including two years: four months must be served
+- Sentence of two years up to and including thirty-nine years: twenty percent of the sentence received must be served
+- Sentence of more than thirty-nine years up to and including life: eight years must be served
+- Persistent Felony Offender I in conjunction with a Class A, B, or C felony: ten years must be served
+
+Separate, more restrictive schedules apply for capital offenses, Class A felonies, Class B felonies involving death or serious physical injury, and for Rape 1 and Sodomy 1.
+
+Violent offenders as defined in KRS 439.3401 must serve at least eighty-five percent of the sentence before parole eligibility.
+
+Sex offenders convicted on or after July 15, 1998 have eligibility governed by KRS 197.045(4).
 
 **Probation Supervision:**
 - Probation officers supervise defendants on probation
@@ -1128,16 +1173,27 @@ Eligible Felonies (Class D only):
 - No pending charges
 - Eligible offenses limited (violent offenses, sex offenses, DUI generally ineligible)
 
-**Misdemeanor Expungement (KRS 431.078):**
-- Class A or B misdemeanor
-- Five years after completion of sentence
-- Limited to certain offenses
-- No subsequent convictions
+**Misdemeanor and Violation Expungement (KRS 431.078):**
+- KRS 431.078 permits a person convicted of a **misdemeanor or a violation**, or a series of misdemeanors or violations arising from a single incident, to petition the court of conviction for expungement. The petition encompasses not only the conviction but also any charges that were dismissed or amended in the same criminal action.
+- A petition may not be filed sooner than **five years** after completion of the sentence, including any period of probation or conditional discharge.
+- The sentencing court must **advise the defendant of this right at the time of adjudication**.
+- For cases dismissed with prejudice or resulting in a verdict of not guilty, a petition to expunge the arrest and charge records may be filed no sooner than sixty days from the date of dismissal.
+- No person whose records have been expunged is required to disclose the expunged offense in response to any inquiry.
 
 **Effect of Expungement:**
 - Records sealed from public
 - Defendant may deny conviction occurred (with limited exceptions for law enforcement, licensing)
 - Conviction still considered for sentencing enhancement in future cases
+
+### Collateral Consequences of Conviction
+
+A criminal conviction carries consequences that extend well beyond the sentence imposed by the court. These operate independently of the sentence and are not controlled by the court at sentencing.
+
+**Immigration:** For defendants who are not United States citizens, a conviction or guilty plea may trigger removal proceedings, bars to naturalization, or other immigration disabilities entirely apart from any sentence imposed. *Padilla v. Kentucky*, 130 S. Ct. 1473 (2010) held that defense counsel has a constitutional obligation under the Sixth Amendment to advise non-citizen clients about the immigration consequences of a guilty plea; failure to do so constitutes deficient performance for an ineffective assistance of counsel claim.
+
+**Civil Rights and Benefits:** Conviction may foreclose eligibility for federally subsidized public housing and federal student financial aid, restrict access to certain professional licenses, require disclosure on employment background checks, and result in loss of the right to vote, the right to hold public office, and the right to serve on a jury. Sex offense convictions require registration under the Kentucky Sex Offender Registry.
+
+**Enhanced Penalties:** Kentucky is an enhanceable offense state for numerous charge categories. For many enumerated offenses, a second or subsequent conviction within five years carries higher statutory penalties, including reclassification from misdemeanor to felony. Kentucky best practices require that a defendant be informed of any applicable enhancement exposure before entering a guilty plea, with an individual colloquy on the record if the defendant intends to waive counsel.
 
 ---
 
@@ -1154,11 +1210,16 @@ Before releasing person arrested for or charged with KRS 508 (assault), KRS 510 
 
 ### Mental Health Proceedings
 
-**Competency to Stand Trial (KRS 504.060; KRS 504.100):**
-- Defendant incompetent if unable to understand nature and consequences of proceedings or unable to assist counsel in defense
-- Court-ordered evaluation
-- If incompetent: proceedings suspended, defendant may be committed for treatment
-- Periodic review of competency status
+**Competency to Stand Trial (KRS 504.060; KRS 504.090):**
+KRS 504.060(5) defines incompetency as, as a result of mental condition, a lack of capacity to appreciate the nature and consequences of the proceedings or to participate rationally in one's own defense. KRS 504.090 provides that no defendant who is incompetent shall be tried, convicted, or sentenced so long as incompetency continues.
+
+**Seth's Law (House Bill 385, 2024 — amending KRS 504.080):**
+Prior to 2024, competency evaluations required placement at a centralized state forensic psychiatric facility, with a waitlist exceeding 400 individuals and average delays of approximately twelve months. Seth's Law authorized Circuit Courts to order **outpatient** competency evaluations conducted at local detention facilities, community behavioral health clinics, or via secure telehealth, targeting a three-to-five-week evaluation timeline.
+
+Procedure:
+- If the initial outpatient examiner concludes extended inpatient observation is medically necessary, the court may commit to a forensic psychiatric facility for **up to thirty days**. The examiner delivers a sealed report to the court within ten days; the court holds a status hearing within thirty days to adjudicate competency on the record.
+- If the court finds incompetency but substantial probability of restoration, defendant may be committed for **up to sixty days** of treatment.
+- If the court finds permanent incompetency, the criminal prosecution terminates and the state proceeds under civil commitment statutes. For defendants charged with capital offenses, Class A felonies, Class B felonies involving death or serious physical injury, or first-degree sex offenses under KRS 510.040 or 510.070, the Commonwealth's Attorney must initiate involuntary commitment proceedings under KRS 202C. For defendants charged with non-violent lower-level felonies, the court proceeds under KRS 202A.
 
 **Not Guilty by Reason of Insanity (KRS 504.020):**
 - Defense must provide notice of intent to raise insanity defense
@@ -1166,10 +1227,12 @@ Before releasing person arrested for or charged with KRS 508 (assault), KRS 510 
 - Acquittal by reason of insanity results in commitment to mental health facility
 - Periodic review for release
 
-**Guilty But Mentally Ill (KRS 504.120):**
-- Defendant found guilty but suffering from mental illness at time of offense
-- Sentenced as if guilty verdict, but receives mental health treatment during incarceration
-- Not a defense; does not reduce culpability
+**Guilty But Mentally Ill (KRS 504.120; KRS 504.130):**
+- A defendant may be found guilty but mentally ill if the prosecution proves guilt beyond a reasonable doubt AND the defendant proves by a preponderance of the evidence that a mental illness existed at the time of the offense.
+- In cases where the defendant introduces evidence of mental illness or insanity, the jury or court may find: guilty; not guilty; not guilty by reason of insanity at the time of the offense; or guilty but mentally ill at the time of the offense.
+- If the defendant waives the right to trial, the court may accept a plea of guilty but mentally ill upon a finding that a mental illness existed at the time of the offense.
+- Sentenced within the same statutory range as a guilty verdict, but receives mental health treatment during incarceration.
+- Not a defense; does not reduce culpability or sentence.
 
 ### Juvenile Delinquency Cases
 
