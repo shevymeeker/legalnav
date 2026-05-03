@@ -138,6 +138,171 @@ Kentucky courts, consistent with federal doctrine, recognize three tiers of law 
 
 ---
 
+### Pre-Arrest Practical Rights — Kentucky Research Report
+
+*This module verifies and supplements the pre-arrest rights framework with primary-source Kentucky authority. Every statutory assertion is traced to the Kentucky General Assembly or controlling court decisions.*
+
+#### Three-Tier Framework — Kentucky Authority
+
+**Tier One: Consensual Contact**
+
+*Commonwealth v. Banks*, 68 S.W.3d 347 (Ky. 2001) confirmed that officers are constitutionally free to approach anyone in a public place for any reason, quoting *Florida v. Royer*, 460 U.S. 491 (1983): officers retain "the same freedom of movement that the rest of society enjoys." No seizure exists unless a reasonable person in the position of the person approached would not feel free to leave.
+
+*Baker v. Commonwealth*, 5 S.W.3d 142 (Ky. 1999) is the foundational Kentucky case distinguishing consensual contact from investigatory detention. The Court held that a request alone — including a request that someone remove their hands from their pockets — is not a seizure. A seizure begins when compliance is compelled, not merely requested.
+
+**Tier Two: Investigatory Detention (Terry Stop)**
+
+Kentucky has fully adopted the Terry doctrine. *Commonwealth v. Banks* is the leading Kentucky Supreme Court application, upholding a Terry stop and frisk based on reasonable suspicion that the defendant was engaging in a hand-to-hand drug transaction in a recognized drug market area. The standard requires reasonable, articulable suspicion — more than a hunch, but less than probable cause — applied under a totality-of-the-circumstances test consistent with *Illinois v. Wardlow*, 528 U.S. 119 (2000) and *United States v. Sokolow*, 490 U.S. 1 (1989).
+
+---
+
+#### Kentucky Stop-and-Identify Law — Full Status
+
+**Kentucky Is Not a Stop-and-Identify State**
+
+The Kentucky Supreme Court has held that the Commonwealth does not have a stop-and-identify statute. Unlike Nevada (the statute upheld in *Hiibel v. Sixth Judicial District Court of Nevada*, 542 U.S. 177 (2004)) or Texas, Kentucky has not enacted a law compelling a person under investigatory detention to disclose their identity to law enforcement.
+
+What Kentucky does have is **KRS 523.110** — Giving Peace Officer False Identifying Information — a Class B misdemeanor (1990 Ky. Acts ch. 478, sec. 1; amended 2016 Ky. Acts ch. 98, sec. 2, effective July 15, 2016). This statute makes it a crime to intentionally give a peace officer a false name, address, or date of birth when the officer has lawfully stopped the person and requested the information for purposes of a lawful investigation. The statute imposes no affirmative duty to identify; it criminalizes lying if you choose to speak.
+
+*Practical Effect:* A person lawfully detained under Terry may decline to identify themselves. They cannot be arrested for that refusal alone, because there is no statute imposing the duty. If they choose to provide information, it must be accurate or they face Class B misdemeanor exposure under KRS 523.110.
+
+**Driver's License Requirement — Traffic Context**
+
+The one exception to the general no-duty-to-identify rule is the traffic context:
+- **KRS 186.510**: A person driving a motor vehicle must carry their operator's license and display it upon demand to a peace officer.
+- **KRS 186.620**: It is unlawful to operate a vehicle without a license; failure to display upon a peace officer's request is a misdemeanor carrying up to 90 days in jail, fines of $100–$250, and possible vehicle impoundment or license suspension for a first offense.
+
+This obligation is specific to *drivers*. Passengers are not operating the vehicle and no statute requires them to produce identification absent independent reasonable suspicion directed at them specifically.
+
+---
+
+#### Rights During Traffic Stops — Statutory Verification
+
+**License, Registration, and Insurance Production**
+
+Kentucky law requires production of three documents upon a lawful traffic stop: (1) driver's license — KRS 186.510; (2) vehicle registration — KRS 186.020; (3) proof of insurance — KRS Chapter 304. These are mandatory. Failure to produce constitutes a separate violation independent of whatever prompted the stop.
+
+**No Obligation to Answer Investigatory Questions**
+
+The Fifth Amendment right against self-incrimination applies during traffic stops as in all other investigatory encounters. *Berkemer v. McCarty*, 468 U.S. 420 (1984) held that traffic stops are Terry stops for Miranda purposes, meaning a driver is not in "custody" triggering automatic Miranda rights — but the Fifth Amendment's substantive protection against compelled incriminating statements remains fully applicable. A driver may decline to answer questions about their destination, travel history, or activities.
+
+**Consent Searches — Refusal Cannot Create Probable Cause**
+
+*Ohio v. Robinette*, 519 U.S. 33 (1996) and *Schneckloth v. Bustamonte*, 412 U.S. 218 (1973) establish the framework: consent searches require voluntary consent free from coercion. Refusal to consent cannot, by itself, supply the reasonable suspicion or probable cause required for a warrantless search. A driver should clearly and explicitly state non-consent ("I do not consent to a search") to create a record.
+
+*United States v. Buchanon*, 72 F.3d 1217 (6th Cir. 1995): A traffic stop must be proportional to the violation that initiated it and may not be extended absent independent reasonable suspicion.
+
+**"Am I Free to Go?" — The Right to Ask**
+
+*Rodriguez v. United States*, 575 U.S. 348 (2015): Absent independent reasonable suspicion, a traffic stop may not be extended beyond the time reasonably necessary to address the traffic violation that justified the stop. A driver or passenger may ask whether they are free to leave. If the officer cannot articulate reasonable suspicion for continued detention, further detention is unlawful and any evidence obtained may be subject to suppression. Confirmed in *United States v. Everett*, 601 F.3d 484 (6th Cir. 2010).
+
+---
+
+#### Right to Record Police — Circuit Status and Kentucky Law
+
+**Federal Circuit Landscape**
+
+As of 2026, the following federal circuits have recognized a First Amendment right to record police officers performing their duties in public: the First, Third, Fifth, Seventh, Ninth, Tenth, and Eleventh Circuits. The leading cases cited in this module — *ACLU of Illinois v. Alvarez*, 679 F.3d 583 (7th Cir. 2012) and *Fields v. City of Philadelphia*, 862 F.3d 353 (3d Cir. 2017) — are correctly cited and correctly hold what they are cited for.
+
+**Sixth Circuit Status — Critical Gap for Kentucky**
+
+The Sixth Circuit — the circuit covering Kentucky — has **not** yet issued a definitive published ruling recognizing the right to record police in public as a "clearly established" right for qualified immunity purposes. The Sixth Circuit has acknowledged the broad consensus among other circuits (as noted in *Clark v. Stone* and related cases) but has declined to rule directly on the question in a published, binding decision.
+
+*Practical impact:* In Kentucky, an officer who prevents a civilian from recording in a public place may still successfully invoke qualified immunity in a civil rights lawsuit, because the right has not been "clearly established" within the Sixth Circuit by binding precedent. The right exists as a First Amendment matter, but the enforceable protection in Kentucky is weaker than citations to Seventh and Third Circuit cases suggest.
+
+**Recording Laws — Kentucky Statute**
+
+Kentucky is a **one-party consent** state under KRS 526.010 and KRS 526.020. Recording a conversation to which you are a party is lawful. Recording police activity in a public place does not implicate the eavesdropping statute. Body camera footage from an encounter involving a civilian is generally accessible through an Open Records request under **KRS 61.168** (created 2018 Ky. Acts ch. 139; amended 2022), subject to exceptions for ongoing investigations.
+
+**Officer Identity as Public Record**
+
+Under the Kentucky Open Records Act (KRS 61.870–61.884), an officer's name, rank, badge number, and the general nature of disciplinary proceedings are public records. A person has a right to request these from the employing law enforcement agency.
+
+---
+
+#### Invocation of Silence and Right to Counsel
+
+**Miranda Applicability**
+
+*Miranda v. Arizona*, 384 U.S. 436 (1966) protections apply when a person is both (1) in custody and (2) subject to interrogation. Traffic stops are generally non-custodial for Miranda purposes (*Berkemer v. McCarty*), meaning Miranda warnings are not automatically required during a roadside stop. However, the Fifth Amendment's substantive protection against compelled self-incrimination remains in force regardless of custody status.
+
+**Invocation Must Be Unambiguous**
+
+*Berghuis v. Thompkins*, 560 U.S. 370 (2010): Invocation of the right to silence must be unambiguous. Silence alone is insufficient; a person must affirmatively invoke: "I want to remain silent." Once invoked, interrogation must cease.
+
+*Edwards v. Arizona*, 451 U.S. 477 (1981): Once the right to counsel is invoked, all interrogation must cease until counsel is present or the suspect re-initiates communication.
+
+**Operative Language**
+
+Say clearly: *"I want to remain silent"* and/or *"I want a lawyer."* Both are legally operative independently. Invoking either requires police to cease interrogation. Do not engage in further discussion after invoking.
+
+---
+
+#### Non-Resistance to Arrest
+
+Do not physically resist even an unlawful arrest. The remedy for an unlawful arrest is suppression of evidence and a civil rights remedy — not force. Resistance creates independent criminal exposure under **KRS 520.090** (Resisting Arrest) and **KRS 519.020** (Obstructing Governmental Operations, which requires force or physical interference). The civil remedy for an unlawful arrest is preserved whether or not resistance occurred; physical resistance eliminates that advantage.
+
+Note: *Kentucky v. King*, 563 U.S. 452 (2011) governs the police-created exigency doctrine and is not authority for the non-resistance rule itself — it is cited in this module for its general principle that lawful remedies exist for Fourth Amendment violations.
+
+---
+
+#### National Traffic Stop Statistics (BJS 2022)
+
+- In 2022, an estimated **49.2 million** U.S. residents age 16 or older (19% of the population) had contact with police during the prior 12 months — down from 21% in 2020 and 24% in 2018.
+- Traffic stops were the most common form of police-initiated contact, but fell from approximately **20 million in 2018 to 12.4 million in 2022** — a 38% decline — primarily attributable to reduced enforcement activity during and after COVID-19.
+- Among drivers stopped, speeding remained the most frequently cited reason.
+
+**Racial Disparities in Stop Outcomes**
+
+BJS 2022 data shows that Black residents (6%) were more likely than white residents (2%), Hispanic residents (2%), or residents of other races (1%) to experience the threat or use of nonfatal force during their most recent police-initiated contact. About 4 in 10 residents who experienced the threat or use of force perceived it as excessive.
+
+Historically, Black drivers (12.3%) were approximately three times as likely as white drivers (3.9%) to be searched during a traffic stop (BJS 2008), and Black drivers (4.7%) were nearly twice as likely as white drivers (2.4%) to be arrested during a stop. A large-scale analysis of nearly 100 million traffic stops (*Pierson et al., Nature Human Behaviour, 2020*) found that Black drivers were less likely to be stopped after sunset — when race is harder to observe — consistent with racial bias in daytime stop decisions, and that the search threshold applied to Black and Hispanic drivers was lower than for white drivers.
+
+*Source: Contacts Between Police and the Public, 2022 — Tapp, S.N. & Davis, E.J., BJS (NCJ 307527, October 4, 2024).*
+
+---
+
+#### Primary Source Index
+
+**Kentucky Case Law**
+- *Commonwealth v. Banks*, 68 S.W.3d 347 (Ky. 2001) — Terry stop; reasonable suspicion; when seizure occurs vs. consensual encounter
+- *Baker v. Commonwealth*, 5 S.W.3d 142 (Ky. 1999) — Seizure defined; consensual contact; request not equivalent to command
+
+**U.S. Supreme Court**
+- *Terry v. Ohio*, 392 U.S. 1 (1968) — Reasonable suspicion standard; stop and frisk
+- *Florida v. Royer*, 460 U.S. 491 (1983) — Officer may request information; investigatory stop must be brief
+- *Illinois v. Wardlow*, 528 U.S. 119 (2000) — Presence in high-crime area as factor in reasonable suspicion
+- *Hiibel v. Sixth Judicial District Court of Nevada*, 542 U.S. 177 (2004) — Stop-and-identify statutes constitutional; states not required to enact them
+- *Berkemer v. McCarty*, 468 U.S. 420 (1984) — Traffic stops non-custodial for Miranda; Fifth Amendment still applies
+- *Miranda v. Arizona*, 384 U.S. 436 (1966) — Custodial interrogation; right to silence; right to counsel
+- *Berghuis v. Thompkins*, 560 U.S. 370 (2010) — Invocation of right to silence must be unambiguous
+- *Edwards v. Arizona*, 451 U.S. 477 (1981) — Once counsel invoked, interrogation must cease
+- *Schneckloth v. Bustamonte*, 412 U.S. 218 (1973) — Consent searches; voluntary consent required
+- *Ohio v. Robinette*, 519 U.S. 33 (1996) — Totality of circumstances for consent voluntariness
+- *Rodriguez v. United States*, 575 U.S. 348 (2015) — Traffic stop may not be extended absent independent reasonable suspicion
+
+**U.S. Courts of Appeals**
+- *ACLU of Illinois v. Alvarez*, 679 F.3d 583 (7th Cir. 2012) — First Amendment right to record police (7th Circuit)
+- *Fields v. City of Philadelphia*, 862 F.3d 353 (3d Cir. 2017) — First Amendment right to record police (3rd Circuit)
+- *United States v. Buchanon*, 72 F.3d 1217 (6th Cir. 1995) — Traffic stop scope; must be proportional to initiating violation
+- *Clark v. Stone* (6th Cir.) — Acknowledging right-to-record consensus; Sixth Circuit has not established "clearly established" status for police recording
+
+**Kentucky Statutory Sources**
+- KRS 186.510 — Display of operator's license upon demand (traffic context)
+- KRS 186.620 — Unlawful operation without license; display on request of peace officer
+- KRS 186.020 — Vehicle registration requirements
+- KRS 431.005 — Arrest authority of peace officers; probable cause requirement
+- KRS 519.020 — Obstructing governmental operations (requires force or physical interference)
+- KRS 520.090 — Resisting arrest
+- KRS 523.110 — Giving peace officer false identifying information (Class B misdemeanor)
+- KRS 526.010, 526.020 — Eavesdropping definition and prohibition (one-party consent)
+- KRS 61.168 — Body-worn cameras; public records disclosure framework (created 2018 Ky. Acts ch. 139)
+- KRS 61.870–61.884 — Kentucky Open Records Act
+
+*This module is for educational use only. It does not constitute legal advice and does not create an attorney-client relationship.*
+
+---
+
 ## PHASE 2: ARREST AND INITIAL CUSTODY
 
 ### Arrest Mechanisms

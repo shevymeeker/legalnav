@@ -20,8 +20,148 @@ const SECTIONS = [
 **Disclaimer (appears in each module):** This course explains criminal court procedures in Daviess County, Kentucky. It is not legal advice. It does not recommend specific actions. Every criminal case is unique and requires consultation with a licensed attorney. This material describes how the system operates based on Kentucky law and local court rules.` 
   },
   {
+    id: 'mod0',
+    title: 'Pre-Arrest Rights',
+    icon: AlertTriangle,
+    content: `# **MODULE 0: PRE-ARREST PRACTICAL RIGHTS**
+
+## **What This Module Explains**
+
+Your constitutional and statutory rights *before* an arrest occurs — during police encounters, investigatory stops, and traffic stops. Understanding these rights affects whether evidence can later be suppressed and whether your statements can be used against you.
+
+---
+
+## **0A. The Three-Tier Framework**
+
+Kentucky courts apply federal Fourth Amendment doctrine to classify every law enforcement encounter into one of three tiers. The tier determines what the officer can legally do and what rights you have.
+
+**Tier One: Consensual Contact**
+
+* No reasonable suspicion required — officer may approach anyone in a public place for any reason
+* You may decline to answer and walk away; no seizure exists unless a reasonable person would not feel free to leave
+* *Commonwealth v. Banks*, 68 S.W.3d 347 (Ky. 2001): officers retain "the same freedom of movement that the rest of society enjoys"
+* *Baker v. Commonwealth*, 5 S.W.3d 142 (Ky. 1999): a request alone — including asking someone to remove their hands from their pockets — is **not** a seizure; a seizure begins when compliance is *compelled*, not merely requested
+
+**Tier Two: Investigatory Detention (Terry Stop)**
+
+* Requires reasonable, articulable suspicion — more than a hunch, less than probable cause — that criminal activity is afoot
+* Officer may briefly detain you to confirm or dispel that suspicion
+* Officer may conduct a pat-down for weapons if there is reasonable suspicion you are armed and dangerous
+* Duration is limited to what is reasonably necessary
+* *Commonwealth v. Banks*: leading Kentucky Supreme Court application of the Terry doctrine
+
+**Tier Three: Arrest**
+
+* Requires probable cause supported by specific articulable facts
+* Triggers full constitutional protections: right to counsel (RCr 2.14(1)), right to remain silent (Fifth Amendment; Kentucky Constitution Section 11), right to be brought before a judicial officer without unnecessary delay (RCr 3.02)
+
+---
+
+## **0B. Kentucky Stop-and-Identify Law**
+
+**Kentucky is NOT a stop-and-identify state.**
+
+The Kentucky Supreme Court has held that Kentucky does not have a stop-and-identify statute. A person lawfully detained under Terry *may decline to identify themselves* and **cannot be arrested for that refusal alone**.
+
+What Kentucky *does* have:
+
+* **KRS 523.110** — Giving Peace Officer False Identifying Information (Class B misdemeanor): makes it a crime to give a peace officer a false name, address, or date of birth when lawfully stopped. The statute imposes **no duty to identify**; it only criminalizes lying if you choose to speak.
+
+**The one exception — traffic stops:**
+
+* **KRS 186.510**: Drivers must carry and display their operator's license upon demand to a peace officer
+* **KRS 186.620**: Failure to display is a misdemeanor (up to 90 days, $100–$250 fine, possible vehicle impoundment)
+* This obligation applies to *drivers only*. Passengers are not required to produce ID absent independent reasonable suspicion directed at them.
+
+---
+
+## **0C. Rights During Traffic Stops**
+
+**Documents you must produce (KRS 186.510, 186.020, KRS Ch. 304):**
+1. Driver's license
+2. Vehicle registration
+3. Proof of insurance
+
+Failure to produce any of these is a separate violation independent of the reason for the stop.
+
+**You do NOT have to answer investigatory questions:**
+
+The Fifth Amendment applies during traffic stops. *Berkemer v. McCarty*, 468 U.S. 420 (1984): traffic stops are Terry stops for Miranda purposes, meaning you are not automatically "in custody" — but you still have the right not to answer questions about your destination, travel history, or activities.
+
+**Consent searches:**
+
+* Clearly state: *"I do not consent to a search."*
+* Refusal to consent **cannot** by itself supply probable cause or justify continued detention — *Ohio v. Robinette*, 519 U.S. 33 (1996); *United States v. Buchanon*, 72 F.3d 1217 (6th Cir. 1995)
+* Oral consent is legally sufficient and can be withdrawn at any time before or during a search
+
+**"Am I free to go?"**
+
+* You may ask this directly
+* Under *Rodriguez v. United States*, 575 U.S. 348 (2015), a stop may **not** be extended beyond the time needed to address the initiating violation without independent reasonable suspicion
+* If the officer cannot articulate reasonable suspicion, further detention is unlawful and evidence obtained may be suppressed
+
+---
+
+## **0D. Right to Record Police**
+
+Recording police officers performing their duties in a public place is a First Amendment right recognized by a majority of federal circuits (1st, 3rd, 5th, 7th, 9th, 10th, 11th).
+
+**Kentucky-specific limitation:** The Sixth Circuit — which covers Kentucky — has **not** issued a definitive published ruling establishing this as a "clearly established" right for qualified immunity purposes. This means an officer who stops you from recording may still successfully invoke qualified immunity in a civil lawsuit.
+
+* **KRS 526.010 / 526.020**: Kentucky is a one-party consent state for recordings. Recording a conversation to which you are a party is lawful.
+* **KRS 61.168**: Body camera footage from an encounter is generally accessible via Open Records request, subject to exceptions for ongoing investigations.
+* **KRS 61.870–61.884 (Open Records Act)**: An officer's name, rank, and badge number are public records you may request.
+
+---
+
+## **0E. Invoking Your Rights**
+
+**Right to remain silent:**
+
+Say clearly: *"I want to remain silent."*
+
+Silence alone is not sufficient — *Berghuis v. Thompkins*, 560 U.S. 370 (2010) requires an unambiguous verbal invocation. Once invoked, interrogation must cease.
+
+**Right to counsel:**
+
+Say clearly: *"I want a lawyer."*
+
+Under *Edwards v. Arizona*, 451 U.S. 477 (1981), once counsel is invoked, all interrogation must stop until counsel is present or you re-initiate communication.
+
+Both rights are independently operative. Invoking either is sufficient.
+
+---
+
+## **0F. Non-Resistance**
+
+Do **not** physically resist even an unlawful arrest. The remedy for an unlawful arrest is:
+* Suppression of evidence obtained
+* Civil rights lawsuit
+
+Physical resistance creates independent criminal exposure under **KRS 520.090** (Resisting Arrest) and **KRS 519.020** (Obstructing Governmental Operations). The civil remedy is preserved whether or not you resist — and physical resistance eliminates your tactical and legal advantage.
+
+After any encounter, document immediately: time, location, officer name and badge number, agency, what was said, what was searched, and what was taken.
+
+---
+
+## **0G. Traffic Stop Statistics (National Context)**
+
+* 2022: ~49.2 million U.S. residents (19%) had police contact in the prior 12 months — down from 24% in 2018
+* Traffic stops fell from ~20 million (2018) to ~12.4 million (2022), a 38% decline
+* Black drivers are searched or arrested at rates more than double other groups (BJS data, consistent 2008–2022)
+* A study of nearly 100 million stops found that Black drivers were less likely to be stopped after sunset, when race is harder to observe — consistent with racial bias in daytime stop decisions (*Pierson et al., Nature Human Behaviour, 2020*)
+
+*Source: BJS Contacts Between Police and the Public, 2022 (NCJ 307527)*
+
+---
+
+## **Connection to Next Module**
+
+Understanding pre-arrest rights directly affects arrest outcomes. Unlawful stops, unlawful extensions of traffic stops, coerced consent searches, and Miranda violations all create grounds for suppression motions after arrest. The conduct during the pre-arrest encounter becomes part of the record reviewed at the suppression hearing.`
+  },
+  {
     id: 'mod1',
-    title: 'Module 1: The Arrest',
+    title: 'The Arrest',
     icon: Shield,
     content: `# **MODULE 1: THE ARREST — HOW CUSTODY BEGINS**
 
@@ -289,7 +429,7 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
   },
   {
     id: 'mod2',
-    title: 'Module 2: Initial Appearance',
+    title: 'Initial Appearance',
     icon: Gavel,
     content: `# **MODULE 2: INITIAL APPEARANCE — FIRST CONTACT WITH COURT**
 
@@ -466,7 +606,7 @@ Arraignment plea determines the procedural path. "Not guilty" triggers the pretr
   },
   {
     id: 'mod3',
-    title: 'Module 3: Bail Determination',
+    title: 'Bail Determination',
     icon: Scale,
     content: `# **MODULE 3: BAIL DETERMINATION — RELEASE VS. DETENTION**
 
@@ -679,7 +819,7 @@ Bond conditions determine the defendant's freedom level during the entire pretri
   },
   {
     id: 'mod4',
-    title: 'Module 4: Legal Representation',
+    title: 'Legal Representation',
     icon: Briefcase,
     content: `# **MODULE 4: LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
 
@@ -840,7 +980,7 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
   },
   {
     id: 'mod5',
-    title: 'Module 5: Discovery',
+    title: 'Discovery',
     icon: FileSearch,
     content: `# **MODULE 5: DISCOVERY — EVIDENCE DISCLOSURE**
 
@@ -1048,7 +1188,7 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
   },
   {
     id: 'mod6',
-    title: 'Module 6: Pretrial Proceedings',
+    title: 'Pretrial Proceedings',
     icon: Handshake,
     content: `# **MODULE 6: PRETRIAL PROCEEDINGS — THE NEGOTIATION PERIOD**
 
@@ -1238,7 +1378,7 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
   },
   {
     id: 'mod7',
-    title: 'Module 7: Motion Practice',
+    title: 'Motion Practice',
     icon: FileText,
     content: `# **MODULE 7: MOTION PRACTICE — CHALLENGING THE PROCESS**
 
@@ -1449,7 +1589,7 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
   },
   {
     id: 'mod8',
-    title: 'Module 8: The Trial Decision',
+    title: 'The Trial Decision',
     icon: SplitSquareHorizontal,
     content: `# **MODULE 8: THE TRIAL DECISION — UNDERSTANDING THE CHOICE**
 
@@ -1642,7 +1782,7 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
   },
   {
     id: 'mod9',
-    title: 'Module 9: Trial Process',
+    title: 'Trial Process',
     icon: Users,
     content: `# **MODULE 9: TRIAL PROCESS — HOW JURY TRIALS FUNCTION**
 
@@ -1888,7 +2028,7 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
   },
   {
     id: 'mod10',
-    title: 'Module 10: Sentencing',
+    title: 'Sentencing',
     icon: Clock,
     content: `# **MODULE 10: SENTENCING — HOW PUNISHMENT IS DETERMINED**
 
@@ -2151,7 +2291,7 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
   },
   {
     id: 'mod11',
-    title: 'Module 11: Appeals',
+    title: 'Appeals',
     icon: RotateCcw,
     content: `# **MODULE 11: APPEALS — POST-CONVICTION REVIEW**
 
@@ -2365,7 +2505,7 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
   },
   {
     id: 'mod12',
-    title: 'Module 12: Collateral Consequences',
+    title: 'Collateral Consequences',
     icon: AlertTriangle,
     content: `# **MODULE 12: COLLATERAL CONSEQUENCES — BEYOND THE SENTENCE**
 
@@ -2605,7 +2745,7 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
   },
   {
     id: 'mod13',
-    title: 'Module 13: System Overview',
+    title: 'System Overview',
     icon: Network,
     content: `# **MODULE 13: HOW THE PIECES CONNECT — SYSTEM OVERVIEW**
 
