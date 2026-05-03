@@ -388,12 +388,16 @@ body {
 
 .mobile-drawer {
   position: fixed;
-  inset-y: 0;
+  top: 0;
+  bottom: 0;
   left: 0;
   width: min(268px, 88vw);
   z-index: 60;
   display: flex;
   flex-direction: column;
+  background: var(--green);
+  overflow: hidden;
+  border-right: 3px solid #1a3828;
   transform: translateX(-100%);
   transition: transform 0.24s ease;
 }
@@ -849,4 +853,5 @@ body {
 @media (min-width: 769px) {
   .mobile-topbar { display: none; }
   .mobile-backdrop { display: none; }
+  .mobile-drawer { display: none; }
 }
