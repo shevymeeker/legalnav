@@ -21,7 +21,7 @@ const SECTIONS = [
   },
   {
     id: 'mod0',
-    title: 'Module 0: Pre-Arrest Rights',
+    title: 'Pre-Arrest Rights',
     icon: AlertTriangle,
     content: `# **MODULE 0: PRE-ARREST PRACTICAL RIGHTS**
 
@@ -161,7 +161,7 @@ Understanding pre-arrest rights directly affects arrest outcomes. Unlawful stops
   },
   {
     id: 'mod1',
-    title: 'Module 1: The Arrest',
+    title: 'The Arrest',
     icon: Shield,
     content: `# **MODULE 1: THE ARREST — HOW CUSTODY BEGINS**
 
@@ -429,7 +429,7 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
   },
   {
     id: 'mod2',
-    title: 'Module 2: Initial Appearance',
+    title: 'Initial Appearance',
     icon: Gavel,
     content: `# **MODULE 2: INITIAL APPEARANCE — FIRST CONTACT WITH COURT**
 
@@ -606,7 +606,7 @@ Arraignment plea determines the procedural path. "Not guilty" triggers the pretr
   },
   {
     id: 'mod3',
-    title: 'Module 3: Bail Determination',
+    title: 'Bail Determination',
     icon: Scale,
     content: `# **MODULE 3: BAIL DETERMINATION — RELEASE VS. DETENTION**
 
@@ -819,7 +819,7 @@ Bond conditions determine the defendant's freedom level during the entire pretri
   },
   {
     id: 'mod4',
-    title: 'Module 4: Legal Representation',
+    title: 'Legal Representation',
     icon: Briefcase,
     content: `# **MODULE 4: LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
 
@@ -980,7 +980,7 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
   },
   {
     id: 'mod5',
-    title: 'Module 5: Discovery',
+    title: 'Discovery',
     icon: FileSearch,
     content: `# **MODULE 5: DISCOVERY — EVIDENCE DISCLOSURE**
 
@@ -1188,7 +1188,7 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
   },
   {
     id: 'mod6',
-    title: 'Module 6: Pretrial Proceedings',
+    title: 'Pretrial Proceedings',
     icon: Handshake,
     content: `# **MODULE 6: PRETRIAL PROCEEDINGS — THE NEGOTIATION PERIOD**
 
@@ -1378,7 +1378,7 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
   },
   {
     id: 'mod7',
-    title: 'Module 7: Motion Practice',
+    title: 'Motion Practice',
     icon: FileText,
     content: `# **MODULE 7: MOTION PRACTICE — CHALLENGING THE PROCESS**
 
@@ -1589,7 +1589,7 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
   },
   {
     id: 'mod8',
-    title: 'Module 8: The Trial Decision',
+    title: 'The Trial Decision',
     icon: SplitSquareHorizontal,
     content: `# **MODULE 8: THE TRIAL DECISION — UNDERSTANDING THE CHOICE**
 
@@ -1782,7 +1782,7 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
   },
   {
     id: 'mod9',
-    title: 'Module 9: Trial Process',
+    title: 'Trial Process',
     icon: Users,
     content: `# **MODULE 9: TRIAL PROCESS — HOW JURY TRIALS FUNCTION**
 
@@ -2028,7 +2028,7 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
   },
   {
     id: 'mod10',
-    title: 'Module 10: Sentencing',
+    title: 'Sentencing',
     icon: Clock,
     content: `# **MODULE 10: SENTENCING — HOW PUNISHMENT IS DETERMINED**
 
@@ -2291,7 +2291,7 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
   },
   {
     id: 'mod11',
-    title: 'Module 11: Appeals',
+    title: 'Appeals',
     icon: RotateCcw,
     content: `# **MODULE 11: APPEALS — POST-CONVICTION REVIEW**
 
@@ -2505,7 +2505,7 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
   },
   {
     id: 'mod12',
-    title: 'Module 12: Collateral Consequences',
+    title: 'Collateral Consequences',
     icon: AlertTriangle,
     content: `# **MODULE 12: COLLATERAL CONSEQUENCES — BEYOND THE SENTENCE**
 
@@ -2745,7 +2745,7 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
   },
   {
     id: 'mod13',
-    title: 'Module 13: System Overview',
+    title: 'System Overview',
     icon: Network,
     content: `# **MODULE 13: HOW THE PIECES CONNECT — SYSTEM OVERVIEW**
 
