@@ -1,13 +1,13 @@
-import {
-  BookOpen, Shield, Gavel, Scale, Briefcase, FileSearch,
-  Handshake, FileText, SplitSquareHorizontal, Users, Clock,
+import { 
+  BookOpen, Shield, Gavel, Scale, Briefcase, FileSearch, 
+  Handshake, FileText, SplitSquareHorizontal, Users, Clock, 
   RotateCcw, AlertTriangle, Network, Paperclip, Library
 } from 'lucide-react';
 
 // Edit this file to update titles, sections, and content.
-// Add new sections by adding objects to the SECTIONS array.
-// Delete sections by removing their object.
-// Change icons by replacing the icon property (must match an import above).
+// Add new sections by adding objects to the array.
+// Delete sections by removing objects.
+// Change icons by replacing the icon property value.
 export const SECTIONS = [
   { 
     id: 'intro', 
@@ -25,13 +25,13 @@ export const SECTIONS = [
     icon: AlertTriangle,
     content: `# **PRE-ARREST PRACTICAL RIGHTS**
 
-## **What This Explains**
 
-Your constitutional and statutory rights *before* an arrest occurs — during police encounters, investigatory stops, and traffic stops. Understanding these rights affects whether evidence can later be suppressed and whether your statements can be used against you.
+
+consensual police encounters, investigatory stops, and traffic stops. Understanding these types of contact 
 
 ---
 
-## **0A. The Three-Tier Framework**
+## **The Three-Tier Framework**
 
 Kentucky courts apply federal Fourth Amendment doctrine to classify every law enforcement encounter into one of three tiers. The tier determines what the officer can legally do and what rights you have.
 
@@ -57,7 +57,7 @@ Kentucky courts apply federal Fourth Amendment doctrine to classify every law en
 
 ---
 
-## **0B. Kentucky Stop-and-Identify Law**
+## **Kentucky Stop-and-Identify Law**
 
 **Kentucky is NOT a stop-and-identify state.**
 
@@ -75,7 +75,7 @@ What Kentucky *does* have:
 
 ---
 
-## **0C. Rights During Traffic Stops**
+## **Rights During Traffic Stops**
 
 **Documents you must produce (KRS 186.510, 186.020, KRS Ch. 304):**
 1. Driver's license
@@ -102,7 +102,7 @@ The Fifth Amendment applies during traffic stops. *Berkemer v. McCarty*, 468 U.S
 
 ---
 
-## **0D. Right to Record Police**
+## **Right to Record Police**
 
 Recording police officers performing their duties in a public place is a First Amendment right recognized by a majority of federal circuits (1st, 3rd, 5th, 7th, 9th, 10th, 11th).
 
@@ -114,7 +114,7 @@ Recording police officers performing their duties in a public place is a First A
 
 ---
 
-## **0E. Invoking Your Rights**
+## **Invoking Your Rights**
 
 **Right to remain silent:**
 
@@ -132,7 +132,7 @@ Both rights are independently operative. Invoking either is sufficient.
 
 ---
 
-## **0F. Non-Resistance**
+## **Non-Resistance**
 
 Do **not** physically resist even an unlawful arrest. The remedy for an unlawful arrest is:
 * Suppression of evidence obtained
@@ -144,7 +144,7 @@ After any encounter, document immediately: time, location, officer name and badg
 
 ---
 
-## **0G. Traffic Stop Statistics (National Context)**
+## **Traffic Stop Statistics (National Context)**
 
 * 2022: ~49.2 million U.S. residents (19%) had police contact in the prior 12 months — down from 24% in 2018
 * Traffic stops fell from ~20 million (2018) to ~12.4 million (2022), a 38% decline
@@ -155,7 +155,7 @@ After any encounter, document immediately: time, location, officer name and badg
 
 ---
 
-## **What Comes Next**
+## **Connection to The Arrest**
 
 Understanding pre-arrest rights directly affects arrest outcomes. Unlawful stops, unlawful extensions of traffic stops, coerced consent searches, and Miranda violations all create grounds for suppression motions after arrest. The conduct during the pre-arrest encounter becomes part of the record reviewed at the suppression hearing.`
   },
@@ -163,15 +163,15 @@ Understanding pre-arrest rights directly affects arrest outcomes. Unlawful stops
     id: 'mod1',
     title: 'The Arrest',
     icon: Shield,
-    content: `# **THE ARREST — HOW CUSTODY BEGINS**
+    content: `# **THE ARREST**
 
-## **What This Explains**
 
-How law enforcement authority to arrest is established, what happens during the arrest itself, what occurs during booking, and what rights attach the moment a person is taken into custody.
+
+Establish law enforcements authority to arrest, what happens during the arrest, what comes after, and general information you should know
 
 ---
 
-## **1A. Legal Definition: Arrest vs. Detention**
+## **Legal Definition: Arrest vs. Detention**
 
 **Detention (Investigatory Stop — Terry Stop)**
 
@@ -198,7 +198,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1B. Arrest With Warrant**
+## **Arrest With Warrant**
 
 **Complaint Process (RCr 2.02)**
 
@@ -242,15 +242,15 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1C. Arrest Without Warrant (RCr 2.10; KRS 431.005)**
+## **Arrest Without Warrant (RCr 2.10; KRS 431.005)**
 
-**Felony Arrests Without Warrant — Officer May Arrest When:**
+**Felony Arrests Can Occur Without a Warrant if**
 
 * Felony committed in officer's presence  
 * Officer has probable cause to believe person committed a felony (even if not witnessed by officer)  
 * Officer has reasonable grounds to believe felony has been committed AND probable cause to believe this person committed it
 
-**Misdemeanor Arrests Without Warrant — Officer May Arrest When:**
+**Misdemeanor Arrests Can Occur Without a Warrant if**
 
 * Misdemeanor committed in officer's presence  
 * Specific statutory authorization exists (examples):  
@@ -275,7 +275,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1D. Constitutional Framework Governing Arrest**
+## **Constitutional Framework Governing Arrest**
 
 **Fourth Amendment (U.S. Constitution)**
 
@@ -298,7 +298,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1E. Booking Procedures**
+## **Booking Procedures**
 
 **Location (Daviess County)**
 
@@ -308,7 +308,7 @@ How law enforcement authority to arrest is established, what happens during the 
 **Booking Process:**
 
 * Fingerprinting (rolled and digital)  
-* Photographing (mugshot — becomes public record)  
+* Photographing (mugshot)  
 * Criminal history check (local, statewide via KYOPS, national via NCIC)  
 * Medical screening (identify medical conditions, injuries, medications)  
 * Property inventory (all personal belongings documented, receipted, secured)  
@@ -325,7 +325,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1F. Right to Contact Attorney (RCr 2.14(1))**
+## **Right to Contact Attorney (RCr 2.14(1))**
 
 **The Rule**
 
@@ -354,7 +354,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1G. Pretrial Services Interview**
+## **Pretrial Services Interview**
 
 **Timing**
 
@@ -390,7 +390,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1H. Body Camera Evidence Created at Arrest**
+## **Body Camera Evidence Created at Arrest**
 
 *(Derived from department body camera policy)*
 
@@ -399,16 +399,6 @@ How law enforcement authority to arrest is established, what happens during the 
 * Camera captures: arrest scene, defendant statements, witness statements, evidence collection  
 * Video footage is discoverable (must be turned over to defense under RCr 7.24)  
 * Failure to activate or preserve footage: may create inference or grounds for suppression argument
-
----
-
-## **Referenced Documents**
-
-* [Miranda Card Printout](/content/pdfs/Miranda-Card_PRINTOUT.pdf) — Standard Miranda rights advisement language
-* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Covers arrest authority, warrantless arrest standards, use of force, and officer liability
-* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations, including Terry stops and probable cause
-* [Kentucky Police Interrogation Tactics & Coercion](/content/pdfs/Kentucky%20Police%20Interrogation%20Tactics%20and%20Coercion_%20Case%20Law%20Analysis%20and%20Misconduct%20Patterns.pdf) — Case law analysis on interrogation practices and misconduct patterns
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language guide to rights at arrest and booking
 
 ---
 
@@ -431,15 +421,15 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
     id: 'mod2',
     title: 'Initial Appearance',
     icon: Gavel,
-    content: `# **INITIAL APPEARANCE — FIRST CONTACT WITH COURT**
+    content: `# **INITIAL APPEARANCE**
 
-## **What This Explains**
 
-What happens when an arrested person first appears before a judge, what rights the court must advise, how arraignment works in district court vs. circuit court, and how the plea entered at arraignment determines the procedural path forward.
+
+How arraignment works in district court vs. circuit court, and how the plea entered at arraignment determines the procedural path forward.
 
 ---
 
-## **2A. Timing Requirements**
+## **Timing Requirements**
 
 **"Without Unnecessary Delay" Standard (RCr 3.02)**
 
@@ -464,7 +454,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2B. Rights Advisement at Initial Appearance**
+## **Rights Advisement at Initial Appearance**
 
 **Judge must inform defendant of all of the following:**
 
@@ -510,7 +500,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2C. District Court vs. Circuit Court Arraignment**
+## **District Court vs. Circuit Court Arraignment**
 
 **District Court Arraignment (Misdemeanors and Pre-Indictment Felonies)**
 
@@ -530,7 +520,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2D. Plea Entry Mechanics**
+## **Plea Entry Mechanics**
 
 **Not Guilty Plea**
 
@@ -565,7 +555,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2E. Case Assignment and Scheduling**
+## **Case Assignment and Scheduling**
 
 **After "Not Guilty" Plea:**
 
@@ -580,14 +570,6 @@ What happens when an arrested person first appears before a judge, what rights t
 * Arraignments and initial pretrial conferences: 8:30 AM, first Thursday and Friday after beginning of each trial period  
 * Two-division system: Division I and Division II alternate trial periods  
 * Criminal motions heard Monday, Wednesday, Thursday at 8:30 AM (C6 Local Rule 2.02)
-
----
-
-## **Referenced Documents**
-
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Arraignment timing and initial appearance procedures in Daviess Circuit Court
-* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court misdemeanor arraignment procedures
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Explains the right to counsel, bail, and what to expect at first court appearance
 
 ---
 
@@ -608,15 +590,15 @@ Arraignment plea determines the procedural path. "Not guilty" triggers the pretr
     id: 'mod3',
     title: 'Bail Determination',
     icon: Scale,
-    content: `# **BAIL DETERMINATION — RELEASE VS. DETENTION**
+    content: `# **BAIL DETERMINATION - RELEASE VS. DETENTION**
 
-## **What This Explains**
+
 
 How judges decide whether to release defendants pending trial, what factors drive that decision, what types of release exist, and what conditions can be attached. Covers the 2025 statewide pretrial release schedule and Daviess County-specific practice.
 
 ---
 
-## **3A. Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
+## **Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
 
 **The Schedule**
 
@@ -647,7 +629,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3B. Judicial Discretion Factors (RCr 4.02; KRS 431.066)**
+## **Judicial Discretion Factors (RCr 4.02; KRS 431.066)**
 
 **For defendants not eligible under schedule or requiring judicial review, judge considers:**
 
@@ -699,7 +681,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3C. Bond Types**
+## **Bond Types**
 
 **Release on Own Recognizance (ROR)**
 
@@ -748,7 +730,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3D. Special Provisions for Domestic Violence and Sexual Assault (KRS 431.064)**
+## **Special Provisions for Domestic Violence and Sexual Assault (KRS 431.064)**
 
 **Before releasing defendant charged with:**
 
@@ -772,7 +754,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3E. Bond Modification**
+## **Bond Modification**
 
 **Motion for Bond Reduction (Defense)**
 
@@ -796,17 +778,9 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **Referenced Documents**
-
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Bond and pretrial release procedures in Daviess Circuit Court
-* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court bond-setting procedures for misdemeanor cases
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language explanation of bail rights and conditions
-
----
-
 ## **Key Terms**
 
-* **ROR**: release on recognizance — signature release, no money  
+* **ROR**: release on recognizance, signature release, no money  
 * **Cash bond**: full amount posted before release  
 * **Unsecured bond**: promise to pay if fails to appear, no upfront money  
 * **Conditional release**: release with specific behavioral requirements attached  
@@ -815,21 +789,21 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ## **Connection to Next Phase**
 
-Bond conditions determine the defendant's freedom level during the entire pretrial period — which can last months to years. Conditions must be complied with continuously. Violations trigger revocation proceedings and re-incarceration. Being in custody vs. on bond also affects the pace of the case — in-custody defendants have constitutional speedy trial rights that apply with more urgency.`
+Bond conditions determine the defendant's freedom level during the entire pretrial period`
   },
   {
     id: 'mod4',
     title: 'Legal Representation',
     icon: Briefcase,
-    content: `# **LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
+    content: `# **LEGAL REPRESENTATION**
 
-## **What This Explains**
 
-The constitutional right to counsel, how attorneys get appointed in Daviess County, what the indigency determination looks like, the difference between public defenders and retained counsel, and what defendants can and cannot control about their representation.
+
+Everyone has the constitutional right to counsel, what does the indigency determination looks like, whats the difference between public defenders and retained counsel, and what defendants can and cannot control about their representation.
 
 ---
 
-## **4A. Constitutional Right to Counsel**
+## **Constitutional Right to Counsel**
 
 **Sixth Amendment; Section 11, Kentucky Constitution**
 
@@ -850,7 +824,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4B. Indigency Determination**
+## **Indigency Determination**
 
 **Who Qualifies**
 
@@ -878,7 +852,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4C. Public Defender System**
+## **Public Defender System**
 
 **Structure**
 
@@ -911,7 +885,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4D. Retained (Private) Counsel**
+## **Retained (Private) Counsel**
 
 **Right to Choose**
 
@@ -936,7 +910,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4E. Right to Represent Yourself (Pro Se)**
+## **Right to Represent Yourself (Pro Se)**
 
 **Recognized Right**
 
@@ -958,13 +932,6 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **Referenced Documents**
-
-* [Conflicts of Interest](/content/pdfs/conflicts_of_interest.pdf) — Guide to recognizing and managing conflicts of interest in legal representation
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers the right to counsel, public defender eligibility, and right to effective representation
-
----
-
 ## **Key Terms**
 
 * **Indigent**: financially unable to afford an attorney without substantial hardship  
@@ -982,15 +949,15 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
     id: 'mod5',
     title: 'Discovery',
     icon: FileSearch,
-    content: `# **DISCOVERY — EVIDENCE DISCLOSURE**
+    content: `# **DISCOVERY**
 
-## **What This Explains**
 
-What evidence the Commonwealth is required to hand over to the defense, what the defense must disclose in return, what Brady and Giglio obligations mean in practice, and what kinds of evidence get produced in a typical Daviess County case.
+
+The Commonwealth is required to hand over evidence to the defense, what the defense must disclose in return, and what kinds of evidence get produced in a typical Daviess County case.
 
 ---
 
-## **5A. Discovery Framework (RCr 7.24)**
+## **Discovery Framework (RCr 7.24)**
 
 **Purpose**
 
@@ -1008,7 +975,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5B. What Commonwealth Must Provide**
+## **What Commonwealth Must Provide**
 
 **Police and Investigative Reports**
 
@@ -1062,7 +1029,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5C. Brady Material (Exculpatory Evidence)**
+## **Brady Material (Exculpatory Evidence)**
 
 **The Rule** (*Brady v. Maryland*, 373 U.S. 83 (1963))
 
@@ -1087,7 +1054,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5D. Giglio Material (Impeachment Evidence)**
+## **Giglio Material (Impeachment Evidence)**
 
 **The Rule** (*Giglio v. United States*, 405 U.S. 150 (1972))
 
@@ -1112,7 +1079,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5E. Defense Disclosure Obligations (Mutual Discovery)**
+## **Defense Disclosure Obligations (Mutual Discovery)**
 
 **Defense Must Provide to Commonwealth:**
 
@@ -1130,7 +1097,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5F. Eyewitness Identification Evidence**
+## **Eyewitness Identification Evidence**
 
 *(Derived from law enforcement identification policy)*
 
@@ -1163,15 +1130,6 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **Referenced Documents**
-
-* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text governing admissibility, hearsay, privilege, and authentication
-* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Comprehensive reference on Kentucky evidence law relevant to what is discoverable and admissible
-* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Grounds and procedure for litigating suppression of evidence obtained in discovery
-* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Case law on Fourth Amendment issues often raised through suppression after discovery
-
----
-
 ## **Key Terms**
 
 * **Discovery**: formal process of exchanging evidence before trial  
@@ -1190,15 +1148,15 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
     id: 'mod6',
     title: 'Pretrial Proceedings',
     icon: Handshake,
-    content: `# **PRETRIAL PROCEEDINGS — THE NEGOTIATION PERIOD**
+    content: `# **PRETRIAL PROCEEDINGS**
 
-## **What This Explains**
+
 
 How the pretrial conference process works, why cases get continued repeatedly, how plea negotiations actually function, what diversion programs look like, and what determines whether a case resolves or proceeds to trial.
 
 ---
 
-## **6A. Pretrial Conference Framework (RCr 8.26; C6 Local Rule 2.03)**
+## **Pretrial Conference Framework (RCr 8.26; C6 Local Rule 2.03)**
 
 **Purpose**
 
@@ -1234,7 +1192,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6B. Why Cases Get Continued Repeatedly**
+## **Why Cases Get Continued Repeatedly**
 
 **Defense Continuances**
 
@@ -1267,7 +1225,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6C. Plea Negotiations — How They Actually Work**
+## **Plea Negotiations**
 
 **The 95% Reality**
 
@@ -1311,7 +1269,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6D. Diversion Programs**
+## **Diversion Programs**
 
 **Eligibility (General)**
 
@@ -1354,15 +1312,6 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **Referenced Documents**
-
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Pretrial conference scheduling and motion deadlines in Daviess Circuit Court
-* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court pretrial conference procedures
-* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Comprehensive guide to pretrial suppression motions in Kentucky
-* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Case law relevant to suppression hearings and pretrial motions
-
----
-
 ## **Key Terms**
 
 * **Pretrial conference**: meeting between attorneys (and sometimes judge) to discuss case status and resolution  
@@ -1380,15 +1329,15 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
     id: 'mod7',
     title: 'Motion Practice',
     icon: FileText,
-    content: `# **MOTION PRACTICE — CHALLENGING THE PROCESS**
+    content: `# **MOTION PRACTICE**
 
-## **What This Explains**
 
-What pretrial motions are, when they can be filed, how hearings work, what the different types of motions accomplish, and why motion outcomes can determine whether a case proceeds.
+
+What are pretrial motions, when they can be filed, what the different types of motions accomplish,
 
 ---
 
-## **7A. Daviess County Motion Docket (C6 Local Rule 2.02)**
+## **Daviess County Motion Docket (C6 Local Rule 2.02)**
 
 **Criminal Motion Schedule**
 
@@ -1414,7 +1363,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7B. Motion to Suppress Evidence (RCr 8.32)**
+## **Motion to Suppress Evidence (RCr 8.32)**
 
 **Purpose**
 
@@ -1457,7 +1406,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7C. Motion to Dismiss**
+## **Motion to Dismiss**
 
 **Grounds**
 
@@ -1470,7 +1419,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7D. Bill of Particulars (RCr 6.22)**
+## **Bill of Particulars (RCr 6.22)**
 
 **Purpose**
 
@@ -1485,7 +1434,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7E. Motion for Change of Venue (RCr 8.30)**
+## **Motion for Change of Venue (RCr 8.30)**
 
 **Grounds**
 
@@ -1501,7 +1450,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7F. Motion to Sever (RCr 9.16)**
+## **Motion to Sever (RCr 9.16)**
 
 **Purpose**
 
@@ -1523,7 +1472,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7G. Competency Evaluation (KRS 504.060; KRS 504.080; KRS 504.100)**
+## **Competency Evaluation (KRS 504.060; KRS 504.080; KRS 504.100)**
 
 **Standard for Competency**
 
@@ -1545,7 +1494,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7H. Motion in Limine**
+## **Motion in Limine**
 
 **Purpose**
 
@@ -1561,15 +1510,6 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 * Limit expert testimony to proper scope  
 * Exclude hearsay  
 * Limit use of defendant's prior statements
-
----
-
-## **Referenced Documents**
-
-* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Practical manual for litigating suppression motions including grounds, procedure, evidentiary standards, and sample motions
-* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations covering warrants, consent, vehicle stops, and suppression
-* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Rules governing evidentiary standards at suppression hearings and motions in limine
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Motion practice deadlines and filing requirements in Daviess Circuit Court
 
 ---
 
@@ -1591,15 +1531,15 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
     id: 'mod8',
     title: 'The Trial Decision',
     icon: SplitSquareHorizontal,
-    content: `# **THE TRIAL DECISION — UNDERSTANDING THE CHOICE**
+    content: `# **THE TRIAL DECISION**
 
-## **What This Explains**
 
-The statistical reality of plea vs. trial, what jury and bench trials are, how the "trial penalty" works structurally, what an Alford plea is, and what factors drive the decision that is arguably the most consequential in the entire process.
+
+what are jury and bench trials, what is an Alford plea, 
 
 ---
 
-## **8A. The Statistical Reality**
+## **The Statistical Reality**
 
 * Approximately 95% of all Kentucky criminal cases resolve through plea agreement  
 * Trial is a constitutional right but a practical rarity  
@@ -1609,7 +1549,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8B. Jury Trial**
+## **Jury Trial**
 
 **Right**
 
@@ -1644,7 +1584,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8C. Bench Trial**
+## **Bench Trial**
 
 **When Available**
 
@@ -1666,7 +1606,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8D. The Trial Penalty — How It Works**
+## **The Trial Penalty — How It Works**
 
 **The Concept**
 
@@ -1694,7 +1634,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8E. Plea Types Available**
+## **Plea Types Available**
 
 **Standard Guilty Plea**
 
@@ -1726,7 +1666,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8F. Why Most Defendants Plead**
+## **Why Most Defendants Plead**
 
 **Evidence Strength**
 
@@ -1760,13 +1700,6 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **Referenced Documents**
-
-* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Reference covering trial procedure, jury selection, and what to expect at a Kentucky criminal trial
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers the right to jury trial, presumption of innocence, and the plea vs. trial decision
-
----
-
 ## **Key Terms**
 
 * **Jury trial**: trial where 12 citizens determine guilt or innocence  
@@ -1784,15 +1717,15 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
     id: 'mod9',
     title: 'Trial Process',
     icon: Users,
-    content: `# **TRIAL PROCESS — HOW JURY TRIALS FUNCTION**
+    content: `# **TRIAL PROCESS**
 
-## **What This Explains**
+
 
 How jury trial periods work in Daviess County, the full trial sequence from jury selection through verdict, what each party can and cannot do, and what happens when a trial ends in acquittal, conviction, or hung jury.
 
 ---
 
-## **9A. Assignment to Trial Docket (C6 Local Rule 2.04)**
+## **Assignment to Trial Docket (C6 Local Rule 2.04)**
 
 **Assignment Process**
 
@@ -1812,7 +1745,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9B. Jury Trial Periods in Daviess County (C6 Local Rule 2.07)**
+## **Jury Trial Periods in Daviess County (C6 Local Rule 2.07)**
 
 **Schedule**
 
@@ -1843,7 +1776,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9C. Jury Selection (Voir Dire)**
+## **Jury Selection (Voir Dire)**
 
 **Jury Pool**
 
@@ -1879,7 +1812,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9D. Trial Sequence (Full)**
+## **Trial Sequence (Full)**
 
 ### **Phase 1: Opening Statements**
 
@@ -2003,15 +1936,6 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **Referenced Documents**
-
-* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Covers jury selection, opening statements, direct and cross-examination, closing argument, and verdict procedures
-* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Kentucky evidence law on admissibility, hearsay exceptions, witness examination, and evidentiary rulings at trial
-* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text governing what evidence is admissible at trial
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Jury trial scheduling and courtroom decorum requirements in Daviess Circuit Court
-
----
-
 ## **Key Terms**
 
 * **Voir dire**: jury selection process  
@@ -2030,11 +1954,11 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
     id: 'mod10',
     title: 'Sentencing',
     icon: Clock,
-    content: `# **SENTENCING — HOW PUNISHMENT IS DETERMINED**
+    content: `# **SENTENCING**
 
-## **What This Explains**
 
-The presentence investigation process, how Kentucky's felony classification system sets sentencing ranges, what judges consider, what sentencing options exist, and how enhancements like PFO can dramatically increase exposure.
+
+What is the presentence investigation process, how Kentucky's felony classification system sets sentencing ranges, what judges consider,
 
 ---
 
@@ -2265,13 +2189,6 @@ The presentence investigation process, how Kentucky's felony classification syst
 
 ---
 
-## **Referenced Documents**
-
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Explains sentencing rights, allocution, and what happens at the sentencing hearing
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Sentencing scheduling and procedures in Daviess Circuit Court
-
----
-
 ## **Key Terms**
 
 * **Presentence investigation (PSI)**: comprehensive report prepared by probation officer before sentencing  
@@ -2293,11 +2210,10 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
     id: 'mod11',
     title: 'Appeals',
     icon: RotateCcw,
-    content: `# **APPEALS — POST-CONVICTION REVIEW**
+    content: `# **APPEALS**
 
-## **What This Explains**
 
-The 30-day deadline to appeal, what can and cannot be appealed, how the appellate process works in Kentucky, what RCr 11.42 collateral attacks are and when they apply, and when federal habeas corpus becomes available.
+You have a 30-day window to appeal, what can and cannot be appealed, how the appellate process works in Kentucky,
 
 ---
 
@@ -2481,13 +2397,6 @@ The 30-day deadline to appeal, what can and cannot be appealed, how the appellat
 
 ---
 
-## **Referenced Documents**
-
-* [Basic Appellate Practice Handbook (P56)](/content/pdfs/P56BasicAppellatePracticeHandbook.pdf) — Step-by-step guide to Kentucky criminal appeals: notice of appeal, briefing, oral argument, and post-conviction relief
-* [Criminal Appeals Brochure](/content/pdfs/Criminal-Appeals-brochure.pdf) — Plain-language overview of the appeals process and what to expect after sentencing
-
----
-
 ## **Key Terms**
 
 * **RAP 3**: Kentucky appellate rule establishing 30-day deadline for notice of appeal  
@@ -2507,9 +2416,9 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
     id: 'mod12',
     title: 'Collateral Consequences',
     icon: AlertTriangle,
-    content: `# **COLLATERAL CONSEQUENCES — BEYOND THE SENTENCE**
+    content: `# **COLLATERAL CONSEQUENCES**
 
-## **What This Explains**
+
 
 The consequences of a felony conviction that extend beyond the sentence imposed by the court — employment, housing, professional licensing, voting, gun rights, immigration, and the narrow circumstances under which expungement is available in Kentucky.
 
@@ -2723,14 +2632,6 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **Referenced Documents**
-
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers collateral consequences including employment, housing, and civil rights impacts of a criminal record
-* [2024 Domestic Violence & Interpersonal Violence Prosecution Manual](/content/pdfs/2024%20Domestic%20Violence%20and%20Interpersonal%20Violence%20Prosecution%20Policy%20Procedure%20Manual.pdf) — Relevant for cases with domestic violence findings and their collateral effects
-* [LGBTQ Victims of Crime](/content/pdfs/LGBTQ-Victims-of-Crime.pdf) — Resources for LGBTQ individuals navigating collateral consequences
-
----
-
 ## **Key Terms**
 
 * **Collateral consequences**: legal and practical consequences of conviction beyond the sentence imposed by court  
@@ -2747,9 +2648,9 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
     id: 'mod13',
     title: 'System Overview',
     icon: Network,
-    content: `# **HOW THE PIECES CONNECT — SYSTEM OVERVIEW**
+    content: `# **HOW THE PIECES CONNECT**
 
-## **What This Explains**
+
 
 The full timeline from arrest to resolution, who each participant is and what role they play, why cases take as long as they do, what decision points exist and how each shapes the path forward, and what realistic expectations look like for a Daviess County criminal case.
 
@@ -3003,15 +2904,6 @@ Every phase of the process is governed by constitutional protections. These are 
 
 ---
 
-## **Referenced Documents**
-
-* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Comprehensive reference on Kentucky criminal trial procedure
-* [KCLM Guidance Document (2025)](/content/pdfs/2025-KCLM_250815.pdf) — Kentucky law enforcement guidance covering system-wide procedures
-* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Law enforcement perspective on the criminal justice system
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Defendant-perspective overview of the full system
-
----
-
 ## **Key Terms**
 
 * **Arraignment**: first court appearance on formal charges  
@@ -3027,30 +2919,6 @@ Every phase of the process is governed by constitutional protections. These are 
     icon: Paperclip,
     content: `# **APPENDICES**
 
-## **Appendix A: Procedural Timeline Flowchart**
-
-* All phases from arrest through collateral consequences  
-* Decision branches at each key point  
-* Typical timeframes noted
-
-## **Appendix B: Legal Terms Glossary**
-
-* Plain-language definitions for all bolded terms across all sections  
-* No legal jargon in definitions themselves
-
-## **Appendix C: Daviess County Court Information**
-
-* Daviess County Courthouse address, phone, hours  
-* Circuit Court clerk contact information  
-* Daviess County Commonwealth Attorney office contact  
-* Daviess County Attorney office contact  
-* Daviess County Detention Center contact  
-* DPA (Public Defender) regional office contact  
-* District court schedule and judge information  
-* Circuit court Division I and Division II judge assignments  
-* Grand jury schedule (next impaneling dates)
-
-## **Appendix D: Referenced Statutes and Rules**
 
 Key citations include:
 
@@ -3102,47 +2970,42 @@ Key citations include:
     icon: Library,
     content: `# **Reference Document Library**
 
-This section provides access to the supplementary manuals, rules, and casebooks referenced in the Daviess County legal navigation resources. Click any document title to open it.
+This section provides access to the supplementary manuals, rules, and casebooks referenced in the Daviess County legal navigation resources.
 
 ## **1. Local Court Rules & Analysis**
-
-* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Official local rules for Daviess Circuit Court covering motion practice, pretrial procedures, jury trial scheduling, and arraignment timing
-* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court rules for misdemeanor arraignment, pretrial conferences, and preliminary hearings
-* [6th Judicial Circuit Family Court Local Rules (C6)](/content/pdfs/C6FamilyRules.pdf) — Family court procedures including domestic violence proceedings and custody matters
+* **Circuit Court Rules (C6):** \`C6LOCALRULES (1).pdf\`
+* **District Court Rules (D6):** \`D6LOCALRULES (1).pdf\`
+* **Family Court Rules:** \`C6FamilyRules.pdf\`
+* **Court Rules Analysis:** \`court_rules_analysis.md\`
 
 ## **2. Police Practices, Search & Seizure**
-
-* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Comprehensive legal reference for law enforcement covering arrest authority, search and seizure, use of force, and officer liability
-* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations: warrants, consent, vehicle stops, and suppression
-* [Kentucky Police Interrogation Tactics & Coercion](/content/pdfs/Kentucky%20Police%20Interrogation%20Tactics%20and%20Coercion_%20Case%20Law%20Analysis%20and%20Misconduct%20Patterns.pdf) — Case law analysis of interrogation practices and misconduct patterns
-* [Search in a School Environment (2019)](/content/pdfs/Search-in-a-School-Environment-2019.pdf) — Guidance on searches in school settings and student rights
-* [Miranda Warning Card (Printout)](/content/pdfs/Miranda-Card_PRINTOUT.pdf) — Printable Miranda rights advisement card
-* [LEOSA for KY Law Enforcement (2019)](/content/pdfs/LEOSA-for-Kentucky-Law-Enforcement-2019.pdf) — Law Enforcement Officers Safety Act guidance for Kentucky
-* [Matricula Consular Identification (2019)](/content/pdfs/Matricula-Consular-2019.pdf) — Guidance on recognizing Matricula Consular identification cards
+* **Model Patrol Legal Handbook (2025):** \`2025-Model-Patrol-Legal-handbook-250917.pdf\`
+* **Search and Seizure Casebook:** \`Search-and-Seizure-Casebook_250520.pdf\`
+* **Police Interrogation Tactics & Coercion (KY):** \`Kentucky Police Interrogation Tactics and Coercion_ Case Law Analysis and Misconduct Patterns.pdf\`
+* **Search in a School Environment (2019):** \`Search-in-a-School-Environment-2019.pdf\`
+* **Miranda Warning Card:** \`Miranda-Card_PRINTOUT.pdf\`
+* **Citizen Interdiction Counter:** \`citizen_interdiction_counter.html\`
 
 ## **3. Evidence & Trial Practice**
-
-* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text: admissibility, witnesses, authentication, hearsay, privilege
-* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Comprehensive reference on Kentucky evidence law at trial and hearings
-* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Practical guide for litigating suppression motions: grounds, procedure, evidentiary standards, sample motions
-* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Reference covering jury selection, opening statements, witness examination, evidence rules, and closing argument
-* [Conflicts of Interest](/content/pdfs/conflicts_of_interest.pdf) — Guide for recognizing and managing conflicts of interest in legal matters
+* **Kentucky Rules of Evidence (2019):** \`Kentucky-Rules-of-Evidence-2019.pdf\`
+* **Evidence Manual (8th Edition):** \`Evidence-Manual-8th-Edition-FINAL.pdf\`
+* **Suppression Manual (May 2024):** \`Suppression-Manual-May-2024.pdf\`
+* **Trial Law Notebook:** \`trial law notebook.pdf\`
+* **Conflicts of Interest:** \`conflicts_of_interest.pdf\`
 
 ## **4. Appeals & Post-Conviction**
+* **Basic Appellate Practice Handbook (P56):** \`P56BasicAppellatePracticeHandbook.pdf\`
+* **Criminal Appeals Brochure:** \`Criminal-Appeals-brochure.pdf\`
 
-* [Basic Appellate Practice Handbook (P56)](/content/pdfs/P56BasicAppellatePracticeHandbook.pdf) — Step-by-step guide to criminal appeals: notice of appeal, briefing, oral argument, post-conviction relief
-* [Criminal Appeals Brochure](/content/pdfs/Criminal-Appeals-brochure.pdf) — Plain-language overview of criminal appeals and what to expect after sentencing
-
-## **5. Defendant Rights & Victim Resources**
-
-* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language guide to defendant rights: counsel, presumption of innocence, bail, trial rights, navigating court
-* [2024 Domestic Violence & Interpersonal Violence Prosecution Manual](/content/pdfs/2024%20Domestic%20Violence%20and%20Interpersonal%20Violence%20Prosecution%20Policy%20Procedure%20Manual.pdf) — Prosecution guidance for domestic and interpersonal violence cases in Kentucky
-* [LGBTQ Victims of Crime](/content/pdfs/LGBTQ-Victims-of-Crime.pdf) — Reference on serving and supporting LGBTQ victims of crime
-
-## **6. Additional Law Enforcement References**
-
-* [KCLM Guidance Document (2025)](/content/pdfs/2025-KCLM_250815.pdf) — Kentucky law enforcement guidance document
-* [Kentucky Criminal Justice Reference (kentufkt)](/content/pdfs/kentufkt.pdf) — Additional Kentucky criminal law reference material
+## **5. Specialized Manuals & Victim Resources**
+* **Domestic & Interpersonal Violence Prosecution Manual (2024):** \`2024 Domestic Violence and Interpersonal Violence Prosecution Policy Procedure Manual.pdf\`
+* **LGBTQ Victims of Crime:** \`LGBTQ-Victims-of-Crime.pdf\`
+* **Fighting For Your Rights From Court:** \`fighting for your rights from court.pdf\`
+* **LEOSA for KY Law Enforcement (2019):** \`LEOSA-for-Kentucky-Law-Enforcement-2019.pdf\`
+* **Matricula Consular (2019):** \`Matricula-Consular-2019.pdf\`
+* **First Amendment:** \`first-amendment-module.html\`
+* **KCLM (2025):** \`2025-KCLM_250815.pdf\`
+* **Kentufkt:** \`kentufkt.pdf\`
 `
   }
 ];
