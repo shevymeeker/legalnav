@@ -25,9 +25,9 @@ export const SECTIONS = [
     icon: Shield,
     content: `# **THE ARREST**
 
-## **What This Explains**
 
-How law enforcement authority to arrest is established, what happens during the arrest itself, what occurs during booking, and what rights attach the moment a person is taken into custody.
+
+Establish law enforcements authority to arrest, what happens during the arrest, what comes after, and general information you should know
 
 ---
 
@@ -104,13 +104,13 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ## **Arrest Without Warrant (RCr 2.10; KRS 431.005)**
 
-**Felony Arrests Without Warrant — Officer May Arrest When:**
+**Felony Arrests Can Occur Without a Warrant if**
 
 * Felony committed in officer's presence  
 * Officer has probable cause to believe person committed a felony (even if not witnessed by officer)  
 * Officer has reasonable grounds to believe felony has been committed AND probable cause to believe this person committed it
 
-**Misdemeanor Arrests Without Warrant — Officer May Arrest When:**
+**Misdemeanor Arrests Can Occur Without a Warrant if**
 
 * Misdemeanor committed in officer's presence  
 * Specific statutory authorization exists (examples):  
@@ -168,7 +168,7 @@ How law enforcement authority to arrest is established, what happens during the 
 **Booking Process:**
 
 * Fingerprinting (rolled and digital)  
-* Photographing (mugshot — becomes public record)  
+* Photographing (mugshot)  
 * Criminal history check (local, statewide via KYOPS, national via NCIC)  
 * Medical screening (identify medical conditions, injuries, medications)  
 * Property inventory (all personal belongings documented, receipted, secured)  
@@ -283,9 +283,9 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
     icon: Gavel,
     content: `# **INITIAL APPEARANCE**
 
-## **What This Explains**
 
-What happens when an arrested person first appears before a judge, what rights the court must advise, how arraignment works in district court vs. circuit court, and how the plea entered at arraignment determines the procedural path forward.
+
+How arraignment works in district court vs. circuit court, and how the plea entered at arraignment determines the procedural path forward.
 
 ---
 
@@ -450,9 +450,9 @@ Arraignment plea determines the procedural path. "Not guilty" triggers the pretr
     id: 'mod3',
     title: 'Bail Determination',
     icon: Scale,
-    content: `# **BAIL DETERMINATION — RELEASE VS. DETENTION**
+    content: `# **BAIL DETERMINATION - RELEASE VS. DETENTION**
 
-## **What This Explains**
+
 
 How judges decide whether to release defendants pending trial, what factors drive that decision, what types of release exist, and what conditions can be attached. Covers the 2025 statewide pretrial release schedule and Daviess County-specific practice.
 
@@ -640,7 +640,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ## **Key Terms**
 
-* **ROR**: release on recognizance — signature release, no money  
+* **ROR**: release on recognizance, signature release, no money  
 * **Cash bond**: full amount posted before release  
 * **Unsecured bond**: promise to pay if fails to appear, no upfront money  
 * **Conditional release**: release with specific behavioral requirements attached  
@@ -649,17 +649,17 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ## **Connection to Next Phase**
 
-Bond conditions determine the defendant's freedom level during the entire pretrial period — which can last months to years. Conditions must be complied with continuously. Violations trigger revocation proceedings and re-incarceration. Being in custody vs. on bond also affects the pace of the case — in-custody defendants have constitutional speedy trial rights that apply with more urgency.`
+Bond conditions determine the defendant's freedom level during the entire pretrial period`
   },
   {
     id: 'mod4',
     title: 'Legal Representation',
     icon: Briefcase,
-    content: `# **LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
+    content: `# **LEGAL REPRESENTATION**
 
-## **What This Explains**
 
-The constitutional right to counsel, how attorneys get appointed in Daviess County, what the indigency determination looks like, the difference between public defenders and retained counsel, and what defendants can and cannot control about their representation.
+
+Everyone has the constitutional right to counsel, what does the indigency determination looks like, whats the difference between public defenders and retained counsel, and what defendants can and cannot control about their representation.
 
 ---
 
@@ -811,9 +811,9 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
     icon: FileSearch,
     content: `# **DISCOVERY**
 
-## **What This Explains**
 
-What evidence the Commonwealth is required to hand over to the defense, what the defense must disclose in return, what Brady and Giglio obligations mean in practice, and what kinds of evidence get produced in a typical Daviess County case.
+
+The Commonwealth is required to hand over evidence to the defense, what the defense must disclose in return, and what kinds of evidence get produced in a typical Daviess County case.
 
 ---
 
@@ -1010,7 +1010,7 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
     icon: Handshake,
     content: `# **PRETRIAL PROCEEDINGS**
 
-## **What This Explains**
+
 
 How the pretrial conference process works, why cases get continued repeatedly, how plea negotiations actually function, what diversion programs look like, and what determines whether a case resolves or proceeds to trial.
 
@@ -1191,9 +1191,9 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
     icon: FileText,
     content: `# **MOTION PRACTICE**
 
-## **What This Explains**
 
-What pretrial motions are, when they can be filed, how hearings work, what the different types of motions accomplish, and why motion outcomes can determine whether a case proceeds.
+
+What are pretrial motions, when they can be filed, what the different types of motions accomplish,
 
 ---
 
@@ -1393,9 +1393,9 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
     icon: SplitSquareHorizontal,
     content: `# **THE TRIAL DECISION**
 
-## **What This Explains**
 
-The statistical reality of plea vs. trial, what jury and bench trials are, how the "trial penalty" works structurally, what an Alford plea is, and what factors drive the decision that is arguably the most consequential in the entire process.
+
+what are jury and bench trials, what is an Alford plea, 
 
 ---
 
@@ -1579,7 +1579,7 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
     icon: Users,
     content: `# **TRIAL PROCESS**
 
-## **What This Explains**
+
 
 How jury trial periods work in Daviess County, the full trial sequence from jury selection through verdict, what each party can and cannot do, and what happens when a trial ends in acquittal, conviction, or hung jury.
 
@@ -1816,9 +1816,9 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
     icon: Clock,
     content: `# **SENTENCING**
 
-## **What This Explains**
 
-The presentence investigation process, how Kentucky's felony classification system sets sentencing ranges, what judges consider, what sentencing options exist, and how enhancements like PFO can dramatically increase exposure.
+
+What is the presentence investigation process, how Kentucky's felony classification system sets sentencing ranges, what judges consider,
 
 ---
 
@@ -2072,9 +2072,8 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
     icon: RotateCcw,
     content: `# **APPEALS**
 
-## **What This Explains**
 
-The 30-day deadline to appeal, what can and cannot be appealed, how the appellate process works in Kentucky, what RCr 11.42 collateral attacks are and when they apply, and when federal habeas corpus becomes available.
+You have a 30-day window to appeal, what can and cannot be appealed, how the appellate process works in Kentucky,
 
 ---
 
@@ -2279,7 +2278,7 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
     icon: AlertTriangle,
     content: `# **COLLATERAL CONSEQUENCES**
 
-## **What This Explains**
+
 
 The consequences of a felony conviction that extend beyond the sentence imposed by the court — employment, housing, professional licensing, voting, gun rights, immigration, and the narrow circumstances under which expungement is available in Kentucky.
 
@@ -2511,7 +2510,7 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
     icon: Network,
     content: `# **HOW THE PIECES CONNECT**
 
-## **What This Explains**
+
 
 The full timeline from arrest to resolution, who each participant is and what role they play, why cases take as long as they do, what decision points exist and how each shapes the path forward, and what realistic expectations look like for a Daviess County criminal case.
 
