@@ -16,7 +16,7 @@ const SECTIONS = [
 
 ### **Daviess County, Kentucky | Civic Education Resource**
 
-**Disclaimer (appears in each module):** This course explains criminal court procedures in Daviess County, Kentucky. It is not legal advice. It does not recommend specific actions. Every criminal case is unique and requires consultation with a licensed attorney. This material describes how the system operates based on Kentucky law and local court rules.` 
+**Disclaimer (appears throughout):** This course explains criminal court procedures in Daviess County, Kentucky. It is not legal advice. It does not recommend specific actions. Every criminal case is unique and requires consultation with a licensed attorney. This material describes how the system operates based on Kentucky law and local court rules.` 
   },
   {
     id: 'mod1',
@@ -24,7 +24,7 @@ const SECTIONS = [
     icon: Shield,
     content: `# **THE ARREST**
 
-## **What This Module Explains**
+## **What This Explains**
 
 How law enforcement authority to arrest is established, what happens during the arrest itself, what occurs during booking, and what rights attach the moment a person is taken into custody.
 
@@ -261,7 +261,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **Key Terms (Module 1)**
+## **Key Terms**
 
 * **Probable cause**: facts that would lead a reasonable officer to believe a crime occurred and this person committed it  
 * **Reasonable suspicion**: lower standard; articulable facts suggesting criminal activity is afoot  
@@ -282,7 +282,7 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
     icon: Gavel,
     content: `# **INITIAL APPEARANCE**
 
-## **What This Module Explains**
+## **What This Explains**
 
 What happens when an arrested person first appears before a judge, what rights the court must advise, how arraignment works in district court vs. circuit court, and how the plea entered at arraignment determines the procedural path forward.
 
@@ -432,7 +432,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **Key Terms (Module 2)**
+## **Key Terms**
 
 * **Arraignment**: formal court appearance where charges are read and plea is entered  
 * **Initial appearance**: first appearance before judge after arrest  
@@ -443,15 +443,15 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ## **Connection to Next Phase**
 
-Arraignment plea determines the procedural path. "Not guilty" triggers the pretrial process — discovery, negotiations, motions. "Guilty" moves directly toward sentencing (with presentence investigation). The pretrial services recommendation from Module 1 heavily influences what happens with bail at this appearance.`
+Arraignment plea determines the procedural path. "Not guilty" triggers the pretrial process — discovery, negotiations, motions. "Guilty" moves directly toward sentencing (with presentence investigation). The pretrial services recommendation heavily influences what happens with bail at this appearance.`
   },
   {
     id: 'mod3',
-    title: 'Module 3: Bail Determination',
+    title: 'Bail Determination',
     icon: Scale,
-    content: `# **MODULE 3: BAIL DETERMINATION — RELEASE VS. DETENTION**
+    content: `# **BAIL DETERMINATION — RELEASE VS. DETENTION**
 
-## **What This Module Explains**
+## **What This Explains**
 
 How judges decide whether to release defendants pending trial, what factors drive that decision, what types of release exist, and what conditions can be attached. Covers the 2025 statewide pretrial release schedule and Daviess County-specific practice.
 
@@ -637,7 +637,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **Key Terms (Module 3)**
+## **Key Terms**
 
 * **ROR**: release on recognizance — signature release, no money  
 * **Cash bond**: full amount posted before release  
@@ -652,11 +652,11 @@ Bond conditions determine the defendant's freedom level during the entire pretri
   },
   {
     id: 'mod4',
-    title: 'Module 4: Legal Representation',
+    title: 'Legal Representation',
     icon: Briefcase,
-    content: `# **MODULE 4: LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
+    content: `# **LEGAL REPRESENTATION — HOW APPOINTMENT WORKS**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The constitutional right to counsel, how attorneys get appointed in Daviess County, what the indigency determination looks like, the difference between public defenders and retained counsel, and what defendants can and cannot control about their representation.
 
@@ -802,7 +802,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ## **Connection to Next Phase**
 
-Attorney handles all subsequent proceedings: reviewing discovery, filing motions, conducting negotiations, preparing for trial. The relationship between defendant and attorney is the most important variable in case outcome after the facts themselves. Everything in Modules 5 through 9 is filtered through this relationship.`
+Attorney handles all subsequent proceedings: reviewing discovery, filing motions, conducting negotiations, preparing for trial. The relationship between defendant and attorney is the most important variable in case outcome after the facts themselves. Everything that follows is filtered through this relationship.`
   },
   {
     id: 'mod5',
@@ -810,7 +810,7 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
     icon: FileSearch,
     content: `# **DISCOVERY**
 
-## **What This Module Explains**
+## **What This Explains**
 
 What evidence the Commonwealth is required to hand over to the defense, what the defense must disclose in return, what Brady and Giglio obligations mean in practice, and what kinds of evidence get produced in a typical Daviess County case.
 
@@ -1009,7 +1009,7 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
     icon: Handshake,
     content: `# **PRETRIAL PROCEEDINGS**
 
-## **What This Module Explains**
+## **What This Explains**
 
 How the pretrial conference process works, why cases get continued repeatedly, how plea negotiations actually function, what diversion programs look like, and what determines whether a case resolves or proceeds to trial.
 
@@ -1190,7 +1190,7 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
     icon: FileText,
     content: `# **MOTION PRACTICE**
 
-## **What This Module Explains**
+## **What This Explains**
 
 What pretrial motions are, when they can be filed, how hearings work, what the different types of motions accomplish, and why motion outcomes can determine whether a case proceeds.
 
@@ -1392,7 +1392,7 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
     icon: SplitSquareHorizontal,
     content: `# **THE TRIAL DECISION**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The statistical reality of plea vs. trial, what jury and bench trials are, how the "trial penalty" works structurally, what an Alford plea is, and what factors drive the decision that is arguably the most consequential in the entire process.
 
@@ -1578,7 +1578,7 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
     icon: Users,
     content: `# **TRIAL PROCESS**
 
-## **What This Module Explains**
+## **What This Explains**
 
 How jury trial periods work in Daviess County, the full trial sequence from jury selection through verdict, what each party can and cannot do, and what happens when a trial ends in acquittal, conviction, or hung jury.
 
@@ -1815,7 +1815,7 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
     icon: Clock,
     content: `# **SENTENCING**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The presentence investigation process, how Kentucky's felony classification system sets sentencing ranges, what judges consider, what sentencing options exist, and how enhancements like PFO can dramatically increase exposure.
 
@@ -2071,7 +2071,7 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
     icon: RotateCcw,
     content: `# **APPEALS**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The 30-day deadline to appeal, what can and cannot be appealed, how the appellate process works in Kentucky, what RCr 11.42 collateral attacks are and when they apply, and when federal habeas corpus becomes available.
 
@@ -2270,7 +2270,7 @@ The 30-day deadline to appeal, what can and cannot be appealed, how the appellat
 
 ## **Connection to Next Phase**
 
-Whether appeal is filed or not, the conviction's collateral consequences begin immediately. Employment consequences, housing restrictions, licensing implications, and loss of rights all attach upon conviction — not upon exhaustion of appeals. Module 12 addresses what defendants face beyond the sentence itself.`
+Whether appeal is filed or not, the conviction's collateral consequences begin immediately. Employment consequences, housing restrictions, licensing implications, and loss of rights all attach upon conviction — not upon exhaustion of appeals. Collateral consequences begin immediately upon conviction.`
   },
   {
     id: 'mod12',
@@ -2278,7 +2278,7 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
     icon: AlertTriangle,
     content: `# **COLLATERAL CONSEQUENCES**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The consequences of a felony conviction that extend beyond the sentence imposed by the court — employment, housing, professional licensing, voting, gun rights, immigration, and the narrow circumstances under which expungement is available in Kentucky.
 
@@ -2510,7 +2510,7 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
     icon: Network,
     content: `# **HOW THE PIECES CONNECT**
 
-## **What This Module Explains**
+## **What This Explains**
 
 The full timeline from arrest to resolution, who each participant is and what role they play, why cases take as long as they do, what decision points exist and how each shapes the path forward, and what realistic expectations look like for a Daviess County criminal case.
 
@@ -2808,7 +2808,7 @@ Key citations include:
 
 ## **Appendix E: Case Law Foundations**
 
-| Case | Holding | Module |
+| Case | Holding | Source |
 | --- | --- | --- |
 | *Boykin v. Alabama*, 395 U.S. 238 (1969) | Guilty plea requires knowing, intelligent, voluntary waiver of rights | 2, 8 |
 | *Argersinger v. Hamlin*, 407 U.S. 25 (1972) | Right to appointed counsel for any charge carrying possible incarceration | 2, 4 |
@@ -2863,7 +2863,7 @@ This section provides access to the supplementary manuals, rules, and casebooks 
 * **Fighting For Your Rights From Court:** \`fighting for your rights from court.pdf\`
 * **LEOSA for KY Law Enforcement (2019):** \`LEOSA-for-Kentucky-Law-Enforcement-2019.pdf\`
 * **Matricula Consular (2019):** \`Matricula-Consular-2019.pdf\`
-* **First Amendment Module:** \`first-amendment-module.html\`
+* **First Amendment:** \`first-amendment-module.html\`
 * **KCLM (2025):** \`2025-KCLM_250815.pdf\`
 * **Kentufkt:** \`kentufkt.pdf\`
 `
@@ -2921,10 +2921,6 @@ export default function App() {
 
     let rawText = activeSection?.content || '';
 
-    // Strip "MODULE N:" prefix from h1 headings (e.g. "# **MODULE 1: THE ARREST...**")
-    rawText = rawText.replace(/^(#{1,2}\s+(?:\*\*)?MODULE\s+\d+:\s*)/gim, (_, prefix) => {
-      return prefix.replace(/MODULE\s+\d+:\s*/i, '');
-    });
 
     // Strip "NA." / "1A." number+letter prefix from h2 headings (e.g. "## **1A. Title**")
     rawText = rawText.replace(/^(##\s+(?:\*\*)?\d+[A-Z]\.\s*)/gim, (_, prefix) => {
@@ -3028,7 +3024,7 @@ export default function App() {
                   <div className={`${isActive ? 'text-blue-500' : 'text-slate-500 group-hover:text-slate-400'}`}>
                     <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
                   </div>
-                  <span className="truncate">{section.title.replace(/^Module\s+\d+:\s*/i, '')}</span>
+                  <span className="truncate">{section.title}</span>
                   {isActive && (
                     <div className="ml-auto w-1 h-4 bg-blue-500 rounded-full" />
                   )}
@@ -3067,7 +3063,7 @@ export default function App() {
               <BookOpen size={16} className="mr-2" />
               <span>Daviess County Minicourse</span>
               <ChevronRight size={14} className="mx-2 text-slate-400" />
-              <span className="text-slate-600">{activeSection.title.replace(/^Module\s+\d+:\s*/i, '')}</span>
+              <span className="text-slate-600">{activeSection.title}</span>
             </div>
 
             {/* Document Render Box */}
