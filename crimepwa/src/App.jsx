@@ -261,6 +261,16 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
+## **Referenced Documents**
+
+* [Miranda Card Printout](/content/pdfs/Miranda-Card_PRINTOUT.pdf) — Standard Miranda rights advisement language
+* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Covers arrest authority, warrantless arrest standards, use of force, and officer liability
+* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations, including Terry stops and probable cause
+* [Kentucky Police Interrogation Tactics & Coercion](/content/pdfs/Kentucky%20Police%20Interrogation%20Tactics%20and%20Coercion_%20Case%20Law%20Analysis%20and%20Misconduct%20Patterns.pdf) — Case law analysis on interrogation practices and misconduct patterns
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language guide to rights at arrest and booking
+
+---
+
 ## **Key Terms (Module 1)**
 
 * **Probable cause**: facts that would lead a reasonable officer to believe a crime occurred and this person committed it  
@@ -429,6 +439,14 @@ What happens when an arrested person first appears before a judge, what rights t
 * Arraignments and initial pretrial conferences: 8:30 AM, first Thursday and Friday after beginning of each trial period  
 * Two-division system: Division I and Division II alternate trial periods  
 * Criminal motions heard Monday, Wednesday, Thursday at 8:30 AM (C6 Local Rule 2.02)
+
+---
+
+## **Referenced Documents**
+
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Arraignment timing and initial appearance procedures in Daviess Circuit Court
+* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court misdemeanor arraignment procedures
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Explains the right to counsel, bail, and what to expect at first court appearance
 
 ---
 
@@ -637,6 +655,14 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
+## **Referenced Documents**
+
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Bond and pretrial release procedures in Daviess Circuit Court
+* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court bond-setting procedures for misdemeanor cases
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language explanation of bail rights and conditions
+
+---
+
 ## **Key Terms (Module 3)**
 
 * **ROR**: release on recognizance — signature release, no money  
@@ -788,6 +814,13 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 * Self-representation is almost universally a disadvantage  
 * Criminal procedure is complex; prosecutors are experienced professionals  
 * This course does not advise on self-representation strategy — consult with an attorney
+
+---
+
+## **Referenced Documents**
+
+* [Conflicts of Interest](/content/pdfs/conflicts_of_interest.pdf) — Guide to recognizing and managing conflicts of interest in legal representation
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers the right to counsel, public defender eligibility, and right to effective representation
 
 ---
 
@@ -989,6 +1022,15 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
+## **Referenced Documents**
+
+* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text governing admissibility, hearsay, privilege, and authentication
+* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Comprehensive reference on Kentucky evidence law relevant to what is discoverable and admissible
+* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Grounds and procedure for litigating suppression of evidence obtained in discovery
+* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Case law on Fourth Amendment issues often raised through suppression after discovery
+
+---
+
 ## **Key Terms (Module 5)**
 
 * **Discovery**: formal process of exchanging evidence before trial  
@@ -1168,6 +1210,15 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 * Prosecution resumes from where it left off  
 * Time spent in diversion does not count toward anything  
 * Defendant faces original charges
+
+---
+
+## **Referenced Documents**
+
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Pretrial conference scheduling and motion deadlines in Daviess Circuit Court
+* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court pretrial conference procedures
+* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Comprehensive guide to pretrial suppression motions in Kentucky
+* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Case law relevant to suppression hearings and pretrial motions
 
 ---
 
@@ -1372,6 +1423,15 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
+## **Referenced Documents**
+
+* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Practical manual for litigating suppression motions including grounds, procedure, evidentiary standards, and sample motions
+* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations covering warrants, consent, vehicle stops, and suppression
+* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Rules governing evidentiary standards at suppression hearings and motions in limine
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Motion practice deadlines and filing requirements in Daviess Circuit Court
+
+---
+
 ## **Key Terms (Module 7)**
 
 * **Motion to suppress**: request to exclude unconstitutionally obtained evidence  
@@ -1556,6 +1616,13 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 **Commonwealth's Evidence**
 
 * If suppression motions lost and evidence is strong, trial may be quixotic
+
+---
+
+## **Referenced Documents**
+
+* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Reference covering trial procedure, jury selection, and what to expect at a Kentucky criminal trial
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers the right to jury trial, presumption of innocence, and the plea vs. trial decision
 
 ---
 
@@ -1792,6 +1859,15 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 **Motion for New Trial (RCr 10.06)**
 
 * Must be served not later than **5 days after verdict return** * Grounds: newly discovered evidence, prejudicial error at trial, juror misconduct, etc.
+
+---
+
+## **Referenced Documents**
+
+* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Covers jury selection, opening statements, direct and cross-examination, closing argument, and verdict procedures
+* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Kentucky evidence law on admissibility, hearsay exceptions, witness examination, and evidentiary rulings at trial
+* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text governing what evidence is admissible at trial
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Jury trial scheduling and courtroom decorum requirements in Daviess Circuit Court
 
 ---
 
@@ -2048,6 +2124,13 @@ The presentence investigation process, how Kentucky's felony classification syst
 
 ---
 
+## **Referenced Documents**
+
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Explains sentencing rights, allocution, and what happens at the sentencing hearing
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Sentencing scheduling and procedures in Daviess Circuit Court
+
+---
+
 ## **Key Terms (Module 10)**
 
 * **Presentence investigation (PSI)**: comprehensive report prepared by probation officer before sentencing  
@@ -2254,6 +2337,13 @@ The 30-day deadline to appeal, what can and cannot be appealed, how the appellat
 * Limited to violations of the federal Constitution (Fourth, Fifth, Sixth, Eighth, Fourteenth Amendments)  
 * Cannot relitigate state law errors  
 * Deferential standard: federal court defers to state court's reasonable application of federal law
+
+---
+
+## **Referenced Documents**
+
+* [Basic Appellate Practice Handbook (P56)](/content/pdfs/P56BasicAppellatePracticeHandbook.pdf) — Step-by-step guide to Kentucky criminal appeals: notice of appeal, briefing, oral argument, and post-conviction relief
+* [Criminal Appeals Brochure](/content/pdfs/Criminal-Appeals-brochure.pdf) — Plain-language overview of the appeals process and what to expect after sentencing
 
 ---
 
@@ -2489,6 +2579,14 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 * Commonwealth has opportunity to object  
 * Court holds hearing if objection filed  
 * Judge grants or denies based on statutory criteria
+
+---
+
+## **Referenced Documents**
+
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Covers collateral consequences including employment, housing, and civil rights impacts of a criminal record
+* [2024 Domestic Violence & Interpersonal Violence Prosecution Manual](/content/pdfs/2024%20Domestic%20Violence%20and%20Interpersonal%20Violence%20Prosecution%20Policy%20Procedure%20Manual.pdf) — Relevant for cases with domestic violence findings and their collateral effects
+* [LGBTQ Victims of Crime](/content/pdfs/LGBTQ-Victims-of-Crime.pdf) — Resources for LGBTQ individuals navigating collateral consequences
 
 ---
 
@@ -2764,6 +2862,15 @@ Every phase of the process is governed by constitutional protections. These are 
 
 ---
 
+## **Referenced Documents**
+
+* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Comprehensive reference on Kentucky criminal trial procedure
+* [KCLM Guidance Document (2025)](/content/pdfs/2025-KCLM_250815.pdf) — Kentucky law enforcement guidance covering system-wide procedures
+* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Law enforcement perspective on the criminal justice system
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Defendant-perspective overview of the full system
+
+---
+
 ## **Key Terms (Module 13)**
 
 * **Arraignment**: first court appearance on formal charges  
@@ -2854,42 +2961,47 @@ Key citations include:
     icon: Library,
     content: `# **Reference Document Library**
 
-This section provides access to the supplementary manuals, rules, and casebooks referenced in the Daviess County legal navigation resources.
+This section provides access to the supplementary manuals, rules, and casebooks referenced in the Daviess County legal navigation resources. Click any document title to open it.
 
 ## **1. Local Court Rules & Analysis**
-* **Circuit Court Rules (C6):** \`C6LOCALRULES (1).pdf\`
-* **District Court Rules (D6):** \`D6LOCALRULES (1).pdf\`
-* **Family Court Rules:** \`C6FamilyRules.pdf\`
-* **Court Rules Analysis:** \`court_rules_analysis.md\`
+
+* [6th Judicial Circuit Local Rules (C6)](/content/pdfs/C6LOCALRULES%20(1).pdf) — Official local rules for Daviess Circuit Court covering motion practice, pretrial procedures, jury trial scheduling, and arraignment timing
+* [6th Judicial District Local Rules (D6)](/content/pdfs/D6LOCALRULES%20(1).pdf) — District court rules for misdemeanor arraignment, pretrial conferences, and preliminary hearings
+* [6th Judicial Circuit Family Court Local Rules (C6)](/content/pdfs/C6FamilyRules.pdf) — Family court procedures including domestic violence proceedings and custody matters
 
 ## **2. Police Practices, Search & Seizure**
-* **Model Patrol Legal Handbook (2025):** \`2025-Model-Patrol-Legal-handbook-250917.pdf\`
-* **Search and Seizure Casebook:** \`Search-and-Seizure-Casebook_250520.pdf\`
-* **Police Interrogation Tactics & Coercion (KY):** \`Kentucky Police Interrogation Tactics and Coercion_ Case Law Analysis and Misconduct Patterns.pdf\`
-* **Search in a School Environment (2019):** \`Search-in-a-School-Environment-2019.pdf\`
-* **Miranda Warning Card:** \`Miranda-Card_PRINTOUT.pdf\`
-* **Citizen Interdiction Counter:** \`citizen_interdiction_counter.html\`
+
+* [Model Patrol Legal Handbook (2025)](/content/pdfs/2025-Model-Patrol-Legal-handbook-250917.pdf) — Comprehensive legal reference for law enforcement covering arrest authority, search and seizure, use of force, and officer liability
+* [Search and Seizure Casebook (2025)](/content/pdfs/Search-and-Seizure-Casebook_250520.pdf) — Fourth Amendment case law with Kentucky citations: warrants, consent, vehicle stops, and suppression
+* [Kentucky Police Interrogation Tactics & Coercion](/content/pdfs/Kentucky%20Police%20Interrogation%20Tactics%20and%20Coercion_%20Case%20Law%20Analysis%20and%20Misconduct%20Patterns.pdf) — Case law analysis of interrogation practices and misconduct patterns
+* [Search in a School Environment (2019)](/content/pdfs/Search-in-a-School-Environment-2019.pdf) — Guidance on searches in school settings and student rights
+* [Miranda Warning Card (Printout)](/content/pdfs/Miranda-Card_PRINTOUT.pdf) — Printable Miranda rights advisement card
+* [LEOSA for KY Law Enforcement (2019)](/content/pdfs/LEOSA-for-Kentucky-Law-Enforcement-2019.pdf) — Law Enforcement Officers Safety Act guidance for Kentucky
+* [Matricula Consular Identification (2019)](/content/pdfs/Matricula-Consular-2019.pdf) — Guidance on recognizing Matricula Consular identification cards
 
 ## **3. Evidence & Trial Practice**
-* **Kentucky Rules of Evidence (2019):** \`Kentucky-Rules-of-Evidence-2019.pdf\`
-* **Evidence Manual (8th Edition):** \`Evidence-Manual-8th-Edition-FINAL.pdf\`
-* **Suppression Manual (May 2024):** \`Suppression-Manual-May-2024.pdf\`
-* **Trial Law Notebook:** \`trial law notebook.pdf\`
-* **Conflicts of Interest:** \`conflicts_of_interest.pdf\`
+
+* [Kentucky Rules of Evidence (2019)](/content/pdfs/Kentucky-Rules-of-Evidence-2019.pdf) — Official KRE text: admissibility, witnesses, authentication, hearsay, privilege
+* [Evidence Manual – 8th Edition](/content/pdfs/Evidence-Manual-8th-Edition-FINAL.pdf) — Comprehensive reference on Kentucky evidence law at trial and hearings
+* [Suppression Manual (May 2024)](/content/pdfs/Suppression-Manual-May-2024.pdf) — Practical guide for litigating suppression motions: grounds, procedure, evidentiary standards, sample motions
+* [Trial Law Notebook](/content/pdfs/trial%20law%20notebook.pdf) — Reference covering jury selection, opening statements, witness examination, evidence rules, and closing argument
+* [Conflicts of Interest](/content/pdfs/conflicts_of_interest.pdf) — Guide for recognizing and managing conflicts of interest in legal matters
 
 ## **4. Appeals & Post-Conviction**
-* **Basic Appellate Practice Handbook (P56):** \`P56BasicAppellatePracticeHandbook.pdf\`
-* **Criminal Appeals Brochure:** \`Criminal-Appeals-brochure.pdf\`
 
-## **5. Specialized Manuals & Victim Resources**
-* **Domestic & Interpersonal Violence Prosecution Manual (2024):** \`2024 Domestic Violence and Interpersonal Violence Prosecution Policy Procedure Manual.pdf\`
-* **LGBTQ Victims of Crime:** \`LGBTQ-Victims-of-Crime.pdf\`
-* **Fighting For Your Rights From Court:** \`fighting for your rights from court.pdf\`
-* **LEOSA for KY Law Enforcement (2019):** \`LEOSA-for-Kentucky-Law-Enforcement-2019.pdf\`
-* **Matricula Consular (2019):** \`Matricula-Consular-2019.pdf\`
-* **First Amendment Module:** \`first-amendment-module.html\`
-* **KCLM (2025):** \`2025-KCLM_250815.pdf\`
-* **Kentufkt:** \`kentufkt.pdf\`
+* [Basic Appellate Practice Handbook (P56)](/content/pdfs/P56BasicAppellatePracticeHandbook.pdf) — Step-by-step guide to criminal appeals: notice of appeal, briefing, oral argument, post-conviction relief
+* [Criminal Appeals Brochure](/content/pdfs/Criminal-Appeals-brochure.pdf) — Plain-language overview of criminal appeals and what to expect after sentencing
+
+## **5. Defendant Rights & Victim Resources**
+
+* [Fighting for Your Rights from Court](/content/pdfs/fighting%20for%20your%20rights%20from%20court.pdf) — Plain-language guide to defendant rights: counsel, presumption of innocence, bail, trial rights, navigating court
+* [2024 Domestic Violence & Interpersonal Violence Prosecution Manual](/content/pdfs/2024%20Domestic%20Violence%20and%20Interpersonal%20Violence%20Prosecution%20Policy%20Procedure%20Manual.pdf) — Prosecution guidance for domestic and interpersonal violence cases in Kentucky
+* [LGBTQ Victims of Crime](/content/pdfs/LGBTQ-Victims-of-Crime.pdf) — Reference on serving and supporting LGBTQ victims of crime
+
+## **6. Additional Law Enforcement References**
+
+* [KCLM Guidance Document (2025)](/content/pdfs/2025-KCLM_250815.pdf) — Kentucky law enforcement guidance document
+* [Kentucky Criminal Justice Reference (kentufkt)](/content/pdfs/kentufkt.pdf) — Additional Kentucky criminal law reference material
 `
   }
 ];
@@ -2950,7 +3062,10 @@ export default function App() {
     rawText = rawText.replace(/\*\*Disclaimer.*?\*\*\s*(.*?)$/gim, '<div class="disclaimer"><strong>Disclaimer:</strong> $1</div>');
     
     // Parse using the external library which flawlessly handles tables/lists/etc.
-    return window.marked.parse(rawText, { breaks: true, gfm: true });
+    let html = window.marked.parse(rawText, { breaks: true, gfm: true });
+    // Open PDF links in a new tab
+    html = html.replace(/<a href="([^"]*\.pdf[^"]*)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer" class="pdf-link"');
+    return html;
   };
 
   return (
@@ -2983,6 +3098,12 @@ export default function App() {
         
         .disclaimer { background-color: #fffbeb; border-left: 4px solid #f59e0b; padding: 1.25rem 1.5rem; margin: 2rem 0; font-size: 0.95rem; color: #b45309; border-radius: 0 0.5rem 0.5rem 0; }
         .gap-note { background-color: #fef2f2; border: 1px solid #fecaca; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 0.95rem; color: #b91c1c; border-radius: 0.5rem; font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .markdown-body a { color: #2563eb; text-decoration: underline; text-underline-offset: 2px; }
+        .markdown-body a:hover { color: #1d4ed8; }
+        .markdown-body a.pdf-link { display: inline-flex; align-items: center; gap: 0.25rem; }
+        .markdown-body a.pdf-link::before { content: "📄 "; font-size: 0.9em; }
+        .ref-docs { background-color: #f0f9ff; border: 1px solid #bae6fd; padding: 1.25rem 1.5rem; margin: 2rem 0 1rem 0; border-radius: 0.5rem; }
+        .ref-docs h2 { color: #0369a1 !important; margin-top: 0 !important; font-size: 1.1rem !important; }
       `}</style>
 
       {/* MOBILE BACKDROP */}
