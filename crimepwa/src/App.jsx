@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import InstallPrompt from './InstallPrompt';
 import { marked } from 'marked';
 import {
   BookOpen, Shield, Gavel, Scale, Briefcase, FileSearch,
@@ -156,6 +157,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      <InstallPrompt />
 
       {/* Desktop sidebar */}
       <div className="sidebar">
