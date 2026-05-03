@@ -25,9 +25,9 @@ export const SECTIONS = [
     icon: AlertTriangle,
     content: `# **PRE-ARREST PRACTICAL RIGHTS**
 
-## **What This Explains**
 
-Your constitutional and statutory rights *before* an arrest occurs — during police encounters, investigatory stops, and traffic stops. Understanding these rights affects whether evidence can later be suppressed and whether your statements can be used against you.
+
+consensual police encounters, investigatory stops, and traffic stops. Understanding these types of contact 
 
 ---
 
