@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  BookOpen, Shield, Gavel, Scale, Briefcase, FileSearch, 
-  Handshake, FileText, SplitSquareHorizontal, Users, Clock, 
-  RotateCcw, AlertTriangle, Network, Paperclip, Menu, X, 
-  ChevronRight, ChevronLeft, Search, Loader2, Library
+import React, { useState, useCallback } from 'react';
+import { marked } from 'marked';
+import {
+  BookOpen, Shield, Gavel, Scale, Briefcase, FileSearch,
+  Handshake, FileText, SplitSquareHorizontal, Users, Clock,
+  RotateCcw, AlertTriangle, Network, Paperclip, Menu, X,
+  ChevronRight, ChevronLeft, Search, Library
 } from 'lucide-react';
 
 // --- CONTENT DATA (100% Unmodified, Exactly from Prompt) ---
@@ -3026,60 +3027,26 @@ const SECTION_META = {
   resources:  { phase: 'resources', num: null,  label: 'Resource Library' },
 };
 
-export default function App() {
-  const [activeTab, setActiveTab] = useState(SECTIONS[0].id);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [markedLoaded, setMarkedLoaded] = useState(false);
-  const [animKey, setAnimKey] = useState(0);
+// Configure marked once at module level — not inside render
+marked.setOptions({ breaks: true, gfm: true });
 
-  useEffect(() => {
-    if (window.marked) { setMarkedLoaded(true); return; }
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
-    script.async = true;
-    script.onload = () => setMarkedLoaded(true);
-    document.body.appendChild(script);
-  }, []);
+function parseContent(raw) {
+  let text = raw.replace(
+    /\*\*Disclaimer.*?\*\*\s*(.*?)$/gim,
+    '<div class="disclaimer"><strong>Disclaimer:</strong> $1</div>'
+  );
+  let html = marked.parse(text);
+  html = html.replace(
+    /<a href="([^"]*\.pdf[^"]*)"/g,
+    '<a href="$1" target="_blank" rel="noopener noreferrer" class="pdf-link"'
+  );
+  return html;
+}
 
-  const activeSectionIndex = SECTIONS.findIndex(s => s.id === activeTab);
-  const activeSection = activeSectionIndex >= 0 ? SECTIONS[activeSectionIndex] : SECTIONS[0];
-  const activeMeta = SECTION_META[activeSection.id] || { phase: null, num: null, label: '' };
+const modSections = SECTIONS.filter(s => s.id.startsWith('mod'));
 
-  const modSections = SECTIONS.filter(s => s.id.startsWith('mod'));
-  const modIndex = modSections.findIndex(s => s.id === activeTab);
-  const progressPct = activeTab === 'intro' ? 0
-    : (activeTab === 'appendices' || activeTab === 'resources') ? 100
-    : modIndex >= 0 ? Math.round(((modIndex + 1) / modSections.length) * 100)
-    : 0;
-
-  const handleTabChange = (id) => {
-    setActiveTab(id);
-    setIsMobileMenuOpen(false);
-    setAnimKey(k => k + 1);
-    const el = document.getElementById('main-scroll-area');
-    if (el) el.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleNext = () => {
-    if (activeSectionIndex < SECTIONS.length - 1) handleTabChange(SECTIONS[activeSectionIndex + 1].id);
-  };
-  const handlePrev = () => {
-    if (activeSectionIndex > 0) handleTabChange(SECTIONS[activeSectionIndex - 1].id);
-  };
-
-  const renderMarkdown = () => {
-    if (!markedLoaded || !window.marked) return '';
-    let raw = activeSection?.content || '';
-    raw = raw.replace(/\*\*Disclaimer.*?\*\*\s*(.*?)$/gim,
-      '<div class="disclaimer"><strong>Disclaimer:</strong> $1</div>');
-    let html = window.marked.parse(raw, { breaks: true, gfm: true });
-    html = html.replace(/<a href="([^"]*\.pdf[^"]*)"/g,
-      '<a href="$1" target="_blank" rel="noopener noreferrer" class="pdf-link"');
-    return html;
-  };
-
-  const SidebarContent = () => (
+function Sidebar({ activeTab, searchQuery, onSearchChange, onTabChange, progressPct }) {
+  return (
     <>
       <div className="sidebar-masthead">
         <div className="sidebar-seal">
@@ -3110,7 +3077,7 @@ export default function App() {
             className="sidebar-search-input"
             placeholder="Search modules…"
             value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
+            onChange={e => onSearchChange(e.target.value)}
           />
         </div>
       </div>
@@ -3126,7 +3093,7 @@ export default function App() {
             return (
               <button
                 key={section.id}
-                onClick={() => handleTabChange(section.id)}
+                onClick={() => onTabChange(section.id)}
                 className={`nav-item${isActive ? ' active' : ''}`}
               >
                 <Icon size={13} className="nav-item-icon" strokeWidth={1.75} />
@@ -3147,7 +3114,40 @@ export default function App() {
       </div>
     </>
   );
+}
 
+export default function App() {
+  const [activeTab, setActiveTab] = useState(SECTIONS[0].id);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [animKey, setAnimKey] = useState(0);
+
+  const activeSectionIndex = SECTIONS.findIndex(s => s.id === activeTab);
+  const activeSection = activeSectionIndex >= 0 ? SECTIONS[activeSectionIndex] : SECTIONS[0];
+  const activeMeta = SECTION_META[activeSection.id] || { phase: null, num: null, label: '' };
+
+  const modIndex = modSections.findIndex(s => s.id === activeTab);
+  const progressPct = activeTab === 'intro' ? 0
+    : (activeTab === 'appendices' || activeTab === 'resources') ? 100
+    : modIndex >= 0 ? Math.round(((modIndex + 1) / modSections.length) * 100)
+    : 0;
+
+  const handleTabChange = useCallback((id) => {
+    setActiveTab(id);
+    setIsMobileMenuOpen(false);
+    setAnimKey(k => k + 1);
+    const el = document.getElementById('main-scroll-area');
+    if (el) el.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  const handleNext = () => {
+    if (activeSectionIndex < SECTIONS.length - 1) handleTabChange(SECTIONS[activeSectionIndex + 1].id);
+  };
+  const handlePrev = () => {
+    if (activeSectionIndex > 0) handleTabChange(SECTIONS[activeSectionIndex - 1].id);
+  };
+
+  const contentHtml = parseContent(activeSection?.content || '');
   const phaseClass = activeMeta.phase ? `page-header--${activeMeta.phase}` : '';
 
   return (
@@ -3155,7 +3155,13 @@ export default function App() {
 
       {/* Desktop sidebar */}
       <div className="sidebar">
-        <SidebarContent />
+        <Sidebar
+          activeTab={activeTab}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          onTabChange={handleTabChange}
+          progressPct={progressPct}
+        />
       </div>
 
       {/* Mobile backdrop */}
@@ -3170,7 +3176,13 @@ export default function App() {
             <X size={16} />
           </button>
         </div>
-        <SidebarContent />
+        <Sidebar
+          activeTab={activeTab}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          onTabChange={handleTabChange}
+          progressPct={progressPct}
+        />
       </div>
 
       {/* Main */}
@@ -3213,17 +3225,10 @@ export default function App() {
             </div>
 
             {/* Content */}
-            {!markedLoaded ? (
-              <div className="loading-state">
-                <div className="loading-mark" />
-                <div className="loading-text">Loading…</div>
-              </div>
-            ) : (
-              <div
-                className="markdown-body"
-                dangerouslySetInnerHTML={{ __html: renderMarkdown() }}
-              />
-            )}
+            <div
+              className="markdown-body"
+              dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
 
             {/* Page turn navigation */}
             <div className="page-nav">
