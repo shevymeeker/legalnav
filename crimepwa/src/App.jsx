@@ -174,7 +174,7 @@ export default function App() {
       )}
 
       {/* Mobile drawer */}
-      <div className={`mobile-drawer sidebar${isMobileMenuOpen ? ' open' : ''}`}>
+      <div className={`mobile-drawer${isMobileMenuOpen ? ' open' : ''}`}>
         <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10 }}>
           <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close">
             <X size={16} />
