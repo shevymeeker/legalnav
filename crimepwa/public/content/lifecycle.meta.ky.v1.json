@@ -30,6 +30,13 @@
           "title": "Supreme Court Opinions",
           "short": "Case Law",
           "tags": ["miranda", "case-law", "interrogation", "coercion", "kentucky"]
+        },
+        {
+          "id": "pre-arrest-practical-rights",
+          "heading_marker": "### Pre-Arrest Practical Rights — Kentucky Research Report",
+          "title": "Pre-Arrest Practical Rights",
+          "short": "Practical Rights",
+          "tags": ["4th-amendment", "5th-amendment", "stop-and-identify", "right-to-record", "traffic-stops", "miranda", "kentucky"]
         }
       ]
     },
