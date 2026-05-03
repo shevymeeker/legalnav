@@ -6,7 +6,7 @@ import {
   ChevronRight, ChevronLeft, Search, Loader2, Library
 } from 'lucide-react';
 
-// --- CONTENT DATA (100% Unmodified, Exactly from Prompt) ---
+// --- CONTENT DATA  ---
 const SECTIONS = [
   { 
     id: 'intro', 
@@ -20,9 +20,9 @@ const SECTIONS = [
   },
   {
     id: 'mod1',
-    title: 'Module 1: The Arrest',
+    title: 'The Arrest',
     icon: Shield,
-    content: `# **MODULE 1: THE ARREST — HOW CUSTODY BEGINS**
+    content: `# **THE ARREST**
 
 ## **What This Module Explains**
 
@@ -30,7 +30,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1A. Legal Definition: Arrest vs. Detention**
+## **Legal Definition: Arrest vs. Detention**
 
 **Detention (Investigatory Stop — Terry Stop)**
 
@@ -57,7 +57,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1B. Arrest With Warrant**
+## **Arrest With Warrant**
 
 **Complaint Process (RCr 2.02)**
 
@@ -101,7 +101,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1C. Arrest Without Warrant (RCr 2.10; KRS 431.005)**
+## **Arrest Without Warrant (RCr 2.10; KRS 431.005)**
 
 **Felony Arrests Without Warrant — Officer May Arrest When:**
 
@@ -134,7 +134,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1D. Constitutional Framework Governing Arrest**
+## **Constitutional Framework Governing Arrest**
 
 **Fourth Amendment (U.S. Constitution)**
 
@@ -157,7 +157,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1E. Booking Procedures**
+## **Booking Procedures**
 
 **Location (Daviess County)**
 
@@ -184,7 +184,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1F. Right to Contact Attorney (RCr 2.14(1))**
+## **Right to Contact Attorney (RCr 2.14(1))**
 
 **The Rule**
 
@@ -213,7 +213,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1G. Pretrial Services Interview**
+## **Pretrial Services Interview**
 
 **Timing**
 
@@ -249,7 +249,7 @@ How law enforcement authority to arrest is established, what happens during the 
 
 ---
 
-## **1H. Body Camera Evidence Created at Arrest**
+## **Body Camera Evidence Created at Arrest**
 
 *(Derived from department body camera policy)*
 
@@ -278,9 +278,9 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
   },
   {
     id: 'mod2',
-    title: 'Module 2: Initial Appearance',
+    title: 'Initial Appearance',
     icon: Gavel,
-    content: `# **MODULE 2: INITIAL APPEARANCE — FIRST CONTACT WITH COURT**
+    content: `# **INITIAL APPEARANCE**
 
 ## **What This Module Explains**
 
@@ -288,7 +288,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2A. Timing Requirements**
+## **Timing Requirements**
 
 **"Without Unnecessary Delay" Standard (RCr 3.02)**
 
@@ -313,7 +313,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2B. Rights Advisement at Initial Appearance**
+## **Rights Advisement at Initial Appearance**
 
 **Judge must inform defendant of all of the following:**
 
@@ -359,7 +359,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2C. District Court vs. Circuit Court Arraignment**
+## **District Court vs. Circuit Court Arraignment**
 
 **District Court Arraignment (Misdemeanors and Pre-Indictment Felonies)**
 
@@ -379,7 +379,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2D. Plea Entry Mechanics**
+## **Plea Entry Mechanics**
 
 **Not Guilty Plea**
 
@@ -414,7 +414,7 @@ What happens when an arrested person first appears before a judge, what rights t
 
 ---
 
-## **2E. Case Assignment and Scheduling**
+## **Case Assignment and Scheduling**
 
 **After "Not Guilty" Plea:**
 
@@ -457,7 +457,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3A. Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
+## **Standard Pretrial Release Schedule (Supreme Court Order 2025-22)**
 
 **The Schedule**
 
@@ -488,7 +488,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3B. Judicial Discretion Factors (RCr 4.02; KRS 431.066)**
+## **Judicial Discretion Factors (RCr 4.02; KRS 431.066)**
 
 **For defendants not eligible under schedule or requiring judicial review, judge considers:**
 
@@ -540,7 +540,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3C. Bond Types**
+## **Bond Types**
 
 **Release on Own Recognizance (ROR)**
 
@@ -589,7 +589,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3D. Special Provisions for Domestic Violence and Sexual Assault (KRS 431.064)**
+## **Special Provisions for Domestic Violence and Sexual Assault (KRS 431.064)**
 
 **Before releasing defendant charged with:**
 
@@ -613,7 +613,7 @@ How judges decide whether to release defendants pending trial, what factors driv
 
 ---
 
-## **3E. Bond Modification**
+## **Bond Modification**
 
 **Motion for Bond Reduction (Defense)**
 
@@ -662,7 +662,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4A. Constitutional Right to Counsel**
+## **Constitutional Right to Counsel**
 
 **Sixth Amendment; Section 11, Kentucky Constitution**
 
@@ -683,7 +683,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4B. Indigency Determination**
+## **Indigency Determination**
 
 **Who Qualifies**
 
@@ -711,7 +711,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4C. Public Defender System**
+## **Public Defender System**
 
 **Structure**
 
@@ -744,7 +744,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4D. Retained (Private) Counsel**
+## **Retained (Private) Counsel**
 
 **Right to Choose**
 
@@ -769,7 +769,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **4E. Right to Represent Yourself (Pro Se)**
+## **Right to Represent Yourself (Pro Se)**
 
 **Recognized Right**
 
@@ -791,7 +791,7 @@ The constitutional right to counsel, how attorneys get appointed in Daviess Coun
 
 ---
 
-## **Key Terms (Module 4)**
+## **Key Terms**
 
 * **Indigent**: financially unable to afford an attorney without substantial hardship  
 * **Appointed counsel**: attorney assigned by court at public expense  
@@ -806,9 +806,9 @@ Attorney handles all subsequent proceedings: reviewing discovery, filing motions
   },
   {
     id: 'mod5',
-    title: 'Module 5: Discovery',
+    title: 'Discovery',
     icon: FileSearch,
-    content: `# **MODULE 5: DISCOVERY — EVIDENCE DISCLOSURE**
+    content: `# **DISCOVERY**
 
 ## **What This Module Explains**
 
@@ -816,7 +816,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5A. Discovery Framework (RCr 7.24)**
+## **Discovery Framework (RCr 7.24)**
 
 **Purpose**
 
@@ -834,7 +834,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5B. What Commonwealth Must Provide**
+## **What Commonwealth Must Provide**
 
 **Police and Investigative Reports**
 
@@ -888,7 +888,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5C. Brady Material (Exculpatory Evidence)**
+## **Brady Material (Exculpatory Evidence)**
 
 **The Rule** (*Brady v. Maryland*, 373 U.S. 83 (1963))
 
@@ -913,7 +913,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5D. Giglio Material (Impeachment Evidence)**
+## **Giglio Material (Impeachment Evidence)**
 
 **The Rule** (*Giglio v. United States*, 405 U.S. 150 (1972))
 
@@ -938,7 +938,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5E. Defense Disclosure Obligations (Mutual Discovery)**
+## **Defense Disclosure Obligations (Mutual Discovery)**
 
 **Defense Must Provide to Commonwealth:**
 
@@ -956,7 +956,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **5F. Eyewitness Identification Evidence**
+## **Eyewitness Identification Evidence**
 
 *(Derived from law enforcement identification policy)*
 
@@ -989,7 +989,7 @@ What evidence the Commonwealth is required to hand over to the defense, what the
 
 ---
 
-## **Key Terms (Module 5)**
+## **Key Terms**
 
 * **Discovery**: formal process of exchanging evidence before trial  
 * **Brady material**: evidence favorable to defendant that Commonwealth must disclose  
@@ -1005,9 +1005,9 @@ Discovery review is the foundation of all pretrial strategy. What the attorney f
   },
   {
     id: 'mod6',
-    title: 'Module 6: Pretrial Proceedings',
+    title: 'Pretrial Proceedings',
     icon: Handshake,
-    content: `# **MODULE 6: PRETRIAL PROCEEDINGS — THE NEGOTIATION PERIOD**
+    content: `# **PRETRIAL PROCEEDINGS**
 
 ## **What This Module Explains**
 
@@ -1015,7 +1015,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6A. Pretrial Conference Framework (RCr 8.26; C6 Local Rule 2.03)**
+## **Pretrial Conference Framework (RCr 8.26; C6 Local Rule 2.03)**
 
 **Purpose**
 
@@ -1051,7 +1051,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6B. Why Cases Get Continued Repeatedly**
+## **Why Cases Get Continued Repeatedly**
 
 **Defense Continuances**
 
@@ -1084,7 +1084,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6C. Plea Negotiations — How They Actually Work**
+## **Plea Negotiations**
 
 **The 95% Reality**
 
@@ -1128,7 +1128,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **6D. Diversion Programs**
+## **Diversion Programs**
 
 **Eligibility (General)**
 
@@ -1171,7 +1171,7 @@ How the pretrial conference process works, why cases get continued repeatedly, h
 
 ---
 
-## **Key Terms (Module 6)**
+## **Key Terms**
 
 * **Pretrial conference**: meeting between attorneys (and sometimes judge) to discuss case status and resolution  
 * **Continuance**: postponement of a scheduled hearing or conference  
@@ -1186,9 +1186,9 @@ Cases that cannot be resolved through negotiation proceed to motion practice and
   },
   {
     id: 'mod7',
-    title: 'Module 7: Motion Practice',
+    title: 'Motion Practice',
     icon: FileText,
-    content: `# **MODULE 7: MOTION PRACTICE — CHALLENGING THE PROCESS**
+    content: `# **MOTION PRACTICE**
 
 ## **What This Module Explains**
 
@@ -1196,7 +1196,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7A. Daviess County Motion Docket (C6 Local Rule 2.02)**
+## **Daviess County Motion Docket (C6 Local Rule 2.02)**
 
 **Criminal Motion Schedule**
 
@@ -1222,7 +1222,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7B. Motion to Suppress Evidence (RCr 8.32)**
+## **Motion to Suppress Evidence (RCr 8.32)**
 
 **Purpose**
 
@@ -1265,7 +1265,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7C. Motion to Dismiss**
+## **Motion to Dismiss**
 
 **Grounds**
 
@@ -1278,7 +1278,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7D. Bill of Particulars (RCr 6.22)**
+## **Bill of Particulars (RCr 6.22)**
 
 **Purpose**
 
@@ -1293,7 +1293,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7E. Motion for Change of Venue (RCr 8.30)**
+## **Motion for Change of Venue (RCr 8.30)**
 
 **Grounds**
 
@@ -1309,7 +1309,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7F. Motion to Sever (RCr 9.16)**
+## **Motion to Sever (RCr 9.16)**
 
 **Purpose**
 
@@ -1331,7 +1331,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7G. Competency Evaluation (KRS 504.060; KRS 504.080; KRS 504.100)**
+## **Competency Evaluation (KRS 504.060; KRS 504.080; KRS 504.100)**
 
 **Standard for Competency**
 
@@ -1353,7 +1353,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **7H. Motion in Limine**
+## **Motion in Limine**
 
 **Purpose**
 
@@ -1372,7 +1372,7 @@ What pretrial motions are, when they can be filed, how hearings work, what the d
 
 ---
 
-## **Key Terms (Module 7)**
+## **Key Terms**
 
 * **Motion to suppress**: request to exclude unconstitutionally obtained evidence  
 * **Standing**: defendant's right to challenge a particular search or seizure (must show they had privacy interest at stake)  
@@ -1388,9 +1388,9 @@ Pretrial motion outcomes reset the negotiation. Won suppression = Commonwealth m
   },
   {
     id: 'mod8',
-    title: 'Module 8: The Trial Decision',
+    title: 'The Trial Decision',
     icon: SplitSquareHorizontal,
-    content: `# **MODULE 8: THE TRIAL DECISION — UNDERSTANDING THE CHOICE**
+    content: `# **THE TRIAL DECISION**
 
 ## **What This Module Explains**
 
@@ -1398,7 +1398,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8A. The Statistical Reality**
+## **The Statistical Reality**
 
 * Approximately 95% of all Kentucky criminal cases resolve through plea agreement  
 * Trial is a constitutional right but a practical rarity  
@@ -1408,7 +1408,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8B. Jury Trial**
+## **Jury Trial**
 
 **Right**
 
@@ -1443,7 +1443,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8C. Bench Trial**
+## **Bench Trial**
 
 **When Available**
 
@@ -1465,7 +1465,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8D. The Trial Penalty — How It Works**
+## **The Trial Penalty — How It Works**
 
 **The Concept**
 
@@ -1493,7 +1493,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8E. Plea Types Available**
+## **Plea Types Available**
 
 **Standard Guilty Plea**
 
@@ -1525,7 +1525,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **8F. Why Most Defendants Plead**
+## **Why Most Defendants Plead**
 
 **Evidence Strength**
 
@@ -1559,7 +1559,7 @@ The statistical reality of plea vs. trial, what jury and bench trials are, how t
 
 ---
 
-## **Key Terms (Module 8)**
+## **Key Terms**
 
 * **Jury trial**: trial where 12 citizens determine guilt or innocence  
 * **Bench trial**: trial where judge alone determines guilt or innocence  
@@ -1574,9 +1574,9 @@ If defendant chooses trial, case moves into trial preparation — witness lists,
   },
   {
     id: 'mod9',
-    title: 'Module 9: Trial Process',
+    title: 'Trial Process',
     icon: Users,
-    content: `# **MODULE 9: TRIAL PROCESS — HOW JURY TRIALS FUNCTION**
+    content: `# **TRIAL PROCESS**
 
 ## **What This Module Explains**
 
@@ -1584,7 +1584,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9A. Assignment to Trial Docket (C6 Local Rule 2.04)**
+## **Assignment to Trial Docket (C6 Local Rule 2.04)**
 
 **Assignment Process**
 
@@ -1604,7 +1604,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9B. Jury Trial Periods in Daviess County (C6 Local Rule 2.07)**
+## **Jury Trial Periods in Daviess County (C6 Local Rule 2.07)**
 
 **Schedule**
 
@@ -1635,7 +1635,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9C. Jury Selection (Voir Dire)**
+## **Jury Selection (Voir Dire)**
 
 **Jury Pool**
 
@@ -1671,7 +1671,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **9D. Trial Sequence (Full)**
+## **Trial Sequence (Full)**
 
 ### **Phase 1: Opening Statements**
 
@@ -1795,7 +1795,7 @@ How jury trial periods work in Daviess County, the full trial sequence from jury
 
 ---
 
-## **Key Terms (Module 9)**
+## **Key Terms**
 
 * **Voir dire**: jury selection process  
 * **Challenge for cause**: removal of juror based on demonstrated bias (unlimited)  
@@ -1811,9 +1811,9 @@ Conviction leads to presentence investigation and sentencing hearing. Acquittal 
   },
   {
     id: 'mod10',
-    title: 'Module 10: Sentencing',
+    title: 'Sentencing',
     icon: Clock,
-    content: `# **MODULE 10: SENTENCING — HOW PUNISHMENT IS DETERMINED**
+    content: `# **SENTENCING**
 
 ## **What This Module Explains**
 
@@ -2048,7 +2048,7 @@ The presentence investigation process, how Kentucky's felony classification syst
 
 ---
 
-## **Key Terms (Module 10)**
+## **Key Terms**
 
 * **Presentence investigation (PSI)**: comprehensive report prepared by probation officer before sentencing  
 * **Allocution**: defendant's right to address the court before sentence is imposed  
@@ -2067,9 +2067,9 @@ Sentence execution begins immediately after imposition. The 30-day clock for not
   },
   {
     id: 'mod11',
-    title: 'Module 11: Appeals',
+    title: 'Appeals',
     icon: RotateCcw,
-    content: `# **MODULE 11: APPEALS — POST-CONVICTION REVIEW**
+    content: `# **APPEALS**
 
 ## **What This Module Explains**
 
@@ -2257,7 +2257,7 @@ The 30-day deadline to appeal, what can and cannot be appealed, how the appellat
 
 ---
 
-## **Key Terms (Module 11)**
+## **Key Terms**
 
 * **RAP 3**: Kentucky appellate rule establishing 30-day deadline for notice of appeal  
 * **Jurisdictional deadline**: a deadline that cannot be waived or extended by the court; missing it permanently forfeits the right  
@@ -2274,9 +2274,9 @@ Whether appeal is filed or not, the conviction's collateral consequences begin i
   },
   {
     id: 'mod12',
-    title: 'Module 12: Collateral Consequences',
+    title: 'Collateral Consequences',
     icon: AlertTriangle,
-    content: `# **MODULE 12: COLLATERAL CONSEQUENCES — BEYOND THE SENTENCE**
+    content: `# **COLLATERAL CONSEQUENCES**
 
 ## **What This Module Explains**
 
@@ -2492,7 +2492,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **Key Terms (Module 12)**
+## **Key Terms**
 
 * **Collateral consequences**: legal and practical consequences of conviction beyond the sentence imposed by court  
 * **Expungement**: sealing of criminal records from public access  
@@ -2506,9 +2506,9 @@ Collateral consequences persist indefinitely. For eligible convictions, the expu
   },
   {
     id: 'mod13',
-    title: 'Module 13: System Overview',
+    title: 'System Overview',
     icon: Network,
-    content: `# **MODULE 13: HOW THE PIECES CONNECT — SYSTEM OVERVIEW**
+    content: `# **HOW THE PIECES CONNECT**
 
 ## **What This Module Explains**
 
@@ -2764,7 +2764,7 @@ Every phase of the process is governed by constitutional protections. These are 
 
 ---
 
-## **Key Terms (Module 13)**
+## **Key Terms**
 
 * **Arraignment**: first court appearance on formal charges  
 * **Grand jury**: body of citizens that decides whether to indict on felony charges  
@@ -2779,30 +2779,6 @@ Every phase of the process is governed by constitutional protections. These are 
     icon: Paperclip,
     content: `# **APPENDICES**
 
-## **Appendix A: Procedural Timeline Flowchart**
-
-* All phases from arrest through collateral consequences  
-* Decision branches at each key point  
-* Typical timeframes noted
-
-## **Appendix B: Legal Terms Glossary**
-
-* Plain-language definitions for all bolded terms across all 13 modules  
-* No legal jargon in definitions themselves
-
-## **Appendix C: Daviess County Court Information**
-
-* Daviess County Courthouse address, phone, hours  
-* Circuit Court clerk contact information  
-* Daviess County Commonwealth Attorney office contact  
-* Daviess County Attorney office contact  
-* Daviess County Detention Center contact  
-* DPA (Public Defender) regional office contact  
-* District court schedule and judge information  
-* Circuit court Division I and Division II judge assignments  
-* Grand jury schedule (next impaneling dates)
-
-## **Appendix D: Referenced Statutes and Rules**
 
 Key citations include:
 
