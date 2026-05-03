@@ -3,6 +3,13 @@
   publish = "dist"
   command = "npm run build"
 
+# Pass static content (PDFs, etc.) through directly before the SPA catch-all
+[[redirects]]
+  from   = "/content/*"
+  to     = "/content/:splat"
+  status = 200
+  force  = false
+
 # Serve index.html for all routes so Vue Router handles them client-side
 [[redirects]]
   from   = "/*"
