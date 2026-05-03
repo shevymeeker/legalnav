@@ -11,7 +11,7 @@ import { SECTIONS } from './content.js';
 
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState(SECTIONS.id);
+  const [activeTab, setActiveTab] = useState(SECTIONS[0].id);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [markedLoaded, setMarkedLoaded] = useState(false);
@@ -32,7 +32,7 @@ export default function App() {
 
   // Handle section changes safely
   const activeSectionIndex = SECTIONS.findIndex(s => s.id === activeTab);
-  const activeSection = activeSectionIndex >= 0 ? SECTIONS[activeSectionIndex] : SECTIONS;
+  const activeSection = activeSectionIndex >= 0 ? SECTIONS[activeSectionIndex] : SECTIONS[0];
 
   const handleTabChange = (id) => {
     setActiveTab(id);
