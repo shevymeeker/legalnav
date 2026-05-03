@@ -2942,13 +2942,23 @@ export default function App() {
     if (!markedLoaded || !window.marked) {
       return ''; // Handled by loading spinner UI below
     }
-    
+
     let rawText = activeSection?.content || '';
-    
-    // Safely pre-process specific callouts to maintain beautiful styling 
+
+    // Strip "MODULE N:" prefix from h1 headings (e.g. "# **MODULE 1: THE ARREST...**")
+    rawText = rawText.replace(/^(#{1,2}\s+(?:\*\*)?MODULE\s+\d+:\s*)/gim, (_, prefix) => {
+      return prefix.replace(/MODULE\s+\d+:\s*/i, '');
+    });
+
+    // Strip "NA." / "1A." number+letter prefix from h2 headings (e.g. "## **1A. Title**")
+    rawText = rawText.replace(/^(##\s+(?:\*\*)?\d+[A-Z]\.\s*)/gim, (_, prefix) => {
+      return prefix.replace(/\d+[A-Z]\.\s*/i, '');
+    });
+
+    // Safely pre-process specific callouts to maintain beautiful styling
     // before the markdown parser converts them into paragraph blocks.
     rawText = rawText.replace(/\*\*Disclaimer.*?\*\*\s*(.*?)$/gim, '<div class="disclaimer"><strong>Disclaimer:</strong> $1</div>');
-    
+
     // Parse using the external library which flawlessly handles tables/lists/etc.
     return window.marked.parse(rawText, { breaks: true, gfm: true });
   };
@@ -3042,7 +3052,7 @@ export default function App() {
                   <div className={`${isActive ? 'text-blue-500' : 'text-slate-500 group-hover:text-slate-400'}`}>
                     <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
                   </div>
-                  <span className="truncate">{section.title}</span>
+                  <span className="truncate">{section.title.replace(/^Module\s+\d+:\s*/i, '')}</span>
                   {isActive && (
                     <div className="ml-auto w-1 h-4 bg-blue-500 rounded-full" />
                   )}
@@ -3081,7 +3091,7 @@ export default function App() {
               <BookOpen size={16} className="mr-2" />
               <span>Daviess County Minicourse</span>
               <ChevronRight size={14} className="mx-2 text-slate-400" />
-              <span className="text-slate-600">{activeSection.title}</span>
+              <span className="text-slate-600">{activeSection.title.replace(/^Module\s+\d+:\s*/i, '')}</span>
             </div>
 
             {/* Document Render Box */}
