@@ -3006,24 +3006,24 @@ This section provides access to the supplementary manuals, rules, and casebooks 
   }
 ];
 
-// Color + snippet metadata per section
+// Phase metadata — color keys match CSS class suffixes
 const SECTION_META = {
-  intro:      { color: 'default',   num: null,  snippet: 'Overview of the criminal court navigation minicourse for Daviess County, KY.' },
-  mod1:       { color: 'danger',    num: '01',  snippet: 'Arrest authority, booking, Miranda rights, and constitutional protections.' },
-  mod2:       { color: 'warning',   num: '02',  snippet: 'First court appearance, arraignment, and rights advisements.' },
-  mod3:       { color: 'primary',   num: '03',  snippet: 'Bail hearings, pretrial release conditions, and risk assessment.' },
-  mod4:       { color: 'teal',      num: '04',  snippet: 'Right to counsel, public defenders, attorney-client relationships.' },
-  mod5:       { color: 'info',      num: '05',  snippet: 'Evidence disclosure, discovery rules, and Brady material.' },
-  mod6:       { color: 'secondary', num: '06',  snippet: 'Plea negotiations, pretrial conferences, and diversion programs.' },
-  mod7:       { color: 'dark',      num: '07',  snippet: 'Suppression motions, procedural filings, and hearing practice.' },
-  mod8:       { color: 'warning',   num: '08',  snippet: 'Bench vs. jury trial decisions, strategic considerations.' },
-  mod9:       { color: 'primary',   num: '09',  snippet: 'Jury selection, evidence presentation, verdict, and acquittal.' },
-  mod10:      { color: 'danger',    num: '10',  snippet: 'Sentencing guidelines, victim impact, and presentence reports.' },
-  mod11:      { color: 'teal',      num: '11',  snippet: 'Direct appeals, post-conviction relief, and appellate process.' },
-  mod12:      { color: 'warning',   num: '12',  snippet: 'Collateral consequences: employment, housing, immigration, voting.' },
-  mod13:      { color: 'info',      num: '13',  snippet: 'System-wide overview: actors, timelines, and structural logic.' },
-  appendices: { color: 'secondary', num: null,  snippet: 'Statutory references, glossary, court directory, and resources.' },
-  resources:  { color: 'dark',      num: null,  snippet: 'PDFs, manuals, and official court documents for download.' },
+  intro:      { phase: null,        num: null,  label: 'Introduction' },
+  mod1:       { phase: 'arrest',    num: 'I',   label: 'The Arrest' },
+  mod2:       { phase: 'appear',    num: 'II',  label: 'Initial Appearance' },
+  mod3:       { phase: 'bail',      num: 'III', label: 'Bail Determination' },
+  mod4:       { phase: 'counsel',   num: 'IV',  label: 'Legal Representation' },
+  mod5:       { phase: 'discovery', num: 'V',   label: 'Discovery' },
+  mod6:       { phase: 'pretrial',  num: 'VI',  label: 'Pretrial Proceedings' },
+  mod7:       { phase: 'motion',    num: 'VII', label: 'Motion Practice' },
+  mod8:       { phase: 'decision',  num: 'VIII',label: 'The Trial Decision' },
+  mod9:       { phase: 'trial',     num: 'IX',  label: 'Trial Process' },
+  mod10:      { phase: 'sentencing',num: 'X',   label: 'Sentencing' },
+  mod11:      { phase: 'appeals',   num: 'XI',  label: 'Appeals' },
+  mod12:      { phase: 'collateral',num: 'XII', label: 'Collateral Consequences' },
+  mod13:      { phase: 'system',    num: 'XIII',label: 'System Overview' },
+  appendices: { phase: 'appendix',  num: null,  label: 'Appendices' },
+  resources:  { phase: 'resources', num: null,  label: 'Resource Library' },
 };
 
 export default function App() {
@@ -3044,13 +3044,14 @@ export default function App() {
 
   const activeSectionIndex = SECTIONS.findIndex(s => s.id === activeTab);
   const activeSection = activeSectionIndex >= 0 ? SECTIONS[activeSectionIndex] : SECTIONS[0];
-  const activeMeta = SECTION_META[activeSection.id] || { color: 'default', num: null, snippet: '' };
+  const activeMeta = SECTION_META[activeSection.id] || { phase: null, num: null, label: '' };
 
-  const moduleCount = SECTIONS.filter(s => s.id.startsWith('mod')).length;
-  const completedModules = SECTIONS.filter(s => s.id.startsWith('mod')).findIndex(s => s.id === activeTab);
+  const modSections = SECTIONS.filter(s => s.id.startsWith('mod'));
+  const modIndex = modSections.findIndex(s => s.id === activeTab);
   const progressPct = activeTab === 'intro' ? 0
-    : activeTab === 'appendices' || activeTab === 'resources' ? 100
-    : Math.round(((completedModules + 1) / moduleCount) * 100);
+    : (activeTab === 'appendices' || activeTab === 'resources') ? 100
+    : modIndex >= 0 ? Math.round(((modIndex + 1) / modSections.length) * 100)
+    : 0;
 
   const handleTabChange = (id) => {
     setActiveTab(id);
@@ -3071,7 +3072,7 @@ export default function App() {
     if (!markedLoaded || !window.marked) return '';
     let raw = activeSection?.content || '';
     raw = raw.replace(/\*\*Disclaimer.*?\*\*\s*(.*?)$/gim,
-      '<div class="disclaimer"><strong>⚠ Disclaimer:</strong> $1</div>');
+      '<div class="disclaimer"><strong>Disclaimer:</strong> $1</div>');
     let html = window.marked.parse(raw, { breaks: true, gfm: true });
     html = html.replace(/<a href="([^"]*\.pdf[^"]*)"/g,
       '<a href="$1" target="_blank" rel="noopener noreferrer" class="pdf-link"');
@@ -3080,45 +3081,42 @@ export default function App() {
 
   const SidebarContent = () => (
     <>
-      {/* Brand header */}
-      <div className="sidebar-header">
-        <div className="sidebar-brand">
-          <div className="sidebar-logo">
-            <Scale size={20} color="#fff" strokeWidth={2.5} />
+      <div className="sidebar-masthead">
+        <div className="sidebar-seal">
+          <div className="sidebar-seal-mark">
+            <Scale size={17} strokeWidth={1.5} />
           </div>
           <div>
             <div className="sidebar-title">LegalNav</div>
-            <div className="sidebar-subtitle">Daviess County · KY</div>
+            <div className="sidebar-jurisdiction">Daviess County · Kentucky</div>
           </div>
         </div>
         <div className="sidebar-progress">
-          <div className="sidebar-progress-label">
-            <span>Course Progress</span>
-            <span>{progressPct}%</span>
+          <div className="sidebar-progress-meta">
+            <span className="sidebar-progress-label">Course Progress</span>
+            <span className="sidebar-progress-pct">{progressPct}%</span>
           </div>
-          <div className="sidebar-progress-bar">
+          <div className="sidebar-progress-rule">
             <div className="sidebar-progress-fill" style={{ width: `${progressPct}%` }} />
           </div>
         </div>
       </div>
 
-      {/* Search */}
       <div className="sidebar-search">
-        <div className="sidebar-search-wrapper">
-          <Search size={14} className="sidebar-search-icon" />
+        <div className="sidebar-search-wrap">
+          <Search size={13} className="sidebar-search-icon" />
           <input
             type="text"
             className="sidebar-search-input"
-            placeholder="Filter modules…"
+            placeholder="Search modules…"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
           />
         </div>
       </div>
 
-      {/* Nav list */}
       <nav className="sidebar-nav">
-        <div className="nav-section-label">Course Modules</div>
+        <div className="sidebar-nav-section">Table of Contents</div>
         {SECTIONS
           .filter(s => s.title.toLowerCase().includes(searchQuery.toLowerCase()))
           .map(section => {
@@ -3131,149 +3129,120 @@ export default function App() {
                 onClick={() => handleTabChange(section.id)}
                 className={`nav-item${isActive ? ' active' : ''}`}
               >
-                <Icon size={15} className="nav-item-icon" strokeWidth={isActive ? 2.5 : 2} />
+                <Icon size={13} className="nav-item-icon" strokeWidth={1.75} />
                 <span style={{ flex: 1, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                   {section.title}
                 </span>
-                {meta.num && <span className="nav-item-number">{meta.num}</span>}
+                {meta.num && <span className="nav-item-num">{meta.num}</span>}
               </button>
             );
           })}
       </nav>
 
-      {/* Footer */}
       <div className="sidebar-footer">
-        <div className="sidebar-footer-dot" />
         <div className="sidebar-footer-text">
           Civic Education Resource<br />
-          Not legal advice · Consult an attorney
+          Not legal advice — consult an attorney
         </div>
       </div>
     </>
   );
 
+  const phaseClass = activeMeta.phase ? `page-header--${activeMeta.phase}` : '';
+
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
+    <div className="app-shell">
 
       {/* Desktop sidebar */}
       <div className="sidebar">
         <SidebarContent />
       </div>
 
-      {/* Mobile drawer backdrop */}
+      {/* Mobile backdrop */}
       {isMobileMenuOpen && (
-        <div
-          className="mobile-drawer-backdrop"
-          onClick={() => setIsMobileMenuOpen(false)}
-        />
+        <div className="mobile-backdrop" onClick={() => setIsMobileMenuOpen(false)} />
       )}
 
       {/* Mobile drawer */}
       <div className={`mobile-drawer sidebar${isMobileMenuOpen ? ' open' : ''}`}>
-        <div style={{ position: 'absolute', top: 14, right: 14, zIndex: 10 }}>
-          <button
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="mobile-menu-btn"
-            aria-label="Close menu"
-          >
-            <X size={18} />
+        <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10 }}>
+          <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close">
+            <X size={16} />
           </button>
         </div>
         <SidebarContent />
       </div>
 
-      {/* Main area */}
+      {/* Main */}
       <div className="main-area">
 
         {/* Mobile topbar */}
         <div className="mobile-topbar">
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setIsMobileMenuOpen(true)}
-            aria-label="Open menu"
-          >
-            <Menu size={18} />
+          <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(true)} aria-label="Menu">
+            <Menu size={17} />
           </button>
-          <div className="mobile-topbar-brand">
-            <div className="mobile-topbar-logo">
-              <Scale size={16} color="#fff" strokeWidth={2.5} />
-            </div>
+          <div className="mobile-topbar-left">
             <span className="mobile-topbar-title">LegalNav</span>
           </div>
-          <div style={{ fontSize: 11, fontWeight: 600, color: 'rgba(255,255,255,0.4)', whiteSpace: 'nowrap' }}>
-            {activeSectionIndex + 1} / {SECTIONS.length}
-          </div>
+          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 10, color: 'rgba(240,232,208,0.35)', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>
+            {activeSectionIndex + 1}&thinsp;/&thinsp;{SECTIONS.length}
+          </span>
         </div>
 
-        {/* Scrollable content */}
         <div id="main-scroll-area" className="content-scroll">
-          <div className="content-inner" key={animKey}>
+          <div className="content-inner animate-in" key={animKey}>
 
-            {/* Breadcrumb */}
-            <div className="breadcrumb">
-              <BookOpen size={13} />
-              <span>Daviess County Minicourse</span>
-              <span className="breadcrumb-sep">›</span>
-              <span className="breadcrumb-current">{activeSection.title}</span>
-            </div>
-
-            {/* Module hero */}
-            <div className={`module-hero module-hero--${activeMeta.color}`}>
-              <div className="module-hero-inner animate-in">
-                <div className="module-hero-eyebrow">
-                  {activeMeta.num ? `Module ${activeMeta.num}` : activeSection.title}
-                </div>
-                <div className="module-hero-title">{activeSection.title}</div>
-                <div className="module-hero-meta">
-                  <span className="module-hero-badge">
-                    <BookOpen size={11} />
-                    Daviess County, KY
-                  </span>
-                  <span className="module-hero-badge">
-                    {activeSectionIndex + 1} of {SECTIONS.length}
-                  </span>
-                </div>
-                {activeMeta.num && (
-                  <div className="module-hero-number">{activeMeta.num}</div>
-                )}
+            {/* Editorial page header */}
+            <div className={`page-header ${phaseClass}`}>
+              <div className="page-header-kicker">
+                {activeMeta.num
+                  ? `Module ${activeMeta.num}`
+                  : 'Daviess County Criminal Court Navigation'}
+              </div>
+              <h1 className="page-header-title">{activeSection.title}</h1>
+              <div className="page-header-meta">
+                <span className="page-header-tag">
+                  <BookOpen size={11} />
+                  Daviess County, KY
+                </span>
+                <span className="page-header-tag">
+                  {activeSectionIndex + 1} of {SECTIONS.length}
+                </span>
+                <span className="page-header-tag">Civic Education</span>
               </div>
             </div>
 
-            {/* Content card */}
-            <div className="content-card animate-in">
-              <div className="content-card-body">
-                {!markedLoaded ? (
-                  <div className="loading-state">
-                    <div className="loading-spinner" />
-                    <div className="loading-text">Loading content…</div>
-                  </div>
-                ) : (
-                  <div
-                    className="markdown-body"
-                    dangerouslySetInnerHTML={{ __html: renderMarkdown() }}
-                  />
-                )}
+            {/* Content */}
+            {!markedLoaded ? (
+              <div className="loading-state">
+                <div className="loading-mark" />
+                <div className="loading-text">Loading…</div>
               </div>
-            </div>
+            ) : (
+              <div
+                className="markdown-body"
+                dangerouslySetInnerHTML={{ __html: renderMarkdown() }}
+              />
+            )}
 
-            {/* Prev / Next navigation */}
-            <div className="phase-nav">
+            {/* Page turn navigation */}
+            <div className="page-nav">
               {activeSectionIndex > 0 ? (
-                <button className="phase-nav-btn phase-nav-btn--prev" onClick={handlePrev}>
-                  <div className="phase-nav-arrow"><ChevronLeft size={16} /></div>
-                  <div className="phase-nav-label">
-                    <span className="phase-nav-hint">Previous</span>
-                    <span className="phase-nav-name">{SECTIONS[activeSectionIndex - 1].title}</span>
+                <button className="page-nav-btn page-nav-btn--prev" onClick={handlePrev}>
+                  <ChevronLeft size={15} className="page-nav-arrow" />
+                  <div className="page-nav-label">
+                    <span className="page-nav-hint">← Previous</span>
+                    <span className="page-nav-name">{SECTIONS[activeSectionIndex - 1].title}</span>
                   </div>
                 </button>
               ) : <div />}
 
               {activeSectionIndex < SECTIONS.length - 1 ? (
-                <button className="phase-nav-btn phase-nav-btn--next" onClick={handleNext}>
-                  <div className="phase-nav-arrow"><ChevronRight size={16} /></div>
-                  <div className="phase-nav-label">
-                    <span className="phase-nav-hint">Next</span>
-                    <span className="phase-nav-name">{SECTIONS[activeSectionIndex + 1].title}</span>
+                <button className="page-nav-btn page-nav-btn--next" onClick={handleNext}>
+                  <ChevronRight size={15} className="page-nav-arrow" />
+                  <div className="page-nav-label">
+                    <span className="page-nav-hint">Next →</span>
+                    <span className="page-nav-name">{SECTIONS[activeSectionIndex + 1].title}</span>
                   </div>
                 </button>
               ) : <div />}
