@@ -21,13 +21,13 @@ export const SECTIONS = [
   },
   {
     id: 'mod0',
-    title: 'Pre-Arrest Rights',
+    title: 'Pre-Arrest',
     icon: AlertTriangle,
-    content: `# **PRE-ARREST PRACTICAL RIGHTS**
+    content: `# **PRE-ARREST**
 
 
 
-consensual police encounters, investigatory stops, and traffic stops. Understanding these types of contact 
+consensual police encounters, investigatory stops, and traffic stops. Understanding the difference between these types of contact 
 
 ---
 
@@ -419,9 +419,9 @@ The arrest creates the jurisdictional basis for court proceedings. The post-arre
   },
   {
     id: 'mod2',
-    title: 'Initial Appearance',
+    title: 'Arraignment',
     icon: Gavel,
-    content: `# **INITIAL APPEARANCE**
+    content: `# **Arraignment**
 
 
 
