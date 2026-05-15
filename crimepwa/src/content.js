@@ -1962,7 +1962,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10A. Presentence Investigation (KRS 532.050)**
+## **Presentence Investigation (KRS 532.050)**
 
 **Mandatory for Felonies**
 
@@ -2003,7 +2003,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10B. Sentencing Hearing**
+## **Sentencing Hearing**
 
 **Timing**
 
@@ -2033,7 +2033,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10C. Felony Classifications and Sentencing Ranges**
+## **Felony Classifications and Sentencing Ranges**
 
 **(KRS 532.020; KRS 532.060)**
 
@@ -2052,7 +2052,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10D. Persistent Felony Offender Enhancement (KRS 532.080)**
+## **Persistent Felony Offender Enhancement (KRS 532.080)**
 
 **What PFO Is**
 
@@ -2078,7 +2078,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10E. Violent Offender Provisions (KRS 439.3401)**
+## **Violent Offender Provisions (KRS 439.3401)**
 
 **85% Rule**
 
@@ -2093,7 +2093,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10F. Sentencing Options**
+## **Sentencing Options**
 
 **Incarceration**
 
@@ -2158,7 +2158,7 @@ What is the presentence investigation process, how Kentucky's felony classificat
 
 ---
 
-## **10G. Death Penalty Cases (KRS 532.025)**
+## **Death Penalty Cases (KRS 532.025)**
 
 **Bifurcated Trial**
 
@@ -2217,7 +2217,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11A. Direct Appeal — Notice of Appeal**
+## **Direct Appeal — Notice of Appeal**
 
 **RAP 3 — The 30-Day Rule**
 
@@ -2247,7 +2247,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11B. What Can Be Appealed**
+## **What Can Be Appealed**
 
 **Legal Errors**
 
@@ -2271,7 +2271,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11C. What Cannot Effectively Be Appealed**
+## **What Cannot Effectively Be Appealed**
 
 **Factual Disputes**
 
@@ -2292,7 +2292,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11D. Harmless Error Doctrine**
+## **Harmless Error Doctrine**
 
 * Not every error requires reversal  
 * Error must have affected defendant's "substantial rights" — likely affected outcome  
@@ -2301,7 +2301,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11E. Appellate Process**
+## **Appellate Process**
 
 1. Notice of appeal filed with circuit court clerk (30 days)  
 2. Transcript ordered and prepared  
@@ -2326,7 +2326,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11F. RCr 11.42 Motion (Collateral Attack)**
+## **RCr 11.42 Motion (Collateral Attack)**
 
 **Purpose**
 
@@ -2371,7 +2371,7 @@ You have a 30-day window to appeal, what can and cannot be appealed, how the app
 
 ---
 
-## **11G. Federal Habeas Corpus (28 U.S.C. § 2254)**
+## **Federal Habeas Corpus (28 U.S.C. § 2254)**
 
 **Purpose**
 
@@ -2424,7 +2424,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12A. Firearms (Federal and State)**
+## **Firearms (Federal and State)**
 
 **Federal Prohibition (18 U.S.C. § 922(g))**
 
@@ -2447,7 +2447,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12B. Civic Rights**
+## **Civic Rights**
 
 **Jury Service**
 
@@ -2468,7 +2468,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12C. Employment Consequences**
+## **Employment Consequences**
 
 **Background Checks**
 
@@ -2495,7 +2495,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12D. Professional Licensing**
+## **Professional Licensing**
 
 **General Rule**
 
@@ -2521,7 +2521,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12E. Housing Consequences**
+## **Housing Consequences**
 
 **Public Housing**
 
@@ -2538,7 +2538,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12F. Federal Benefits**
+## **Federal Benefits**
 
 **Student Loans and Financial Aid**
 
@@ -2557,7 +2557,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12G. Immigration Consequences**
+## **Immigration Consequences**
 
 **Critical Warning**
 
@@ -2587,7 +2587,7 @@ The consequences of a felony conviction that extend beyond the sentence imposed 
 
 ---
 
-## **12H. Expungement (KRS 431.073 — Felonies; KRS 431.078 — Misdemeanors)**
+## **Expungement (KRS 431.073 — Felonies; KRS 431.078 — Misdemeanors)**
 
 **What Expungement Does**
 
@@ -2656,7 +2656,7 @@ The full timeline from arrest to resolution, who each participant is and what ro
 
 ---
 
-## **13A. Case Timeline Visualization**
+## **Case Timeline Visualization**
 
 ARREST  
   ↓  
@@ -2713,7 +2713,7 @@ COLLATERAL CONSEQUENCES (persist indefinitely)
 
 ---
 
-## **13B. Roles of Each Participant**
+## **Roles of Each Participant**
 
 **Judge**
 
@@ -2780,7 +2780,7 @@ COLLATERAL CONSEQUENCES (persist indefinitely)
 
 ---
 
-## **13C. Why Cases Take So Long**
+## **Why Cases Take So Long**
 
 **Calendar Structure**
 
@@ -2818,7 +2818,7 @@ COLLATERAL CONSEQUENCES (persist indefinitely)
 
 ---
 
-## **13D. Typical Daviess County Timelines**
+## **Typical Daviess County Timelines**
 
 | Case Type | Arrest to Disposition |
 | --- | --- |
@@ -2832,7 +2832,7 @@ COLLATERAL CONSEQUENCES (persist indefinitely)
 
 ---
 
-## **13E. Decision Points and Procedural Branches**
+## **Decision Points and Procedural Branches**
 
 **At Arraignment:**
 
@@ -2867,7 +2867,7 @@ COLLATERAL CONSEQUENCES (persist indefinitely)
 
 ---
 
-## **13F. Constitutional Protections Throughout**
+## **Constitutional Protections Throughout**
 
 Every phase of the process is governed by constitutional protections. These are not technicalities — they are the framework that separates a system with due process from one without:
 
@@ -2880,7 +2880,7 @@ Every phase of the process is governed by constitutional protections. These are 
 
 ---
 
-## **13G. Practical Realities**
+## **Practical Realities**
 
 **Resource Constraints Affect Outcomes**
 
