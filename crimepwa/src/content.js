@@ -13,11 +13,11 @@ export const SECTIONS = [
     id: 'intro', 
     title: 'Introduction', 
     icon: BookOpen, 
-    content: `# **Criminal Court Navigation Minicourse**
+    content: `# **Criminal Court Navigation**
 
 ### **Daviess County, Kentucky | Civic Education Resource**
 
-**Disclaimer (appears throughout):** This course explains criminal court procedures in Daviess County, Kentucky. It is not legal advice. It does not recommend specific actions. Every criminal case is unique and requires consultation with a licensed attorney. This material describes how the system operates based on Kentucky law and local court rules.` 
+**Disclaimer (appears throughout):** This material describes how the system operates based on Kentucky law and local court rules. 
   },
   {
     id: 'mod0',
@@ -35,14 +35,14 @@ consensual police encounters, investigatory stops, and traffic stops. Understand
 
 Kentucky courts apply federal Fourth Amendment doctrine to classify every law enforcement encounter into one of three tiers. The tier determines what the officer can legally do and what rights you have.
 
-**Tier One: Consensual Contact**
+**Consensual Contact**
 
 * No reasonable suspicion required — officer may approach anyone in a public place for any reason
 * You may decline to answer and walk away; no seizure exists unless a reasonable person would not feel free to leave
 * *Commonwealth v. Banks*, 68 S.W.3d 347 (Ky. 2001): officers retain "the same freedom of movement that the rest of society enjoys"
 * *Baker v. Commonwealth*, 5 S.W.3d 142 (Ky. 1999): a request alone — including asking someone to remove their hands from their pockets — is **not** a seizure; a seizure begins when compliance is *compelled*, not merely requested
 
-**Tier Two: Investigatory Detention (Terry Stop)**
+**Investigatory Detention (Terry Stop)**
 
 * Requires reasonable, articulable suspicion — more than a hunch, less than probable cause — that criminal activity is afoot
 * Officer may briefly detain you to confirm or dispel that suspicion
@@ -50,7 +50,7 @@ Kentucky courts apply federal Fourth Amendment doctrine to classify every law en
 * Duration is limited to what is reasonably necessary
 * *Commonwealth v. Banks*: leading Kentucky Supreme Court application of the Terry doctrine
 
-**Tier Three: Arrest**
+**Arrest**
 
 * Requires probable cause supported by specific articulable facts
 * Triggers full constitutional protections: right to counsel (RCr 2.14(1)), right to remain silent (Fifth Amendment; Kentucky Constitution Section 11), right to be brought before a judicial officer without unnecessary delay (RCr 3.02)
