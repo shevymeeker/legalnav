@@ -62,16 +62,6 @@ function Sidebar({ activeTab, searchQuery, onSearchChange, onTabChange, progress
             <div className="sidebar-title">LegalNav</div>
             <div className="sidebar-jurisdiction">Daviess County · Kentucky</div>
           </div>
-        </div>
-        <div className="sidebar-progress">
-          <div className="sidebar-progress-meta">
-            <span className="sidebar-progress-label">Course Progress</span>
-            <span className="sidebar-progress-pct">{progressPct}%</span>
-          </div>
-          <div className="sidebar-progress-rule">
-            <div className="sidebar-progress-fill" style={{ width: `${progressPct}%` }} />
-          </div>
-        </div>
       </div>
 
       <div className="sidebar-search">
@@ -215,13 +205,13 @@ export default function App() {
               <div className="page-header-kicker">
                 {activeMeta.num
                   ? activeMeta.title
-                  : 'Daviess County Criminal Court Navigation'}
+                  : 'Court Navigation'}
               </div>
               <h1 className="page-header-title">{activeSection.title}</h1>
               <div className="page-header-meta">
                 <span className="page-header-tag">
                   <BookOpen size={11} />
-                  Daviess County, KY
+                  
                 </span>
                 <span className="page-header-tag">
                   {activeSectionIndex + 1} of {SECTIONS.length}
